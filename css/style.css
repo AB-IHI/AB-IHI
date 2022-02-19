@@ -18,7 +18,7 @@ body {
 
 h1 {
     font-size: 45px;
-    line-height: 45px;
+    line-height: 150%;
     color: #282828;
     font-weight: bold;
     margin-bottom: 28px;
