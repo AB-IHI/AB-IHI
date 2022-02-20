@@ -26,8 +26,11 @@ h1 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 30px;
     letter-spacing: 0.15px;
+
+    line-height: 1.23;
+    letter-spacing: 0.36px;
 
 }
 .right_div {
@@ -52,6 +55,11 @@ p {
     width: 50%;
 }
 
+img {
+    width: 400px;
+    height: 300px;
+}
+
 /* Clear floats after the columns */
 .row:after {
     content: "";
@@ -61,7 +69,16 @@ p {
 
 }
 
-container {
+.btn-xl-center {
+    position:absolute;
+    margin-top: 330px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    padding-top: -130px ;
+    font-size: 30px;
+    border-radius: 10px;
+    width: 15%;
+    top: 650px;
 
 
 }
@@ -109,7 +126,7 @@ html {
 }
 
 
-#titil_one {
+#title_one {
     margin-top : 200px;
     margin-left: 50px;
 
@@ -132,7 +149,7 @@ html {
 }
 
 
-/* css*/
+/* css side bar probably*/
 
 body.offcanvas-active{
     overflow:hidden;
@@ -192,7 +209,93 @@ body.offcanvas-active{
 
         margin-top : 0px;
     }
+    #nav_top, #button_contenu {
+        visibility: hidden;
+    }
 
+    .btn-xl {
+        padding: 10px 30px;
+        font-size: 50px;
+        border-radius: 10px;
+    }
+
+    .btn-xl-center {
+        position:relative;
+        margin-top: 0px;
+        margin-left: 00px;
+        margin: 30px;
+        margin-bottom: 50px;
+        padding: 30px ;
+        font-size: 50px;
+        border-radius: 10px;
+        width: 80%;
+        top: 0px;
+
+
+    }
+
+
+    a {
+        font-size: 20px;
+    }
+
+    .nav-link, .dropdown-item {
+        font-size: 50px;
+        height: 120px;
+
+    }
+
+    .btn-xl-right {
+        padding: 10px 20px;
+        font-size: 70px;
+        border-radius: 10px;
+        margin-left: 50%;
+        margin-right: 15%;
+    }
+
+    .btn-close, .offcanvas-header {
+        margin-right: 15%;
+    }
+
+    #title_one {
+        margin-top : 0px;
+        margin-left: 0px;
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
+
+    .column {
+        float: none;
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 50%;
+
+    }
+
+    container {
+        margin-bottom: 0px;
+    }
+
+    .pt-5, .mt-5 {
+        padding-top: 30rem !important;
+        margin-top: 20rem !important;
+    }
+
+    p {
+        font-size: 40px;
+    }
+
+    h1 {
+        font-size: 75px;
+    }
+
+    img {
+        height: 400px;
+        width: 600px;
+        margin-left: 9%;
+    }
 
 }
 /* ============ mobile view .end// ============ */

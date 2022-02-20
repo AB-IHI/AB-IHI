@@ -17,7 +17,7 @@
 <nav id="navbar_top"  class="mobile-offcanvas navbar navbar-expand-lg navbar-light    bg-light border-bottom">
     <div class="container-fluid hstack gap-5">
         <div class="offcanvas-header">
-            <button class="btn-close float-end"></button>
+            <button class="btn-close float-end btn-xl-right "></button>
         </div>
 
         <div class="bg-light col-md-1"><!--Left space (col-md-1) automatically pushes to the right until equilibrium with the 2 ms-auto on the right--></div>
@@ -82,7 +82,7 @@
 
     </div> <!-- container-fluid.// -->
 </nav>
-<button data-trigger="navbar_top" class="d-lg-none btn btn-warning beige" type="button">  Show navbar </button>
+<button data-trigger="navbar_top"  id="button_menu" class="d-lg-none btn btn-warning beige btn-xl" type="button">  Menu </button>
 
 
 <!--  First nav-bar with links and language -->
@@ -127,13 +127,13 @@
     <!--3th navbar-->
 
 
-    <button data-trigger="navbar_main" class="d-lg-none btn btn-warning beige " type="button">  Contenu </button>
+    <button data-trigger="navbar_main" id="button_contenu" class="d-lg-none btn btn-warning beige " type="button">  Contenu </button>
     <!-- Ninja nav-bar -->
 
     <nav id="navbar_main" class="mobile-offcanvas navbar navbar2 navbar-expand-lg navbar-light  bg-white">
         <div class="container-fluid hstack gap-3">
             <div class="offcanvas-header">
-                <button class="btn-close float-end"></button>
+                <button class="btn-close float-end btn-xl-right "></button>
             </div>
 
             <div class="bg-light ms-auto"><!--Left space (ms-auto) automatically pushes to the right until equilibrium with the 2 ms-auto on the right--></div>
