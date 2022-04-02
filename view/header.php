@@ -23,11 +23,26 @@
         <div class="bg-light col-md-1"><!--Left space (col-md-1) automatically pushes to the right until equilibrium with the 2 ms-auto on the right--></div>
         <ul class="navbar-nav">
 
+
+
             <li class="nav-item dropdown">
-                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  AB IHI  </a>
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  AB IHI  </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#"> Status</a></li>
-                    <li><a class="dropdown-item" href="#"> Organigramme </a></li>
+                    <li><a class="dropdown-item" href="#"> Qui sommes nous &raquo; </a>
+                        <ul class="submenu dropdown-menu">
+                            <li><a class="dropdown-item" href="#">l'équipe</a></li>
+                            <li><a class="dropdown-item" href="#">Les objectifs</a></li>
+                            <li><a class="dropdown-item" href="#">Législation &raquo; </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="storage/Statuts AB IHI Tahoma.pdf">Status</a></li>
+                                    <li><a class="dropdown-item" href="#"> </a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#"> </a></li>
+                            <li><a class="dropdown-item" href="#"> </a></li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#">  </a></li>
 
                 </ul>
             </li>
@@ -139,15 +154,37 @@
             <div class="bg-light ms-auto"><!--Left space (ms-auto) automatically pushes to the right until equilibrium with the 2 ms-auto on the right--></div>
             <ul class="navbar-nav">
 
+
                 <li class="nav-item dropdown">
-                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Qui sommes nous  </a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  Qui sommes nous  </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#"> L'équipe</a></li>
+                        <li><a class="dropdown-item" href="#"> L'équipe </a></li>
                         <li><a class="dropdown-item" href="#"> Les objectifs </a></li>
-                        <li><a class="dropdown-item" href="#"> Législation </a></li>
+                        <li><a class="dropdown-item" href="#"> Législation &raquo; </a>
+                            <ul class="submenu dropdown-menu">
+
+                                <li><a class="dropdown-item" href="storage/Statuts AB IHI Tahoma.pdf">Status</a></li>
+
+
+                                <li><a class="dropdown-item" href="#"> Instruction du poste &raquo; </a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                               href="storage/Tahoma Description du poste de trésorier de AB IHII.pdf"> de trésorier </a></li>
+                                        <li><a class="dropdown-item"
+                                               href="storage/Tahoma Description du poste de secrétaire de AB IHI.pdf"> de secrétaire </a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#"></a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#">  </a></li>
+
                     </ul>
                 </li>
+
             </ul>
+
+
 
             <ul class="navbar-nav">
 
@@ -159,6 +196,7 @@
                         <li><a class="dropdown-item" href="#"> Avantages fiscaux </a></li>
                     </ul>
                 </li>
+
             </ul>
 
             <ul class="navbar-nav">
