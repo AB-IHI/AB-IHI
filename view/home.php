@@ -20,7 +20,7 @@
         </left_div>
     </div>
     <div class="column">
-    <button id = "button_one" type="button" class="btn btn-primary btn-xl-center ">Rallier</button>
+    <button id = "button_one" type="button" class="btn btn-primary btn-xl-center ">Créer</button>
     </div>
 </div>
 

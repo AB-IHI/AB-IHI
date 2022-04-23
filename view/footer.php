@@ -8,7 +8,7 @@
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">À propos</a></li>
         </ul>
-        <p class="text-center text-muted">© 2021 AB IHI </p>
+        <p class="text-center text-muted">© 2022 IHI asso </p>
     </footer>
 </div>
 </body>
