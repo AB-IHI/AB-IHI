@@ -32,8 +32,8 @@
     <!-- container but this time with section -->
 
     <div class="container px-4 py-5 quisn" id="featured-3 ">
-        <h2 id="quiSN" class="pb-2 border-bottom">Qui sommes nous ?</h2>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-1">
+        <h5 id="quiSN" class="pb-2 border-bottom">Qui sommes nous ?</h5>
+        <div class=" row-p g-4 py-5 row-cols-1 row-cols-lg-1">
             <div class="feature col">
                 <div class="feature-icon ">
                     <svg class="bi" width="1em" height="1em">
@@ -45,10 +45,10 @@
                     Nous voyons le sens de notre action dans un élargissement des possibilités de solidarité, d’altruisme, de générosité et de charité en créant les conditions d'un libre accès pour tous aux activités caritatives et d'accompagnement des personnes en situation défavorisée ou difficile (aide alimentaire, aide matérielle, logement, fourniture de biens de première nécessité, soins , soutien moral, etc.)
                     Les activités de l'Association sont régies par la loi du 1er juillet 1901 et le décret du 16 août 1901, ainsi que par les textes réglementaires de loi française.
                     L'Association est passée par le processus de formalisation et a reçu le statut de personne morale.
-                    Le règlement intérieur est déterminé par les Statuts, le Règlement sur les bénévoles, le Règlement sur les programmes humanitaires et les projets de bienfaisance, ainsi que la description de poste du Trésorier et du Secrétaire du bureau de l'association.
+                    Le règlement intérieur est déterminé par les <a href="#" class="icon-link">Statuts</a>, <a href="#" class="icon-link">le Règlement sur les bénévoles</a>, le <a href="#" class="icon-link">Règlement sur les programmes humanitaires et les projets de bienfaisance</a>, ainsi que la description de <a href="#" class="icon-link">poste du Trésorier et du Secrétaire</a> du bureau de l'association.
                 </p>
-                <a href="#" class="icon-link">
-                    En savoir plus
+                <a  class="icon-link">
+                    
                     <svg class="bi" width="1em" height="1em">
                         <use xlink:href="#chevron-right"></use>
                     </svg>
@@ -66,27 +66,18 @@
     <!-- container but this time with section -->
 
     <div class="container px-4 py-5 quisn" id="featured-3 ">
-        <h2 id="progH" class="pb-2 border-bottom">Programmes humanitaires</h2>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-1">
-            
+        <h5 id="progH" class="pb-2 border-bottom">Programmes humanitaires</h5>
+        <div class=" row-p g-4 py-5 row-cols-1 row-cols-lg-1">
+
             <div class="feature col">
-                <div class="feature-icon  ">
-                    <svg class="bi" width="1em" height="1em">
-                        <use xlink:href="#people-circle"></use>
-                    </svg>
-                </div>
-                <h2></h2>
+
+
                 <p>Les programmes humanitaires contiennent une description des activités pratiques de notre association, visant à résoudre les principaux problèmes de la société moderne.
                     Notre outil principal pour surmonter les défis existants dans le domaine des problèmes sociaux, de la protection des droits de l'homme et de l'environnement sont des projets de bienfaisance, dont l'impact devra être davantage orienté vers la création de conditions pour le développement réussi et durable de la société humaine.
                 </p>
-                <a href="#" class="icon-link">
-                    En savoir plus
-                    <svg class="bi" width="1em" height="1em">
-                        <use xlink:href="#chevron-right"></use>
-                    </svg>
-                </a>
+                
             </div>
-            
+
 
         </div>
 
@@ -98,8 +89,8 @@
     <!-- container but this time with section -->
 
     <div class="container px-4 py-5 quisn" id="featured-3 ">
-        <h2 id="ofs" class="pb-2 border-bottom">Office</h2>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-1">
+        <h5 id="ofs" class="pb-2 border-bottom">Office</h5>
+        <div class=" row-p g-4 py-5 row-cols-1 row-cols-lg-1">
 
             <div class="feature col">
                 <div class="feature-icon  bg-gradient">
@@ -113,12 +104,7 @@
                     Au fur et à mesure que les activités de l'Association se développent grâce à la participation à des missions humanitaires financées par des fonds départementaux, régionaux, nationaux et internationaux, la structure de l’Office sera adaptée aux besoins des projets spécifiques.
 
                 </p>
-                <a href="#" class="icon-link">
-                    En savoir plus
-                    <svg class="bi" width="1em" height="1em">
-                        <use xlink:href="#chevron-right"></use>
-                    </svg>
-                </a>
+
             </div>
 
         </div>
