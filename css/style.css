@@ -49,7 +49,7 @@ container {
 }
 
 p {
-    font-size: 18px;
+    font-size: 1.3em;
     letter-spacing: 0.15px;
 
     line-height: 1.23;
@@ -340,9 +340,10 @@ body.offcanvas-active{
         margin-top: 20rem !important;
     }
 
+    /* not needed since we use em which adapts to screen size while keeping proportions
     p {
         font-size: 40px;
-    }
+    }*/
 
     h1 {
         font-size: 75px;

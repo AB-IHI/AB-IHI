@@ -35,16 +35,11 @@
         <h5 id="quiSN" class="pb-2 border-bottom">Qui sommes nous ?</h5>
         <div class=" row-p g-4 py-1 row-cols-1 row-cols-lg-1">
             <div class="feature col">
-                
 
-                <p>Nous sommes une équipe qui, en partageant les idées de l'humanisme, s'efforce d'atteindre nos objectifs en organisant et en mettant en œuvre des activités caritatives pour fournir une aide humanitaire, une attitude de principe et efficace envers la personne humaine, les droits et les intérêts de l'homme.
-                    Nous voyons le sens de notre action dans un élargissement des possibilités de solidarité, d’altruisme, de générosité et de charité en créant les conditions d'un libre accès pour tous aux activités caritatives et d'accompagnement des personnes en situation défavorisée ou difficile (aide alimentaire, aide matérielle, logement, fourniture de biens de première nécessité, soins , soutien moral, etc.)
-                    Les activités de l'Association sont régies par la loi du 1er juillet 1901 et le décret du 16 août 1901, ainsi que par les textes réglementaires de loi française.
-                    L'Association est passée par le processus de formalisation et a reçu le statut de personne morale.
-                    Le règlement intérieur est déterminé par les <a href="#" class="icon-link">Statuts</a>, <a href="#" class="icon-link">le Règlement sur les bénévoles</a>, le <a href="#" class="icon-link">Règlement sur les programmes humanitaires et les projets de bienfaisance</a>, ainsi que la description de <a href="#" class="icon-link">poste du Trésorier et du Secrétaire</a> du bureau de l'association.
-                </p>
-                <a  class="icon-link">
-                    
+
+                <p>Nous sommes une équipe de personnes partageant les mêmes idées, passionnées par les idées d'humanisme, d’élargissement des opportunités, de la solidarité, d'altruisme, de générosité et de charité. L’Association du 1er juillet 1901 est une personne morale. L'ordre de travail est déterminé par les Statuts, le Règlement sur les bénévoles, le Règlement sur les programmes humanitaires et les projets de bienfaisance, ainsi que les instructions du Trésorier et du Secrétaire. </p>
+                <a class="icon-link">
+
                     <svg class="bi" width="1em" height="1em">
                         <use xlink:href="#chevron-right"></use>
                     </svg>
@@ -68,10 +63,8 @@
             <div class="feature col">
 
 
-                <p>Les programmes humanitaires contiennent une description des activités pratiques de notre association, visant à résoudre les principaux problèmes de la société moderne.
-                    Notre outil principal pour surmonter les défis existants dans le domaine des problèmes sociaux, de la protection des droits de l'homme et de l'environnement sont des projets de bienfaisance, dont l'impact devra être davantage orienté vers la création de conditions pour le développement réussi et durable de la société humaine.
-                </p>
-                
+                <p>Les programmes humanitaires contiennent une description des activités pratiques de l’Association, visant à résoudre les principaux problèmes de la société moderne. Les moyens principaux sont les missions humanitaires orientées vers la création de conditions pour le développement réussi et durable de la société humaine. </p>
+
             </div>
 
 
@@ -90,10 +83,10 @@
 
             <div class="feature col">
 
-                
-                <p>Au stade actuel du début des activités de notre association, la structure organisationnelle de l’Office est simple – ce sont des bénévoles qui participent à la mise en œuvre de programmes humanitaires et de projets de bienfaisance dans le cadre du Règlement sur les bénévoles.
-                    Pour devenir un bénévole, chaque personne désirante peut déposer sa candidature. Le candidat recevra une invitation à un entretien et l'accès à la participation à des missions humanitaires en tant que volontaire. A l'issue de la période d'essai de deux mois, le candidat recevra le statut de bénévole de l'Association.
-                    Au fur et à mesure que les activités de l'Association se développent grâce à la participation à des missions humanitaires financées par des fonds départementaux, régionaux, nationaux et internationaux, la structure de l’Office sera adaptée aux besoins des projets spécifiques.
+
+                <p>L'Office d’aujourd’hui est composé de bénévoles qui participent à la mise en œuvre de programmes humanitaires et de projets de bienfaisance dans le cadre du Règlement sur les bénévoles.
+                    Le recrutement des volontaires est ouvert.
+                    Les activités et la structure de l’Office s’adaptent aux conditions des missions humanitaires.
 
                 </p>
 
