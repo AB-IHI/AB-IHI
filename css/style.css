@@ -26,9 +26,13 @@ h1 {
 }
 
 .quisn {
-    
+  margin-top: -50px;  
   width: 100%;
   height: max-content;
+}
+
+#ofs {
+ margin-top: -20px;   
 }
 
 .row {
@@ -69,7 +73,7 @@ p {
 
     height: max-content;
     margin-top: 6%;
-    margin-bottom: 15%;
+    
     padding-bottom: 10%;
 }
 
@@ -234,6 +238,27 @@ body.offcanvas-active{
 /* ============ mobile view ============ */
 @media all and (max-width: 991px) {
 
+    .container {
+        border : none;
+        margin-bottom: -50px;
+    }
+
+    .h2 {
+        font-size: 3em;
+    }
+
+    .h3 {
+        font-size: 1.5em;
+    }
+
+    #progH {
+        margin-top: 20px;
+    }
+
+    #ofs {
+        margin-top: 50px;
+    }
+
     .offcanvas-header{ display:block; }
 
     .mobile-offcanvas{
@@ -254,7 +279,7 @@ body.offcanvas-active{
     }
     .mobile-offcanvas .container, .mobile-offcanvas .container-fluid{
         display: block;
-        border: 1px solid #333333;
+        
   width: 80%;
   height: 100vw;
     }
@@ -303,7 +328,7 @@ body.offcanvas-active{
         padding: 10px 20px;
         font-size: 70px;
         border-radius: 10px;
-        margin-left: 50%;
+        
         margin-right: 15%;
     }
 
@@ -328,11 +353,18 @@ body.offcanvas-active{
 
     }
 
-    container {
+    /*container {
         border: 1px solid #333333;
   width: 200px;
   height: 500px;
 
+    }
+    */
+
+    .footer ul li a {
+
+        font-size: 20px ;
+        height: 25px;
     }
 
     .pt-5, .mt-5 {

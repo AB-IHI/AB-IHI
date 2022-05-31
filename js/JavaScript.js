@@ -39,6 +39,10 @@ document.addEventListener("DOMContentLoaded", function(){
         close_offcanvas();
     });
 
+    document.querySelector('.go_to_section').addEventListener('click', function (event) {
+        close_offcanvas();
+    });
+
 });
 // below code to manage the multilevel dropdown on mobile
 

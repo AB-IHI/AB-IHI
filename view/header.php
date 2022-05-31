@@ -31,11 +31,11 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> IHI </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#quiSN"> Qui sommes nous </a>
+                            <li><a class="dropdown-item go_to_section" href="#quiSN"> Qui sommes nous </a>
 
                             </li>
-                            <li><a class="dropdown-item" href="#progH">Programmes </a></li>
-                            <li><a class="dropdown-item" href="#ofs">Contactez nous </a></li>
+                            <li><a class="dropdown-item go_to_section" href="#progH">Programmes </a></li>
+                            <li><a class="dropdown-item go_to_section" href="#ofs">Contactez nous </a></li>
 
                         </ul>
                     </li>
@@ -56,7 +56,7 @@
                 <ul class="navbar-nav">
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Béneficiaires </a>
+                        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Bénéficiaires </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#"> Comment devenir</a></li>
                             <li><a class="dropdown-item" href="#"> Reglementation </a></li>
