@@ -37,7 +37,7 @@
             <div class="feature col">
 
 
-                <p>Nous sommes une équipe de personnes partageant les mêmes idées, passionnées par les idées d'humanisme, d’élargissement des opportunités, de la solidarité, d'altruisme, de générosité et de charité. L’Association du 1er juillet 1901 est une personne morale. L'ordre de travail est déterminé par les <a href="storage/Statuts IHI du 27.03.2022.pdf">Statuts</a>, le Règlement sur les bénévoles, le Règlement sur les programmes humanitaires et les projets de bienfaisance, ainsi que les instructions du <a href="storage/Description du poste de trésorier de AB IHII.pdf">Trésorier </a> et du <a href="storage/Descript.du poste de secrétaire de AB IHI - Copie.pdf">Secrétaire</a>.</p>
+                <p>Nous sommes une équipe de personnes partageant les mêmes idées, passionnées par les idées d'humanisme, d’élargissement des opportunités, de la solidarité, d'altruisme, de générosité et de charité. L’Association du 1er juillet 1901 est une <a href="storage/personne morale.pdf">personne morale</a>. L'ordre de travail est déterminé par les <a href="storage/Statuts IHI du 27.03.2022.pdf">Statuts</a>, le Règlement sur les bénévoles, le Règlement sur les programmes humanitaires et les projets de bienfaisance, ainsi que les instructions du <a href="storage/Description du poste de trésorier de AB IHII.pdf">Trésorier </a> et du <a href="storage/Descript.du poste de secrétaire de AB IHI - Copie.pdf">Secrétaire</a>.</p>
                 <a class="icon-link">
 
                     <svg class="bi" width="1em" height="1em">
