@@ -63,7 +63,9 @@
             <div class="feature col">
 
 
-                <p>Les programmes humanitaires contiennent une description des activités pratiques de l’Association, visant à résoudre les principaux problèmes de la société moderne. Les moyens principaux sont les missions humanitaires orientées vers la création de conditions pour le développement réussi et durable de la société humaine. </p>
+                <p>Programmes humanitaires
+                    Les programmes humanitaires contiennent une description des activités principales de l'Association, dans le cadre desquelles des projets de bienfaisance seront réalisés.
+                    Les projets de bienfaisance sont des activités pratiques de l'Association visant à améliorer les conditions de vie des personnes en situation précaire ou difficile (aide alimentaire, secours financier, hébergement, fourniture des nécessités de la vie, soins, soutien moral, etc.) </p>
 
             </div>
 
