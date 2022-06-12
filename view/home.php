@@ -57,15 +57,15 @@
     <!-- container but this time with section -->
 
     <div class="container px-4 py-5 quisn" id="featured-3 ">
-        <h5 id="progH" class="pb-2 border-bottom h3">Programmes humanitaires</h5>
+        <h5 id="progH" class="pb-2 border-bottom h3">Programmes humanitaires et projets de bienfaisance</h5>
         <div class=" row-p g-4 py-1 row-cols-1 row-cols-lg-1">
 
             <div class="feature col">
 
 
-                <p>Programmes humanitaires
+                <p>
                     Les programmes humanitaires contiennent une description des activités principales de l'Association, dans le cadre desquelles des projets de bienfaisance seront réalisés.
-                    Les projets de bienfaisance sont des activités pratiques de l'Association visant à améliorer les conditions de vie des personnes en situation précaire ou difficile (aide alimentaire, secours financier, hébergement, fourniture des nécessités de la vie, soins, soutien moral, etc.) </p>
+</p><p> Projets de bienfaisance sont des activités pratiques de l'Association visant à améliorer les conditions de vie des personnes en situation précaire ou difficile (aide alimentaire, secours financier, hébergement, fourniture des nécessités de la vie, soins, soutien moral, etc.) </p>
 
             </div>
 
