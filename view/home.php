@@ -37,14 +37,15 @@
             <div class="feature col">
 
 
-                <p>Nous sommes une équipe de personnes partageant les mêmes idées, passionnées par les idées d'humanisme,
-                    d’élargissement des opportunités, de la solidarité, d'altruisme, de générosité et de charité.
-                    L’Association du <a href="storage/1. Loi du 1er juillet 1901 relative au contrat d'association - Légifrance.pdf">1er
-                        juillet 1901</a> est une <a href="storage/personne morale.pdf">personne morale</a>.
-                    L'ordre de travail est déterminé par les <a href="storage/Statuts IHI du 27.03.2022.pdf">Statuts</a>,
+                <p>Nous sommes une équipe de personnes passionnées par les idées de l’humanisme, de l’élargissement des opportunités de la solidarité,
+                    de l'altruisme, de la générosité et de la charité.
+                    Notre Association du <a href="storage/1. Loi du 1er juillet 1901 relative au contrat d'association - Légifrance.pdf">1er
+                        juillet 1901</a> est une <a href="storage/personne morale.pdf">personne morale</a> dont les activités sont régies par les
+                    <a href="storage/Statuts IHI du 27.03.2022.pdf">Statuts</a>,
                     le Règlement sur les bénévoles, le Règlement sur les programmes humanitaires et les projets de bienfaisance,
                     ainsi que les descriptions de poste du <a href="storage/Description du poste de trésorier de IHII.pdf">Trésorier
-                    </a> et du <a href="storage/Descript.du poste de secrétaire de IHI.pdf">Secrétaire</a> du Bureau.</p>
+                    </a> et du <a href="storage/Descript.du poste de secrétaire de IHI.pdf">Secrétaire</a> du Bureau.
+                </p>
                 <a class="icon-link">
 
                     <svg class="bi" width="1em" height="1em">
@@ -73,7 +74,10 @@
                 <p>
                     Les programmes humanitaires contiennent une description des activités principales de l'Association, dans le cadre desquelles des projets de bienfaisance seront réalisés.
                 </p>
-                <p> Projets de bienfaisance sont des activités pratiques de l'Association visant à améliorer les conditions de vie des personnes en situation précaire ou difficile (aide alimentaire, secours financier, hébergement, fourniture des nécessités de la vie, soins, soutien moral, etc.) </p>
+                <p> Les projets de bienfaisance sont des activités pratiques de l'Association visant à améliorer les conditions de vie des personnes en situation précaire ou difficile
+                     (aide alimentaire, secours financier, hébergement, fourniture des nécessités de la vie, soins, soutien moral, etc.)
+
+                </p>
 
             </div>
 
@@ -94,9 +98,11 @@
             <div class="feature col">
 
 
-                <p>L'Office d’aujourd’hui est composé de bénévoles qui participent à la mise en œuvre de programmes humanitaires et de projets de bienfaisance dans le cadre du Règlement sur les bénévoles.
-                    Le recrutement des volontaires est ouvert.
-                    Les activités et la structure de l’Office s’adaptent aux conditions des missions humanitaires.
+                <p>L'Office actuel est composé de bénévoles qui participent à la mise en œuvre de projets de bienfaisance dans le cadre du Règlement sur les bénévoles. </p>
+                <p> Le recrutement des volontaires est ouvert.</p>
+                <p>Les activités et la structure de l’Office s’adaptent aux conditions des missions humanitaires.
+
+                </p>
 
                 </p>
 
