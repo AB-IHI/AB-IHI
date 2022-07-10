@@ -5,15 +5,20 @@
     url('Mulish-VariableFont_wght.ttf') format('truetype');
 
     font-family: Mulish, sans-serif;
+        /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
 }
 
 
 
 body {
+    
+    min-height: 100vh !important;
     background-color: rgba(250, 230, 148, 0.1);
     letter-spacing: 1px;
-
-
+    margin-right: 0px;
+    /* margin-bottom: 0px !important; */
 }
 
 h1 {
@@ -22,21 +27,34 @@ h1 {
     color: #282828;
     font-weight: bold;
     margin-bottom: 28px;
-
+    min-width: 574px;
 }
 
+.hid_btn_xl {
+    visibility: hidden;
+}
 .quisn {
   margin-top: -50px;  
   width: 100%;
   height: max-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.col-md-12 {
+  flex: 0 0 auto;
+  width: 100%;
+  margin-left: 8%;
+  margin-right: 36%;
+  margin-bottom: 7%;
 }
 
 #ofs {
  margin-top: -20px;   
 }
 
-.row {
-    margin-top: 0%;
+.row{
+    display:flex;
 }
 
 .row-p {
@@ -45,11 +63,43 @@ h1 {
 
 .footer {
    
+    bottom: 0;
+    margin-bottom: 0px !important;
+    position: relative !important;
+    
 
 }
 
 container {
-    height: max-content;
+    
+    /* min-height: 100% !important;
+    height: 100% !important;
+    https://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page
+     */
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+     display: flex;
+    flex-direction: column;
+}
+
+container_main {
+    
+    /* min-height: 100% !important; https://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page */
+    height: 100vh !important;
+    
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+     display: flex;
+    flex-direction: column;
+}
+
+.spacer {
+    /* https://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page */
+    flex: 1;
 }
 
 p {
@@ -60,15 +110,18 @@ p {
     letter-spacing: 0.36px;
 
 }
-.right_div {
-    columns: 1em;
-    columns: 1;
-    columns: auto;
-    columns: 1 auto;
-    columns: auto 12em;
-    columns: auto auto;
+
+ label {
+    font-size: 2.3em;
+    letter-spacing: 0.15px;
+
+    line-height: 1.23;
+    letter-spacing: 0.36px;
 
 }
+
+
+
 .row {
 
     height: max-content;
@@ -77,12 +130,10 @@ p {
     padding-bottom: 10%;
 }
 
-.column {
-    float: left;
-    width: 50%;
-}
+
 
 img {
+
     width: 400px;
     height: 300px;
 }
@@ -98,24 +149,26 @@ img {
 
 .btn-xl-center {
     position:absolute;
-    margin-top: 330px;
-    margin-left: 100px;
+     margin-top: 0px;
+    /*margin-left: 100px;
     margin-bottom: 50px;
-    padding-top: -130px ;
+    padding-top: -130px ; */
     font-size: 30px;
     border-radius: 10px;
     width: 15%;
-    top: 650px;
+    /* top: 650px; */
 
 
 }
 
 html {
-    position: center;
-    margin-left: 8vw;
-    margin-right: 8vw;
+    min-height: 100% !important;
+
+   margin-right: 0;
+    
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
+    margin-bottom: 0px;
 
 
 }
@@ -130,7 +183,7 @@ html {
 
 #navbar_top {
     font-size: 13px;
-    width: 100%; //fallback
+    width: 100%; /*fallback*/
     width: 100vw;
     left: 0;
     position: absolute;
@@ -147,15 +200,21 @@ html {
 }
 
 .navbar2{
-    top:95px;
+    margin-top: 5%;
     height: 80px;
-    margin-bottom: 215px;
+    margin-bottom: 5%;
 }
 
 
 #title_one {
-    margin-top : 200px;
-    margin-left: 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 80px 600px 80px; */
+    /* display: flex;
+    flex-direction: column; */
+    min-width: 1083px;
+    
+    right: 0%;
 
 }
 
@@ -163,9 +222,7 @@ html {
 
 }
 
-#button_one {
-    margin-top: 50px;
-}
+
 
 .light-gray {
     background-color: #bfd1ec;
@@ -178,7 +235,7 @@ html {
 
 /* css side bar probably*/
 
-body.offcanvas-active{
+body.offcanvas-active {
     overflow:hidden;
 }
 
@@ -188,7 +245,8 @@ body.offcanvas-active{
     height: 100%; width:0%;
     z-index: 30;
     position: fixed; top: 0; right: 0;
-    opacity:0; visibility:hidden;
+    opacity:0; 
+    visibility:hidden;
     background-color: rgba(34, 34, 34, 0.6);
     transition:opacity .2s linear, visibility 0.2s, width 2s ease-in;
 }
@@ -240,7 +298,9 @@ body.offcanvas-active{
 
     .container {
         border : none;
-        margin-bottom: -50px;
+        
+        display: flex;
+        
     }
 
     .h2 {
@@ -259,9 +319,11 @@ body.offcanvas-active{
         margin-top: 50px;
     }
 
-    .offcanvas-header{ display:block; }
+    .offcanvas-header{ 
+        display:block; 
+    }
 
-    .mobile-offcanvas{
+    .mobile-offcanvas, .hidetitl{
         visibility: hidden;
         transform:translateX(-100%);
         border-radius:0;
@@ -275,13 +337,13 @@ body.offcanvas-active{
     }
 
     .mobile-offcanvas.show{
-        visibility: visible; 	transform: translateX(0);
+        visibility: visible; 	
+        transform: translateX(0);
     }
     .mobile-offcanvas .container, .mobile-offcanvas .container-fluid{
         display: block;
-        
-  width: 80%;
-  height: 100vw;
+        width: 80%;
+        height: 100vw;
     }
 
     #nav_top {
@@ -292,6 +354,11 @@ body.offcanvas-active{
         visibility: hidden;
     }
 
+    /*.navbar_top {
+          position: static;
+}*/
+    
+
     .btn-xl {
         padding: 10px 30px;
         font-size: 50px;
@@ -301,13 +368,14 @@ body.offcanvas-active{
     .btn-xl-center {
         position:relative;
         margin-top: 0px;
-        margin-left: 00px;
+        margin-left: 25%;
+        left: 30%;
         margin: 30px;
         margin-bottom: 50px;
         padding: 30px ;
         font-size: 50px;
-        border-radius: 10px;
-        width: 80%;
+        border-radius: 8%;
+        width: 89%;
         top: 0px;
 
 
@@ -315,7 +383,7 @@ body.offcanvas-active{
 
 
     a {
-        font-size: 20px;
+        font-size: 2.3rem;
     }
 
     .nav-link, .dropdown-item {
@@ -341,30 +409,25 @@ body.offcanvas-active{
         margin-left: 0px;
         margin-left: auto;
         margin-right: auto;
-
+        min-width: fit-content;
+        max-width: none;
+        display: flex;
+        flex-direction: column;
 
     }
 
     .column {
-        float: none;
-        width: 100%;
-        margin-left: 5%;
-        margin-right: 50%;
-
+        width: fit-content;  
     }
 
-    /*container {
-        border: 1px solid #333333;
-  width: 200px;
-  height: 500px;
-
+    .hid_btn_xl {
+    visibility: visible;
     }
-    */
 
     .footer ul li a {
-
-        font-size: 20px ;
-        height: 25px;
+        
+        
+        height: 100%;
     }
 
     .pt-5, .mt-5 {
@@ -373,28 +436,44 @@ body.offcanvas-active{
     }
 
     /* not needed since we use em which adapts to screen size while keeping proportions
-    p {
-        font-size: 40px;
-    }*/
+       update : font-size needs to be automated so user can choose size of text*/
+    p, h4 {
+        font-size: 2.3em;
+    letter-spacing: 0.15px;
+
+    line-height: 1.23;
+    letter-spacing: 0.36px;
+    }
+
+    .form-control {
+    font-size: 2rem;
+    line-height: 2.5;
+    }
+    
+    #button_one {
+        min-width: initial;
+        max-width: 100%;
+        margin-top: 0px;
+    }
 
     h1 {
         font-size: 75px;
+        min-width: initial;
     }
 
     img {
         height: 400px;
         width: 600px;
-        margin-left: 9%;
+        
     }
-
 
 
 /* manage the multiplevel dropdown but for mobile */
 
-.dropdown-menu .dropdown-menu{
-    margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
-
-
+    .dropdown-menu .dropdown-menu{
+    margin-left:0.7rem; 
+    margin-right:0.7rem; 
+    margin-bottom: .5rem;
+    }
 /* ============ mobile view .end// ============ */
-}
 }

@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>IHI</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
 </head>
 
-<body>
-    <container class="container">
+<body class="mb-0">
+    <container_main class="container">
         <span class="screen-darken"></span>
 
         <!-- Ninja nav-bar at the top, ninja means it adapts to mobile -->
@@ -31,7 +31,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> IHI </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item go_to_section" href="#quiSN"> Qui sommes nous </a>
+                            <li><a class="dropdown-item go_to_section" href="?page=home#quiSN"> Qui sommes nous </a>
 
                             </li>
                             <li><a class="dropdown-item go_to_section" href="#progH">Programmes </a></li>
@@ -112,7 +112,7 @@
                 <ul class="nav">
                     <li class="nav-item">
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle float-end light-gray" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button href="index.php?page=connexion" class=" btn btn-secondary dropdown-toggle float-end light-gray" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 Connexion
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -133,7 +133,7 @@
 
         </header>
 
-        <container>
+        <container class="">
 
 
             <!--3rd navbar-->

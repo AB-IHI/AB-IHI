@@ -1,5 +1,5 @@
-<div id="title_one" class="row">
-    <div class="column">
+<div id="title_one" class="col-md-12">
+    <div class=" column">
         <right_div class="right_div">
 
             <p class="h2">
@@ -10,6 +10,12 @@
             </h1>
 
         </right_div>
+        <div class="column hidetitl">
+            <a href="index.php?page=connexion&view=view_dem">
+                <button type="button" class="btn btn-primary btn-xl-center col-md-12" id="button_one">
+                    Connexion</button></a>
+
+        </div>
     </div>
 
     <div class="column">
@@ -17,9 +23,15 @@
             <img src="palm_of_hand_6.png">
         </left_div>
     </div>
-    <div class="column">
-        <button id="button_one" type="button" class="btn btn-primary btn-xl-center ">Connexion</button>
+
+    <div class="column  hid_btn_xl">
+        <a href="index.php?page=connexion&view=view_dem">
+            <button type="button" class="btn btn-primary btn-xl-center col-md-12" id="button_one">
+                Connexion</button></a>
+
     </div>
+
+
 </div>
 
 
@@ -32,7 +44,7 @@
     <!-- container but this time with section -->
 
     <div class="container px-4 py-5 quisn" id="featured-3 ">
-        <h5 id="quiSN" class="pb-2 border-bottom h3">Qui sommes nous ?</h5>
+        <h4 id="quiSN" class="pb-3 border-bottom h2">Qui sommes nous ?</h4>
         <div class=" row-p g-4 py-1 row-cols-1 row-cols-lg-1">
             <div class="feature col">
 
@@ -65,7 +77,7 @@
     <!-- container but this time with section -->
 
     <div class="container px-4 py-5 quisn" id="featured-3 ">
-        <h5 id="progH" class="pb-2 border-bottom h3">Programmes humanitaires et projets de bienfaisance</h5>
+        <h4 id="progH" class="pb-2 border-bottom h2">Programmes humanitaires et projets de bienfaisance</h4>
         <div class=" row-p g-4 py-1 row-cols-1 row-cols-lg-1">
 
             <div class="feature col">
@@ -75,7 +87,7 @@
                     Les programmes humanitaires contiennent une description des activités principales de l'Association, dans le cadre desquelles des projets de bienfaisance seront réalisés.
                 </p>
                 <p> Les projets de bienfaisance sont des activités pratiques de l'Association visant à améliorer les conditions de vie des personnes en situation précaire ou difficile
-                     (aide alimentaire, secours financier, hébergement, fourniture des nécessités de la vie, soins, soutien moral, etc.)
+                    (aide alimentaire, secours financier, hébergement, fourniture des nécessités de la vie, soins, soutien moral, etc.)
 
                 </p>
 
@@ -92,7 +104,7 @@
     <!-- container but this time with section -->
 
     <div class="container px-4 py-5 quisn" id="featured-3 ">
-        <h5 id="ofs" class="pb-2 border-bottom h3">Office</h5>
+        <h4 id="ofs" class="pb-2 border-bottom h2">Office</h4>
         <div class=" row-p g-4 py-1 row-cols-1 row-cols-lg-1">
 
             <div class="feature col">
