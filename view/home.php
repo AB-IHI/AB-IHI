@@ -10,26 +10,29 @@
             </h1>
 
         </right_div>
-        <div class="column hidetitl">
-            <a href="index.php?page=connexion&view=view_dem">
-                <button type="button" class="btn btn-primary btn-xl-center col-md-12" id="button_one">
-                    Connexion</button></a>
+        <div class="column hidetitl"> <!--hidden when min width -->
+            <div id="don">
+                <a href="">
+                    <button type="button" class="btn btn-primary btn-xl-center " id="button_one">
+                        Je fais un don</button></a>
 
+            </div>
         </div>
     </div>
 
     <div class="column">
         <left_div>
-            <img src="palm_of_hand_6.png">
+            <img id="main_pic" src="palm_of_hand_6.png">
         </left_div>
     </div>
 
-    <div class="column  hid_btn_xl">
-        <a href="index.php?page=connexion&view=view_dem">
-            <button type="button" class="btn btn-primary btn-xl-center col-md-12" id="button_one">
-                Connexion</button></a>
+    <div class="column  hid_btn_xl"> <!--hidden when full width -->
 
+        <a href="">
+            <button type="button" class="btn btn-primary btn-xl-center " id="button_one">
+                Je fais un don</button></a>
     </div>
+</div>
 
 
 </div>
@@ -40,7 +43,7 @@
 
 
 
-<container>
+<article class="article">
     <!-- container but this time with section -->
 
     <div class="container px-4 py-5 quisn" id="featured-3 ">
@@ -71,9 +74,9 @@
 
     </div>
 
-</container>
+</article>
 
-<container>
+<article class="article2">
     <!-- container but this time with section -->
 
     <div class="container px-4 py-5 quisn" id="featured-3 ">
@@ -98,9 +101,9 @@
 
     </div>
 
-</container>
+</article>
 
-<container>
+<article class="article3">
     <!-- container but this time with section -->
 
     <div class="container px-4 py-5 quisn" id="featured-3 ">
@@ -124,4 +127,4 @@
 
     </div>
 
-</container>
+</article>
