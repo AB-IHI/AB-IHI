@@ -57,7 +57,7 @@
                     Notre Association du <a href="storage/1. Loi du 1er juillet 1901 relative au contrat d'association - Légifrance.pdf">1er
                         juillet 1901</a> est une <a href="storage/personne morale.pdf">personne morale</a> dont les activités sont régies par les
                     <a href="storage/Statuts IHI du 27.03.2022.pdf">Statuts</a>,
-                    le Règlement sur les bénévoles, le Règlement sur les programmes humanitaires et les projets de bienfaisance,
+                    le <a href="storage/Règlement sur les bénévoles.pdf">Règlement sur les bénévoles</a>, le Règlement sur les programmes humanitaires et les projets de bienfaisance,
                     ainsi que les descriptions de poste du <a href="storage/Description du poste de trésorier de IHII.pdf">Trésorier
                     </a> et du <a href="storage/Descript.du poste de secrétaire de IHI.pdf">Secrétaire</a> du Bureau.
                 </p>
