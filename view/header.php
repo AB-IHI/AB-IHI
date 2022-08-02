@@ -141,6 +141,7 @@
 
 
         <!--   second nav-bar with search and LOGIN-->
+    
         <nav id="nav_top" class="py-2 bg-transparent border-bottom">
             <div class="container d-flex flex-wrap">
                 <ul class="nav me-auto">
@@ -164,6 +165,7 @@
                         </div>
                     </li>
                 </ul>
+
 
             </div>
         </nav>

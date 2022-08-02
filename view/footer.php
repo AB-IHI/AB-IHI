@@ -10,11 +10,11 @@
             <li class="nav-item"><a href="#" class="nav-link px-1 text-muted">FAQs</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-1 text-muted">À propos</a></li>
         </ul>
-        
+
         <div class="d-flex justify-content-between py-4 my-4 border-top">
             <!-- <p class="hidetitl">
-                <!--hidden when min width 
-                © 2022 IHI asso
+                /*hidden when min width */
+            © 2022 IHI asso
             </p> -->
             <ul class="list-unstyled d-flex mx-auto">
                 <li class="ms-3"><a class="link-dark " href="https://twitter.com/MZinaliyev"><svg class="bi social_ic" width="100" height="100">
