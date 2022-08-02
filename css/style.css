@@ -632,6 +632,9 @@ body.offcanvas-active {
 
     }
 
+    #footer_ {
+        margin-top: 29% !important;
+    }
     article {
     
     /* min-height: 100% !important;
