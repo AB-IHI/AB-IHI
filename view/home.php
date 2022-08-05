@@ -10,7 +10,8 @@
             </h1>
 
         </right_div>
-        <div class="column hidetitl"> <!--hidden when min width -->
+        <div class="column hidetitl">
+            <!--hidden when min width -->
             <div id="don">
                 <a href="">
                     <button type="button" class="btn btn-primary btn-xl-center " id="button_one">
@@ -26,7 +27,8 @@
         </left_div>
     </div>
 
-    <div class="column  hid_btn_xl"> <!--hidden when full width -->
+    <div class="column  hid_btn_xl">
+        <!--hidden when full width -->
 
         <a href="">
             <button type="button" class="btn btn-primary btn-xl-center " id="button_one">
@@ -120,6 +122,29 @@
                 </p>
 
                 </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</article>
+
+<article class="article3">
+    <!-- container but this time with section -->
+
+    <div class="container px-4 py-5 quisn" id="featured-3 ">
+        <h4 id="contact" class="pb-2 border-bottom h2">Contactez nous</h4>
+        <div class=" row-p g-4 py-1 row-cols-1 row-cols-lg-1">
+
+            <div class="feature col">
+
+
+                <p> accueil@ihi-asso.com</p>
+
+
+
 
             </div>
 

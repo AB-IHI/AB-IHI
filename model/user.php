@@ -5,24 +5,24 @@
 function ajouterUser($user,$email,$mdp) {
     global $c;
 
-        $pseudo = mysqli_real_escape_string($c, $user);
+        $nick = mysqli_real_escape_string($c, $user);
         $mdp = mysqli_real_escape_string($c, $mdp);
         $email = mysqli_real_escape_string($c, $email);
-        $sql = "INSERT INTO `users` (`id`, `pseudo`, `mdp`, `role`, `email`) VALUES (NULL, '$pseudo', '$mdp', '', '$email');";
+        $sql = "INSERT INTO `users` (`id`, `nick`, `mdp`, `role`, `email`) VALUES (NULL, '$nick', '$mdp', '', '$email');";
         mysqli_query($c, $sql);
     }
 
 //fontion connexion
-function connexion($pseudo,$mdp) {
+function connexion($nick,$mdp) {
     global $c;
-    //$sql = "SELECT * FROM `users` WHERE `pseudo` = '" . $pseudo . "' and `mdp`= '". $mdp ."'" ;
-    $sql = "SELECT count(*) FROM `users` WHERE `pseudo` = '" . $pseudo . "' and `mdp`= '". $mdp ."'" ;
+    //$sql = "SELECT * FROM `users` WHERE `nick` = '" . $nick . "' and `mdp`= '". $mdp ."'" ;
+    $sql = "SELECT count(*) FROM `users` WHERE `nick` = '" . $nick . "' and `mdp`= '". $mdp ."'" ;
     $exec_requete = mysqli_query($c,$sql);
     $reponse = mysqli_fetch_array($exec_requete);
 
     //var_dump($reponse);
 
-    $sql = "SELECT id FROM `users` WHERE `pseudo` = '" . $pseudo . "' and `mdp`= '". $mdp ."'" ;
+    $sql = "SELECT id FROM `users` WHERE `nick` = '" . $nick . "' and `mdp`= '". $mdp ."'" ;
     $exec_requete = mysqli_query($c,$sql);
     $reponse2 = mysqli_fetch_array($exec_requete);
     $_SESSION['id'] = $reponse2;
@@ -50,9 +50,9 @@ function delete_user_db() {
 
 }
 
-function dispo_pseudo($user){
+function dispo_nick($user){
     global $c;
-    $sql = "SELECT pseudo FROM `users` WHERE pseudo='$user'";
+    $sql = "SELECT nick FROM `users` WHERE nick='$user'";
     $resultat = mysqli_query($c,$sql);
     $row = mysqli_fetch_assoc($resultat);
     return mysqli_num_rows($resultat) == 0;
@@ -68,33 +68,33 @@ function dispo_email($user){
 
 function recup_id_user($user){
     global $c;
-    $sql = "SELECT id FROM `users` WHERE pseudo='$user'";
+    $sql = "SELECT id FROM `users` WHERE nick='$user'";
     $resultat = mysqli_query($c,$sql);
     $row = mysqli_fetch_assoc($resultat);
     return $row["id"];
 }
 
-function recup_pseudo_user($user){
+function recup_nick_user($user){
     global $c;
-    $sql = "SELECT pseudo FROM `users` WHERE id='$user'";
+    $sql = "SELECT nick FROM `users` WHERE id='$user'";
     $resultat = mysqli_query($c,$sql);
     $row = mysqli_fetch_assoc($resultat);
-    return $row["pseudo"];
+    return $row["nick"];
 }
 
 function recup_role($user){
     global $c;
-    $sql = "SELECT `role` FROM `users` WHERE pseudo = '$user'";
+    $sql = "SELECT `role` FROM `users` WHERE nick = '$user'";
     $resultat = mysqli_query($c,$sql);
     $row = mysqli_fetch_assoc($resultat);
     $role = $row["role"];
     return $role;
 }
 
-function modification_compte ($id, $pseudo, $password, $mail, $user){
+function modification_compte ($id, $nick, $password, $mail, $user){
     global $c;
-    $sql = "UPDATE `users` SET `mdp` = '".$password."', `email` = '".$mail."', `pseudo` = '".$pseudo."' WHERE `users`.`id` = '".$id."'";
-    $sql2 = "UPDATE `media` SET `createur` = '".$pseudo."' WHERE `createur` = '".$user."'";
+    $sql = "UPDATE `users` SET `mdp` = '".$password."', `email` = '".$mail."', `nick` = '".$nick."' WHERE `users`.`id` = '".$id."'";
+    $sql2 = "UPDATE `media` SET `createur` = '".$nick."' WHERE `createur` = '".$user."'";
     //echo $sql;
     mysqli_query($c,$sql);
     mysqli_query($c,$sql2);
@@ -102,11 +102,11 @@ function modification_compte ($id, $pseudo, $password, $mail, $user){
 
 function suppression ($id){
     global $c;
-    $pseu = recup_pseudo_user($id);
+    $pseu = recup_nick_user($id);
     if (!recup_role($pseu) == "admin"){
     $sql = "DELETE FROM users WHERE id='".$id."'";
     $sql2 = "DELETE FROM  `commentaires` WHERE id_user='".$id."'";
-    $user = recup_pseudo_user($id);
+    $user = recup_nick_user($id);
     $sql3 = "DELETE FROM  `media` WHERE createur='".$user."'";
     mysqli_query($c,$sql);
     mysqli_query($c,$sql2);

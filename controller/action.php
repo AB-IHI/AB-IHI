@@ -5,9 +5,18 @@
 
 // el view après toute action on affiche le res
 /*usless use !isset*/
-$page = 'home';
+
+// var_dump($_GET['page']);
 if (isset($_GET['page'])) {
-    $page = $_GET['page'];
+
+    $_SESSION['page'] = $_GET['page'];
+    //var_dump($_SESSION['page']);
+}
+else {
+
+
+    $_SESSION['page'] = 'home';
+    // var_dump($_SESSION['page']);
 }
 
 //include_once "view/view.php";
@@ -15,16 +24,17 @@ if (isset($_GET['page'])) {
 /*si y a le truc selectionnné alors page view home sinon
 view de démarche administrative */
 
-if (!isset($_GET['view'])) {
-    // no special book is requested, we'll show a list of all available books  
+// if (!isset($_GET['view'])) {
+//     // no special book is requested, we'll show a list of all available books  
 
-    include 'view/view.php';
-} else {
-    if (isset($_GET['view']) & $_GET['view'] == 'view_home') {
-        include 'view/view.php';
-    } else {
-        if (isset($_GET['view']) == 'view_dem') {
-            include 'view/view_demarche.php';
-        }
-    }
-}
+//     include 'view/view.php';
+// } 
+//else {
+//     if (isset($_GET['view']) & $_GET['view'] == 'view_home') {
+//         include 'view/view.php';
+//     } else {
+//         if (isset($_GET['view']) == 'view_dem') {
+//             include 'view/view_demarche.php';
+//         }
+//     }
+// }
