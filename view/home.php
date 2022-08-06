@@ -2,7 +2,7 @@
     <div class=" column">
         <right_div class="right_div">
 
-            <p id = "h2_assoc" class="h2">
+            <p id="h2_assoc" class="h2">
                 Association de bienfaisance
             </p>
             <h1 class="">
@@ -131,25 +131,27 @@
 
 </article>
 
-<article class="article3">
-    <!-- container but this time with section -->
+<div class="put_rght_div">
+    <article class="article3">
+        <!-- container but this time with section -->
 
-    <div class="container px-4 py-5 quisn" id="featured-3 ">
-        <h4 id="contact" class="pb-2 border-bottom h2">Contactez nous</h4>
-        <div class=" row-p g-4 py-1 row-cols-1 row-cols-lg-1">
+        <div class="container px-4 py-5 quisn" id="featured-3 ">
+            <h4 id="contact" class="pb-2 border-bottom h2">Contactez nous</h4>
+            <div class=" row-p g-4 py-1 row-cols-1 row-cols-lg-1">
 
-            <div class="feature col">
-
-
-                <p> accueil@ihi-asso.com</p>
+                <div class="feature col">
 
 
+                    <p> accueil@ihi-asso.com</p>
 
+
+
+
+                </div>
 
             </div>
 
         </div>
 
-    </div>
-
-</article>
+    </article>
+</div>

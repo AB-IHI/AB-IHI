@@ -506,6 +506,10 @@ body.offcanvas-active {
         margin-top: 50px;
     }
 
+    .put_rght_div {
+        width: 100%;
+    }
+
     .offcanvas-header{ 
         display:block; 
     }
