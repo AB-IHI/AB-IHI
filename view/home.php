@@ -2,7 +2,7 @@
     <div class=" column">
         <right_div class="right_div">
 
-            <p class="h2">
+            <p id = "h2_assoc" class="h2">
                 Association de bienfaisance
             </p>
             <h1 class="">

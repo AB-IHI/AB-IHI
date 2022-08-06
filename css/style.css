@@ -30,6 +30,10 @@ h1 {
     min-width: 574px;
 }
 
+#h2_assoc {
+    margin-bottom: 2%;
+}
+
 .hid_btn_xl {
     visibility: hidden;
 }
@@ -176,7 +180,7 @@ img {
 }
 
 #main_pic {
-     margin-left: 17%;
+     margin-left: 25.9%;
     width: 400px;
     height: 300px;
 }
@@ -281,7 +285,7 @@ html {
 }
 
 .navbar2{
-    margin-top: 5%;
+    margin-top: 4.5%;
     height: 80px;
     margin-bottom: 7%;
 }
@@ -313,7 +317,7 @@ html {
 #button_one {
      /* min-width: initial;
         max-width: 100%;*/
-        margin-top: 2%; 
+        margin-top: 3%; 
     margin-left: 1.7vw;
 }
 
