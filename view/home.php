@@ -15,7 +15,7 @@
             <div id="don">
                 <a href="">
                     <button type="button" class="btn btn-primary btn-xl-center " id="button_one">
-                        Je fais un don</button></a>
+                        Je fais un dons</button></a>
 
             </div>
         </div>

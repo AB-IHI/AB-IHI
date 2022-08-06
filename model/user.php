@@ -50,7 +50,7 @@ function delete_user_db() {
 
 }
 
-function dispo_nick($user){
+function dispo_pseudo($user){
     global $c;
     $sql = "SELECT nick FROM `users` WHERE nick='$user'";
     $resultat = mysqli_query($c,$sql);
