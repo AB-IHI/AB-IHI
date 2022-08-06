@@ -579,9 +579,7 @@ body.offcanvas-active {
     }
 
 
-    a {
-        font-size: 2.3rem;
-    }
+    
 
     .a_cre {
         margin-top: 25%;
@@ -686,13 +684,14 @@ body.offcanvas-active {
     /* not needed since we use em which adapts to screen size while keeping proportions
        update : font-size needs to be automated so user can choose size of text*/
     p, h4 {
-        font-size: 2.3em;
-    letter-spacing: 0.15px;
-
-    line-height: 1.23;
-    letter-spacing: 0.36px;
+        font-size: 2.9em !important;
+        letter-spacing: 0.15px;
+        line-height: 1.23;
+        letter-spacing: 0.36px;
     }
-
+    a {
+        font-size: 2.9rem;
+    }
 
     #button_one {
         /* min-width: initial;
