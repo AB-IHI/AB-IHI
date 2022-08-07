@@ -15,7 +15,7 @@
             <div id="don">
                 <a href="">
                     <button type="button" class="btn btn-primary btn-xl-center " id="button_one">
-                        Je fais un donss</button></a>
+                        Je fais un don</button></a>
 
             </div>
         </div>
@@ -32,7 +32,7 @@
 
         <a href="">
             <button type="button" class="btn btn-primary btn-xl-center " id="button_one">
-                Je fais un donss</button></a>
+                Je fais un don</button></a>
     </div>
 </div>
 
