@@ -1,3 +1,20 @@
+<?php
+if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+?>
+    <div class="page-header">
+        <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
+    </div>
+<?php
+    echo '
+        <a href=".?page=reset_password" class="btn btn-warning">Reset Your Password</a>
+        <a href=".?page=logout" class="btn btn-danger">Sign Out of Your Account</a>
+        ';
+    echo "<header><h1>Page d'administration</h1>";
+} else {
+    echo ' <a href=".?page=login" class="btn btn-primary">Sign in</a>';
+}
+?>
+
 <div id="title_one" class="col-md-12">
     <div class=" column">
         <right_div class="right_div">
@@ -56,12 +73,12 @@
 
                 <p>Nous sommes une équipe de personnes passionnées par les idées de l’humanisme, de l’élargissement des opportunités de la solidarité,
                     de l'altruisme, de la générosité et de la charité.
-                    Notre Association du <a href="storage/1. Loi du 1er juillet 1901 relative au contrat d'association - Légifrance.pdf">1er
-                        juillet 1901</a> est une <a href="storage/personne morale.pdf">personne morale</a> dont les activités sont régies par les
-                    <a href="storage/Statuts IHI du 27.03.2022.pdf">Statuts</a>,
-                    le <a href="storage/Règlement sur les bénévoles.pdf">Règlement sur les bénévoles</a>, le Règlement sur les programmes humanitaires et les projets de bienfaisance,
-                    ainsi que les descriptions de poste du <a href="storage/Description du poste de trésorier de IHII.pdf">Trésorier
-                    </a> et du <a href="storage/Descript.du poste de secrétaire de IHI.pdf">Secrétaire</a> du Bureau.
+                    Notre Association du <a href="y_storage/1. Loi du 1er juillet 1901 relative au contrat d'association - Légifrance.pdf">1er
+                        juillet 1901</a> est une <a href="y_storage/personne morale.pdf">personne morale</a> dont les activités sont régies par les
+                    <a href="y_storage/Statuts IHI du 27.03.2022.pdf">Statuts</a>,
+                    le <a href="y_storage/Règlement sur les bénévoles.pdf">Règlement sur les bénévoles</a>, le Règlement sur les programmes humanitaires et les projets de bienfaisance,
+                    ainsi que les descriptions de poste du <a href="y_storage/Description du poste de trésorier de IHII.pdf">Trésorier
+                    </a> et du <a href="y_storage/Descript.du poste de secrétaire de IHI.pdf">Secrétaire</a> du Bureau.
                 </p>
                 <a class="icon-link">
 

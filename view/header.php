@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <title>IHI</title>
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/> -->
+    <link rel="stylesheet" type="text/css" href="css_js/bootstrap.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css_js/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/> -->
 
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css_js/style.css" />
 
 
 </head>
@@ -121,8 +121,8 @@
                                 Connexion
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href=".?page=connexion">Entrer</a></li>
-                                <li><a class="dropdown-item" href=".?page=inscription">Créer mon compte</a></li>
+                                <li><a class="dropdown-item" href=".?page=login">Entrer</a></li>
+                                <li><a class="dropdown-item" href=".?page=register">Créer mon compte</a></li>
 
                             </ul>
                         </div>

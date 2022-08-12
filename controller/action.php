@@ -7,17 +7,19 @@
 /*usless use !isset*/
 
 // var_dump($_GET['page']);
-if (isset($_GET['page'])) {
-
-    $_SESSION['page'] = $_GET['page'];
-    //var_dump($_SESSION['page']);
-}
-else {
 
 
-    $_SESSION['page'] = 'home';
-    // var_dump($_SESSION['page']);
-}
+// if (isset($_GET['page'])) {
+
+//     $_SESSION['page'] = $_GET['page'];
+//     //var_dump($_SESSION['page']);
+// }
+// else {
+
+
+//     $_SESSION['page'] = 'home';
+//     // var_dump($_SESSION['page']);
+// }
 
 //include_once "view/view.php";
 
@@ -38,3 +40,80 @@ view de démarche administrative */
 //         }
 //     }
 // }
+
+if (!isset($_GET['page'])) {
+    $_SESSION['page'] = 'home';
+}
+
+if (isset($_GET['page'])) {
+
+    $_SESSION['page'] = $_GET['page'];
+    // var_dump($_SESSION['page']);
+    if ($_GET['page'] == 'logout') {
+        // Unset all of the session variables
+        $_SESSION = array();
+
+        // Destroy the session.
+        session_destroy();
+
+        // Redirect to login page
+        // header("location: login.php");
+        // exit;
+        $_SESSION['page'] = 'home';
+    }
+} else {
+
+
+    $_SESSION['page'] = 'home';
+    // var_dump($_SESSION['page']);
+}
+
+include_once "action_user.php";
+
+// Check if the user is logged in, if not then redirect him to login page
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+
+    if ($_SESSION['page'] !== 'login' || $_SESSION['page'] !== 'register' || $_SESSION['page'] !== 'reset-password') {
+        // $_SESSION['page'] = 'login';
+
+    }
+    // header("location: login.php");
+    //exit;
+}
+
+
+// if (isset($_POST["action"])) {
+
+//     //---------------------------------------------
+//     if ($_POST["action"] == "add") {
+//         process_ajout($c);
+//     }
+
+
+//     //---------------------------------------------
+//     // if ($_POST["action"] == "delete") {
+
+//     // // requête DELETE
+
+//     // }
+// }
+
+// $page = 'login';
+// var_dump($page);
+
+// if (isset($_GET['page'])) {
+//     if ($_GET['page'] == 'logout') {
+//         // Unset all of the session variables
+//         $_SESSION = array();
+
+//         // Destroy the session.
+//         // session_destroy();
+
+//         // Redirect to login page
+//         // header("location: login.php");
+//         // exit;
+
+//         $_SESSION['page'] = 'login';
+//     }
+// }
+var_dump($_SESSION['page']);
