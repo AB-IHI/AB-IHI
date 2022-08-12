@@ -116,4 +116,4 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 //         $_SESSION['page'] = 'login';
 //     }
 // }
-var_dump($_SESSION['page']);
+// var_dump($_SESSION['page']);
