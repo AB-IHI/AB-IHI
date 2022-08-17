@@ -34,6 +34,9 @@ h1 {
     margin-bottom: 2%;
 }
 
+#welcome {
+    margin-top : 0.3rem;
+}
 .hid_btn_xl {
     visibility: hidden;
 }

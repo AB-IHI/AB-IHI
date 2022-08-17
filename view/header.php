@@ -86,10 +86,22 @@
                 <ul class="navbar-nav">
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Bénéficiaires </a>
+                        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Bénévoles </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#"> Comment devenir</a></li>
-                            <li><a class="dropdown-item" href="#"> Reglementation </a></li>
+                            <li><a class="dropdown-item" href="y_storage/Règlement sur les bénévoles.pdf"> Règlement sur les bénévoles</a></li>
+                            <li><a class="dropdown-item" href=".?page=login"> Devenir bénevole </a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+                 <ul class="navbar-nav">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Bénévoles </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="y_storage/Règlement sur les bénévoles.pdf"> Règlement sur les bénévoles</a></li>
+                            <li><a class="dropdown-item" href=".?page=login"> Devenir bénevole </a></li>
 
                         </ul>
                     </li>
@@ -136,6 +148,7 @@
 
         <!-- end  First nav-bar with links and language -->
 
-<?php
-if ($_SESSION['page'] == 'home') { include "header_suite.php";
-}
+        <?php
+        if ($_SESSION['page'] == 'home') {
+            include "header_suite.php";
+        }

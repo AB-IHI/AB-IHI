@@ -1,4 +1,5 @@
 <?php
+unset($_GET['page']);
 // include_once "action_user.php";
 // include_once "action_media.php";
 
@@ -70,16 +71,7 @@ if (isset($_GET['page'])) {
 
 include_once "action_user.php";
 
-// Check if the user is logged in, if not then redirect him to login page
-if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
-    if ($_SESSION['page'] !== 'login' || $_SESSION['page'] !== 'register' || $_SESSION['page'] !== 'reset-password') {
-        // $_SESSION['page'] = 'login';
-
-    }
-    // header("location: login.php");
-    //exit;
-}
 
 
 // if (isset($_POST["action"])) {

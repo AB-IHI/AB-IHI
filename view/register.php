@@ -24,11 +24,11 @@
                 <!-- <div class="invalid-feedback">
                         Valid mot de passe is required.-->
             </div>
-            <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
+            <!-- <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
 
                 <input type="password" name="confirm_password" class="form-control btn-lg" id="confirm_pw" value="<?php echo $confirm_password; ?>" placeholder="mot de passe" required="">
                 <span class="help-block"><?php echo $confirm_password_err; ?></span>
-            </div>
+            </div> -->
         </div>
 
 

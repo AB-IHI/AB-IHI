@@ -37,14 +37,27 @@
         <ul class="navbar-nav">
 
             <li class="nav-item dropdown">
-                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Bénéficiaires </a>
+                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Bénévoles </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#"> Comment devenir</a></li>
-                    <li><a class="dropdown-item" href="#"> Reglementation </a></li>
+                    <li><a class="dropdown-item" href="y_storage/Règlement sur les bénévoles.pdf"> Règlement sur les bénévoles</a></li>
+                    <li><a class="dropdown-item" href=".?page=login"> Devenir bénevole </a></li>
 
                 </ul>
             </li>
         </ul>
+
+        <ul class="navbar-nav">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Nos missions </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="y_storage/Règlement sur les bénévoles.pdf"> Règlement sur les missions</a></li>
+                    <li><a class="dropdown-item" href=".?page=login"> Liste de missions </a></li>
+
+                </ul>
+            </li>
+        </ul>
+
 
         <ul class="navbar-nav">
 
@@ -65,17 +78,12 @@
             <li class="nav-item"><a href="#" class="nav-link link-dark px-2 small">English</a></li>
         </ul>
 
+
         <ul class="navbar-nav hid_btn_xl">
             <li class="nav-item">
                 <div class="dropdown">
-                    <button href="index.php?page=connexion" class="nav-link  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Connexion
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href=".?page=connexion">Entrer</a></li>
-                        <li><a class="dropdown-item" href=".?page=inscription">Créer mon compte</a></li>
+                    <!-- failed attempt wrong place anyways -->
 
-                    </ul>
                 </div>
             </li>
         </ul>
@@ -96,19 +104,47 @@
                 </form>
             </li>
         </ul>
-        <ul class="nav">
-            <li class="nav-item">
-                <div class="dropdown">
-                    <button href="index.php?page=connexion" class=" btn btn-secondary dropdown-toggle float-end light-gray" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Connexion
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href=".?page=login">Entrer</a></li>
-                        <li><a class="dropdown-item" href=".?page=register">Créer mon compte</a></li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
+
+        <!-- test area -->
+
+
+        <?php
+        if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+            echo '<h2 id="welcome">compte de :      </h2> ';
+            echo ' <button href="index.php?page=user_acc" class="btn btn-secondary dropdown-toggle float-end light-gray" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+' .    htmlspecialchars($_SESSION["username"]) .
+                '</button>';
+
+            echo '<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li>        <a href=".?page=reset_password" class="dropdown-item ">Reset Your Password</a></li>
+    <li><a href=".?page=logout" class="dropdown-item">Sign Out of Your Account</a></li>
+    </ul>
+        ';
+            // echo "<header><h1>Page d'administration</h1>";
+        } else {
+            echo '<ul class="nav">
+    <li class="nav-item">
+        <div class="dropdown">
+            <button href="index.php?page=connexion" class=" btn btn-secondary dropdown-toggle float-end light-gray" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Connexion
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href=".?page=login">Entrer</a></li>
+                <li><a class="dropdown-item" href=".?page=register">Créer mon compte</a></li>
+            </ul>
+        </div>
+    </li>
+</ul> ';
+        }
+        ?>
+
+
+
+
+
+
+        <!-- end of test area -->
+
 
 
     </div>

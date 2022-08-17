@@ -73,7 +73,7 @@ if (isset($_POST["action"])) {
 
                                     // Redirect user to welcome page
                                     // header("location: welcome.php");
-                                    $_SESSION['page'] = "home";
+                                    $_SESSION['page'] = "volunteer";
                                     echo "executed 1";
                                 } else {
                                     // Display an error message if password is not valid
@@ -130,7 +130,7 @@ if (isset($_POST["action"])) {
             } else {
                 // Prepare a select statement
                 $sql = "SELECT id FROM users WHERE username = ?";
-
+                
                 if ($stmt = mysqli_prepare($c, $sql)) {
                     // Bind variables to the prepared statement as parameters
                     mysqli_stmt_bind_param($stmt, "s", $param_username);
@@ -149,7 +149,8 @@ if (isset($_POST["action"])) {
                             $username = trim($_POST["username"]);
                         }
                     } else {
-                        echo "Oops! Something went wrong. Please try again later.";
+                        echo "1Oops! Something went wrong. Please try again later.";
+                        var_dump($stmt);
                     }
 
                     // Close statement
@@ -167,14 +168,14 @@ if (isset($_POST["action"])) {
             }
 
             // Validate confirm password
-            if (empty(trim($_POST["confirm_password"]))) {
-                $confirm_password_err = "Please confirm password.";
-            } else {
-                $confirm_password = trim($_POST["confirm_password"]);
-                if (empty($password_err) && ($password != $confirm_password)) {
-                    $confirm_password_err = "Password did not match.";
-                }
-            }
+            // if (empty(trim($_POST["confirm_password"]))) {
+            //     $confirm_password_err = "Please confirm password.";
+            // } else {
+            //     $confirm_password = trim($_POST["confirm_password"]);
+            //     if (empty($password_err) && ($password != $confirm_password)) {
+            //         $confirm_password_err = "Password did not match.";
+            //     }
+            // }
 
             // Check input errors before inserting in database
             if (empty($username_err) && empty($password_err) && empty($confirm_password_err)) {
@@ -196,7 +197,7 @@ if (isset($_POST["action"])) {
                         // header("location: login.php");
                         $_SESSION['page'] = 'login';
                     } else {
-                        echo "Something went wrong. Please try again later.";
+                        echo "2Something went wrong. Please try again later.";
                     }
 
                     // Close statement

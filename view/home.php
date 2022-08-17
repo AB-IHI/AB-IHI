@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 ?>
     <div class="page-header">
@@ -13,7 +13,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 } else {
     echo ' <a href=".?page=login" class="btn btn-primary">Sign in</a>';
 }
-?>
+?> -->
 
 <div id="title_one" class="col-md-12">
     <div class=" column">
@@ -32,7 +32,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
             <div id="don">
                 <a href="">
                     <button type="button" class="btn btn-primary btn-xl-center " id="button_one">
-                        Je fais un dons</button></a>
+                        Je fais un don</button></a>
 
             </div>
         </div>
@@ -75,9 +75,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
                     de l'altruisme, de la générosité et de la charité.
                     Notre Association du <a href="y_storage/1. Loi du 1er juillet 1901 relative au contrat d'association - Légifrance.pdf">1er
                         juillet 1901</a> est une <a href="y_storage/personne morale.pdf">personne morale</a> dont les activités sont régies par les
-                    <a href="y_storage/Statuts IHI du 27.03.2022.pdf">Statuts</a>,
-                    le <a href="y_storage/Règlement sur les bénévoles.pdf">Règlement sur les bénévoles</a>, le Règlement sur les programmes humanitaires et les projets de bienfaisance,
-                    ainsi que les descriptions de poste du <a href="y_storage/Description du poste de trésorier de IHII.pdf">Trésorier
+                    <a href="y_storage/Statuts IHI du 10.08.2022.pdf">Statuts</a>, ainsi que les descriptions de poste du <a href="y_storage/Description du poste de trésorier de IHII.pdf">Trésorier
                     </a> et du <a href="y_storage/Descript.du poste de secrétaire de IHI.pdf">Secrétaire</a> du Bureau.
                 </p>
                 <a class="icon-link">
