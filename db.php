@@ -12,7 +12,7 @@ mysqli_set_charset($c, "utf8");
 //   echo "Script is still running...";
 
 
-// if ($c->connect_error) {
-//     die("Connection failed: " . $c->connect_error);
+if ($c->connect_error) {
+    die("Connection failed: " . $c->connect_error);
     
-// }
+}

@@ -73,7 +73,7 @@ if (isset($_POST["action"])) {
 
                                     // Redirect user to welcome page
                                     // header("location: welcome.php");
-                                    $_SESSION['page'] = "volunteer";
+                                    $_SESSION['page'] = "home"; //volunteer
                                     echo "executed 1";
                                 } else {
                                     // Display an error message if password is not valid
