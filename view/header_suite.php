@@ -39,7 +39,8 @@
             <li class="nav-item dropdown">
                 <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Bénévoles </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="y_storage/Règlement sur les bénévoles.pdf"> Règlement sur les bénévoles</a></li>
+                    <li><a class="dropdown-item" href=".?page=explanation"> Règlement sur les bénévoles</a></li>
+                    <!-- href="y_storage/Règlement sur les bénévoles.pdf" -->
                     <li><a class="dropdown-item" href=".?page=login"> Devenir bénevole </a></li>
 
                 </ul>
@@ -51,8 +52,8 @@
             <li class="nav-item dropdown">
                 <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Nos missions </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="y_storage/Règlement sur les bénévoles.pdf"> Règlement sur les missions</a></li>
-                    <li><a class="dropdown-item" href=".?page=login"> Liste de missions </a></li>
+                    <li><a class="dropdown-item" href=""> Règlement sur les missions</a></li>
+                    <li><a class="dropdown-item" href=""> Liste de missions </a></li>
 
                 </ul>
             </li>

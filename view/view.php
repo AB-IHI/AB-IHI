@@ -1,6 +1,6 @@
 <?php
 
-// if (isset($_GET['volunteer'])) {
+// if (isset($_SESSION['loggedin']) && $_SESSION["loggedin"] == true){
 //     // $_SESSION['page'] = 'home';
 //     include_once "volunteer/header.php";
 //     include_once "volunteer/".$_SESSION['page'] . ".php";

@@ -43,7 +43,7 @@ view de démarche administrative */
 // }
 
 if (!isset($_GET['page'])) {
-    $_SESSION['page'] = 'home';
+    // $_SESSION['page'] = 'home';
 }
 
 if (isset($_GET['page'])) {
@@ -109,3 +109,21 @@ include_once "action_user.php";
 //     }
 // }
 // var_dump($_SESSION['page']);
+
+if (isset($_GET['page'])) {
+
+    
+    // var_dump($_SESSION['page']);
+    if ($_GET['page'] == 'explanation') {
+        // Unset all of the session variables
+
+
+        // Destroy the session.
+        header('Location: view/explanation.php');
+
+        // Redirect to login page
+        // header("location: login.php");
+        // exit;
+        
+    }
+}

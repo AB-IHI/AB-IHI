@@ -17,4 +17,12 @@
 
 
 
+    <container_main class="container">
 
+    <container class="auto-mx">
+
+<div id="title_one" class="d-flex align-items-center justify-content-center">
+    <h1 id="title_two">Volunteer's personal page of "Shining of the hope"</h1>
+</div>
+
+</container>
