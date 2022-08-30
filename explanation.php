@@ -8,7 +8,67 @@
 
     <link rel="stylesheet" type="text/css" href="css_js/bootstrap.css" />
     <!-- <link rel="stylesheet" type="text/css" href="css_js/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/> -->
-
+    <style type="text/css">
+    @page {  }
+    table { border-collapse:collapse; border-spacing:0; empty-cells:show }
+    td, th { vertical-align:top; font-size:12pt;}
+    h1, h2, h3, h4, h5, h6 { clear:both;}
+    ol, ul { margin:0; padding:0;}
+    li { list-style: none; margin:0; padding:0;}
+    /* "li span.odfLiEnd" - IE 7 issue*/
+    li span. { clear: both; line-height:0; width:0; height:0; margin:0; padding:0; }
+    span.footnodeNumber { padding-right:1em; }
+    span.annotation_style_by_filter { font-size:95%; font-family:Arial; background-color:#fff000;  margin:0; border:0; padding:0;  }
+    span.heading_numbering { margin-right: 0.8rem; }* { margin:0;}
+    .P1 { font-size:12pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; }
+    .P10 { font-size:12pt; line-height:115%; margin-bottom:0.247cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; }
+    .P11 { font-size:12pt; line-height:100%; margin-bottom:0.247cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; }
+    .P12_borderStart { font-size:6pt; line-height:100%; margin-top:0cm; text-align:left ! important; font-family:Tahoma; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; color:#000000; font-weight:bold; background-color:#ffffff; padding-bottom:0.247cm;  border-bottom-style:none; }
+    .P12 { font-size:6pt; line-height:100%; text-align:left ! important; font-family:Tahoma; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; color:#000000; font-weight:bold; background-color:#ffffff; padding-bottom:0.247cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
+    .P12_borderEnd { font-size:6pt; line-height:100%; margin-bottom:0.247cm; text-align:left ! important; font-family:Tahoma; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; color:#000000; font-weight:bold; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
+    .P13_borderStart { font-size:12pt; line-height:150%; margin-top:0.101cm; text-align:left ! important; font-family:Tahoma; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; color:#000000; background-color:#ffffff; padding-bottom:0.146cm;  border-bottom-style:none; }
+    .P13 { font-size:12pt; line-height:150%; text-align:left ! important; font-family:Tahoma; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; color:#000000; background-color:#ffffff; padding-bottom:0.146cm; padding-top:0.101cm;  border-top-style:none; border-bottom-style:none; }
+    .P13_borderEnd { font-size:12pt; line-height:150%; margin-bottom:0.146cm; text-align:left ! important; font-family:Tahoma; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; color:#000000; background-color:#ffffff; padding-top:0.101cm;  border-top-style:none;}
+    .P14_borderStart { font-size:12pt; line-height:150%; margin-top:0.101cm; text-align:left ! important; font-family:Tahoma; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; color:#000000; font-weight:bold; background-color:#ffffff; padding-bottom:0.146cm;  border-bottom-style:none; }
+    .P14 { font-size:12pt; line-height:150%; text-align:left ! important; font-family:Tahoma; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; color:#000000; font-weight:bold; background-color:#ffffff; padding-bottom:0.146cm; padding-top:0.101cm;  border-top-style:none; border-bottom-style:none; }
+    .P14_borderEnd { font-size:12pt; line-height:150%; margin-bottom:0.146cm; text-align:left ! important; font-family:Tahoma; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; color:#000000; font-weight:bold; background-color:#ffffff; padding-top:0.101cm;  border-top-style:none;}
+    .P15_borderStart { font-size:6pt; line-height:150%; margin-top:0.101cm; text-align:left ! important; font-family:Tahoma; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; color:#000000; background-color:#ffffff; padding-bottom:0.146cm;  border-bottom-style:none; }
+    .P15 { font-size:6pt; line-height:150%; text-align:left ! important; font-family:Tahoma; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; color:#000000; background-color:#ffffff; padding-bottom:0.146cm; padding-top:0.101cm;  border-top-style:none; border-bottom-style:none; }
+    .P15_borderEnd { font-size:6pt; line-height:150%; margin-bottom:0.146cm; text-align:left ! important; font-family:Tahoma; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; color:#000000; background-color:#ffffff; padding-top:0.101cm;  border-top-style:none;}
+    .P16 { font-size:12pt; line-height:150%; margin-bottom:0.146cm; margin-top:0.101cm; text-align:left ! important; font-family:Liberation Serif; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; }
+    .P17 { font-size:12pt; line-height:150%; margin-bottom:0.146cm; margin-top:0.101cm; text-align:left ! important; font-family:Liberation Serif; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; }
+    .P18 { font-size:12pt; line-height:150%; margin-bottom:0.146cm; margin-top:0.101cm; text-align:left ! important; font-family:Liberation Serif; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; }
+    .P19 { font-size:12pt; line-height:150%; margin-bottom:0.146cm; margin-top:0.101cm; text-align:left ! important; font-family:Liberation Serif; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; }
+    .P20 { font-size:12pt; line-height:150%; margin-bottom:0.146cm; margin-top:0.101cm; text-align:left ! important; font-family:Liberation Serif; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; margin-left:2cm; margin-right:0cm; text-indent:-0.7cm; }
+    .P21 { font-size:12pt; line-height:150%; margin-bottom:0.146cm; margin-top:0.101cm; text-align:left ! important; font-family:Liberation Serif; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; margin-left:2cm; margin-right:0cm; text-indent:-0.7cm; }
+    .P22 { font-size:12pt; line-height:150%; margin-bottom:0.146cm; margin-top:0.101cm; text-align:left ! important; font-family:Liberation Serif; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; margin-left:2cm; margin-right:0cm; text-indent:-0.7cm; }
+    .P23 { font-size:12pt; line-height:150%; margin-bottom:0.146cm; margin-top:0.101cm; text-align:left ! important; font-family:Liberation Serif; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; margin-left:2cm; margin-right:0cm; text-indent:-0.7cm; }
+    .P24_borderStart { font-size:12pt; line-height:150%; margin-top:0.101cm; text-align:left ! important; font-family:Tahoma; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; margin-left:2cm; margin-right:0cm; text-indent:-0.7cm; color:#000000; background-color:#ffffff; padding-bottom:0.146cm;  border-bottom-style:none; }
+    .P24 { font-size:12pt; line-height:150%; text-align:left ! important; font-family:Tahoma; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; margin-left:2cm; margin-right:0cm; text-indent:-0.7cm; color:#000000; background-color:#ffffff; padding-bottom:0.146cm; padding-top:0.101cm;  border-top-style:none; border-bottom-style:none; }
+    .P24_borderEnd { font-size:12pt; line-height:150%; margin-bottom:0.146cm; text-align:left ! important; font-family:Tahoma; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; margin-left:2cm; margin-right:0cm; text-indent:-0.7cm; color:#000000; background-color:#ffffff; padding-top:0.101cm;  border-top-style:none;}
+    .P25 { font-size:12pt; line-height:150%; margin-bottom:0.146cm; margin-top:0.101cm; text-align:left ! important; font-family:Liberation Serif; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; margin-left:3cm; margin-right:0cm; text-indent:-0.7cm; }
+    .P3 { font-size:18pt; font-weight:bold; margin-bottom:0.212cm; margin-top:0.423cm; text-align:left ! important; font-family:Liberation Sans; writing-mode:horizontal-tb; direction:ltr; line-height:150%; }
+    .P4 { font-size:18pt; font-weight:bold; margin-bottom:0.212cm; margin-top:0.423cm; text-align:left ! important; font-family:Liberation Sans; writing-mode:horizontal-tb; direction:ltr; }
+    .P5 { font-size:18pt; font-weight:bold; margin-bottom:0.212cm; margin-top:0.423cm; text-align:left ! important; font-family:Liberation Sans; writing-mode:horizontal-tb; direction:ltr; }
+    .P6 { font-size:18pt; font-weight:bold; margin-bottom:0.212cm; margin-top:0.423cm; text-align:left ! important; font-family:Liberation Sans; writing-mode:horizontal-tb; direction:ltr; line-height:150%; }
+    .P7 { font-size:18pt; font-weight:bold; margin-bottom:0.146cm; margin-top:0.101cm; text-align:left ! important; font-family:Liberation Sans; writing-mode:horizontal-tb; direction:ltr; line-height:150%; }
+    .P8_borderStart { font-size:12pt; font-weight:bold; margin-top:0.101cm; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; line-height:150%; color:#000000; background-color:#ffffff; padding-bottom:0.146cm;  border-bottom-style:none; }
+    .P8 { font-size:12pt; font-weight:bold; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; line-height:150%; color:#000000; background-color:#ffffff; padding-bottom:0.146cm; padding-top:0.101cm;  border-top-style:none; border-bottom-style:none; }
+    .P8_borderEnd { font-size:12pt; font-weight:bold; margin-bottom:0.146cm; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; line-height:150%; color:#000000; background-color:#ffffff; padding-top:0.101cm;  border-top-style:none;}
+    .P9 { font-size:12pt; margin-bottom:0.146cm; margin-top:0.101cm; text-align:left ! important; font-family:Liberation Serif; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; line-height:150%; }
+    .Internet_20_link { color:#000080; text-decoration:underline; }
+    .T1 { color:#00a933; font-family:Tahoma; font-size:12pt; text-decoration:none ! important; font-weight:bold; }
+    .T10 { color:#000000; font-family:Tahoma; font-size:10pt; letter-spacing:normal; font-style:normal; font-weight:normal; background-color:#ffffff; }
+    .T2 { color:#00a933; font-family:Tahoma; font-size:59px; text-decoration:none ! important; font-weight:bold; background-color:#ffffff; }
+    .T4 { color:#2a6099; font-family:Tahoma; font-size:26pt; }
+    .T5 { color:#2a6099; font-family:Tahoma; font-size:20pt; font-weight:bold; background-color:#ffffff; }
+    .T6 { color:#000000; font-family:Tahoma; font-size:12pt; background-color:#ffffff; }
+    .T7 { color:#000000; font-family:Tahoma; font-size:10pt; font-weight:bold; background-color:#ffffff; }
+    .T8 { color:#000000; font-family:Tahoma; font-size:10pt; background-color:#ffffff; }
+    .T9 { font-family:Tahoma; font-size:10pt; }
+    /* ODF styles with no properties representable as CSS */
+    .ListLabel_20_1 .ListLabel_20_10 .ListLabel_20_11 .ListLabel_20_12 .ListLabel_20_13 .ListLabel_20_14 .ListLabel_20_15 .ListLabel_20_16 .ListLabel_20_17 .ListLabel_20_18 .ListLabel_20_19 .ListLabel_20_2 .ListLabel_20_20 .ListLabel_20_21 .ListLabel_20_22 .ListLabel_20_23 .ListLabel_20_24 .ListLabel_20_25 .ListLabel_20_26 .ListLabel_20_27 .ListLabel_20_28 .ListLabel_20_29 .ListLabel_20_3 .ListLabel_20_30 .ListLabel_20_31 .ListLabel_20_32 .ListLabel_20_33 .ListLabel_20_34 .ListLabel_20_35 .ListLabel_20_36 .ListLabel_20_4 .ListLabel_20_5 .ListLabel_20_6 .ListLabel_20_7 .ListLabel_20_8 .ListLabel_20_9  { }
+    </style>
     <link rel="stylesheet" type="text/css" href="css_js/style.css" />
 
 
@@ -32,8 +92,8 @@
 
 <article class="article">
     <div class="container px-4 py-5">
-        <div id="" class="d-flex align-items-center justify-content-center">
-            <a id="a_​_Voir_" href="y_storage/Règlement sur les bénévoles.pdf"><div class="T2">Voir+</div></a>
+        <div id="featured" class="d-flex align-items-center justify-content-center">
+            <a id="a_​_Voir_" href="y_storage/Règlement sur les bénévoles.pdf"><div class="T2 Tcustom">Voir+</div></a>
             <p class="T4 Tcustom pb-2 border-bottom ">Devenir bénévole </p>
         
         <div class="">
@@ -57,7 +117,7 @@
      
 
 <article class="article">
-    <div class="container px-4 py-5" id="featured-3">
+    <div class="container px-4 py-5" id="featured-1">
         <div class="d-flex align-items-center justify-content-center">
             <p class="T4 pb-2 border-bottom h2">Catégories spéciales de bénévoles</p>
             
@@ -84,13 +144,19 @@
                 
                         Une personne en âge de préretraite peut facilement devenir bénévole dans une association, à la seule condition que ce bénévolat ne se fasse pas dans la structure dans laquelle elle était auparavant salarié.
                 
-                        <div class="bold">Références juridiques :</div>
+                        <div class="bold"><p>Références juridiques :</p></div>
                 
-                        Des chômeurs : code du travail, article L 5425-8
+                        <p>
+                            Des chômeurs : <a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006903908">code du travail, article L 5425-8</a>
+                            <p>
+                                Des préretraités : <a href="https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000018494360?init=true&page=1&query=Article+R5123-18+-+Code+du+travail&searchField=ALL&tab_selection=all&anchor=LEGIARTI000018526998#LEGIARTI000018526998">
+                                    code du travail, art. R. 5123-18</a>
+                            </p>
+                        </p>
                 
-                        Des préretraités : code du travail, art. R. 5123-18
-                
-                        En savoir + :
+                        <div class="bold">
+                            <p>En savoir + :</p>
+                        </div>
                 
                         
                     </p>
@@ -114,7 +180,7 @@
        <div class="container px-4 py-5">
            <div class="d-flex align-items-center justify-content-center">
                <a id="a_​_Voir_" href="/y_storage/Règlement sur les bénévoles.pdf"><div class="T2">Voir+</div></a>
-               <p class="T4">Droits du bénévole</p>
+               <p id="featured-2" class="T4">Droits du bénévole</p>
                <div class="row-p g-4 py-1 row-cols-1 row-cols-lg-1">
                    <div class="wrapper">
                     <p>
@@ -142,7 +208,7 @@
        <div class="container px-4 py-5">
            <div class="d-flex align-items-center justify-content-center">
     <a id="a_​_Voir_" href="/y_storage/Règlement sur les bénévoles.pdf"><div class="T2">Voir+</div></a> 
-    <p class="T4">Devoirs du bénévole</p>
+    <p id="featured-3" class="T4">Devoirs du bénévole</p>
 <div class="wrapper">
     <p>
         
@@ -163,7 +229,7 @@
     </p>
 </div>
 
-    <p class="T2"><a id="a_​_Voir_" href="y_storage/Règlement sur les bénévoles.pdf"><div class="T2">Voir+</div></a></p> 
+    <a id="a_​_Voir_" href="y_storage/Règlement sur les bénévoles.pdf"><div class="T2">Voir+</div></a> 
     </p>
 
 </div>

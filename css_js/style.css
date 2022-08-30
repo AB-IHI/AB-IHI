@@ -39,9 +39,6 @@ h1 {
     margin-bottom: 2%;
 }
 
-.Tcustom {
-    font-size: 149px;
-}
 
 #welcome {
     margin-top : 0.3rem;
@@ -346,7 +343,9 @@ html {
     background-color: #e6dbb9;
 }
 
-
+.bold {
+    font-weight: bold;
+}
 /* css side bar probably*/
 
 body.offcanvas-active {
@@ -473,6 +472,10 @@ body.offcanvas-active {
         display: block;
 
     }
+    .Tcustom {
+        font-size: 149px !important;
+    }
+   
 }
 
 
