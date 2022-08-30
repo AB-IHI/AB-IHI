@@ -60,8 +60,8 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Donateurs </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#"> Mécènes </a></li>
-                        <li><a class="dropdown-item" href="#"> Sponsors </a></li>
+                        <li><a class="dropdown-item" href="#"> Mécènat </a></li>
+                        <li><a class="dropdown-item" href="#"> Parrainage </a></li>
 
                     </ul>
                 </li>

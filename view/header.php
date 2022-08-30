@@ -15,9 +15,16 @@
 
 <body class="mb-0">
 
+<!-- <p>Make up your mind already is the site under developement or is it done?
+
+</p>
+<p> it can be pretty but it will be slower</p>
+<p> don't look up for such insignificants elements </p> -->
+
     <?php
     if ($_SESSION['page'] != 'volunteer') {
         include_once "heder_pls.php";
     } else {
         include_once "headerr.php";
     }
+
