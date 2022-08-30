@@ -475,6 +475,7 @@ body.offcanvas-active {
     .Tcustom {
         font-size: 149px !important;
     }
+    
    
 }
 
@@ -513,6 +514,10 @@ body.offcanvas-active {
         font-size: 1.5em;
     }
 
+    .T4 {
+        font-size: 58px ;
+        margin-bottom: 2%;
+    }
     #progH {
         margin-top: 20px;
     }

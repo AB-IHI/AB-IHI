@@ -94,7 +94,7 @@
     <div class="container px-4 py-5">
         <div id="featured" class="d-flex align-items-center justify-content-center">
             <a id="a_​_Voir_" href="y_storage/Règlement sur les bénévoles.pdf"><div class="T2 Tcustom">Voir+</div></a>
-            <p class="T4 Tcustom pb-2 border-bottom ">Devenir bénévole </p>
+            <h1 class="T4 Tcustom pb-2 border-bottom ">Devenir bénévole </h1>
         
         <div class="">
             <div class="wrapper ">
@@ -119,7 +119,7 @@
 <article class="article">
     <div class="container px-4 py-5" id="featured-1">
         <div class="d-flex align-items-center justify-content-center">
-            <p class="T4 pb-2 border-bottom h2">Catégories spéciales de bénévoles</p>
+            <h1 class="T4 pb-2 border-bottom h2">Catégories spéciales de bénévoles</h1>
             
             <div class="row-p g-4 py-1 row-cols-1 row-cols-lg-1">
                 <div class="wrapper feature col">
@@ -180,7 +180,7 @@
        <div class="container px-4 py-5">
            <div class="d-flex align-items-center justify-content-center">
                <a id="a_​_Voir_" href="/y_storage/Règlement sur les bénévoles.pdf"><div class="T2">Voir+</div></a>
-               <p id="featured-2" class="T4">Droits du bénévole</p>
+               <h1 id="featured-2" class="T4">Droits du bénévole</h1>
                <div class="row-p g-4 py-1 row-cols-1 row-cols-lg-1">
                    <div class="wrapper">
                     <p>
@@ -208,7 +208,7 @@
        <div class="container px-4 py-5">
            <div class="d-flex align-items-center justify-content-center">
     <a id="a_​_Voir_" href="/y_storage/Règlement sur les bénévoles.pdf"><div class="T2">Voir+</div></a> 
-    <p id="featured-3" class="T4">Devoirs du bénévole</p>
+    <h1 id="featured-3" class="T4">Devoirs du bénévole</h1>
 <div class="wrapper">
     <p>
         
