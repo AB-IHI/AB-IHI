@@ -1,9 +1,18 @@
 <?php
+
+// C : Contrôleur = Exécution des fonctions du modèle et gestion de interactions avec l'utilisateur (formulaires, liens). Aucun affichage !
+
 // unset($_GET['page']);
 // include_once "action_user.php";
 // include_once "action_media.php";
 
+if (!isset($_SESSION['view']) or !isset($_SESSION['loggedin']) or $_SESSION["loggedin"] != true) { // test almost same if above
 
+    $_SESSION['view'] = 'view';
+    // var_dump($_SESSION['page']);
+    
+
+}
 // el view après toute action on affiche le res
 /*usless use !isset*/
 
@@ -42,11 +51,15 @@ view de démarche administrative */
 //     }
 // }
 
-if (!isset($_GET['page'])) {
-    // $_SESSION['page'] = 'home';
+if (!isset($_GET['page'])) { // test almost same if below but both needed
+    $_SESSION['page'] = 'home';
+    // if (isset($_SESSION['loggedin']) && $_SESSION["loggedin"] == true) {
+    //     $_SESSION['page'] = 'volunteer';
+    // }
 }
 
-if (isset($_GET['page'])) {
+
+if (isset($_GET['page'])) { // test almost same if above but both needed
 
     $_SESSION['page'] = $_GET['page'];
     // var_dump($_SESSION['page']);
@@ -60,12 +73,13 @@ if (isset($_GET['page'])) {
         // Redirect to login page
         // header("location: login.php");
         // exit;
+        $_SESSION['view'] = 'view';
         $_SESSION['page'] = 'home';
     }
 } else {
 
 
-    $_SESSION['page'] = 'home';
+    // $_SESSION['page'] = 'home'; // not needed anymore since creationn of volunteer
     // var_dump($_SESSION['page']);
 }
 
@@ -112,18 +126,23 @@ include_once "action_user.php";
 
 if (isset($_GET['page'])) {
 
-    
+
     // var_dump($_SESSION['page']);
     if ($_GET['page'] == 'explanation') {
         // Unset all of the session variables
 
 
         // Destroy the session.
-        header('Location: view/explanation.php');
+        header('Location: explanation.php');
 
         // Redirect to login page
         // header("location: login.php");
         // exit;
-        
+
     }
 }
+
+// include_once "view_controller.php";
+echo "<!-- ";
+var_dump($_SESSION['view']);
+echo "-->";

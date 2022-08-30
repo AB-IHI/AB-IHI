@@ -91,7 +91,7 @@ if (isset($_POST["action"])) {
 
         if (isset($_SESSION["id"][0] )) {
 
-            $id = $_SESSION['id'][0]; // $id is now defined
+            $id = $_SESSION['id_user'][0]; // $id is now defined
             $password = $_POST['mdp'];
             $mail = $_POST['email'];
             $pseudo =  $_POST['user'];

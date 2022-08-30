@@ -84,7 +84,7 @@
                 
                         Une personne en âge de préretraite peut facilement devenir bénévole dans une association, à la seule condition que ce bénévolat ne se fasse pas dans la structure dans laquelle elle était auparavant salarié.
                 
-                        Références juridiques :
+                        <div class="bold">Références juridiques :</div>
                 
                         Des chômeurs : code du travail, article L 5425-8
                 
