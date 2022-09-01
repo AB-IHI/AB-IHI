@@ -124,22 +124,22 @@ include_once "action_user.php";
 // }
 // var_dump($_SESSION['page']);
 
-if (isset($_GET['page'])) {
-
+if (isset($_GET['explain'])) {
+    header('Location: '.$_GET['explain'].'.php');
 
     // var_dump($_SESSION['page']);
-    if ($_GET['page'] == 'explanation') {
+    // if ($_GET['explain'] == 'explanation') {
         // Unset all of the session variables
 
 
         // Destroy the session.
-        header('Location: explanation.php');
+        // header('Location: explanation.php');
 
         // Redirect to login page
         // header("location: login.php");
         // exit;
 
-    }
+    // }
 }
 
 // include_once "view_controller.php";

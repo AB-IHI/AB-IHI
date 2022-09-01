@@ -40,69 +40,9 @@
             <div class="bg-light col-md-1">
                 <!--Left space (col-md-1) automatically pushes to the right until equilibrium with the 2 ms-auto on the right-->
             </div>
-            <ul class="navbar-nav">
-
-
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> IHI </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item go_to_section" href="?page=home#quiSN"> Qui sommes nous </a></li>
-                        <li><a class="dropdown-item go_to_section" href="?page=home#progH">Programmes </a></li>
-                        <li><a class="dropdown-item go_to_section" href="?page=home#ofs">Office </a></li>
-                        <li><a class="dropdown-item go_to_section" href="?page=home#contact">Contactez nous </a></li>
-                    </ul>
-                </li>
-            </ul>
-
-            <ul class="navbar-nav">
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Donateurs </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#"> Mécènat </a></li>
-                        <li><a class="dropdown-item" href="#"> Parrainage </a></li>
-
-                    </ul>
-                </li>
-            </ul>
-
-            <ul class="navbar-nav">
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Bénévoles </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href=".?page=explanation"> Règlement sur les bénévoles</a></li>
-                        <!-- href="y_storage/Règlement sur les bénévoles.pdf" -->
-                        <li><a class="dropdown-item" href=".?page=login"> Devenir bénevole </a></li>
-
-                    </ul>
-                </li>
-            </ul>
-
-            <ul class="navbar-nav">
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Nos missions </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href=""> Règlement sur les missions</a></li>
-                        <li><a class="dropdown-item" href=""> Liste de missions </a></li>
-
-                    </ul>
-                </li>
-            </ul>
-
-            <ul class="navbar-nav">
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> FAQ </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#"> </a></li>
-                        <li><a class="dropdown-item" href="#"> </a></li>
-
-                    </ul>
-                </li>
-            </ul>
+           <?php
+           include_once "inside_nav.php";
+           ?>
 
 
 
