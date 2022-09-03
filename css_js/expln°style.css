@@ -557,6 +557,19 @@ body.offcanvas-active {
     font-size: 2.9rem;
     }
 
+    ol {
+        
+        
+    }
+
+    li  {
+        font-size: 2.9rem;
+    }
+
+    li  span{
+        font-size: 2.9rem;
+    }
+
     #progH {
         margin-top: 20px;
     }
@@ -742,7 +755,7 @@ body.offcanvas-active {
 
     /* not needed since we use em which adapts to screen size while keeping proportions
        update : font-size needs to be automated so user can choose size of text*/
-    p, h4 {
+     h4 {
         font-size: 2.9em !important;
         letter-spacing: 0.15px;
         line-height: 1.23;
