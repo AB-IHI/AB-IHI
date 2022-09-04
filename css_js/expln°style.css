@@ -552,9 +552,12 @@ body.offcanvas-active {
         margin-bottom: 2%;
     }
 
-    .P1, .P10,.P11,.P12,.P13,.P14,.P15,.P16,.P17,.P2 ,.P3 ,.P4_,.P4 ,.P4_,.P5 ,.P6 ,.P7 ,.P8 ,.P9 ,.Int,.T1 ,.T10,.T11,.T12,.T13,.T14,.T15,.T16,.T17,.T2 ,.T4 ,.T6 ,.T7 ,.T8 ,.T9 
+    .P1, .P10,.P11,.P12,.P13,.P14,.P15,.P16,.P17,.P2 ,.P3 ,.P4_,.P4 ,.P4_,.P5 ,.P6 ,.P7 ,.P8 ,.P9 ,.Int,.T1 ,.T10,.T11,.T14,.T15,.T16,.T17,.T2 ,.T4 ,.T7 ,.T8 ,.T9 
     {
     font-size: 2.9rem;
+    }
+    .T12,.T13,.T6{
+        font-size: 2.0rem;
     }
 
     .T2 { font-size:49pt; }
