@@ -344,7 +344,7 @@ li {
 }
 
 .custom_btm_space {
-    margin-bottom: 22px;
+    margin-bottom: 95px;
 }
 
 #title_one {
@@ -557,10 +557,7 @@ body.offcanvas-active {
     font-size: 2.9rem;
     }
 
-    ol {
-        
-        
-    }
+    .T2 { font-size:49pt; }
 
     li  {
         font-size: 2.9rem;
