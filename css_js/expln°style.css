@@ -560,6 +560,9 @@ body.offcanvas-active {
         font-size: 2.0rem;
     }
 
+    .custom_font_size {
+        font-size: 62px;
+    }
     .T2 { font-size:49pt; }
 
     li  {
