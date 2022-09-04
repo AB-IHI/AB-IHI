@@ -15,7 +15,7 @@
 body {
     
     min-height: 100vh !important;
-    background-color: rgba(250, 230, 148, 0.1);
+    background-color: white;
     letter-spacing: 1px;
     margin-right: 0px;
     /* margin-bottom: 0px !important; */
@@ -552,7 +552,7 @@ body.offcanvas-active {
         margin-bottom: 2%;
     }
 
-    .P1, .P10,.P11,.P12,.P13,.P14,.P15,.P16,.P17,.P2 ,.P3 ,.P4_,.P4 ,.P4_,.P5 ,.P6 ,.P7 ,.P8 ,.P9 ,.Int,.T1 ,.T10,.T11,.T17,.T2 ,.T4 ,.T8 ,.T9 
+    .P1, .T3, .P10,.P11,.P12,.P13,.P14,.P15,.P16,.P17,.P2 ,.P3 ,.P4_,.P4 ,.P4_,.P5 ,.P6 ,.P7 ,.P8 ,.P9 ,.Int,.T1 ,.T10,.T11,.T17,.T2 ,.T4 ,.T8 ,.T9 
     {
     font-size: 2.9rem;
     }

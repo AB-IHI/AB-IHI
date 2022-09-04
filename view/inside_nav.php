@@ -42,8 +42,8 @@
 <li class="nav-item dropdown">
     <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Nos missions </a>
     <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href=""> Règlement sur les missions</a></li>
-        <li><a class="dropdown-item" href=""> L'aube de l'espoir</a></li>
+        <li><a class="dropdown-item" href=".?explain=act_bienfsce"> Règlement sur les missions</a></li>
+        <li><a class="dropdown-item" href="#"> L'aube de l'espoir</a></li>
 
     </ul>
 </li>
