@@ -73,7 +73,7 @@
 
 <div id="" class=" d-flex align-items-center justify-content-center">
     <?php 
-    include_once "1. Mécènes.html"; 
+    include_once "2. Le régime fiscal de mécénat.html"; 
     ?>
 </div>
 

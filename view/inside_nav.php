@@ -19,7 +19,7 @@
     <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Parrainage </a>
     <ul class="dropdown-menu">
         
-        <li><a class="dropdown-item" href="#"> Parrain </a></li>
+        <li><a class="dropdown-item" href=".?explain=parrains"> Parrain </a></li>
 
     </ul>
 </li>
@@ -67,8 +67,8 @@
 <li class="nav-item dropdown">
     <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Mécénat </a>
     <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Mècènes </a></li>
-        <li><a class="dropdown-item" href="#">Le régime fiscal </a></li>
+        <li><a class="dropdown-item" href=".?explain=mecenes">Mècènes </a></li>
+        <li><a class="dropdown-item" href=".?explain=fisc_mecenat">Le régime fiscal </a></li>
         <li><a class="dropdown-item" href=".?explain=explain_don_org_foreign">Organismes étrangers </a></li>
     </ul>
 </li>
