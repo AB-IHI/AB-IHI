@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <title>IHI</title>
 
-    <link rel="stylesheet" type="text/css" href="css_js/bootstrap.css" />
+
     <!-- <link rel="stylesheet" type="text/css" href="css_js/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/> -->
     <style type="text/css">
     @page {  }
@@ -37,17 +37,17 @@
     .P15_borderEnd { font-size:6pt; line-height:150%; margin-bottom:0.146cm; text-align:left ! important; font-family:Tahoma; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; color:#000000; background-color:#ffffff; padding-top:0.101cm;  border-top-style:none;}
     .P16 { font-size:12pt; line-height:150%; margin-bottom:0.146cm; margin-top:0.101cm; text-align:left ! important; font-family:Liberation Serif; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; }
     .P17 { font-size:12pt; line-height:150%; margin-bottom:0.146cm; margin-top:0.101cm; text-align:left ! important; font-family:Liberation Serif; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; }
-    .P18 { font-size:12pt; line-height:150%; margin-bottom:0.146cm; margin-top:0.101cm; text-align:left ! important; font-family:Liberation Serif; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; }
-    .P19 { font-size:12pt; line-height:150%; margin-bottom:0.146cm; margin-top:0.101cm; text-align:left ! important; font-family:Liberation Serif; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; }
+    .P18 {   margin-bottom:0.146cm; margin-top:0.101cm; text-align:left ! important; font-family:Liberation Serif; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; }
+    .P19 {  margin-bottom:0.146cm; margin-top:0.101cm; text-align:left ! important; font-family:Liberation Serif; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; }
     .P20 { font-size:12pt; line-height:150%; margin-bottom:0.146cm; margin-top:0.101cm; text-align:left ! important; font-family:Liberation Serif; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; margin-left:2cm; margin-right:0cm; text-indent:-0.7cm; }
     .P21 { font-size:12pt; line-height:150%; margin-bottom:0.146cm; margin-top:0.101cm; text-align:left ! important; font-family:Liberation Serif; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; margin-left:2cm; margin-right:0cm; text-indent:-0.7cm; }
     .P22 { font-size:12pt; line-height:150%; margin-bottom:0.146cm; margin-top:0.101cm; text-align:left ! important; font-family:Liberation Serif; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; margin-left:2cm; margin-right:0cm; text-indent:-0.7cm; }
     .P23 { font-size:12pt; line-height:150%; margin-bottom:0.146cm; margin-top:0.101cm; text-align:left ! important; font-family:Liberation Serif; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; margin-left:2cm; margin-right:0cm; text-indent:-0.7cm; }
-    .P24_borderStart { font-size:12pt; line-height:150%; margin-top:0.101cm; text-align:left ! important; font-family:Tahoma; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; margin-left:2cm; margin-right:0cm; text-indent:-0.7cm; color:#000000; background-color:#ffffff; padding-bottom:0.146cm;  border-bottom-style:none; }
+    .P24_borderStart { font-size:12pt; line-height:150%; margin-top:0.101cm; text-align:left ! important; font-family:Tahoma; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-bottom:0.146cm;  border-bottom-style:none; }
     .P24 { font-size:12pt; line-height:150%; text-align:left ! important; font-family:Tahoma; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; margin-left:2cm; margin-right:0cm; text-indent:-0.7cm; color:#000000; background-color:#ffffff; padding-bottom:0.146cm; padding-top:0.101cm;  border-top-style:none; border-bottom-style:none; }
     .P24_borderEnd { font-size:12pt; line-height:150%; margin-bottom:0.146cm; text-align:left ! important; font-family:Tahoma; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; margin-left:2cm; margin-right:0cm; text-indent:-0.7cm; color:#000000; background-color:#ffffff; padding-top:0.101cm;  border-top-style:none;}
-    .P25 { font-size:12pt; line-height:150%; margin-bottom:0.146cm; margin-top:0.101cm; text-align:left ! important; font-family:Liberation Serif; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; margin-left:3cm; margin-right:0cm; text-indent:-0.7cm; }
-    .P3 { font-size:18pt; font-weight:bold; margin-bottom:0.212cm; margin-top:0.423cm; text-align:left ! important; font-family:Liberation Sans; writing-mode:horizontal-tb; direction:ltr; line-height:150%; }
+    .P25 { font-size:12pt; line-height:150%; margin-bottom:0.146cm; margin-top:0.101cm; text-align:left ! important; font-family:Liberation Serif; vertical-align:top; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; }
+    .P3 { font-size:18pt; font-weight:bold; margin-bottom:0.212cm; margin-top:0.423cm; text-align:left ! important; font-family:Liberation Sans; writing-mode:horizontal-tb; direction:ltr; line-height:150%; margin-bottom: 80px;}
     .P4 { font-size:18pt; font-weight:bold; margin-bottom:0.212cm; margin-top:0.423cm; text-align:left ! important; font-family:Liberation Sans; writing-mode:horizontal-tb; direction:ltr; }
     .P5 { font-size:18pt; font-weight:bold; margin-bottom:0.212cm; margin-top:0.423cm; text-align:left ! important; font-family:Liberation Sans; writing-mode:horizontal-tb; direction:ltr; }
     .P6 { font-size:18pt; font-weight:bold; margin-bottom:0.212cm; margin-top:0.423cm; text-align:left ! important; font-family:Liberation Sans; writing-mode:horizontal-tb; direction:ltr; line-height:150%; }
@@ -69,7 +69,7 @@
     /* ODF styles with no properties representable as CSS */
     .ListLabel_20_1 .ListLabel_20_10 .ListLabel_20_11 .ListLabel_20_12 .ListLabel_20_13 .ListLabel_20_14 .ListLabel_20_15 .ListLabel_20_16 .ListLabel_20_17 .ListLabel_20_18 .ListLabel_20_19 .ListLabel_20_2 .ListLabel_20_20 .ListLabel_20_21 .ListLabel_20_22 .ListLabel_20_23 .ListLabel_20_24 .ListLabel_20_25 .ListLabel_20_26 .ListLabel_20_27 .ListLabel_20_28 .ListLabel_20_29 .ListLabel_20_3 .ListLabel_20_30 .ListLabel_20_31 .ListLabel_20_32 .ListLabel_20_33 .ListLabel_20_34 .ListLabel_20_35 .ListLabel_20_36 .ListLabel_20_4 .ListLabel_20_5 .ListLabel_20_6 .ListLabel_20_7 .ListLabel_20_8 .ListLabel_20_9  { }
     </style>
-    <link rel="stylesheet" type="text/css" href="css_js/style.css" />
+        <link rel="stylesheet" type="text/css" href="css_js/expln°style.css" />
 
 
 </head>
@@ -82,19 +82,19 @@
 
     <container class="auto-mx don">
 
-<div id="" class="mobile-offcanvas d-flex align-items-center justify-content-center">
+<div id="" class=" d-flex align-items-center justify-content-center">
     <?php include_once "Règlement bref sur les  bénévole.html"; ?>
 </div>
 
 </container>
 
 <container class="auto-mx hid_btn_xl">
-
+<!-- 
 <article class="article">
     <div class="container px-4 py-5">
         <div id="featured" class="d-flex align-items-center justify-content-center">
             <a id="a_​_Voir_" href="y_storage/Règlement sur les bénévoles.pdf"><div class="T2 Tcustom">Voir+</div></a>
-            <h1 class="T4 Tcustom pb-2 border-bottom ">Devenir bénévole </h1>
+            <h1 class="T4U Tcustom pb-2 border-bottom ">Devenir bénévole </h1>
         
         <div class="">
             <div class="wrapper ">
@@ -234,7 +234,7 @@
 
 </div>
        </div>
-   </article>
+   </article> -->
 
 </container>
 

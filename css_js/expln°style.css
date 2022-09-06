@@ -299,6 +299,18 @@ html {
     margin-bottom: 6%;
 }
 
+.T4U { color:#2a6099;
+     font-family:Tahoma;
+      font-size:26pt;
+     }
+
+     .T12U {
+        color: #000000;
+        font-family: Tahoma;
+        font-size: 10pt;
+        font-style: normal;
+        font-weight: bold;
+      }
 ol {
     margin-left: 27px;
 }
@@ -308,6 +320,10 @@ li {
     margin-left: 7px;
 }
 
+.show_list {
+    list-style: inside !important;
+    
+}
 .hide_list {
     list-style: none;
 }
@@ -338,6 +354,24 @@ li {
     margin-left: 48px;
 }
 
+.T7U {
+    color: #000000;
+font-family: Tahoma;
+
+font-weight: bold;
+background-color: #ffffff;
+}
+
+.T1U {
+    color: #00a933;
+    font-weight: bold;
+    margin-bottom: 15%;
+
+}
+
+.custom_btm_space {
+    margin-bottom: 95px;
+}
 
 .article {
     margin-bottom: 8%;
@@ -351,9 +385,7 @@ li {
     margin-bottom: 8%;
 }
 
-.custom_btm_space {
-    margin-bottom: 95px;
-}
+
 
 #title_one {
     display: grid;
@@ -565,18 +597,21 @@ body.offcanvas-active {
     {
     font-size: 2.9rem !important;
     }
-    .T12,.T13,.T6,.T7,.T15,.T14,.T16{
+    .T12,.T13,.T6,.T7,.T15,.T14,.T16, .SML, .T12U{
         font-size: 2.0rem;
     }
 
     .custom_font_size {
         font-size: 62px;
     }
-    .T4 { color:#2a6099; font-family:Tahoma; font-size: 58px !important;}
+    .T4U { color:#2a6099; font-family:Tahoma;
+         font-size: 66px !important;
+         margin-bottom: 75px;
+        }
     .T2 { font-size:49pt !important; 
     }
 
-    .TS {
+    .TS, .P16, .T6, .T5 {
         font-size: 2.9rem !important;
     }
 
@@ -588,6 +623,19 @@ body.offcanvas-active {
     li  span{
         font-size: 2.9rem;
     }
+
+    .T1U {
+        color: #00a933;
+        font-weight: bold;
+        margin-bottom: 25px;
+        font-size: 2.9rem;
+        height: 98px;
+    }
+
+
+.T7U {
+    font-size: 2.0rem;
+}
 
     #progH {
         margin-top: 20px;
