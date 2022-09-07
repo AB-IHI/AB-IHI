@@ -342,6 +342,12 @@ li {
     margin-bottom: 15px;
 }
 
+
+.horiz_spacin_2 {
+    
+    margin-bottom: 15px;
+}
+
 #custom_ul, .custom_ul {
     margin-left: 82px;
 }
@@ -368,6 +374,20 @@ background-color: #ffffff;
     margin-bottom: 15%;
 
 }
+
+.P13U {
+    font-size: 12pt;
+    line-height: 150%;
+    margin-bottom: 0.499cm;
+    margin-top: 0cm;
+    text-align: left !important;
+    font-family: Liberation Serif;
+    writing-mode: horizontal-tb;
+    direction: ltr;
+    margin-left: 0.0cm;
+    margin-right: 0cm;
+    text-indent: 0.0cm;
+  }
 
 .custom_btm_space {
     margin-bottom: 95px;
