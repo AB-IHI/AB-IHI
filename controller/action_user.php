@@ -2,7 +2,6 @@
 
 
 
-// the obivious logging part
 
 
 // Check if the user is already logged in, if yes then redirect him to welcome page
@@ -117,6 +116,9 @@ if (isset($_POST["action"])) {
     }
 }
 
+
+// the obivious logging part
+
 // Define variables and initialize with empty values
 
 $_SESSION["username"] = "";
@@ -218,8 +220,8 @@ if (isset($_POST["action"])) {
 
 
 // Define variables and initialize with empty values
-$username = $password = $confirm_password = "";
-$username_err = $password_err = $confirm_password_err = "";
+$username = $nom = $prenom = $password = $confirm_password = "";
+$username_err = $nom_err = $prenom_err = $password_err = $confirm_password_err = "";
 
 if (isset($_POST["action"])) {
     if ($_POST["action"] == "register") {

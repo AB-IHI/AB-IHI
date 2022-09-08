@@ -17,6 +17,22 @@
                 <!-- <div class="invalid-feedback ">
                         nick is required.-->
             </div>
+
+            <div class="col-12 <?php echo (!empty($nom_err)) ? 'has-error' : ''; ?>">
+
+                <input type="text" name="nom" class="form-control btn-lg" id="nom" value="<?php echo $nom; ?>" placeholder="nom" required="">
+                <span class="help-block"><?php echo $nom_err; ?></span>
+                <!-- <div class="invalid-feedback ">
+                        nick is required.-->
+            </div>
+            <div class="col-12 <?php echo (!empty($prenom_err)) ? 'has-error' : ''; ?>">
+
+                <input type="text" name="prenom" class="form-control btn-lg" id="nick" value="<?php echo $prenom; ?>" placeholder="prenom" required="">
+                <span class="help-block"><?php echo $prenom_err; ?></span>
+                <!-- <div class="invalid-feedback ">
+                        nick is required.-->
+            </div>
+
             <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
 
                 <input type="password" name="password" class="form-control btn-lg" id="pw" value="<?php echo $password; ?>" placeholder=" mot de passe" required="">
