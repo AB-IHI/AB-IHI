@@ -154,7 +154,7 @@ container_main {
     flex: 1;
 }
 
-p {
+p, .agree_cb {
     font-size: 1.3em;
     letter-spacing: 0.15px;
 

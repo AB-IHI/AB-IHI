@@ -46,7 +46,25 @@
                 <span class="help-block"><?php echo $confirm_password_err; ?></span>
             </div> -->
         </div>
+        <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
 
+            <div>
+                <input type="checkbox" name="password" id="pw" value="<?php echo $accepted_1; ?>" placeholder=" mot de passe" required="">
+                <span class="help-block"><?php echo $password_err; ?></span>
+                <label class="agree_cb"><a href="#">
+                    Agree to terms 1
+                </a></label>
+            </div>
+            <div>
+                <input type="checkbox" name="password" id="pw" value="<?php echo $accepted_2; ?>" placeholder=" mot de passe" required="">
+                <span class="help-block"><?php echo $password_err; ?></span>
+                <label class="agree_cb"><a href="#">
+                    Agree to terms 2
+                </a></label>
+            </div>
+            <!-- <div class="invalid-feedback">
+        Valid mot de passe is required.-->
+        </div>
 
 
         <!-- <div class="col-12 <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
