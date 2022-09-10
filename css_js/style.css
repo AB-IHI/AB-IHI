@@ -299,6 +299,15 @@ html {
     margin-bottom: 6%;
 }
 
+.hide_list {
+    list-style: none;
+}
+
+.horiz_spacin {
+    text-indent: -0.7cm;
+    margin-bottom: 15px;
+}
+
 .article {
     margin-bottom: 8%;
 }

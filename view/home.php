@@ -97,19 +97,32 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     <!-- container but this time with section -->
 
     <div class="container px-4 py-5 quisn" id="featured-3 ">
-        <h4 id="progH" class="pb-2 border-bottom h2">Programmes humanitaires et projets de bienfaisance</h4>
+        <h4 id="progH" class="pb-2 border-bottom h2"><a href="?explain=explanation">Programmes humanitaires et projets de bienfaisance</a></h4>
         <div class=" row-p g-4 py-1 row-cols-1 row-cols-lg-1">
 
             <div class="feature col">
 
 
                 <p>
-                    Les programmes humanitaires contiennent une description des activités principales de l'Association, dans le cadre desquelles des projets de bienfaisance seront réalisés.
+                Les activités de bienfaisance de l'Association sont menées dans le cadre de projets de bienfaisance – il s'agit d'actions n'ayant pas un caractère d'intérêt personnel, visant à améliorer les conditions de vie de personnes en situation précaire ou difficile.                </p>
+                <p> Les situations précaires ou difficiles des personnes visées ne recouvrent pas systématiquement le niveau de ressources de ces personnes. Il peut s’agir du handicap, de la maladie, de l’isolement, de la vieillesse, de la discrimination, etc.
                 </p>
-                <p> Les projets de bienfaisance sont des activités pratiques de l'Association visant à améliorer les conditions de vie des personnes en situation précaire ou difficile
-                    (aide alimentaire, secours financier, hébergement, fourniture des nécessités de la vie, soins, soutien moral, etc.)
+                <p>
+                L'activité humanitaire de l'Association consiste en :
+                </p>
 
-                </p>
+                <ul class="hide_list ">
+                    <li class=" hide_list horiz_spacin" style="margin-left: 2cm">
+                    <p>
+                        1)  mise en œuvre de programmes humanitaires visant les actions d'urgence ainsi que les actions requises en vue de la satisfaction
+                        des besoins indispensables des populations en situation de détresse ou de misère et en vue de contribuer à leur insertion sociale ;
+                    </p></li>
+                <li class="hide_list horiz_spacin" style="margin-left: 2cm">
+                <p>
+                    2)  la promotion des idées d'humanisme, la coordination des efforts et l’interaction en matière de réponse humanitaire avec d'autres
+                    associations, organismes internationaux et étatiques, ainsi qu'avec des administrations territoriales.
+                </p></li>
+                </ul>
 
             </div>
 
@@ -130,7 +143,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
             <div class="feature col">
 
 
-                <p>L'Office actuel est composé de bénévoles qui participent à la mise en œuvre de projets de bienfaisance dans le cadre du Règlement sur les bénévoles. </p>
+                <p>L'Office actuel est composé de bénévoles qui participent à la mise en œuvre de projets de bienfaisance dans le cadre du <a href="?explain=explanation">Règlement sur les bénévoles</a>. </p>
                 <p> Le recrutement des volontaires est ouvert.</p>
                 <p>Les activités et la structure de l’Office s’adaptent aux conditions des missions humanitaires.
 
