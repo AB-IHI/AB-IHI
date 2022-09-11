@@ -48,7 +48,7 @@
     .T1 { color:#00a933; font-family:Tahoma; font-size:14pt; font-weight:bold; }
     .T11 { font-family:Tahoma; background-color:#ffffff; }
     .T12 { font-family:Tahoma; font-size:12pt; background-color:#ffffff; }
-    .T13 { font-family:Tahoma; font-size:10pt; font-weight:bold; }
+    .T13 { font-family:Tahoma; font-size:10pt;  }
     .T14 { font-family:Tahoma; font-size:10pt; }
     .T2 { color:#00a933; font-family:Tahoma; font-size:14pt; font-weight:bold; }
     .T3 { color:#2a6099; font-family:Tahoma; font-size:26pt; font-weight:bold; }
