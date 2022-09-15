@@ -16,103 +16,103 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 if (isset($_POST["action"])) {
     if ($_POST["action"] == "info_add") {
         // Define variables and initialize with empty values
-    $passport = $date = $pays = $adress = $email = $telephone = "";
-    $passport_err = $date_err = $pays_err = $adress_err = $email_err = $telephone_err = "";
+        $passport = $date = $pays = $adress = $email = $telephone = "";
+        $passport_err = $date_err = $pays_err = $adress_err = $email_err = $telephone_err = "";
 
 
 
-    $_SESSION['page'] = "my_info";
-    // Processing form data when form is submitted
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $_SESSION['page'] = "my_info";
+        // Processing form data when form is submitted
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-        // Validate passport
-        if (empty(trim($_POST["passport"]))) {
-            $passport_err = "Please enter a passport.";
-        } elseif (strlen(trim($_POST["passport"])) < 3) {
-            $passport_err = "Passport must have atleast 3 characters.";
-        } else {
-            $passport = trim($_POST["passport"]);
-        }
-
-        // Validate date
-        if (empty(trim($_POST["date"]))) {
-            $date_err = "Please enter a date.";
-        } elseif (strlen(trim($_POST["date"])) < 3) {
-            $date_err = "date must have atleast 3 characters.";
-        } else {
-            $date = trim($_POST["date"]);
-        }
-
-        // Validate pays
-        if (empty(trim($_POST["pays"]))) {
-            $pays_err = "Please enter a pays.";
-        } elseif (strlen(trim($_POST["pays"])) < 3) {
-            $pays_err = "pays must have atleast 3 characters.";
-        } else {
-            $pays = trim($_POST["pays"]);
-        }
-
-        // Validate adress
-        if (empty(trim($_POST["adress"]))) {
-            $adress_err = "Please enter a adress.";
-        } elseif (strlen(trim($_POST["adress"])) < 3) {
-            $adress_err = "adress must have atleast 3 characters.";
-        } else {
-            $adress = trim($_POST["adress"]);
-        }
-
-        // Validate email
-        if (empty(trim($_POST["email"]))) {
-            $email_err = "Please enter a email.";
-        } elseif (strlen(trim($_POST["email"])) < 3) {
-            $email_err = "email must have atleast 3 characters.";
-        } else {
-            $email = trim($_POST["email"]);
-        }
-
-        // Validate telephone
-        if (empty(trim($_POST["telephone"]))) {
-            $telephone_err = "Please enter a telephone.";
-        } elseif (strlen(trim($_POST["telephone"])) < 3) {
-            $telephone_err = "telephone must have atleast 3 characters.";
-        } else {
-            $telephone = trim($_POST["telephone"]);
-        }
-
-        // Check input errors before inserting in database
-        if (empty($passport_err) && empty($date_err) && empty($pays_err) && empty($adress_err) && empty($email_err) && empty($telephone_err)) {
-
-            // Prepare an insert statement UPDATE `users` SET `date` = '11/01/02' WHERE `users`.`id` = 4; 
-
-            $sql = "UPDATE users SET passport =?, date=?, pays=?, adress=?, email=?, telephone=?  WHERE users.id=?";
-
-            if ($stmt = mysqli_prepare($c, $sql)) {
-                // Bind variables to the prepared statement as parameters
-                mysqli_stmt_bind_param($stmt, "sssssss", $passport, $date, $pays, $adress, $email, $telephone, $_SESSION['id_user']);
-
-                // Set parameters, useless
-                // $param_username = $username;
-                // $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
-
-                // Attempt to execute the prepared statement
-                if (mysqli_stmt_execute($stmt)) {
-                    // Redirect to login page
-                    // header("location: login.php");
-                    $_SESSION['page'] = 'benevole';
-                } else {
-                    echo "2Something went wrong. Please try again later.";
-                }
-
-                // Close statement
-                mysqli_stmt_close($stmt);
+            // Validate passport
+            if (empty(trim($_POST["passport"]))) {
+                $passport_err = "Please enter a passport.";
+            } elseif (strlen(trim($_POST["passport"])) < 3) {
+                $passport_err = "Passport must have atleast 3 characters.";
+            } else {
+                $passport = trim($_POST["passport"]);
             }
-        }
 
-        // Close connection
-        // mysqli_close($c);
-    }
+            // Validate date
+            if (empty(trim($_POST["date"]))) {
+                $date_err = "Please enter a date.";
+            } elseif (strlen(trim($_POST["date"])) < 3) {
+                $date_err = "date must have atleast 3 characters.";
+            } else {
+                $date = trim($_POST["date"]);
+            }
+
+            // Validate pays
+            if (empty(trim($_POST["pays"]))) {
+                $pays_err = "Please enter a pays.";
+            } elseif (strlen(trim($_POST["pays"])) < 3) {
+                $pays_err = "pays must have atleast 3 characters.";
+            } else {
+                $pays = trim($_POST["pays"]);
+            }
+
+            // Validate adress
+            if (empty(trim($_POST["adress"]))) {
+                $adress_err = "Please enter a adress.";
+            } elseif (strlen(trim($_POST["adress"])) < 3) {
+                $adress_err = "adress must have atleast 3 characters.";
+            } else {
+                $adress = trim($_POST["adress"]);
+            }
+
+            // Validate email
+            if (empty(trim($_POST["email"]))) {
+                $email_err = "Please enter a email.";
+            } elseif (strlen(trim($_POST["email"])) < 3) {
+                $email_err = "email must have atleast 3 characters.";
+            } else {
+                $email = trim($_POST["email"]);
+            }
+
+            // Validate telephone
+            if (empty(trim($_POST["telephone"]))) {
+                $telephone_err = "Please enter a telephone.";
+            } elseif (strlen(trim($_POST["telephone"])) < 3) {
+                $telephone_err = "telephone must have atleast 3 characters.";
+            } else {
+                $telephone = trim($_POST["telephone"]);
+            }
+
+            // Check input errors before inserting in database
+            if (empty($passport_err) && empty($date_err) && empty($pays_err) && empty($adress_err) && empty($email_err) && empty($telephone_err)) {
+
+                // Prepare an insert statement UPDATE `users` SET `date` = '11/01/02' WHERE `users`.`id` = 4; 
+
+                $sql = "UPDATE users SET passport =?, date=?, pays=?, adress=?, email=?, telephone=?  WHERE users.id=?";
+
+                if ($stmt = mysqli_prepare($c, $sql)) {
+                    // Bind variables to the prepared statement as parameters
+                    mysqli_stmt_bind_param($stmt, "sssssss", $passport, $date, $pays, $adress, $email, $telephone, $_SESSION['id_user']);
+
+                    // Set parameters, useless
+                    // $param_username = $username;
+                    // $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
+
+                    // Attempt to execute the prepared statement
+                    if (mysqli_stmt_execute($stmt)) {
+                        // Redirect to login page
+                        // header("location: login.php");
+                        $_SESSION['page'] = 'benevole';
+                    } else {
+                        echo "2Something went wrong. Please try again later.";
+                    }
+
+                    // Close statement
+                    mysqli_stmt_close($stmt);
+                }
+            }
+
+            // Close connection
+            // mysqli_close($c);
+        }
     }
 }
 
@@ -179,7 +179,7 @@ if (isset($_POST["action"])) {
                                     // Redirect user to volunteer page
                                     // header("location: view/volunteer.php");
                                     $_SESSION['view'] = 'volunteer';
-                                    $_SESSION['page'] = "benevole"; 
+                                    $_SESSION['page'] = "benevole";
                                     echo "executed 1";
                                 } else {
                                     // Display an error message if password is not valid
@@ -224,6 +224,7 @@ $username = $nom = $prenom = $password = $confirm_password = "";
 $username_err = $nom_err = $prenom_err = $password_err = $confirm_password_err = "";
 
 if (isset($_POST["action"])) {
+    
     if ($_POST["action"] == "register") {
         $_SESSION['page'] = "register";
         // Processing form data when form is submitted
@@ -235,7 +236,7 @@ if (isset($_POST["action"])) {
             } else {
                 // Prepare a select statement
                 $sql = "SELECT id FROM users WHERE username = ?";
-                
+
                 if ($stmt = mysqli_prepare($c, $sql)) {
                     // Bind variables to the prepared statement as parameters
                     mysqli_stmt_bind_param($stmt, "s", $param_username);
@@ -272,6 +273,34 @@ if (isset($_POST["action"])) {
                 $password = trim($_POST["password"]);
             }
 
+            // Validate nom
+            if (empty(trim($_POST["nom"]))) {
+                $nom_err = "Please enter a nom.";
+            } elseif (strlen(trim($_POST["nom"])) < 2) {
+                $nom_err = "nom must have atleast 2 characters.";
+            } else {
+                $nom = trim($_POST["nom"]);
+            }
+            var_dump($password_err);
+            // Validate prenom
+            if (empty(trim($_POST["prenom"]))) {
+                $prenom_err = "Please enter a prenom.";
+            } elseif (strlen(trim($_POST["prenom"])) < 2) {
+                $prenom_err = "prenom must have atleast 2 characters.";
+            } else {
+                $prenom = trim($_POST["prenom"]);
+            }
+
+            // Validate confirm reglement
+            if (empty(trim($_POST["reglement"]))) {
+                $reglement_err = "Please confirm reglement.";
+            }
+
+            // Validate confirm conditions
+            if (empty(trim($_POST["condition"]))) {
+                $conditions_err = "Please confirm conditions.";
+            }
+
             // Validate confirm password
             // if (empty(trim($_POST["confirm_password"]))) {
             //     $confirm_password_err = "Please confirm password.";
@@ -283,25 +312,29 @@ if (isset($_POST["action"])) {
             // }
 
             // Check input errors before inserting in database
-            if (empty($username_err) && empty($password_err) && empty($confirm_password_err)) {
+            if (empty($username_err) && empty($password_err) && empty($nom_err) 
+            && empty($prenom_err) && empty($condition_err) && empty($reglement_err)) {
 
                 // Prepare an insert statement
-                $sql = "INSERT INTO users (username, password) VALUES (?, ?)";
+                $sql = "INSERT INTO users (username, password, nom, prenom) VALUES (?, ?, ?, ?)";
 
                 if ($stmt = mysqli_prepare($c, $sql)) {
                     // Bind variables to the prepared statement as parameters
-                    mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
+                    mysqli_stmt_bind_param($stmt, "ssss", $param_username, $param_password, $param_nom, $param_prenom);
 
                     // Set parameters
                     $param_username = $username;
                     $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
-
+                    $param_nom = $nom;
+                    $param_prenom = $prenom;
                     // Attempt to execute the prepared statement
                     if (mysqli_stmt_execute($stmt)) {
                         // Redirect to login page
                         // header("location: login.php");
                         $_SESSION['page'] = 'login';
+                        echo "executed 1";
                     } else {
+                        echo "executed 2";
                         echo "2Something went wrong. Please try again later.";
                     }
 

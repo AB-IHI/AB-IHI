@@ -1,3 +1,25 @@
+// console.log(flexCheckDefault)
+// let worms = document.querySelector("#def .bge ")
+let checkbox = document.querySelectorAll(".form-check-input")
+function hop() {
+    let r = Math.random()*255
+    let g = Math.random()*255
+    let b = Math.random()*255
+    if (x.matches) { // If media query matches
+    checkbox.forEach((document) => {
+        document.style.border  = "3px solid rgb("+r+","+g+","+b+")"
+    // flexCheckDefault2.style.border = "3px solid rgb("+r+","+g+","+b+") "
+    })
+    //     body.style.background = "rgb("+r+","+g+","+b+")"
+    // worms.classList.toggle("big")
+//     checkbox.onclick = function(){background = none
+//         };
+}
+}
+var x = window.matchMedia("(max-width: 991px)")
+setInterval(hop, 500)
+setTimeout(hop, 500)
+
 function darken_screen(yesno){
     if( yesno == true ){
         document.querySelector('.screen-darken').classList.add('active');

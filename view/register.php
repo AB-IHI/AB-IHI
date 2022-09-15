@@ -47,8 +47,8 @@
             </div> -->
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required="">
-            <label class="form-check-label" for="flexCheckDefault">
+            <input class="form-check-input" type="checkbox" name="reglement" value="1" id="flexCheckDefault" required="">
+            <label class="form-check-label" for="flexCheckDefault1">
                 J'ai pris connaissance du <a class="" href="y_storage/Règlement sur les bénévoles.pdf">
                     Reglement sur les benevoles
                 </a> et je m'engage à le respecter
@@ -56,7 +56,7 @@
         </div>
 
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" required="">
+            <input class="form-check-input" type="checkbox" name="condition" value="1" id="flexCheckDefault2" required="">
             <label class="form-check-label" for="flexCheckDefault2">
             J'ai pris connaissance des conditions du <a href="#">
                         projet de bienfaisance
