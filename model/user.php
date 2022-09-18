@@ -3,22 +3,32 @@
 
 
 
-function dispo_email($user)
+function dispo_in_db($email, $type, $c)
 {
-    global $c;
-    $sql = "SELECT email FROM `users` WHERE email='$user'";
-    $resultat = mysqli_query($c, $sql);
-    $row = mysqli_fetch_assoc($resultat);
-    return mysqli_num_rows($resultat) == 0;
+    // Prepare a select statement
+    $sql = "SELECT id FROM users WHERE " . $type . " = ?";
+    var_dump($sql);
+    $stmt = mysqli_prepare($c, $sql);
+    // Bind variables to the prepared statement as parameters
+    mysqli_stmt_bind_param($stmt, "s", $param_type);
+    var_dump($sql);
+    // Set parameters
+    $param_type = trim($email);
+
+    // Attempt to execute the prepared statement
+    if (mysqli_stmt_execute($stmt)) {
+        /* store result */
+        mysqli_stmt_store_result($stmt);
+        var_dump(mysqli_stmt_num_rows($stmt));
+        return mysqli_stmt_num_rows($stmt) == 1;
+    }
+    // Close statement
+    mysqli_stmt_close($stmt);
 }
 
-function ajouterUserInfo()
+function ajouterUserInfo($c)
 {
     global $c;
-
-
-
-    
 }
 
 

@@ -7,4 +7,4 @@ include_once "controller/action.php";
 include_once "view/".$_SESSION['view'].".php";
 echo "<!-- ";
 var_dump($_SESSION['view']);
-echo "--> ";
+echo "--> "; 

@@ -309,7 +309,8 @@ if (isset($_POST["action"])) {
                 $email = trim($_POST["email"]);
                 if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
                     // valid address
-                    if(dispo_email($email)==false) {
+                    $type = "email";
+                    if(dispo_in_db($email, $type, $c)) {
                         // unavailable address
                         $email_err = "Adresse email indisponible";
                     }  
@@ -335,7 +336,7 @@ if (isset($_POST["action"])) {
 
             // Check input errors before inserting in database
             if (empty($username_err) && empty($password_err) && empty($nom_err) 
-            && empty($prenom_err) && empty($condition_err) && empty($reglement_err)) {
+            && empty($prenom_err) && empty($condition_err) && empty($reglement_err) && empty($email_err)) {
 
                 // Prepare an insert statement
                 $sql = "INSERT INTO users (username, password, nom, prenom, email) VALUES (?, ?, ?, ?, ?)";
