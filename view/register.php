@@ -33,6 +33,14 @@
                         nick is required.-->
             </div>
 
+            <div class="form-group <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>">
+
+                <input type="email" name="email" class="form-control btn-lg" id="pw" value="<?php echo $email; ?>" placeholder=" email" required="">
+                <span class="help-block"><?php echo $email_err; ?></span>
+                <!-- <div class="invalid-feedback">
+        email is required.-->
+            </div>
+
             <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
 
                 <input type="password" name="password" class="form-control btn-lg" id="pw" value="<?php echo $password; ?>" placeholder=" mot de passe" required="">
@@ -58,13 +66,13 @@
         <div class="form-check">
             <input class="form-check-input" type="checkbox" name="condition" value="1" id="flexCheckDefault2" required="">
             <label class="form-check-label" for="flexCheckDefault2">
-            J'ai pris connaissance des conditions du <a href="#">
-                        projet de bienfaisance
-                    </a> et je m'engage à les respecter
+                J'ai pris connaissance des conditions du <a href="#">
+                    projet de bienfaisance
+                </a> et je m'engage à les respecter
             </label>
         </div>
         <!-- 2eme -->
-       
+
 
 
 

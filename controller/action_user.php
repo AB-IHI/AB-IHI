@@ -220,8 +220,8 @@ if (isset($_POST["action"])) {
 
 
 // Define variables and initialize with empty values
-$username = $nom = $prenom = $password = $confirm_password = "";
-$username_err = $nom_err = $prenom_err = $password_err = $confirm_password_err = "";
+$username = $nom = $prenom = $email = $password = $confirm_password = "";
+$username_err = $nom_err = $prenom_err = $email_err = $password_err = $confirm_password_err = "";
 
 if (isset($_POST["action"])) {
     
@@ -301,6 +301,28 @@ if (isset($_POST["action"])) {
                 $conditions_err = "Please confirm conditions.";
             }
 
+            // Validate email
+            if (empty(trim($_POST["email"]))) {
+                $email_err = "Please enter a email.";
+            }
+            else {
+                $email = trim($_POST["email"]);
+                if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                    // valid address
+                    if(dispo_email($email)==false) {
+                        // unavailable address
+                        $email_err = "Adresse email indisponible";
+                    }  
+                }
+                else {
+                    // invalid address
+                    $email_err = "Please enter valid email.";
+                }
+    
+            }
+
+            
+            
             // Validate confirm password
             // if (empty(trim($_POST["confirm_password"]))) {
             //     $confirm_password_err = "Please confirm password.";
@@ -316,17 +338,18 @@ if (isset($_POST["action"])) {
             && empty($prenom_err) && empty($condition_err) && empty($reglement_err)) {
 
                 // Prepare an insert statement
-                $sql = "INSERT INTO users (username, password, nom, prenom) VALUES (?, ?, ?, ?)";
+                $sql = "INSERT INTO users (username, password, nom, prenom, email) VALUES (?, ?, ?, ?, ?)";
 
                 if ($stmt = mysqli_prepare($c, $sql)) {
                     // Bind variables to the prepared statement as parameters
-                    mysqli_stmt_bind_param($stmt, "ssss", $param_username, $param_password, $param_nom, $param_prenom);
+                    mysqli_stmt_bind_param($stmt, "sssss", $param_username, $param_password, $param_nom, $param_prenom, $param_email);
 
                     // Set parameters
                     $param_username = $username;
                     $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
                     $param_nom = $nom;
                     $param_prenom = $prenom;
+                    $param_email = $email;
                     // Attempt to execute the prepared statement
                     if (mysqli_stmt_execute($stmt)) {
                         // Redirect to login page

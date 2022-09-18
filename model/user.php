@@ -2,6 +2,16 @@
 //M : Modèle = ensemble de fonctions (chargement, affichages, ajout dans la base de données, ...).
 
 
+
+function dispo_email($user)
+{
+    global $c;
+    $sql = "SELECT email FROM `users` WHERE email='$user'";
+    $resultat = mysqli_query($c, $sql);
+    $row = mysqli_fetch_assoc($resultat);
+    return mysqli_num_rows($resultat) == 0;
+}
+
 function ajouterUserInfo()
 {
     global $c;
@@ -66,14 +76,7 @@ function dispo_pseudo($user)
     return mysqli_num_rows($resultat) == 0;
 }
 
-function dispo_email($user)
-{
-    global $c;
-    $sql = "SELECT email FROM `users` WHERE email='$user'";
-    $resultat = mysqli_query($c, $sql);
-    $row = mysqli_fetch_assoc($resultat);
-    return mysqli_num_rows($resultat) == 0;
-}
+
 
 function recup_id_user($user)
 {

@@ -97,18 +97,18 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     <!-- container but this time with section -->
 
     <div class="container px-4 py-5 quisn" id="featured-3 ">
-        <h4 id="progH" class="pb-2 border-bottom h2"><a href="?explain=explanation">Programmes humanitaires et projets de bienfaisance</a></h4>
+        <h4 id="progH" class="pb-2 border-bottom h2">Projets de bienfaisance et programmes humanitaires</h4>
         <div class=" row-p g-4 py-1 row-cols-1 row-cols-lg-1">
 
             <div class="feature col">
 
 
                 <p>
-                Les activités de bienfaisance de l'Association sont menées dans le cadre de projets de bienfaisance – il s'agit d'actions n'ayant pas un caractère d'intérêt personnel, visant à améliorer les conditions de vie de personnes en situation précaire ou difficile.                </p>
+                Les <a href="?explain="> activités de bienfaisance</a> de l'Association sont menées dans le cadre de projets de bienfaisance – il s'agit d'actions n'ayant pas un caractère d'intérêt personnel, visant à améliorer les conditions de vie de personnes en situation précaire ou difficile.                </p>
                 <p> Les situations précaires ou difficiles des personnes visées ne recouvrent pas systématiquement le niveau de ressources de ces personnes. Il peut s’agir du handicap, de la maladie, de l’isolement, de la vieillesse, de la discrimination, etc.
                 </p>
                 <p>
-                L'activité humanitaire de l'Association consiste en :
+                L'<a href="">activité humanitaire</a> de l'Association consiste en :
                 </p>
 
                 <ul class="hide_list ">

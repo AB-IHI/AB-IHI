@@ -2,6 +2,16 @@
 
 
 
+    <li class="nav-item "  >
+        <a class="nav-link " href="?page=home" > Accueil </a>
+        
+    </li>
+</ul>
+
+<ul class="navbar-nav">
+
+
+
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> IHI </a>
         <ul class="dropdown-menu">
