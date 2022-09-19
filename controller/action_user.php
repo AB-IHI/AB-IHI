@@ -13,13 +13,13 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 
 // update user info / add more personal data
 
+// Define variables and initialize with empty values
+$passport = $date = $pays = $adress = $email = $rib = $telephone = "";
+$passport_err = $date_err = $pays_err = $adress_err = $email_err = $rib_err = $telephone_err = "";
+
 if (isset($_POST["action"])) {
+
     if ($_POST["action"] == "info_add") {
-        // Define variables and initialize with empty values
-        $passport = $date = $pays = $adress = $email = $telephone = "";
-        $passport_err = $date_err = $pays_err = $adress_err = $email_err = $telephone_err = "";
-
-
 
         $_SESSION['page'] = "my_info";
         // Processing form data when form is submitted
@@ -66,10 +66,19 @@ if (isset($_POST["action"])) {
             // Validate email
             if (empty(trim($_POST["email"]))) {
                 $email_err = "Please enter a email.";
-            } elseif (strlen(trim($_POST["email"])) < 3) {
-                $email_err = "email must have atleast 3 characters.";
             } else {
                 $email = trim($_POST["email"]);
+                if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                    // valid address
+                    $type = "email";
+                    if (dispo_in_db($email, $type, $c)) {
+                        // unavailable address
+                        $email_err = "Adresse email indisponible";
+                    }
+                } else {
+                    // invalid address
+                    $email_err = "Please enter valid email.";
+                }
             }
 
             // Validate telephone
@@ -81,16 +90,26 @@ if (isset($_POST["action"])) {
                 $telephone = trim($_POST["telephone"]);
             }
 
+                        // Validate RIB if available (user not forced to provide rib)
+                        if (!empty(trim($_POST["rib"]))) {
+                            if (strlen(trim($_POST["rib"])) < 16) {
+                                $rib_err = "rib must have atleast 16 characters.";
+                            } else {
+                                $rib = trim($_POST["rib"]);
+                            }
+                        } 
+
             // Check input errors before inserting in database
-            if (empty($passport_err) && empty($date_err) && empty($pays_err) && empty($adress_err) && empty($email_err) && empty($telephone_err)) {
+            if (empty($passport_err) && empty($date_err) && empty($pays_err) 
+            && empty($adress_err) && empty($email_err) && empty($telephone_err) && empty($rib_err)) {
 
                 // Prepare an insert statement UPDATE `users` SET `date` = '11/01/02' WHERE `users`.`id` = 4; 
 
-                $sql = "UPDATE users SET passport =?, date=?, pays=?, adress=?, email=?, telephone=?  WHERE users.id=?";
+                $sql = "UPDATE users SET passport =?, date=?, pays=?, adress=?, email=?, telephone=?, rib=?  WHERE users.id=?";
 
                 if ($stmt = mysqli_prepare($c, $sql)) {
                     // Bind variables to the prepared statement as parameters
-                    mysqli_stmt_bind_param($stmt, "sssssss", $passport, $date, $pays, $adress, $email, $telephone, $_SESSION['id_user']);
+                    mysqli_stmt_bind_param($stmt, "sssssss", $passport, $date, $pays, $adress, $email, $telephone, $rib, $_SESSION['id_user']);
 
                     // Set parameters, useless
                     // $param_username = $username;
@@ -115,6 +134,7 @@ if (isset($_POST["action"])) {
         }
     }
 }
+// end of update personal info
 
 
 // the obivious logging part
@@ -224,7 +244,7 @@ $username = $nom = $prenom = $email = $password = $confirm_password = "";
 $username_err = $nom_err = $prenom_err = $email_err = $password_err = $confirm_password_err = "";
 
 if (isset($_POST["action"])) {
-    
+
     if ($_POST["action"] == "register") {
         $_SESSION['page'] = "register";
         // Processing form data when form is submitted
@@ -304,26 +324,23 @@ if (isset($_POST["action"])) {
             // Validate email
             if (empty(trim($_POST["email"]))) {
                 $email_err = "Please enter a email.";
-            }
-            else {
+            } else {
                 $email = trim($_POST["email"]);
-                if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
                     // valid address
                     $type = "email";
-                    if(dispo_in_db($email, $type, $c)) {
+                    if (dispo_in_db($email, $type, $c)) {
                         // unavailable address
                         $email_err = "Adresse email indisponible";
-                    }  
-                }
-                else {
+                    }
+                } else {
                     // invalid address
                     $email_err = "Please enter valid email.";
                 }
-    
             }
 
-            
-            
+
+
             // Validate confirm password
             // if (empty(trim($_POST["confirm_password"]))) {
             //     $confirm_password_err = "Please confirm password.";
@@ -335,8 +352,10 @@ if (isset($_POST["action"])) {
             // }
 
             // Check input errors before inserting in database
-            if (empty($username_err) && empty($password_err) && empty($nom_err) 
-            && empty($prenom_err) && empty($condition_err) && empty($reglement_err) && empty($email_err)) {
+            if (
+                empty($username_err) && empty($password_err) && empty($nom_err)
+                && empty($prenom_err) && empty($condition_err) && empty($reglement_err) && empty($email_err)
+            ) {
 
                 // Prepare an insert statement
                 $sql = "INSERT INTO users (username, password, nom, prenom, email) VALUES (?, ?, ?, ?, ?)";

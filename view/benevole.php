@@ -85,6 +85,111 @@
 
                         // $result = mysqli_query($c, $sql);
                         ?>
+
+<container>
+                <?php
+                // var_dump($_SESSION['id_user']);
+                // gettype($_SESSION['id_user']);
+                $var = strval($_SESSION['id_user']);
+                $sql = "SELECT * FROM users where users.id = $var";
+
+                $result = mysqli_query($c, $sql);
+
+                // 3/3 -> AFFICHAGE
+                // Récupère chaque ligne de la BD dans un tableau "$row"
+
+
+
+
+
+
+                // 3/3 -> AFFICHAGE
+                // Récupère chaque ligne de la BD dans un tableau "$row"
+                $row = mysqli_fetch_assoc($result);
+
+                echo "<h2><a href='.?page=my_info'>Mes informations</a>.</h2>";
+                
+                echo "<table class='table table-responsive table-hover w-100 d-block'>
+      <tbody> ";
+                echo "<tr class='margin'>";
+
+                echo "<td class='margin'> pièce d'identité </td>";
+                $var3 = htmlspecialchars($row["passport"], ENT_QUOTES, 'UTF-8');
+                echo "<td class='margin'>" . $var3 . "</td> </tr>";
+
+                echo "<tr class='margin'>
+                    <td class='margin'> date expiration de la pièce d'identité</td>
+                ";
+                $var4 =    htmlspecialchars($row["date"], ENT_QUOTES, 'UTF-8');
+                    echo "<td class='margin'>" . $var4 . "</td> </tr>";
+
+                echo "<tr class='margin'>
+                    <td class='margin'> nationalité </td>
+                ";
+                $var5 = htmlspecialchars($row["pays"], ENT_QUOTES, 'UTF-8');
+                echo "<td class='margin'>" . $var5 . "</td>  </tr> ";
+
+                echo "<tr class='margin'>
+                    <td class='margin'> adress </td>     
+                 ";
+                $var6 = htmlspecialchars($row["adress"], ENT_QUOTES, 'UTF-8');
+                    echo "<td >" . $var6 . "</td>  </tr> ";
+
+                echo "<tr class='margin'>
+                    <td class='margin'> email </td>      
+                ";
+                $var5 = htmlspecialchars($row["email"], ENT_QUOTES, 'UTF-8');
+                    echo "<td class='margin'>" . $var5 . "</td>  </tr> ";
+
+                echo "<tr class='margin'>
+                    <td class='margin'> telephone </td>  
+               ";
+                $var6 = htmlspecialchars($row["telephone"], ENT_QUOTES, 'UTF-8');
+                    echo "<td >" . $var6 . "</td>";
+                
+                echo "</tr>";
+                $i = 0;
+
+                    $i++;
+
+                    echo "<tr class='margin'>";
+
+                    
+                    
+                   
+                    
+                    
+                    
+
+                    echo "</tr>";
+                
+                echo "</tbody>
+    </table>";
+
+                ?>
+
+
+                <p> <a href="#">top</a>.</p>
+
+                <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
+  <label class="form-check-label" for="flexCheckCheckedDisabled">
+    Disabled checked checkbox
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
+  <label class="form-check-label" for="flexCheckCheckedDisabled">
+    Disabled checked checkbox
+  </label>
+</div>
+            </container>
+
+
+
+
+
+
                         <form action="." method="post" class="signin-form">
                             <input type="hidden" name="action" value="register">
                             <div class="col-12">

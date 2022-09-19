@@ -71,8 +71,15 @@
                 </a> et je m'engage à les respecter
             </label>
         </div>
-        <!-- 2eme -->
-
+        <!-- 2eme  1. Règlement sur les PB et les PH.pdf-->
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="condition" value="1" id="flexCheckDefault2" required="">
+            <label class="form-check-label" for="flexCheckDefault2">
+                J'ai pris connaissance des conditions du <a href="y_storage/1. Règlement sur les PB et les PH.pdf">
+                Règlement sur les projets de bienfaisance et les programmes humanitaires
+                </a> et je m'engage à les respecter
+            </label>
+        </div>
 
 
 
