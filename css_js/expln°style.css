@@ -315,6 +315,13 @@ ol {
     margin-left: 27px;
 }
 
+ ol li {
+    margin-bottom: 0.499cm;
+}
+ul li {
+    margin-bottom: 0.499cm;
+    margin-left: 109px;
+}
 li {
     list-style: inherit;
     margin-left: 7px;
@@ -827,7 +834,7 @@ body.offcanvas-active {
     visibility: visible;
     }
 
-    .footer ul li a {
+    .footer {                   /* , ul, li, a  */
         height: 100%;
     }
 

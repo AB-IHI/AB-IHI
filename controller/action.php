@@ -53,9 +53,10 @@ view de démarche administrative */
 
 if (!isset($_GET['page'])) { // test almost same if below but both needed
     $_SESSION['page'] = 'home';
-    // if (isset($_SESSION['loggedin']) && $_SESSION["loggedin"] == true) {
-    //     $_SESSION['page'] = 'volunteer';
-    // }
+    if (isset($_SESSION['loggedin']) && $_SESSION["loggedin"] == true) {
+        $_SESSION['view'] = 'volunteer';
+        $_SESSION['page'] = 'benevole';
+    }
 }
 
 
