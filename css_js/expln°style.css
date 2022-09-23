@@ -320,7 +320,7 @@ ol {
 }
 ul li {
     margin-bottom: 0.499cm;
-    margin-left: 109px;
+    margin-left: 139px;
 }
 li {
     list-style: inherit;
@@ -367,7 +367,7 @@ li {
     margin-left: 48px;
 }
 
-.T7U {
+.T7U { /*see also T12U*/
     color: #000000;
 font-family: Tahoma;
 

@@ -42,7 +42,7 @@
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href=".?explain=mecenes">Mècènes </a></li>
             <li><a class="dropdown-item" href=".?explain=fisc_mecenat">Le régime fiscal </a></li>
-            <li><a class="dropdown-item" href=".?explain=explain_don_org_foreign">Organismes étrangers </a></li>
+            <li><a class="dropdown-item" href=".?explain=Act_internat°al">Activités internationales </a></li>
         </ul>
     </li>
 </ul>
