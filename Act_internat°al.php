@@ -49,8 +49,8 @@
     .P3_borderEnd { font-size:6pt; margin-bottom:0.499cm; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; line-height:150%; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
     .P4 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; }
     .P5 { font-size:26pt; line-height:115%; margin-bottom:0.247cm; margin-top:0cm; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; color:#2a6099; }
-    .P6 { font-size:12pt; line-height:150%; margin-bottom:0.247cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; }
-    .P7 { font-size:12pt; line-height:150%; margin-bottom:0.247cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; }
+    .P6 { font-size:12pt; line-height:150%; margin-bottom:0.247cm; margin-top:0cm; text-align:left ! important; writing-mode:horizontal-tb; direction:ltr; }
+    .P7 { font-size:12pt; line-height:150%; margin-bottom:0.247cm; margin-top:0cm; text-align:left ! important; writing-mode:horizontal-tb; direction:ltr; }
     .P8_borderStart { font-size:12pt; line-height:150%; margin-top:0cm; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; background-color:#ffffff; padding-bottom:0.247cm;  border-bottom-style:none; }
     .P8 { font-size:12pt; line-height:150%; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; background-color:#ffffff; padding-bottom:0.247cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
     .P8_borderEnd { font-size:12pt; line-height:150%; margin-bottom:0.247cm; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
@@ -71,14 +71,14 @@
     .T19 { color:#06436a; font-family:Tahoma; font-size:12pt; letter-spacing:normal; font-style:normal; text-decoration:underline; font-weight:normal; background-color:transparent; }
     .T2 { color:#2a6099; font-family:Tahoma; font-size:26pt; font-weight:bold; background-color:#ffffff; }
     .T20 { color:#333333; font-family:Open Sans, arial, helvetica, sans-serif; font-size:10.5pt; letter-spacing:normal; font-style:normal; font-weight:normal; background-color:#ffffff; }
-    .T22 { color:#000000; font-family:Tahoma; font-size:10pt; font-style:normal; font-weight:bold; background-color:#ffffff; }
-    .T23 { color:#000000; font-family:Tahoma; font-size:10pt; font-style:normal; font-weight:normal; background-color:#ffffff; }
-    .T24 { color:#000000; font-family:Tahoma; font-size:10pt; font-style:italic; font-weight:bold; background-color:#ffffff; }
-    .T3 { color:#2a6099; font-family:Tahoma; font-size:12pt; font-weight:bold; background-color:#ffffff; }
-    .T4 { color:#2a6099; font-family:Tahoma; font-size:14pt; font-weight:bold; background-color:#ffffff; }
-    .T7 { font-family:Tahoma; background-color:#ffffff; }
-    .T8 { font-family:Tahoma; font-size:12pt; background-color:#ffffff; }
-    .T9 { font-family:Tahoma; font-size:11pt; background-color:#ffffff; }
+    .T22 { color:#000000; font-size:10pt; font-style:normal; font-weight:bold; background-color:#ffffff; }
+    .T23 { color:#000000; font-size:10pt; font-style:normal; font-weight:normal; background-color:#ffffff; }
+    .T24 { color:#000000; font-size:10pt; font-style:italic; font-weight:bold; background-color:#ffffff; }
+    .T3 { color:#2a6099; font-size:12pt; font-weight:bold; background-color:#ffffff; }
+    .T4 { color:#2a6099; font-size:14pt; font-weight:bold; background-color:#ffffff; }
+    .T7 {  background-color:#ffffff; }
+    .T8 {  font-size:12pt; background-color:#ffffff; }
+    .T9 {  font-size:12pt; background-color:#ffffff; }
     /* ODF styles with no properties representable as CSS */
     .ListLabel_20_1 .ListLabel_20_10 .ListLabel_20_11 .ListLabel_20_12 .ListLabel_20_13 .ListLabel_20_14 .ListLabel_20_15 .ListLabel_20_16 .ListLabel_20_17 .ListLabel_20_18 .ListLabel_20_19 .ListLabel_20_2 .ListLabel_20_20 .ListLabel_20_21 .ListLabel_20_22 .ListLabel_20_23 .ListLabel_20_24 .ListLabel_20_25 .ListLabel_20_26 .ListLabel_20_27 .ListLabel_20_28 .ListLabel_20_29 .ListLabel_20_3 .ListLabel_20_30 .ListLabel_20_31 .ListLabel_20_32 .ListLabel_20_33 .ListLabel_20_34 .ListLabel_20_35 .ListLabel_20_36 .ListLabel_20_4 .ListLabel_20_5 .ListLabel_20_6 .ListLabel_20_7 .ListLabel_20_8 .ListLabel_20_9  { }
      </style>
