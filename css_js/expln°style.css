@@ -318,7 +318,13 @@ ol {
  ol li, l li {
     margin-bottom: 0.499cm;
 }
+
 ul li {
+    margin-bottom: 0.499cm;
+    margin-left: 109px;
+}
+
+ol ul li {
     margin-bottom: 0.499cm;
     margin-left: 139px;
 }
@@ -356,15 +362,15 @@ li {
 }
 
 #custom_ul, .custom_ul {
-    margin-left: 82px;
+    /* margin-left: 82px; */
 }
 
 .custom_ul_2 {
-    margin-left: 109px;
+    /* margin-left: 109px; */
 }
 
 #custom_ul_end, .custom_ul_end {
-    margin-left: 48px;
+    /* margin-left: 48px; */
 }
 
 .T7U { /*see also T12U*/

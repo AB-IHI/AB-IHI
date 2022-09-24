@@ -16,7 +16,7 @@
     ol, ul { margin:0; padding:0;}
     li { list-style: none; margin:0; padding:0;}
     /* "li span.odfLiEnd" - IE 7 issue*/
-    li span. { clear: both; line-height:0; width:0; height:0; margin:0; padding:0; }
+    li span { clear: both; line-height:0; width:0; height:0; margin:0; padding:0; }
     span.footnodeNumber { padding-right:1em; }
     span.annotation_style_by_filter { font-size:95%; font-family:Arial; background-color:#fff000;  margin:0; border:0; padding:0;  }
     span.heading_numbering { margin-right: 0.8rem; }* { margin:0;}
@@ -262,6 +262,6 @@
 </body>
 <script type='text/javascript' src='css_js/js/popper.min.js'></script>
 <script type='text/javascript' src='css_js/js/bootstrap.js'></script>
-<script type='text/javascript' src='css_js/js/JavaScript.js'></script>
+<script type='text/javascript' src='css_js/main.js'></script>
 
 </html>
