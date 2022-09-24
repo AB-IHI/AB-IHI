@@ -315,7 +315,7 @@ ol {
     margin-left: 27px;
 }
 
- ol li {
+ ol li, l li {
     margin-bottom: 0.499cm;
 }
 ul li {
