@@ -407,6 +407,10 @@ background-color: #ffffff;
     margin-bottom: 95px;
 }
 
+.bottom_space {
+    margin-bottom: 0.7cm;
+}
+
 .article {
     margin-bottom: 8%;
 }
