@@ -327,6 +327,7 @@ ul li {
 ol ul li {
     margin-bottom: 0.499cm;
     margin-left: 139px;
+    list-style-type: disc;
 }
 li {
     list-style: inherit;

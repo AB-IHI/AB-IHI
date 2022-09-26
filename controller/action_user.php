@@ -200,7 +200,7 @@ if (isset($_POST["action"])) {
                                     // header("location: view/volunteer.php");
                                     $_SESSION['view'] = 'volunteer';
                                     $_SESSION['page'] = "benevole";
-                                    echo "executed 1";
+                                    // echo "executed 1";
                                 } else {
                                     // Display an error message if password is not valid
                                     $password_err = "The password you entered was not valid.";

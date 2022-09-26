@@ -114,14 +114,8 @@ echo '                <svg xmlns="http://www.w3.org/2000/svg" width="160" height
                 
 ?>
 
-<form action="."  method="post">
-    <div class="mb-3" >
-    <input type="hidden" name="action" value="info_update_photo">
-      <label for="formFile" class="form-label">Ajouter photo</label>
-      <input class="form-control" type="file" id="formFile">
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
-</form>
+
+
 
 <?php
 
@@ -141,16 +135,29 @@ $sql = "SELECT * FROM users where users.id = $var";
                 // Récupère chaque ligne de la BD dans un tableau "$row"
                 $row = mysqli_fetch_assoc($result);
 
+                $prenom = htmlspecialchars($row["prenom"], ENT_QUOTES, 'UTF-8');
+                
+                $nom = htmlspecialchars($row["nom"], ENT_QUOTES, 'UTF-8');
+                echo " <div class='mb-3 '>
+                 <label for='formFile' class='form-label'>" . $prenom . " ". $nom ."</label></div>";
+                    echo '
+                    <form action="."  method="post">
+    <div class="mb-3" >
+    <input type="hidden" name="action" value="info_update_photo">
+      <p> Ajouter Photo</p>
+      <input class="form-control" type="file" id="formFile">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+';
                 echo "<h2><a href='.?page=my_info'>Mes informations</a>.</h2>";
                 
                 echo "<table class='table table-responsive table-hover w-100 d-block'>
       <tbody> ";
                 echo "<tr class='margin'>";
 
-                $var1 = htmlspecialchars($row["prenom"], ENT_QUOTES, 'UTF-8');
-                echo "<td class='margin'>" . $var1 . "  </td>";
-                $var2 = htmlspecialchars($row["nom"], ENT_QUOTES, 'UTF-8');
-                echo "<td class='margin'>" . $var2 . "</td> </tr>";
+
+                
 
                 echo "<td class='margin'> pièce d'identité, N°</td>";
                 $var3 = htmlspecialchars($row["passport"], ENT_QUOTES, 'UTF-8');
