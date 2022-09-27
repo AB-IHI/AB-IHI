@@ -300,7 +300,7 @@ html {
 }
 
 .T4U { color:#2a6099;
-     font-family:Tahoma;
+     
       font-size:26pt;
      }
 
@@ -642,7 +642,7 @@ body.offcanvas-active {
     .custom_font_size {
         font-size: 62px;
     }
-    .T4U { color:#2a6099; font-family:Tahoma;
+    .T4U { color:#2a6099; 
          font-size: 66px !important;
          margin-bottom: 75px;
         }

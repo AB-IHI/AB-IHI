@@ -22,12 +22,12 @@
     span.heading_numbering { margin-right: 0.8rem; }* { margin:0;}
     .P1 { font-size:12pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; }
     .P10 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; }
-    .P11_borderStart { font-size:6pt; line-height:150%; margin-top:0cm; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; font-weight:bold; background-color:#ffffff; padding-bottom:0.499cm;  border-bottom-style:none; }
-    .P11 { font-size:6pt; line-height:150%; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; font-weight:bold; background-color:#ffffff; padding-bottom:0.499cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
-    .P11_borderEnd { font-size:6pt; line-height:150%; margin-bottom:0.499cm; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; font-weight:bold; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
-    .P12_borderStart { font-size:12pt; line-height:150%; margin-top:0cm; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; font-weight:normal; background-color:#ffffff; padding-bottom:0.499cm;  border-bottom-style:none; }
-    .P12 { font-size:12pt; line-height:150%; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; font-weight:normal; background-color:#ffffff; padding-bottom:0.499cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
-    .P12_borderEnd { font-size:12pt; line-height:150%; margin-bottom:0.499cm; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; font-weight:normal; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
+    .P11_borderStart { font-size:6pt; line-height:150%; margin-top:0cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; font-weight:bold; background-color:#ffffff; padding-bottom:0.499cm;  border-bottom-style:none; }
+    .P11 { font-size:6pt; line-height:150%; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; font-weight:bold; background-color:#ffffff; padding-bottom:0.499cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
+    .P11_borderEnd { font-size:6pt; line-height:150%; margin-bottom:0.499cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; font-weight:bold; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
+    .P12_borderStart { font-size:12pt; line-height:150%; margin-top:0cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; font-weight:normal; background-color:#ffffff; padding-bottom:0.499cm;  border-bottom-style:none; }
+    .P12 { font-size:12pt; line-height:150%; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; font-weight:normal; background-color:#ffffff; padding-bottom:0.499cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
+    .P12_borderEnd { font-size:12pt; line-height:150%; margin-bottom:0.499cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; font-weight:normal; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
     .P13 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; margin-left:0.0cm; margin-right:0cm; text-indent:0.0cm; }
     .P14 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; margin-left:1.7cm; margin-right:0cm; text-indent:-0.7cm; }
     .P15 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; }
@@ -42,16 +42,16 @@
     .P8 { font-size:12pt; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; line-height:150%; text-indent:0cm; }
     .P9 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; }
     .Internet_20_link { color:#000080; text-decoration:underline; }
-    .T1 { color:#00a933; font-family:Tahoma; font-size:14pt; font-weight:bold; }
-    .T10 { font-family:Tahoma; background-color:#ffffff; }
-    .T2 { color:#00a933; font-family:Tahoma; font-size:20pt; font-weight:bold; background-color:#ffffff; }
-    .T3 { color:#2a6099; font-family:Tahoma; font-size:26pt; }
-    .T4 { color:#2a6099; font-family:Tahoma; font-size:29pt; font-weight:bold; background-color:#ffffff; }
-    .T5 { color:#2a6099; font-family:Tahoma; font-size:20pt; font-weight:bold; background-color:#ffffff; }
-    .T6 { color:#000000; font-family:Tahoma; background-color:#ffffff; }
-    .T7 { color:#000000; font-family:Tahoma; font-size:10pt; font-weight:bold; background-color:#ffffff; }
-    .T8 { color:#000000; font-family:Tahoma; font-size:10pt; background-color:#ffffff; }
-    .T9 { color:#000000; font-family:Tahoma; font-size:10pt; font-weight:normal; background-color:#ffffff; }
+    .T1 { color:#00a933;  font-size:14pt; font-weight:bold; }
+    .T10 {  background-color:#ffffff; }
+    .T2 { color:#00a933;  font-size:20pt; font-weight:bold; background-color:#ffffff; }
+    .T3 { color:#2a6099;  font-size:26pt; }
+    .T4 { color:#2a6099;  font-size:29pt; font-weight:bold; background-color:#ffffff; }
+    .T5 { color:#2a6099;  font-size:20pt; font-weight:bold; background-color:#ffffff; }
+    .T6 { color:#000000;  background-color:#ffffff; }
+    .T7 { color:#000000;  font-size:10pt; font-weight:bold; background-color:#ffffff; }
+    .T8 { color:#000000;  font-size:10pt; background-color:#ffffff; }
+    .T9 { color:#000000;  font-size:10pt; font-weight:normal; background-color:#ffffff; }
     /* ODF styles with no properties representable as CSS */
     .ListLabel_20_1 .ListLabel_20_10 .ListLabel_20_11 .ListLabel_20_12 .ListLabel_20_13 .ListLabel_20_14 .ListLabel_20_15 .ListLabel_20_16 .ListLabel_20_17 .ListLabel_20_18 .ListLabel_20_2 .ListLabel_20_3 .ListLabel_20_4 .ListLabel_20_5 .ListLabel_20_6 .ListLabel_20_7 .ListLabel_20_8 .ListLabel_20_9  { }
     </style>

@@ -22,26 +22,26 @@
     span.heading_numbering { margin-right: 0.8rem; }* { margin:0;}
     .P1 { font-size:12pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; }
     .P10 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; }
-    .P11_borderStart { font-size:6pt; line-height:150%; margin-top:0cm; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; margin-left:0.7cm; margin-right:0cm; text-indent:-0.7cm; color:#000000; background-color:#ffffff; padding-bottom:0.499cm;  border-bottom-style:none; }
-    .P11 { font-size:6pt; line-height:150%; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; margin-left:0.7cm; margin-right:0cm; text-indent:-0.7cm; color:#000000; background-color:#ffffff; padding-bottom:0.499cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
-    .P11_borderEnd { font-size:6pt; line-height:150%; margin-bottom:0.499cm; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; margin-left:0.7cm; margin-right:0cm; text-indent:-0.7cm; color:#000000; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
+    .P11_borderStart { font-size:6pt; line-height:150%; margin-top:0cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0.7cm; margin-right:0cm; text-indent:-0.7cm; color:#000000; background-color:#ffffff; padding-bottom:0.499cm;  border-bottom-style:none; }
+    .P11 { font-size:6pt; line-height:150%; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0.7cm; margin-right:0cm; text-indent:-0.7cm; color:#000000; background-color:#ffffff; padding-bottom:0.499cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
+    .P11_borderEnd { font-size:6pt; line-height:150%; margin-bottom:0.499cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0.7cm; margin-right:0cm; text-indent:-0.7cm; color:#000000; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
     .P3 { font-size:18pt; font-weight:bold; margin-bottom:0.212cm; margin-top:0.423cm; text-align:left ! important; font-family:Liberation Sans; writing-mode:horizontal-tb; direction:ltr; line-height:150%; }
     .P4 { font-size:18pt; font-weight:bold; margin-bottom:0.212cm; margin-top:0.423cm; text-align:left ! important; font-family:Liberation Sans; writing-mode:horizontal-tb; direction:ltr; line-height:150%; }
     .P5 { font-size:18pt; font-weight:bold; margin-bottom:0.212cm; margin-top:0.423cm; text-align:left ! important; font-family:Liberation Sans; writing-mode:horizontal-tb; direction:ltr; line-height:150%; }
     .P6 { font-size:12pt; margin-bottom:0cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; line-height:150%; }
-    .P7 { font-size:12pt; margin-bottom:0cm; margin-top:0cm; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; line-height:150%; }
+    .P7 { font-size:12pt; margin-bottom:0cm; margin-top:0cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; line-height:150%; }
     .P8 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; }
     .P9 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; margin-left:1.7cm; margin-right:0cm; text-indent:-0.7cm; }
     .Internet_20_link { color:#000080; text-decoration:underline; }
-    .T1 { color:#00a933; font-family:Tahoma; font-size:14pt; font-weight:bold; }
-    .T2 { color:#2a6099; font-family:Tahoma; font-size:26pt; }
-    .T3 { color:#2a6099; font-family:Tahoma; font-size:16pt; font-weight:bold; background-color:#ffffff; }
-    .T4 { color:#2a6099; font-family:Tahoma; font-size:20pt; font-weight:bold; background-color:#ffffff; }
-    .T5 { color:#000000; font-family:Tahoma; background-color:#ffffff; }
-    .T6 { color:#000000; font-family:Tahoma; font-size:10pt; font-weight:bold; background-color:#ffffff; }
-    .T7 { color:#000000; font-family:Tahoma; font-size:10pt; background-color:#ffffff; }
-    .T8 { color:#000000; font-family:Tahoma; font-size:10pt; font-weight:normal; background-color:#ffffff; }
-    .T9 { font-family:Tahoma; background-color:#ffffff; }
+    .T1 { color:#00a933;  font-size:14pt; font-weight:bold; }
+    .T2 { color:#2a6099;  font-size:26pt; }
+    .T3 { color:#2a6099;  font-size:16pt; font-weight:bold; background-color:#ffffff; }
+    .T4 { color:#2a6099;  font-size:20pt; font-weight:bold; background-color:#ffffff; }
+    .T5 { color:#000000;  background-color:#ffffff; }
+    .T6 { color:#000000;  font-size:10pt; font-weight:bold; background-color:#ffffff; }
+    .T7 { color:#000000;  font-size:10pt; background-color:#ffffff; }
+    .T8 { color:#000000;  font-size:10pt; font-weight:normal; background-color:#ffffff; }
+    .T9 {  background-color:#ffffff; }
     /* ODF styles with no properties representable as CSS */
      { }</style>
     <link rel="stylesheet" type="text/css" href="css_js/expln°style.css" />

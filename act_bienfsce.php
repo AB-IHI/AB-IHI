@@ -26,37 +26,37 @@
     .P12 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; }
     .P13 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; }
     .P14 { font-size:12pt; line-height:150%; margin-bottom:0.247cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; }
-    .P15 { font-size:10pt; line-height:150%; margin-bottom:0.247cm; margin-top:0cm; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; }
+    .P15 { font-size:10pt; line-height:150%; margin-bottom:0.247cm; margin-top:0cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; }
     .P16 { font-size:12pt; line-height:150%; margin-bottom:0.247cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; }
     .P3 { font-size:18pt; font-weight:bold; margin-bottom:0.212cm; margin-top:0.423cm; text-align:left ! important; font-family:Liberation Sans; writing-mode:horizontal-tb; direction:ltr; line-height:150%; }
     .P4 { font-size:18pt; font-weight:bold; margin-bottom:0.212cm; margin-top:0.423cm; text-align:left ! important; font-family:Liberation Sans; writing-mode:horizontal-tb; direction:ltr; line-height:150%; }
     .P5 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; }
-    .P6_borderStart { font-size:6pt; line-height:150%; margin-top:0cm; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-bottom:0.499cm;  border-bottom-style:none; }
-    .P6 { font-size:6pt; line-height:150%; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-bottom:0.499cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
-    .P6_borderEnd { font-size:6pt; line-height:150%; margin-bottom:0.499cm; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
-    .P7_borderStart { font-size:12pt; line-height:150%; margin-top:0cm; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-bottom:0.499cm;  border-bottom-style:none; }
-    .P7 { font-size:12pt; line-height:150%; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-bottom:0.499cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
-    .P7_borderEnd { font-size:12pt; line-height:150%; margin-bottom:0.499cm; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
-    .P8_borderStart { font-size:10pt; line-height:150%; margin-top:0cm; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; font-weight:bold; background-color:#ffffff; padding-bottom:0.499cm;  border-bottom-style:none; }
-    .P8 { font-size:10pt; line-height:150%; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; font-weight:bold; background-color:#ffffff; padding-bottom:0.499cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
-    .P8_borderEnd { font-size:10pt; line-height:150%; margin-bottom:0.499cm; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; font-weight:bold; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
-    .P9_borderStart { font-size:6pt; line-height:150%; margin-top:0cm; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#2a6099; font-weight:bold; background-color:#ffffff; padding-bottom:0.499cm;  border-bottom-style:none; }
-    .P9 { font-size:6pt; line-height:150%; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#2a6099; font-weight:bold; background-color:#ffffff; padding-bottom:0.499cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
-    .P9_borderEnd { font-size:6pt; line-height:150%; margin-bottom:0.499cm; text-align:left ! important; font-family:Tahoma; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#2a6099; font-weight:bold; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
+    .P6_borderStart { font-size:6pt; line-height:150%; margin-top:0cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-bottom:0.499cm;  border-bottom-style:none; }
+    .P6 { font-size:6pt; line-height:150%; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-bottom:0.499cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
+    .P6_borderEnd { font-size:6pt; line-height:150%; margin-bottom:0.499cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
+    .P7_borderStart { font-size:12pt; line-height:150%; margin-top:0cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-bottom:0.499cm;  border-bottom-style:none; }
+    .P7 { font-size:12pt; line-height:150%; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-bottom:0.499cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
+    .P7_borderEnd { font-size:12pt; line-height:150%; margin-bottom:0.499cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
+    .P8_borderStart { font-size:10pt; line-height:150%; margin-top:0cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; font-weight:bold; background-color:#ffffff; padding-bottom:0.499cm;  border-bottom-style:none; }
+    .P8 { font-size:10pt; line-height:150%; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; font-weight:bold; background-color:#ffffff; padding-bottom:0.499cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
+    .P8_borderEnd { font-size:10pt; line-height:150%; margin-bottom:0.499cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; font-weight:bold; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
+    .P9_borderStart { font-size:6pt; line-height:150%; margin-top:0cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#2a6099; font-weight:bold; background-color:#ffffff; padding-bottom:0.499cm;  border-bottom-style:none; }
+    .P9 { font-size:6pt; line-height:150%; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#2a6099; font-weight:bold; background-color:#ffffff; padding-bottom:0.499cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
+    .P9_borderEnd { font-size:6pt; line-height:150%; margin-bottom:0.499cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#2a6099; font-weight:bold; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
     .Internet_20_link { color:#000080; text-decoration:underline; }
     .ListLabel_20_1 { font-size:12pt; font-weight:normal; }
-    .T1 { color:#00a933; font-family:Tahoma; font-size:14pt; font-weight:bold; }
-    .T11 { font-family:Tahoma; background-color:#ffffff; }
-    .T12 { font-family:Tahoma; font-size:12pt; background-color:#ffffff; }
-    .T13 { font-family:Tahoma; font-size:10pt;  }
-    .T14 { font-family:Tahoma; font-size:10pt; }
-    .T2 { color:#00a933; font-family:Tahoma; font-size:14pt; font-weight:bold; }
-    .T3 { color:#2a6099; font-family:Tahoma; font-size:26pt; font-weight:bold; }
-    .T5 { color:#2a6099; font-family:Tahoma; font-size:16pt; font-weight:bold; background-color:#ffffff; }
-    .T6 { color:#000000; font-family:Tahoma; background-color:#ffffff; }
-    .T7 { color:#000000; font-family:Tahoma; font-size:12pt; font-weight:normal; background-color:#ffffff; }
-    .T8 { color:#000000; font-family:Tahoma; font-size:10pt; font-weight:bold; background-color:#ffffff; }
-    .T9 { color:#000000; font-family:Tahoma; font-size:10pt; font-weight:normal; background-color:#ffffff; }
+    .T1 { color:#00a933;  font-size:14pt; font-weight:bold; }
+    .T11 {  background-color:#ffffff; }
+    .T12 {  font-size:12pt; background-color:#ffffff; }
+    .T13 {  font-size:10pt;  }
+    .T14 {  font-size:10pt; }
+    .T2 { color:#00a933;  font-size:14pt; font-weight:bold; }
+    .T3 { color:#2a6099;  font-size:26pt; font-weight:bold; }
+    .T5 { color:#2a6099;  font-size:16pt; font-weight:bold; background-color:#ffffff; }
+    .T6 { color:#000000;  background-color:#ffffff; }
+    .T7 { color:#000000;  font-size:12pt; font-weight:normal; background-color:#ffffff; }
+    .T8 { color:#000000;  font-size:10pt; font-weight:bold; background-color:#ffffff; }
+    .T9 { color:#000000;  font-size:10pt; font-weight:normal; background-color:#ffffff; }
     /* ODF styles with no properties representable as CSS */
     .ListLabel_20_10 .ListLabel_20_11 .ListLabel_20_12 .ListLabel_20_13 .ListLabel_20_14 .ListLabel_20_15 .ListLabel_20_16 .ListLabel_20_17 .ListLabel_20_18 .ListLabel_20_19 .ListLabel_20_2 .ListLabel_20_3 .ListLabel_20_4 .ListLabel_20_5 .ListLabel_20_6 .ListLabel_20_7 .ListLabel_20_8 .ListLabel_20_9  { }
     </style>
