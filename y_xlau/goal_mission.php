@@ -45,7 +45,7 @@
     .ListLabel_20_8 { font-size:12pt; }
     .ListLabel_20_9 { font-size:12pt; }
     .T1 {  font-size:12pt; font-weight:normal; background-color:#ffffff; }
-    .T2 {  font-size:12pt; background-color:#ffffff; }
+    
     .T3 {  background-color:#ffffff; }
     .T4 { color:#2a6099;  font-size:12pt; font-weight:bold; background-color:#ffffff; }
     .T5 { color:#2a6099;  font-size:20pt; font-weight:bold; background-color:#ffffff; }
