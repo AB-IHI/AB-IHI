@@ -16,7 +16,7 @@
         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> IHI </a>
         <ul class="dropdown-menu">
             <li><a class="dropdown-item go_to_section" href="?page=home#quiSN"> Qui sommes nous </a></li>
-            <li><a class="dropdown-item go_to_section" href="?page=home#progH">Programmes </a></li>
+            <li><a class="dropdown-item go_to_section" href="?page=home#progH">Nos activités </a></li>
             <li><a class="dropdown-item go_to_section" href="?page=home#ofs">Office </a></li>
             <li><a class="dropdown-item go_to_section" href="?page=home#contact">Contactez nous </a></li>
         </ul>
