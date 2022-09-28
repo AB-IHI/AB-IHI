@@ -93,7 +93,7 @@
 <article class="article">
     <div class="container px-4 py-5">
         <div id="featured" class="d-flex align-items-center justify-content-center">
-            <a id="a_​_Voir_" href="y_storage/Règlement sur les bénévoles.pdf"><div class="T2 Tcustom">Voir+</div></a>
+            <a id="a_​_Voir_" href="y_storage/Règlement sur les bénévoles.pdf"><div class="T2 Tcustom">Lien vers le texte intégral</div></a>
             <h1 class="T4U Tcustom pb-2 border-bottom ">Devenir bénévole </h1>
         
         <div class="">
@@ -179,7 +179,7 @@
    <article class="article">
        <div class="container px-4 py-5">
            <div class="d-flex align-items-center justify-content-center">
-               <a id="a_​_Voir_" href="/y_storage/Règlement sur les bénévoles.pdf"><div class="T2">Voir+</div></a>
+               <a id="a_​_Voir_" href="/y_storage/Règlement sur les bénévoles.pdf"><div class="T2">Lien vers le texte intégral</div></a>
                <h1 id="featured-2" class="T4">Droits du bénévole</h1>
                <div class="row-p g-4 py-1 row-cols-1 row-cols-lg-1">
                    <div class="wrapper">
@@ -207,7 +207,7 @@
    <article class="article">
        <div class="container px-4 py-5">
            <div class="d-flex align-items-center justify-content-center">
-    <a id="a_​_Voir_" href="/y_storage/Règlement sur les bénévoles.pdf"><div class="T2">Voir+</div></a> 
+    <a id="a_​_Voir_" href="/y_storage/Règlement sur les bénévoles.pdf"><div class="T2">Lien vers le texte intégral</div></a> 
     <h1 id="featured-3" class="T4">Devoirs du bénévole</h1>
 <div class="wrapper">
     <p>
@@ -229,7 +229,7 @@
     </p>
 </div>
 
-    <a id="a_​_Voir_" href="y_storage/Règlement sur les bénévoles.pdf"><div class="T2">Voir+</div></a> 
+    <a id="a_​_Voir_" href="y_storage/Règlement sur les bénévoles.pdf"><div class="T2">Lien vers le texte intégral</div></a> 
     </p>
 
 </div>

@@ -101,7 +101,7 @@
 <article class="article">
     <div class="container px-4 py-5">
         <div id="featured" class="d-flex align-items-center justify-content-center">
-            <a id="a_​_Voir_" href="y_storage/Règlement sur les bénévoles.pdf"><div class="T2 Tcustom">Voir+</div></a>
+            <a id="a_​_Voir_" href="y_storage/Règlement sur les bénévoles.pdf"><div class="T2 Tcustom">Lien vers le texte intégral</div></a>
             <h1 class="T4 Tcustom pb-2 border-bottom ">​ Dons faits au profit d'organismes étrangers   </h1>
         
         <div class="">
