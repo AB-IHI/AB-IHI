@@ -31,7 +31,7 @@
     .P6 { font-size:12pt; margin-bottom:0cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; line-height:150%; }
     .P7 { font-size:12pt; margin-bottom:0cm; margin-top:0cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; line-height:150%; }
     .P8 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; }
-    .P9 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; margin-left:1.7cm; margin-right:0cm; text-indent:-0.7cm; }
+    .P9 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr;  margin-right:0cm; text-indent:-0.7cm; }
     .Internet_20_link { color:#000080; text-decoration:underline; }
     .T1 { color:#00a933;  font-size:14pt; font-weight:bold; }
     .T2 { color:#2a6099;  font-size:26pt; }
