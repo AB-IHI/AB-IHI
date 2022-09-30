@@ -41,7 +41,7 @@
     <li class="nav-item dropdown">
         <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Bénéficiaires</a>
         <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href=".?explain=act_bienfsce"> Situation précaire ou difficile</a></li>
+            <li><a class="dropdown-item" href=".?explain=Benef"> Situation précaire ou difficile</a></li>
             
 
         </ul>
