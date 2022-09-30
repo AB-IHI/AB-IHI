@@ -23,13 +23,26 @@
     </li>
 </ul>
 
+
+<ul class="navbar-nav">
+
+<li class="nav-item dropdown">
+    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Nos missions </a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href=".?explain=act_bienfsce"> Règlement sur les missions</a></li>
+        <li><a class="dropdown-item" href=".?explain=lau"> L'aube de l'espoir</a></li>
+
+    </ul>
+</li>
+</ul>
+
 <ul class="navbar-nav">
 
     <li class="nav-item dropdown">
-        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Nos missions </a>
+        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Bénéficiaires</a>
         <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href=".?explain=act_bienfsce"> Règlement sur les missions</a></li>
-            <li><a class="dropdown-item" href=".?explain=lau"> L'aube de l'espoir</a></li>
+            <li><a class="dropdown-item" href=".?explain=act_bienfsce"> Situation précaire ou difficile</a></li>
+            
 
         </ul>
     </li>
