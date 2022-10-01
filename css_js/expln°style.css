@@ -298,28 +298,37 @@ html {
   background-color: #ffffff;
 }
 
-ol {
-  margin-left: 27px;
+
+
+/* div ul li {
+  text-indent: 0.7px;
+} */
+
+ol li {
+  margin-bottom: 0.499cm;
+  margin-left: 68px;
 }
 
-ol li, l li {
+l li {
   margin-bottom: 0.499cm;
 }
 
-ul li {
+:not(ol) > ul li {    /*  exemple liste*/
   margin-bottom: 0.499cm;
-  margin-left: 109px;
+  margin-left: 59px;
+
+  text-indent: 0.7px;
 }
 
-ol ul li {
+ ul li {
   margin-bottom: 0.499cm;
-  margin-left: 139px;
+  margin-left: 79px;
   list-style-type: disc;
 }
-li {
+/* li {
   list-style: inherit;
-  margin-left: 7px;
-}
+  margin-left: px;
+} */
 
 .show_list {
   list-style: inside !important;
@@ -346,8 +355,7 @@ li {
   margin-bottom: 15px;
 }
 
-#custom_ul,
-.custom_ul {
+#custom_ul,.custom_ul {
   /* margin-left: 82px; */
 }
 
@@ -355,8 +363,7 @@ li {
   /* margin-left: 109px; */
 }
 
-#custom_ul_end,
-.custom_ul_end {
+#custom_ul_end,.custom_ul_end {
   /* margin-left: 48px; */
 }
 

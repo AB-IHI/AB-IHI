@@ -14,7 +14,7 @@
     td, th { vertical-align:top; font-size:12pt;}
     h1, h2, h3, h4, h5, h6 { clear:both;}
     ol, ul { margin:0; padding:0;}
-    li { list-style: none; margin:0; padding:0;}
+    /* li { list-style: none; margin:0; padding:0;} */
     /* "li span.odfLiEnd" - IE 7 issue*/
     li span { clear: both; line-height:0; width:0; height:0; margin:0; padding:0; }
     span.footnodeNumber { padding-right:1em; }

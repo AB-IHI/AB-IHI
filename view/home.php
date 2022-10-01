@@ -112,12 +112,12 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
                 </p>
 
                 <ul class="hide_list ">
-                    <li class=" hide_list horiz_spacin" style="margin-left: 2cm">
+                    <li class=" hide_list horiz_spacin" >
                     <p>
                         1)  mise en œuvre de programmes humanitaires visant les actions d'urgence ainsi que les actions requises en vue de la satisfaction
                         des besoins indispensables des populations en situation de détresse ou de misère et en vue de contribuer à leur insertion sociale ;
                     </p></li>
-                <li class="hide_list horiz_spacin" style="margin-left: 2cm">
+                <li class="hide_list horiz_spacin" >
                 <p>
                     2)  la promotion des idées d'humanisme, la coordination des efforts et l’interaction en matière de réponse humanitaire avec d'autres
                     associations, organismes internationaux et étatiques, ainsi qu'avec des administrations territoriales.
