@@ -656,6 +656,10 @@ select.form-control:focus::-ms-value {
     font-size: 2.9rem !important;
   }
 
+  ol ul li {
+    margin-left: 108px;
+  }
+
   li {
     font-size: 2.9rem;
   }
@@ -698,8 +702,7 @@ select.form-control:focus::-ms-value {
     display: block;
   }
 
-  .mobile-offcanvas,
-  .hidetitl {
+  .mobile-offcanvas,  .hidetitl {
     visibility: hidden;
     transform: translateX(-100%);
     border-radius: 0;
@@ -719,8 +722,7 @@ select.form-control:focus::-ms-value {
     visibility: visible;
     transform: translateX(0);
   }
-  .mobile-offcanvas .container,
-  .mobile-offcanvas .container-fluid {
+  .mobile-offcanvas .container,  .mobile-offcanvas .container-fluid {
     display: block;
     width: 80%;
     height: 100vw;
@@ -729,8 +731,7 @@ select.form-control:focus::-ms-value {
   #nav_top {
     margin-top: 0px;
   }
-  #nav_top,
-  #button_contenu {
+  #nav_top,  #button_contenu {
     visibility: hidden;
   }
 
@@ -758,8 +759,7 @@ select.form-control:focus::-ms-value {
     top: 0px;
   }
 
-  .btn-lg,
-  .btn-group-lg > .btn {
+  .btn-lg,  .btn-group-lg > .btn {
     padding: 0.5rem 1rem !important;
     font-size: 4.25rem !important;
     border-radius: 0.3rem !important;
@@ -769,8 +769,7 @@ select.form-control:focus::-ms-value {
     margin-top: 25%;
   }
 
-  .nav-link,
-  .dropdown-item {
+  .nav-link,  .dropdown-item {
     font-size: 50px;
     height: 120px;
   }
@@ -783,8 +782,7 @@ select.form-control:focus::-ms-value {
     margin-right: 15%;
   }
 
-  .btn-close,
-  .offcanvas-header {
+  .btn-close, .offcanvas-header {
     margin-right: 15%;
   }
 
