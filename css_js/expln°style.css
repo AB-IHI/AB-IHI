@@ -660,6 +660,11 @@ select.form-control:focus::-ms-value {
     margin-left: 108px;
   }
 
+  ol li { /* goal mission indent 1)*/
+    text-indent: -37px;
+    margin-left: 91px;
+  }
+
   li {
     font-size: 2.9rem;
   }
