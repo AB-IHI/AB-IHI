@@ -39,7 +39,7 @@
 <ul class="navbar-nav">
 
     <li class="nav-item dropdown">
-        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Bénéficiaires</a>
+        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Éligibilité à l'aide</a>
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href=".?explain=Benef"> Situation précaire ou difficile</a></li>
             
