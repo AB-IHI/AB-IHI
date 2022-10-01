@@ -306,17 +306,17 @@ html {
 
 ol li {
   margin-bottom: 0.499cm;
-  margin-left: 68px;
+  margin-left: 106px;
+  text-indent: -34px;
 }
 
 l li {
   margin-bottom: 0.499cm;
 }
 
-:not(ol) > ul li {    /*  exemple liste*/
+ul li {    /*  exemple liste   :not(ol) > */
   margin-bottom: 0.499cm;
   margin-left: 59px;
-
   text-indent: 0.7px;
 }
 
@@ -657,10 +657,28 @@ select.form-control:focus::-ms-value {
   }
 
   ol ul li {
-    margin-left: 108px;
+    margin-left: 145px;
   }
 
-  ol li { /* goal mission indent 1)*/
+  ol li {
+    margin-bottom: 0.499cm;
+    margin-left: 106px;
+    text-indent: -34px;
+  }
+
+  ul li {
+    margin-bottom: 0.499cm;
+    margin-left: 79px;
+    list-style-type: disc;
+  }
+
+  ul li {    /*  exemple liste   :not(ol) > */
+    margin-bottom: 0.499cm;
+    margin-left: 59px;
+    text-indent: 0.7px;
+  }
+
+  ol > :not(ul) li { /* goal mission indent 1)*/
     text-indent: -37px;
     margin-left: 91px;
   }
