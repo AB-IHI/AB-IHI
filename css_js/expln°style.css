@@ -278,7 +278,7 @@ html {
   font-size: 26pt;
 }
 
-.T12U {
+.T12U { /* universel used at the end for small bold text*/
   color: #000000;
   font-family: Tahoma;
   font-size: 10pt;
@@ -286,7 +286,7 @@ html {
   font-weight: bold;
 }
 
-.T01U {
+.T01U { /* universel */
     font-size: 12pt;
     font-weight: normal;
     background-color: #ffffff;
