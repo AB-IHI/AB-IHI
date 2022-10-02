@@ -306,7 +306,7 @@ html {
 
 ol li {
   margin-bottom: 0.499cm;
-  margin-left: 106px;
+  margin-left: 67px;
   text-indent: -34px;
 }
 
@@ -322,8 +322,12 @@ ul li {    /*  exemple liste   :not(ol) > */
 
  ul li {
   margin-bottom: 0.499cm;
-  margin-left: 79px;
+  margin-left: 60px;
   list-style-type: disc;
+}
+
+ol ul li {
+  margin-left: 98px;
 }
 /* li {
   list-style: inherit;
