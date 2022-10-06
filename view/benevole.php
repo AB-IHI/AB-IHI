@@ -61,20 +61,6 @@
 </table>";
                     ?>
 
-<!-- form if no rib then echo-->
-<!-- <div action="." method="post" class="signin-form">
-    <input type="hidden" name="action" value="add_rib">
-            <div class="col-12">
-        <div class="form-group <?php echo (!empty($rib_err)) ? 'has-error' : ''; ?>">
-                      <label for=""> pour remboursement les depenses du benevole entrez votre RIB</label>  
-        <input type="rib" name="rib" class="form-control btn-lg" id="pw" value="<?php echo $rib; ?>" placeholder=" rib" required="">
-        <span class="help-block"><?php echo $rib_err; ?></span>
-        
-        </div>
-      <button type="submit" class="btn btn-primary">Mettre à jour</button>
-    </div>
-</div> -->
-
 
 
                 </right_div>

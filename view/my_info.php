@@ -94,7 +94,7 @@
 
                 <div class="form-group <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>">
 
-                    <input type="email" name="email" class="form-control btn-lg" id="pw" value="<?php echo $email; ?>" placeholder=" email" required="">
+                    <input type="email" name="email" class="form-control btn-lg" id="pw" value="<?php echo $email; ?>" placeholder=" email" >
                     <span class="help-block"><?php echo $email_err; ?></span>
                     <!-- <div class="invalid-feedback">
             email is required.-->

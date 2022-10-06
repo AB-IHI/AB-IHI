@@ -65,7 +65,7 @@ if (isset($_POST["action"])) {
 
             // Validate email
             if (empty(trim($_POST["email"]))) {
-                $email_err = "Please enter a email.";
+                // $email_err = "Please enter a email.";
             } else {
                 $email = trim($_POST["email"]);
                 if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -109,7 +109,7 @@ if (isset($_POST["action"])) {
 
                 if ($stmt = mysqli_prepare($c, $sql)) {
                     // Bind variables to the prepared statement as parameters
-                    mysqli_stmt_bind_param($stmt, "sssssss", $passport, $date, $pays, $adress, $email, $telephone, $rib, $_SESSION['id_user']);
+                    mysqli_stmt_bind_param($stmt, "ssssssss", $passport, $date, $pays, $adress, $email, $telephone, $rib, $_SESSION['id_user']);
 
                     // Set parameters, useless
                     // $param_username = $username;
