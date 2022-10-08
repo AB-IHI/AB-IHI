@@ -30,7 +30,7 @@
                         Liste des dossiers en cours
                     </p>
                     <?php
-                    $sql = "SELECT * FROM dossier";
+                    $sql = "SELECT * FROM dossier Where id_benevole =". $_SESSION['id_user'] ;
 
                     $result = mysqli_query($c, $sql);
 
@@ -44,14 +44,19 @@
                     echo "<td class='margin'> dossier </td>";
 
                     echo "</tr>";
-                    $i = 0;
+                    // $i = 0;
                     while ($row = mysqli_fetch_assoc($result)) {
-                        $i++;
+                        // $i++;
 
                         echo "<tr class='margin'>";
-                        echo "<td class='margin'>" . $i . "</td>";
+                        $var2 = htmlspecialchars($row["id"], ENT_QUOTES, 'UTF-8');
+                        echo "<td class='margin'>" . $var2 . "</td>";
                         $var3 = htmlspecialchars($row["nom"], ENT_QUOTES, 'UTF-8');
-                        echo "<td class='margin'>" . $var3 . "</td>";
+                        echo "<td class='margin'><a href=?id_benef=" .$var2 .">
+                            " .
+                            $var3
+                            . "
+                        </a></td>";
 
 
 
@@ -60,6 +65,29 @@
                     echo "</tbody>
 </table>";
                     ?>
+            <form action="." method="post" class="signin-form">
+                <input type="hidden" name="action" value="cree_fldr">
+                <div class="col-12">
+
+                    <div class="col-12 <?php echo (!empty($nom_folder_err)) ? 'has-error' : ''; ?>">
+                        <input type="text" class="form-control btn-lg" name="nom_fldr" id="nom_fldr" value="<?php //echo $nom; 
+                                                            ?>" placeholder="  " required="">
+                        <span class="help-block"><?php echo $nom_folder_err; 
+                                                    ?></span>
+                        <!-- <div class="invalid-feedback ">
+                            passeport is required.
+                        </div> -->
+
+                        
+                    </div>
+
+                </div>
+
+
+                <input type="submit" class=" cnx-sub btn_dem btn-lg mx-auto btn-outline-dark" value="creer dossier">
+
+            </form>
+
 
 
 
@@ -108,6 +136,8 @@ echo '                <svg xmlns="http://www.w3.org/2000/svg" width="160" height
 $sql = "SELECT * FROM users where users.id = $var";
 
                 $result = mysqli_query($c, $sql);
+
+                mysqli_close($c);
 
                 // 3/3 -> AFFICHAGE
                 // Récupère chaque ligne de la BD dans un tableau "$row"
