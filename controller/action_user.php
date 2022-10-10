@@ -11,6 +11,110 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     //exit;
 }
 
+
+// Define variables and initialize with empty values
+$nom_fldr = "";
+$nom_folder_err = "";
+
+if (isset($_POST["action"])) {
+
+    if ($_POST["action"] == "cree_fldr") {
+        $_SESSION['page'] = "benevole";
+        // Processing form data when form is submitted
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+            // Validate username
+            // if (empty(trim($_POST["username"]))) {
+                // $username_err = "Please enter a username.";
+            // } else {
+                // Prepare a select statement
+                // $sql = "SELECT id FROM users WHERE username = ?";
+// 
+                // if ($stmt = mysqli_prepare($c, $sql)) {
+                    // Bind variables to the prepared statement as parameters
+                    // mysqli_stmt_bind_param($stmt, "s", $param_username);
+// 
+                    // Set parameters
+                    // $param_username = trim($_POST["username"]);
+// 
+                    // Attempt to execute the prepared statement
+                    // if (mysqli_stmt_execute($stmt)) {
+                        // /* store result */
+                        // mysqli_stmt_store_result($stmt);
+// 
+                        // if (mysqli_stmt_num_rows($stmt) == 1) {
+                            // $username_err = "This username is already taken.";
+                        // } else {
+                            // $username = trim($_POST["username"]);
+                        // }
+                    // } else {
+                        // echo "1Oops! Something went wrong. Please try again later.";
+                        // var_dump($stmt);
+                    // }
+// 
+                    // Close statement
+                    // mysqli_stmt_close($stmt);
+                // }
+            // }
+// 
+            
+
+            // Validate nom
+            if (empty(trim($_POST["nom_fldr"]))) {
+                $nom_folder_err = "Please enter a nom.";
+            } elseif (strlen(trim($_POST["nom_fldr"])) < 2) {
+                $nom__folder_err = "nom must have atleast 2 characters.";
+            } else {
+                $nom_fldr = trim($_POST["nom_fldr"]);
+            }
+            // var_dump($password_err);
+           
+
+          
+
+
+            // Check input errors before inserting in database
+            if (
+                empty($nom_folder_err)
+            ) {
+
+                // Prepare an insert statement
+                $sql = "INSERT INTO `dossier` (`nom`, `id_benevole`) VALUES ( ?, ?)"; 
+                // $sql = "INSERT INTO dossier (nom_fldr) VALUES (?)";
+
+                if ($stmt = mysqli_prepare($c, $sql)) {
+                    // Bind variables to the prepared statement as parameters
+                    mysqli_stmt_bind_param($stmt, "ss", $param_nom_fldr, $_SESSION['id_user']);
+
+                    // Set parameters
+                    $param_nom_fldr = $nom_fldr;
+
+                    // Attempt to execute the prepared statement
+                    if (mysqli_stmt_execute($stmt)) {
+                        // Redirect to login page
+                        // header("location: login.php");
+                        $_SESSION['page'] = 'benevole';
+                        echo "executed 1";
+                    } else {
+                        echo "executed 2";
+                        echo "2Something went wrong. Please try again later.";
+                    }
+
+                    // Close statement
+                    mysqli_stmt_close($stmt);
+                }
+            }
+
+            // Close connection
+            
+        }
+    }
+}
+
+
+// end of create folder
+
+
 // update user info / add more personal data
 
 // Define variables and initialize with empty values

@@ -19,6 +19,7 @@
             <li><a class="dropdown-item go_to_section" href="?page=home#progH">Nos activités </a></li>
             <li><a class="dropdown-item go_to_section" href="?page=home#ofs">Office </a></li>
             <li><a class="dropdown-item go_to_section" href="?page=home#contact">Contactez nous </a></li>
+            <li><a class="dropdown-item go_to_section" href="y_storage/1. Politique de protection des données personnelles.pdf">Protection de données </a></li>
         </ul>
     </li>
 </ul>

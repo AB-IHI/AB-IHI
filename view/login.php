@@ -18,7 +18,7 @@
             </div>
 
             <div class="col-12 <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                <label for="pw" class="form-label ">mot de passes</label>
+                <label for="pw" class="form-label ">mot de passe</label>
                 <input type="password" name="password" class="form-control btn-lg " id="pw" placeholder="mot de passe" required="">
                 <span class="help-block"><?php echo $password_err; ?></span>
                 <!-- <div class="invalid-feedback">
