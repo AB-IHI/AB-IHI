@@ -30,8 +30,8 @@
                         Liste des dossiers en cours
                     </p>
                     <?php
-                    $sql = "SELECT * FROM dossier Where id_benevole =". $_SESSION['id_user'] ;
-
+                    $sql = "SELECT * FROM dossier Where id_benevole =". $_SESSION['id_user'] ."";
+                    var_dump($sql);
                     $result = mysqli_query($c, $sql);
 
 
@@ -107,6 +107,7 @@
                 <h1 class="">
                     Benevole
                 </h1>
+                <a href="?page=logout">Deconnexion</a>
                 <left_div>
                     
                     <div>
