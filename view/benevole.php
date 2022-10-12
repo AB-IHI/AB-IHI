@@ -31,7 +31,7 @@
                     </p>
                     <?php
                     $sql = "SELECT * FROM dossier Where id_benevole =". $_SESSION['id_user'] ."";
-                    var_dump($sql);
+                    // var_dump($sql);
                     $result = mysqli_query($c, $sql);
 
 
