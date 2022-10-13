@@ -329,6 +329,10 @@ ul li {    /*  exemple liste   :not(ol) > */
 ol ul li {
   margin-left: 98px;
 }
+
+ol ol li {
+  margin-left: 98px;
+}
 /* li {
   list-style: inherit;
   margin-left: px;
