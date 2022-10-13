@@ -45,7 +45,7 @@ y_storage/1. L'aube de l'espoir.pdf">Lien vers le texte intégral</a></div>
   <p class="bottom_space P4"> <a href="y_xlau/finance.php"><span class="T5">Budget et sources de financement</span>                     </a>             </p>
   <p class="bottom_space P4"> <a href="y_xlau/admiss.php"><span class="T5">Admissibilité à l'aide</span>                      </a>                          </p>
   <p class="bottom_space P4"> <a href="y_xlau/interact.php"><span class="T5">Interaction des participants à la mission</span>                 </a>         </p>
-  <p class="bottom_space P11"><a href="y_xlau/act_intern°.php"><span class="T5">Activités de bienfaisance et humanitaires internationales</span></a></p>
+  <p class="bottom_space P11"><a href=".?explain=Act_internat°al"><span class="T5">Activités de bienfaisance et humanitaires internationales</span></a></p>
   <p class="bottom_space P4"> <a href="y_xlau/dec&ctrl.php"><span class="T5">Procédure de déclaration et de contrôle</span>                 </a>       </p>
   <p class="P7"> </p>
   <p class="P5">&nbsp;</p>
