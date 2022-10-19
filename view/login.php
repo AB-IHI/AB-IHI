@@ -31,8 +31,8 @@
 
         </div>
 
-        <!-- <input type="submit" class="cnx-sub btn_dem btn-lg mx-auto btn-outline-dark" value="connexion"> -->
-        <a href="?page=dev"><input class="cnx-sub btn_dem btn-lg  btn-outline-dark" value="connexion">Retour</a>
+        <input type="submit" class="cnx-sub btn_dem btn-lg mx-auto btn-outline-dark" value="connexion">
+        <!-- <a href="?page=dev"><input class="cnx-sub btn_dem btn-lg  btn-outline-dark" value="connexion">Retour</a> -->
 
     </form>
 
