@@ -91,10 +91,9 @@
 <ul class="navbar-nav">
 
     <li class="nav-item dropdown">
-        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> FAQ </a>
+        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Information utile </a>
         <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#"> </a></li>
-            <li><a class="dropdown-item" href="#"> </a></li>
+            <li><a class="dropdown-item" href="https://www.annecy-ukraine.org/uk/otrymaty-dopomohu/">Отримати допомогу</a></li>
 
         </ul>
     </li>
