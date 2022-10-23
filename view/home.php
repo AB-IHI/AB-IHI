@@ -104,11 +104,11 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 
 
                 <p>
-                Les <a href="?explain="> activités de bienfaisance</a> de l'Association sont menées dans le cadre de projets de bienfaisance – il s'agit d'actions n'ayant pas un caractère d'intérêt personnel, visant à améliorer les conditions de vie de personnes en situation précaire ou difficile.                </p>
+                Les <a href="?explain=lau"> activités de bienfaisance</a> de l'Association sont menées dans le cadre de projets de bienfaisance – il s'agit d'actions n'ayant pas un caractère d'intérêt personnel, visant à améliorer les conditions de vie de personnes en situation précaire ou difficile.                </p>
                 <p> Les situations précaires ou difficiles des personnes visées ne recouvrent pas systématiquement le niveau de ressources de ces personnes. Il peut s’agir du handicap, de la maladie, de l’isolement, de la vieillesse, de la discrimination, etc.
                 </p>
                 <p>
-                L'<a href="">activité humanitaire</a> de l'Association consiste en :
+                L'<a href="y_storage/1. Protection temporaire.pdf">activité humanitaire</a> de l'Association consiste en :
                 </p>
 
                 <ul class="hide_list ">
