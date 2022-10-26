@@ -102,9 +102,9 @@
 <ul class="navbar-nav">
 
     <li class="nav-item dropdown">
-        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Je veux aider gouv </a>
+        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Mentions légales </a>
         <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="https://www.jeveuxaider.gouv.fr/organisations/14315-initiative-humanitaire-international">Site du gouv</a></li>
+            <li><a class="dropdown-item" href="https://www.jeveuxaider.gouv.fr/organisations/14315-initiative-humanitaire-international">Je veux aider gouv fr</a></li>
 
         </ul>
     </li>
