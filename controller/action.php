@@ -6,6 +6,8 @@
 // include_once "action_user.php";
 // include_once "action_media.php";
 
+
+
 if (!isset($_SESSION['view']) or !isset($_SESSION['loggedin']) or $_SESSION["loggedin"] != true) { // test almost same if above
 
     $_SESSION['view'] = 'view';
@@ -56,6 +58,11 @@ if (!isset($_GET['page'])) { // test almost same if below but both needed
     if (isset($_SESSION['loggedin']) && $_SESSION["loggedin"] == true) {
         $_SESSION['view'] = 'volunteer';
         $_SESSION['page'] = 'benevole';
+        if (isset($_POST["action"])) {
+            if ($_POST["action"] == "ajout_pic") {
+                include_once "upload.php";      // will self check that there is an upload
+            }
+        }
     }
 }
 

@@ -123,9 +123,7 @@
                 // gettype($_SESSION['id_user']);
                 $var = strval($_SESSION['id_user']);
 
-echo '                <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
-</svg>';
+
                 
 ?>
 
@@ -151,22 +149,17 @@ $sql = "SELECT * FROM users where users.id = $var";
                 // 3/3 -> AFFICHAGE
                 // Récupère chaque ligne de la BD dans un tableau "$row"
                 $row = mysqli_fetch_assoc($result);
+$photo = htmlspecialchars($row["photo"], ENT_QUOTES, 'UTF-8');
+echo '<img src="uploads/'. $photo  .'" alt="My profile pic">';
 
                 $prenom = htmlspecialchars($row["prenom"], ENT_QUOTES, 'UTF-8');
                 
                 $nom = htmlspecialchars($row["nom"], ENT_QUOTES, 'UTF-8');
                 echo " <div class='mb-3 '>
                  <label for='formFile' class='form-label'>" . $prenom . " ". $nom ."</label></div>";
-                    echo '
-                    <form action="."  method="post">
-    <div class="mb-3" >
-    <input type="hidden" name="action" value="info_update_photo">
-      <p> Ajouter Photo</p>
-      <input class="form-control" type="file" id="formFile">
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
-</form>
-';
+
+                    include_once "upload.php";
+
                 echo "<h2><a href='.?page=my_info'>Mes informations</a>.</h2>";
                 
                 echo "<table class='table table-responsive table-hover w-100 d-block'>

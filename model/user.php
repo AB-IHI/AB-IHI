@@ -2,6 +2,45 @@
 //M : Modèle = ensemble de fonctions (chargement, affichages, ajout dans la base de données, ...).
 
 
+function pic_db($c, $file_name )
+{
+
+
+    // Prepare an insert statement UPDATE `users` SET `date` = '11/01/02' WHERE `users`.`id` = 4;
+
+    $sql = "UPDATE users SET photo =? WHERE users.id=?";
+
+    if ($stmt = mysqli_prepare($c, $sql)) {
+        // Bind variables to the prepared statement as parameters
+        mysqli_stmt_bind_param($stmt, "ss", $photo, $_SESSION['id_user']);
+
+        // Set parameters, useless
+        $photo = $file_name;
+        // $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
+
+        // Attempt to execute the prepared statement
+        if (mysqli_stmt_execute($stmt)) {
+            // Redirect to login page
+            // header("location: login.php");
+//            $_SESSION['page'] = 'benevole';
+            echo "added to db";
+//            var_dump($stmt);
+        } else {
+            echo "2Something went wrong. Please try again later.";
+//            var_dump($stmt);
+        }
+
+        // Close statement
+        mysqli_stmt_close($stmt);
+    }
+
+    // Close connection
+    // mysqli_close($c);
+//    var_dump($stmt);
+
+
+}
+
 
 function dispo_in_db($email, $type, $c)
 {
@@ -32,16 +71,6 @@ function ajouterUserInfo($c)
 }
 
 
-
-
-
-
-
-
-
-
-
-
 // old functions
 
 function ajouterUser($user, $email, $mdp)
@@ -54,9 +83,6 @@ function ajouterUser($user, $email, $mdp)
     $sql = "INSERT INTO `users` (`id`, `nick`, `mdp`, `role`, `email`) VALUES (NULL, '$nick', '$mdp', '', '$email');";
     mysqli_query($c, $sql);
 }
-
-
-
 
 
 function delete_user_db()
@@ -85,7 +111,6 @@ function dispo_pseudo($user)
     $row = mysqli_fetch_assoc($resultat);
     return mysqli_num_rows($resultat) == 0;
 }
-
 
 
 function recup_id_user($user)
