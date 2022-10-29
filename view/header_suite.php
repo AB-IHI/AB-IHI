@@ -1,4 +1,4 @@
-<nav id="navbar_top" class="mobile-offcanvas navbar navbar-expand-lg navbar-light    bg-light border-bottom">
+<nav id="navbar_top" class="mobile-offcanvas navbar navbar-expand-lg navbar-light    bg-light border-bottom ms-auto">
     <div class="container-fluid hstack gap-5">
         <div class="offcanvas-header">
             <button class="btn-close float-end btn-xl-right "></button>
@@ -16,18 +16,11 @@ include "inside_nav.php";
 
         <ul class="navbar-nav ms-auto">
             <!--right space (ms-auto) automatically pushes to the left until equilibrium with the 1st ms-auto on the left-->
-            <li class="nav-item"><a href="#" class="nav-link link-dark px-2 small">English</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2 small"></a></li>
         </ul>
 
 
-        <ul class="navbar-nav hid_btn_xl">
-            <li class="nav-item">
-                <div class="dropdown">
-                    <!-- failed attempt wrong place anyways -->
 
-                </div>
-            </li>
-        </ul>
 
     </div> <!-- container-fluid.// -->
 </nav>

@@ -55,13 +55,13 @@
         <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Mécénat </a>
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href=".?explain=mecenes">Mècènes </a></li>
-            <li><a class="dropdown-item" href=".?explain=fisc_mecenat">Le régime fiscal </a></li>
+            <li><a class="dropdown-item" href=".?explain=parrains">Parrain </a></li>
             <li><a class="dropdown-item" href=".?explain=Act_internat°al">Activités internationales </a></li>
         </ul>
     </li>
 </ul>
 
-<ul class="navbar-nav">
+<!--<ul class="navbar-nav">
 
     <li class="nav-item dropdown">
         <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Parrainage </a>
@@ -71,7 +71,7 @@
 
         </ul>
     </li>
-</ul>
+</ul>-->
 
 <ul class="navbar-nav">
 

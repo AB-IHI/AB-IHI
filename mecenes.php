@@ -70,7 +70,8 @@
 
 <div id="" class=" d-flex align-items-center justify-content-center">
     <?php 
-    include_once "1. Mécènes.html"; 
+    include_once "1. Mécènes.html";
+    include_once "fisc_mecenat.php";
     ?>
 </div>
 
