@@ -282,6 +282,8 @@ html {
   list-style: none;
 }
 
+
+
 .horiz_spacin {
   text-indent: -0.7cm;
   margin-bottom: 15px;
@@ -454,6 +456,10 @@ select.form-control:focus::-ms-value {
 /* manages the multi level of the dropdown */
 
 @media all and (min-width: 992px) {
+  .hide_when_not_mobile {
+    display: none;
+  }
+
   .dropdown-menu li {
     position: relative;
   }

@@ -1,12 +1,14 @@
+<!--headersuite-->
 <nav id="navbar_top" class="mobile-offcanvas navbar navbar-expand-lg navbar-light    bg-light border-bottom ms-auto">
-    <div class="container-fluid hstack gap-5">
+    <div class="bg-light ms-auto">
+        <!--Left space (col-md-1) automatically pushes to the right until equilibrium with the 2 ms-auto on the right-->
+    </div>
+    <div class="d-flex justify-content-center py-3">
         <div class="offcanvas-header">
             <button class="btn-close float-end btn-xl-right "></button>
         </div>
 
-        <div class="bg-light col-md-1">
-            <!--Left space (col-md-1) automatically pushes to the right until equilibrium with the 2 ms-auto on the right-->
-        </div>
+
 <?php
 include "inside_nav.php";
 ?>
@@ -19,10 +21,26 @@ include "inside_nav.php";
             <li class="nav-item"><a href="#" class="nav-link link-dark px-2 small"></a></li>
         </ul>
 
+        <ul class="navbar-nav hid_btn_xl">
+            <li class="nav-item">
+                <div class="dropdown">
+                    <button href="index.php?page=connexion" class="nav-link  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Connexion
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href=".?page=login">Entrer</a></li>
+                        <li><a class="dropdown-item" href=".?page=register">Créer mon compte</a></li>
 
+                    </ul>
+                </div>
+            </li>
+        </ul>
 
 
     </div> <!-- container-fluid.// -->
+    <div class="bg-light ms-auto">
+        <!--Left space (col-md-1) automatically pushes to the right until equilibrium with the 2 ms-auto on the right-->
+    </div>
 </nav>
 
 
