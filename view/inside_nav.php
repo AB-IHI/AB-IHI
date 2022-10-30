@@ -52,7 +52,7 @@
 <ul class="navbar-nav">
 
     <li class="nav-item dropdown">
-        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Mécénat </a>
+        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Donateurs </a>
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href=".?explain=mecenes">Mècènes </a></li>
             <li><a class="dropdown-item" href=".?explain=parrains">Parrain </a></li>
