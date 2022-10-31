@@ -3,7 +3,7 @@
     <div class="bg-light ms-auto">
         <!--Left space (col-md-1) automatically pushes to the right until equilibrium with the 2 ms-auto on the right-->
     </div>
-    <div class="d-flex justify-content-center py-3">
+    <div class="container_fluid hstack  justify-content-center py-3">
         <div class="offcanvas-header">
             <button class="btn-close float-end btn-xl-right "></button>
         </div>

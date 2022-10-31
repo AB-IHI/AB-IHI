@@ -510,6 +510,21 @@ select.form-control:focus::-ms-value {
     flex-direction: column;
   }
 
+  .container_fluid, .container  {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .navbar > .container_fluid, .navbar > .container {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .h2 {
     font-size: 3em;
   }
@@ -560,7 +575,7 @@ select.form-control:focus::-ms-value {
     transform: translateX(0);
   }
   .mobile-offcanvas .container,
-  .mobile-offcanvas .container-fluid {
+  .mobile-offcanvas .container-fluid, .mobile-offcanvas .container_fluid {
     display: block;
     width: 80%;
     height: 100vw;
