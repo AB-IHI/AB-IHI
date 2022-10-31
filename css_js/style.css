@@ -40,7 +40,7 @@ h1 {
   margin-top: 0.3rem;
 }
 .hid_btn_xl {
-  visibility: hidden;
+  display: none;
 }
 .quisn {
   margin-top: -50px;
@@ -746,7 +746,7 @@ select.form-control:focus::-ms-value {
   }
 
   .hid_btn_xl {
-    visibility: visible;
+    display: block;
   }
 
   .footer ul li a {
