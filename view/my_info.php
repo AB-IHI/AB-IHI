@@ -25,7 +25,7 @@
 
         <h1>Informations personnel</h1>
 
-
+        <a class="position-absolute top-0 end-0" href="?page=logout">Deconnexion</a>
 
 
 
@@ -92,13 +92,13 @@
 
                 </div>
 
-                <div class="form-group <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>">
+                <!--<div class="form-group <?php /*echo (!empty($email_err)) ? 'has-error' : ''; */?>">
 
-                    <input type="email" name="email" class="form-control btn-lg" id="pw" value="<?php echo $email; ?>" placeholder=" email" >
-                    <span class="help-block"><?php echo $email_err; ?></span>
-                    <!-- <div class="invalid-feedback">
-            email is required.-->
-                </div>
+                    <input type="email" name="email" class="form-control btn-lg" id="pw" value="<?php /*echo $email; */?>" placeholder=" email" >
+                    <span class="help-block"><?php /*echo $email_err; */?></span>
+                    <div class="invalid-feedback">
+            email is required.
+                </div>-->
 
                 <div class="form-group <?php echo (!empty($telephone_err)) ? 'has-error' : ''; ?>">
                     <input type="text" class="form-control btn-lg" name="telephone" id="telephone" placeholder="N° telephone" required="">
@@ -110,7 +110,7 @@
                 </div>
 
                 <div class="form-group <?php echo (!empty($rib_err)) ? 'has-error' : ''; ?>">
-                    <input type="text" class="form-control btn-lg" name="rib" id="rib" placeholder="RIB (facultatif)" >
+                    <input type="text" class="form-control btn-lg" name="rib" id="rib" placeholder="IBAN facultatif" >
                     <span class="help-block"><?php echo $rib_err; ?></span>
                     <!-- <div class="invalid-feedback">
                         Please enter a rib address.

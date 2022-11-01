@@ -168,7 +168,7 @@ if (isset($_POST["action"])) {
             }
 
             // Validate email
-            if (empty(trim($_POST["email"]))) {
+            /*if (empty(trim($_POST["email"]))) {
                 // $email_err = "Please enter a email.";
             } else {
                 $email = trim($_POST["email"]);
@@ -183,7 +183,7 @@ if (isset($_POST["action"])) {
                     // invalid address
                     $email_err = "Please enter valid email.";
                 }
-            }
+            }*/
 
             // Validate telephone
             if (empty(trim($_POST["telephone"]))) {
@@ -197,7 +197,8 @@ if (isset($_POST["action"])) {
                         // Validate RIB if available (user not forced to provide rib)
                         if (!empty(trim($_POST["rib"]))) {
                             if (strlen(trim($_POST["rib"])) < 16) {
-                                $rib_err = "rib must have atleast 16 characters.";
+//                                $rib_err = "rib must have atleast 16 characters.";
+                                echo "rib must have at least 16 characters.";
                             } else {
                                 $rib = trim($_POST["rib"]);
                             }
@@ -205,15 +206,15 @@ if (isset($_POST["action"])) {
 
             // Check input errors before inserting in database
             if (empty($passport_err) && empty($date_err) && empty($pays_err) 
-            && empty($adress_err) && empty($email_err) && empty($telephone_err) && empty($rib_err)) {
+            && empty($adress_err) && empty($telephone_err) ) {
 
                 // Prepare an insert statement UPDATE `users` SET `date` = '11/01/02' WHERE `users`.`id` = 4; 
 
-                $sql = "UPDATE users SET passport =?, date=?, pays=?, adress=?, email=?, telephone=?, rib=?  WHERE users.id=?";
+                $sql = "UPDATE users SET passport =?, date=?, pays=?, adress=?, telephone=?, rib=?  WHERE users.id=?";
 
                 if ($stmt = mysqli_prepare($c, $sql)) {
                     // Bind variables to the prepared statement as parameters
-                    mysqli_stmt_bind_param($stmt, "ssssssss", $passport, $date, $pays, $adress, $email, $telephone, $rib, $_SESSION['id_user']);
+                    mysqli_stmt_bind_param($stmt, "sssssss", $passport, $date, $pays, $adress, $telephone, $rib, $_SESSION['id_user']);
 
                     // Set parameters, useless
                     // $param_username = $username;
