@@ -31,7 +31,7 @@ if (isset($_GET["id_benef"])) {
                 }
             } else {
                 echo "1Oops! Something went wrong. Please try again later.";
-                var_dump($stmt);
+//                var_dump($stmt);
             }
 
             // Close statement

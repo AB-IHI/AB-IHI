@@ -46,11 +46,11 @@ function dispo_in_db($email, $type, $c)
 {
     // Prepare a select statement
     $sql = "SELECT id FROM users WHERE " . $type . " = ?";
-    var_dump($sql);
+    /*var_dump($sql);*/
     $stmt = mysqli_prepare($c, $sql);
     // Bind variables to the prepared statement as parameters
     mysqli_stmt_bind_param($stmt, "s", $param_type);
-    var_dump($sql);
+//    var_dump($sql);
     // Set parameters
     $param_type = trim($email);
 
@@ -58,7 +58,7 @@ function dispo_in_db($email, $type, $c)
     if (mysqli_stmt_execute($stmt)) {
         /* store result */
         mysqli_stmt_store_result($stmt);
-        var_dump(mysqli_stmt_num_rows($stmt));
+//        var_dump(mysqli_stmt_num_rows($stmt));
         return mysqli_stmt_num_rows($stmt) == 1;
     }
     // Close statement

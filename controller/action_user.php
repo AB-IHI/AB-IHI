@@ -380,7 +380,7 @@ if (isset($_POST["action"])) {
                         }
                     } else {
                         echo "1Oops! Something went wrong. Please try again later.";
-                        var_dump($stmt);
+//                        var_dump($stmt);
                     }
 
                     // Close statement
@@ -405,7 +405,7 @@ if (isset($_POST["action"])) {
             } else {
                 $nom = trim($_POST["nom"]);
             }
-            var_dump($password_err);
+//            var_dump($password_err);
             // Validate prenom
             if (empty(trim($_POST["prenom"]))) {
                 $prenom_err = "Please enter a prenom.";
