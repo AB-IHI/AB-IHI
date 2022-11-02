@@ -150,7 +150,7 @@ $sql = "SELECT * FROM users where users.id = $var";
                 // Récupère chaque ligne de la BD dans un tableau "$row"
                 $row = mysqli_fetch_assoc($result);
 $photo = htmlspecialchars($row["photo"], ENT_QUOTES, 'UTF-8');
-echo '<img src="uploads/'. $photo  .'" alt="My profile pic">';
+echo '<img class= "responsive" src="uploads/'. $photo  .'" alt="My profile pic">';
 
                 $prenom = htmlspecialchars($row["prenom"], ENT_QUOTES, 'UTF-8');
                 

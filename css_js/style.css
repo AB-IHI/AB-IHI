@@ -139,6 +139,12 @@ container_main {
   flex-direction: column;
 }
 
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
 .spacer {
   /* verticall spacer use 0 1 auto for horizontal one
      https://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page */
@@ -547,6 +553,11 @@ select.form-control:focus::-ms-value {
 
   .put_rght_div {
     width: 100%;
+  }
+
+  .responsive {
+    width: 100%;
+    height: auto;
   }
 
   .offcanvas-header {
