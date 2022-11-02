@@ -22,8 +22,8 @@
 
 
 
-        <div id="title_one" class="col-md-12">
-            <div class=" column">
+        <container_i id="title_one" class="col-md-12 reverse container_i">
+            <div class="a">
                 <right_div class="right_div">
 
                     <p id="h2_assoc" class="h2">
@@ -103,7 +103,7 @@
                 </div>
             </div>
 
-            <div class="column">
+            <div class="b">
                 <h1 class="">
                     Benevole
                 </h1>
@@ -267,7 +267,7 @@ echo '<img class= "responsive" src="uploads/'. $photo  .'" alt="My profile pic">
             </div>
 
 
-        </div>
+        </container_i>
 
 
         </div>

@@ -756,6 +756,36 @@ select.form-control:focus::-ms-value {
     width: fit-content;
   }
 
+  /* tchast otvechaiuchia za na verx nijniu a verxniu v niz*/
+  #title_one {
+    display: grid;
+    grid-template-columns:  1fr;
+    /*grid-auto-flow: dense; !* NEW *!*/
+  }
+
+  #title_one>.a {
+    grid-column: 1;
+    grid-row: 2 ;
+  }
+
+  #title_one>.b {
+    grid-column: 1;
+    grid-row: 1 ;
+  }
+
+  /*#title_one.reverse>.a {
+    grid-column: 2;
+  }
+
+  #title_one.reverse>.b {
+    grid-row: 1;
+    grid-column: 1;
+  }*/
+  /* konets persmechenia https://stackoverflow.com/questions/45383042/reverse-order-of-columns-in-css-grid-layout*/
+
+  #title_one {
+    margin-top: 0%;
+  }
   .hid_btn_xl {
     display: block;
   }
