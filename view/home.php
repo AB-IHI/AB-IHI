@@ -30,7 +30,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
         <div class="column hidetitl">
             <!--hidden when min width -->
             <div id="don">
-                <a href="https://www.payasso.fr/ihi/don#/form310782721_name">
+                <a href="?page=options">
                     <button type="button" class="btn btn-primary btn-xl-center " id="button_one">
                         Je fais un don</button></a>
 
@@ -47,7 +47,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     <div class="column  hid_btn_xl">
         <!--hidden when full width -->
 
-        <a href="https://www.payasso.fr/ihi/don#/form310782721_name">
+        <a href="?page=options">
             <button type="button" class="btn btn-primary btn-xl-center " id="button_one">
                 Je fais un don</button></a>
     </div>
