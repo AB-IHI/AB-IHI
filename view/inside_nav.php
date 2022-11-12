@@ -33,6 +33,7 @@
         <li><a class="dropdown-item" href=".?explain=act_bienfsce"> Règlement sur les missions</a></li>
         <li><a class="dropdown-item" href=".?explain=lau"> L'aube de l'espoir</a></li>
         <li><a class="dropdown-item" href="y_storage/1. Protection temporaire.pdf"> Protection temporaire</a></li>
+        <li><a class="dropdown-item" href="y_storage/Règlement sur la procéd.de l’usage des serv.ling.pdf"> Traducteurs</a></li>
     </ul>
 </li>
 </ul>
