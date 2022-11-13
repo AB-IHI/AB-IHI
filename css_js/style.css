@@ -514,6 +514,11 @@ select.form-control:focus::-ms-value {
   .sml_spcr {
     margin-bottom: 0.499cm;
   }
+
+  .h_1 {
+    font-size: 35px;
+  }
+
   container {
     /* min-height: 100% !important;
     height: 100% !important;
@@ -527,6 +532,7 @@ select.form-control:focus::-ms-value {
     display: flex;
     flex-direction: column;
   }
+
 
   .container_fluid, .container  {
     width: 100%;

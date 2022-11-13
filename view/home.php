@@ -3,7 +3,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 ?>
     <div class="page-header">
         <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
-    </div>
+    </div>-->
 <?php
     echo '
         <a href=".?page=reset_password" class="btn btn-warning">Reset Your Password</a>
@@ -13,7 +13,8 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 } else {
     echo ' <a href=".?page=login" class="btn btn-primary">Sign in</a>';
 }
-?> -->
+include_once "header.php";
+?>
 
 <div id="title_one" class="col-md-12">
     <div class=" column">
@@ -40,7 +41,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 
     <div class="column">
         <left_div>
-            <img id="main_pic" src="palm_of_hand_6.png">
+            <img id="main_pic" src="y_ymages/palm_of_hand_6.png">
         </left_div>
     </div>
 

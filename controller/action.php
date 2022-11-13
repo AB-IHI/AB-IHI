@@ -86,6 +86,11 @@ if (isset($_GET['page'])) { // test almost same if above but both needed
         $_SESSION['page'] = 'home';
 
     }
+    if ($_GET['page'] == 'options') {
+
+        header('Location: ./view/options.php');
+    }
+
 } else {
 
 
@@ -148,6 +153,24 @@ if (isset($_GET['explain'])) {
         // Redirect to login page
         // header("location: login.php");
         // exit;
+
+    // }
+}
+
+if (isset($_GET['page'])) {
+
+
+    // var_dump($_SESSION['page']);
+    // if ($_GET['explain'] == 'explanation') {
+    // Unset all of the session variables
+
+
+    // Destroy the session.
+    // header('Location: explanation.php');
+
+    // Redirect to login page
+    // header("location: login.php");
+    // exit;
 
     // }
 }

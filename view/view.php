@@ -12,7 +12,7 @@
 //     // include_once  "volunteer/footer.php";
 // }
 // else {
-include_once "header.php";
+
 include_once $_SESSION['page'] . ".php";
 include_once  "footer.php";
 // }
