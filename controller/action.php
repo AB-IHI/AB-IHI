@@ -11,6 +11,7 @@
 if (!isset($_SESSION['view']) or !isset($_SESSION['loggedin']) or $_SESSION["loggedin"] != true) { // test almost same if above
 
     $_SESSION['view'] = 'view';
+    $_SESSION['page'] = 'home';
     // var_dump($_SESSION['page']);
     
 
@@ -54,10 +55,10 @@ view de démarche administrative */
 // }
 
 if (!isset($_GET['page'])) { // test almost same if below but both needed
-    $_SESSION['page'] = 'home';
+//    $_SESSION['page'] = 'home';
     if (isset($_SESSION['loggedin']) && $_SESSION["loggedin"] == true) {
         $_SESSION['view'] = 'volunteer';
-        $_SESSION['page'] = 'benevole';
+
         if (isset($_POST["action"])) {
             if ($_POST["action"] == "ajout_pic") {
                 include_once "upload.php";      // will self check that there is an upload
@@ -83,6 +84,7 @@ if (isset($_GET['page'])) { // test almost same if above but both needed
         // exit;
         $_SESSION['view'] = 'view';
         $_SESSION['page'] = 'home';
+
     }
 } else {
 
@@ -133,7 +135,7 @@ include_once "action_user.php";
 // var_dump($_SESSION['page']);
 
 if (isset($_GET['explain'])) {
-    header('Location: '.$_GET['explain'].'.php');
+    header('Location: y_yfles/'.$_GET['explain'].'.php');
 
     // var_dump($_SESSION['page']);
     // if ($_GET['explain'] == 'explanation') {

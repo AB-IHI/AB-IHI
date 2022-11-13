@@ -55,7 +55,7 @@
     /* ODF styles with no properties representable as CSS */
     .ListLabel_20_1 .ListLabel_20_10 .ListLabel_20_11 .ListLabel_20_12 .ListLabel_20_13 .ListLabel_20_14 .ListLabel_20_15 .ListLabel_20_16 .ListLabel_20_17 .ListLabel_20_18 .ListLabel_20_2 .ListLabel_20_3 .ListLabel_20_4 .ListLabel_20_5 .ListLabel_20_6 .ListLabel_20_7 .ListLabel_20_8 .ListLabel_20_9  { }
     </style>
-    <link rel="stylesheet" type="text/css" href="css_js/expln°style.css" />
+    <link rel="stylesheet" type="text/css" href="../css_js/expln°style.css" />
 
 
 </head>

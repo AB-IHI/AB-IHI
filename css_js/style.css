@@ -145,6 +145,12 @@ container_main {
   height: auto;
 }
 
+.responsive2 {
+  width: 100%;
+  max-width:100%
+  height: auto;
+}
+
 .spacer {
   /* verticall spacer use 0 1 auto for horizontal one
      https://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page */
@@ -567,6 +573,11 @@ select.form-control:focus::-ms-value {
   }
 
   .responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .responsive2 {
     width: 100%;
     height: auto;
   }

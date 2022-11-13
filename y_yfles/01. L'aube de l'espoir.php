@@ -28,7 +28,7 @@
     margin-left: 2cm;
     margin-right: 2cm;">
 
-<div class="T1U"><a class="T1U" href="
+<div class="T1U"><a class="T1U" href="../
 y_storage/1. L'aube de l'espoir.pdf">Lien vers le texte intégral</a></div>
 <p class="P5">&nbsp;</p>
 <p class="P6"><span class="T3">Projet de bienfaisance</span></p>
@@ -40,15 +40,15 @@ y_storage/1. L'aube de l'espoir.pdf">Lien vers le texte intégral</a></div>
   <p class="P8_borderStart" />
   <p class="P8_borderEnd" />
   <p class="bottom_space P9"> <span class="T6">Consulter une section :</span>                                      </p>
-  <p class="bottom_space P10"><a href="y_xlau/goal_mission.php"><span class="T5">Objet et principes directeurs de la mission</span>               </a>       </p>
-  <p class="bottom_space P4"> <a href="y_xlau/explain_mi.php"><span class="T5">Description de la mission</span>                      </a>                   </p>
-  <p class="bottom_space P4"> <a href="y_xlau/finance.php"><span class="T5">Budget et sources de financement</span>                     </a>             </p>
-  <p class="bottom_space P4"> <a href="y_xlau/admiss.php"><span class="T5">Admissibilité à l'aide</span>                      </a>                          </p>
-  <p class="bottom_space P4"> <a href="y_xlau/interact.php"><span class="T5">Interaction des participants à la mission</span>                 </a>         </p>
-  <p class="bottom_space P11"><a href=".?explain=Act_internat°al"><span class="T5">Activités de bienfaisance et humanitaires internationales</span></a></p>
-  <p class="bottom_space P4"> <a href="y_xlau/dec&ctrl.php"><span class="T5">Procédure de déclaration et de contrôle</span>                 </a>       </p>
+  <p class="bottom_space P10"><a href="../y_xlau/goal_mission.php"><span class="T5">Objet et principes directeurs de la mission</span>               </a>       </p>
+  <p class="bottom_space P4"> <a href="../y_xlau/explain_mi.php"><span class="T5">Description de la mission</span>                      </a>                   </p>
+  <p class="bottom_space P4"> <a href="../y_xlau/finance.php"><span class="T5">Budget et sources de financement</span>                     </a>             </p>
+  <p class="bottom_space P4"> <a href="../y_xlau/admiss.php"><span class="T5">Admissibilité à l'aide</span>                      </a>                          </p>
+  <p class="bottom_space P4"> <a href="../y_xlau/interact.php"><span class="T5">Interaction des participants à la mission</span>                 </a>         </p>
+  <p class="bottom_space P11"><a href="Act_internat°al.php"><span class="T5">Activités de bienfaisance et humanitaires internationales</span></a></p>
+  <p class="bottom_space P4"> <a href="../y_xlau/dec&ctrl.php"><span class="T5">Procédure de déclaration et de contrôle</span>                 </a>       </p>
   <p class="P7"> </p>
   <p class="P5">&nbsp;</p>
   <div class="T1U"><a class="T1U" href="
-y_storage/1. L'aube de l'espoir.pdf">Lien vers le texte intégral</a></div>
+../y_storage/1. L'aube de l'espoir.pdf">Lien vers le texte intégral</a></div>
 </body>

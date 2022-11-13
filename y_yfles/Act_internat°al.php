@@ -82,7 +82,7 @@
     /* ODF styles with no properties representable as CSS */
     .ListLabel_20_1 .ListLabel_20_10 .ListLabel_20_11 .ListLabel_20_12 .ListLabel_20_13 .ListLabel_20_14 .ListLabel_20_15 .ListLabel_20_16 .ListLabel_20_17 .ListLabel_20_18 .ListLabel_20_19 .ListLabel_20_2 .ListLabel_20_20 .ListLabel_20_21 .ListLabel_20_22 .ListLabel_20_23 .ListLabel_20_24 .ListLabel_20_25 .ListLabel_20_26 .ListLabel_20_27 .ListLabel_20_28 .ListLabel_20_29 .ListLabel_20_3 .ListLabel_20_30 .ListLabel_20_31 .ListLabel_20_32 .ListLabel_20_33 .ListLabel_20_34 .ListLabel_20_35 .ListLabel_20_36 .ListLabel_20_4 .ListLabel_20_5 .ListLabel_20_6 .ListLabel_20_7 .ListLabel_20_8 .ListLabel_20_9  { }
      </style>
-    <link rel="stylesheet" type="text/css" href="css_js/expln°style.css" />
+    <link rel="stylesheet" type="text/css" href="../css_js/expln°style.css" />
 
 
 </head>
@@ -279,8 +279,8 @@ https://www.prefectures-regions.gouv.fr/ile-de-france/Region-et-institutions/Dem
 </container>
 </container_main>
 </body>
-<script type='text/javascript' src='css_js/js/popper.min.js'></script>
-<script type='text/javascript' src='css_js/js/bootstrap.js'></script>
+<script type='text/javascript' src='../css_js/js/popper.min.js'></script>
+<script type='text/javascript' src='../css_js/js/bootstrap.js'></script>
 <script type='text/javascript' src='css_js/js/JavaScript.js'></script>
 
 </html>

@@ -11,12 +11,13 @@
 
                         <a class="icon-link  border" href="https://www.payasso.fr/ihi/don#/form310782721_name
 ">
-                            <img src="view/admin/L'aube de l'espoir.png">
+                            <img class="responsive2" src="y_ymages/b_and_13.png">
+                            <h1>Campagne de dons. "L'aube de l'espoir"</h1>
 
                         </a>
                         <a  href="https://www.payasso.fr/protection-temporaire/don">
-                            <img src="view/admin/Protection temporaire.png">
-
+                            <img  class="responsive2" src="y_ymages/bandeau_1.png">
+                            <h1>Campagne de dons. "Protection temporaire"</h1>
                         </a>
                     </div>
             </div>

@@ -99,7 +99,7 @@
     /* ODF styles with no properties representable as CSS */
     .ListLabel_20_46 .ListLabel_20_47 .ListLabel_20_48 .ListLabel_20_49 .ListLabel_20_50 .ListLabel_20_51 .ListLabel_20_52 .ListLabel_20_53 .ListLabel_20_54 .T6  { }
     </style>
-    <link rel="stylesheet" type="text/css" href="css_js/expln°style.css" />
+    <link rel="stylesheet" type="text/css" href="../css_js/expln°style.css" />
 
 
 </head>
@@ -171,8 +171,8 @@
 </container>
 </container_main>
 </body>
-<script type='text/javascript' src='css_js/js/popper.min.js'></script>
-<script type='text/javascript' src='css_js/js/bootstrap.js'></script>
+<script type='text/javascript' src='../css_js/js/popper.min.js'></script>
+<script type='text/javascript' src='../css_js/js/bootstrap.js'></script>
 <script type='text/javascript' src='css_js/js/main.js'></script>
 
 </html>

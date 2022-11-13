@@ -44,7 +44,7 @@
     .T6 { color:#ea7500;  font-size:18pt; font-weight:bold; background-color:#ffffff; }
     /* ODF styles with no properties representable as CSS */
     .T1  { }</style>
-    <link rel="stylesheet" type="text/css" href="css_js/expln°style.css" />
+    <link rel="stylesheet" type="text/css" href="../css_js/expln°style.css" />
 
 
 </head>
@@ -116,8 +116,8 @@
 </container>
 </container_main>
 </body>
-<script type='text/javascript' src='css_js/js/popper.min.js'></script>
-<script type='text/javascript' src='css_js/js/bootstrap.js'></script>
+<script type='text/javascript' src='../css_js/js/popper.min.js'></script>
+<script type='text/javascript' src='../css_js/js/bootstrap.js'></script>
 <script type='text/javascript' src='css_js/js/main.js'></script>
 
 </html>
