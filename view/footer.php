@@ -24,7 +24,7 @@
                                     </path>
                                 </use>
                             </svg></a></li>
-                    <li class="ms-3"><a class="link-dark " href="https://t.me/ihi_asso"> <img class="social_ic" src="website_icon.svg">
+                    <li class="ms-3"><a class="link-dark " href="https://t.me/ihi_asso"> <img class="social_ic" src="y_ymages/website_icon.svg">
                             <svg class="bi" width="1" height="1">
                                 <use xlink:href="#telegram"> </use>
                             </svg></a></li>
