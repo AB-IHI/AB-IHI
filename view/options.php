@@ -49,11 +49,12 @@
 
     <div class="container px-4 py-5 quisn" id="featured-3 ">
                 <h4 id="quiSN" class="pb-3 border-bottom h2">Je fais un don</h4>
+    </div> </div></div>
                 <div class=" row-p g-4 py-1 row-cols-1 row-cols-lg-1">
                     <div class="feature-3 ">
 
 
-                        <a class="icon-link  border" href="https://www.payasso.fr/ihi/don#/form310782721_name
+                        <a class="  " href="https://www.payasso.fr/ihi/don#/form310782721_name
 ">
                             <img class="responsive2" src="../y_ymages/b_and_13.png">
                             <h1 class="h_1">Campagne de dons. "L'aube de l'espoir"</h1>
@@ -62,17 +63,42 @@
 
 
 
-                        <a  href="https://www.payasso.fr/protection-temporaire/don">
 
-                            <img  class="responsive2" src="../y_ymages/bandeau_1.png">
-                            <h1 class="h_1">Campagne de dons. "Protection temporaire"</h1>
-
-                        </a>
                     </div>
 
+                    <div class=" row-p g-4 py-1 row-cols-1 row-cols-lg-1">
+                        <div class="feature-3 ">
 
 
-        </div>
+                            <div></div>
+
+
+                        </div>
+
+
+                    </div> </div></div>
+    <div class="container px-4 py-5 quisn" id="featured-3 ">
+        <!--spacer-->
+    </div>
+                    <div class=" row-p g-4 py-1 row-cols-1 row-cols-lg-1">
+
+                        <div class=" row-p g-4 py-1 row-cols-1 row-cols-lg-1">
+                            <div class="feature-3 ">
+
+
+                                <div></div>
+
+
+                                <a  href="https://www.payasso.fr/protection-temporaire/don">
+
+                                    <img  class="responsive2" src="../y_ymages/bandeau_1.png">
+                                    <h1 class="h_1">Campagne de dons. "Protection temporaire"</h1>
+
+                                </a>
+                            </div>
+
+
+                        </div>
 
     </div>
 
