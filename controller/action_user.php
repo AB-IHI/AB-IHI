@@ -359,6 +359,8 @@ if (isset($_POST["action"])) {
             // Validate username
             if (empty(trim($_POST["username"]))) {
                 $username_err = "Please enter a username.";
+            } elseif (strlen(trim($_POST["username"])) > 250) {
+                $nom_err = "username must have at most 250 characters.";
             } else {
                 // Prepare a select statement
                 $sql = "SELECT id FROM users WHERE username = ?";
@@ -393,8 +395,10 @@ if (isset($_POST["action"])) {
             // Validate password
             if (empty(trim($_POST["password"]))) {
                 $password_err = "Please enter a password.";
-            } elseif (strlen(trim($_POST["password"])) < 3) {
-                $password_err = "Password must have atleast 3 characters.";
+            } elseif (strlen(trim($_POST["password"])) < 6) {
+                $password_err = "Password must have atleast 6 characters.";
+            } elseif (strlen(trim($_POST["password"])) > 250) {
+                $nom_err = "password must have at most 250 characters.";
             } else {
                 $password = trim($_POST["password"]);
             }
@@ -403,7 +407,9 @@ if (isset($_POST["action"])) {
             if (empty(trim($_POST["nom"]))) {
                 $nom_err = "Please enter a nom.";
             } elseif (strlen(trim($_POST["nom"])) < 2) {
-                $nom_err = "nom must have atleast 2 characters.";
+                $nom_err = "nom must have at least 2 characters.";
+            } elseif (strlen(trim($_POST["nom"])) > 25) {
+                $nom_err = "nom must have at most 25 characters.";
             } else {
                 $nom = trim($_POST["nom"]);
             }
@@ -413,6 +419,8 @@ if (isset($_POST["action"])) {
                 $prenom_err = "Please enter a prenom.";
             } elseif (strlen(trim($_POST["prenom"])) < 2) {
                 $prenom_err = "prenom must have atleast 2 characters.";
+            } elseif (strlen(trim($_POST["prenom"])) > 25) {
+                $nom_err = "prenom must have at most 25 characters.";
             } else {
                 $prenom = trim($_POST["prenom"]);
             }
@@ -430,6 +438,8 @@ if (isset($_POST["action"])) {
             // Validate email
             if (empty(trim($_POST["email"]))) {
                 $email_err = "Please enter a email.";
+            } elseif (strlen(trim($_POST["email"])) > 100) {
+                $nom_err = "email must have at most 100 characters.";
             } else {
                 $email = trim($_POST["email"]);
                 if (filter_var($email, FILTER_VALIDATE_EMAIL)) {

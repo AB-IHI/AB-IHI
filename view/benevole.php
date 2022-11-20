@@ -118,7 +118,7 @@
 
             <div class="b">
                 <h1 class="">
-                    Bénévole
+                    Volontaire
                 </h1>
                 <?php
                 if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin') { // test almost same if above
