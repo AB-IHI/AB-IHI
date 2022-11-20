@@ -1,4 +1,17 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <meta charset="UTF-8">
+    <title>volunteer</title>
+
+    <link rel="stylesheet" type="text/css" href="css_js/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css_js/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" type="text/css" href="css_js/style.css" />
+
+
+</head>
 <body class="mb-0">
 
 <!-- http://www.w3.org/2000/svg -->
@@ -17,9 +30,9 @@
 
     </header>
 
-    <container class="">
+    <container_main class="container">
 
-
+        <a class="position-absolute top-0 end-0 deconnexion" href="?page=logout">Déconnexion</a>
 
 
         <container_i id="title_one" class="col-md-12 reverse container_i">
@@ -84,7 +97,7 @@
                 </div>
 
 
-                <input type="submit" class=" cnx-sub btn_dem btn-lg mx-auto btn-outline-dark" value="creer dossier">
+                <input type="submit" class=" cnx-sub btn_dem btn-lg mx-auto btn-outline-dark" value="créer dossier">
 
             </form>
 
@@ -105,9 +118,17 @@
 
             <div class="b">
                 <h1 class="">
-                    Benevole
+                    Bénévole
                 </h1>
-                <a href="?page=logout">Deconnexion</a>
+                <?php
+                if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin') { // test almost same if above
+
+                    echo '<a href="?page=admin">Admin</a>';
+
+
+                }
+                ?>
+
                 <left_div>
                     
                     <div>
@@ -149,7 +170,7 @@ $sql = "SELECT * FROM users where users.id = $var";
                 // 3/3 -> AFFICHAGE
                 // Récupère chaque ligne de la BD dans un tableau "$row"
                 $row = mysqli_fetch_assoc($result);
-$photo = htmlspecialchars($row["photo"], ENT_QUOTES, 'UTF-8');
+            $photo = htmlspecialchars($row["photo"], ENT_QUOTES, 'UTF-8');
 echo '<img class= "responsive" src="uploads/'. $photo  .'" alt="My profile pic">';
 
                 $prenom = htmlspecialchars($row["prenom"], ENT_QUOTES, 'UTF-8');
@@ -174,7 +195,7 @@ echo '<img class= "responsive" src="uploads/'. $photo  .'" alt="My profile pic">
                 echo "<td class='margin'>" . $var3 . "</td> </tr>";
 
                 echo "<tr class='margin'>
-                    <td class='margin'> date expiration de la pièce d'identité</td>
+                    <td class='margin'> date d'expiration de la pièce d'identité</td>
                 ";
                 $var4 =    htmlspecialchars($row["date"], ENT_QUOTES, 'UTF-8');
                     echo "<td class='margin'>" . $var4 . "</td> </tr>";
@@ -186,7 +207,7 @@ echo '<img class= "responsive" src="uploads/'. $photo  .'" alt="My profile pic">
                 echo "<td class='margin'>" . $var5 . "</td>  </tr> ";
 
                 echo "<tr class='margin'>
-                    <td class='margin'> adress </td>     
+                    <td class='margin'> adresse </td>     
                  ";
                 $var6 = htmlspecialchars($row["adress"], ENT_QUOTES, 'UTF-8');
                     echo "<td >" . $var6 . "</td>  </tr> ";
@@ -198,7 +219,7 @@ echo '<img class= "responsive" src="uploads/'. $photo  .'" alt="My profile pic">
                     echo "<td class='margin'>" . $var5 . "</td>  </tr> ";
 
                 echo "<tr class='margin'>
-                    <td class='margin'> telephone </td>  
+                    <td class='margin'> téléphone </td>  
                ";
                 $var6 = htmlspecialchars($row["telephone"], ENT_QUOTES, 'UTF-8');
                     echo "<td >" . $var6 . "</td>";
@@ -274,7 +295,7 @@ echo '<img class= "responsive" src="uploads/'. $photo  .'" alt="My profile pic">
 
 
 
-    </container>
+    </container_main>
 
 
 
@@ -307,3 +328,12 @@ echo '<img class= "responsive" src="uploads/'. $photo  .'" alt="My profile pic">
 <script type='text/javascript' src='css_js/main.js'></script>
 
 </html>
+
+<?php
+echo "<!-- ";
+var_dump($_SESSION['view']);
+var_dump($_SESSION['page']);
+var_dump($_SESSION['loggedin']);
+echo 'something';
+echo "--> ";
+?>

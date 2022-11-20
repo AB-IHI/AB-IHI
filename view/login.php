@@ -72,7 +72,7 @@
         <div class="row g-10">
             <div class="col-12 <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <label for="pseudo" class="form-label ">pseudo</label>
-                <input type="text" name="username" class="form-control btn-lg" id="pseudo" value="<?php echo $username; ?>" placeholder="nick ou email" required="">
+                <input type="text" name="username" class="form-control btn-lg" id="pseudo" value="<?php echo $username; ?>" placeholder="nick " required="">
                 <span class="help-block"><?php echo $username_err; ?></span>
                 <!-- <div class="invalid-feedback ">
                     nick is required.

@@ -1,12 +1,12 @@
-<ul class="navbar-nav">
+<!--<ul class="navbar-nav">
 
 
 
     <li class="nav-item "  >
         <a class="nav-link " href="?page=home" > Accueil </a>
-        
+
     </li>
-</ul>
+</ul>-->
 
 <ul class="navbar-nav">
 
