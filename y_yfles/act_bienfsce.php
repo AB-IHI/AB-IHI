@@ -22,7 +22,7 @@
     span.heading_numbering { margin-right: 0.8rem; }* { margin:0;}
     .P1 { font-size:12pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; }
     .P10 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; }
-    .P11 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr;  margin-right:0cm; text-indent:-1.7cm; }
+    .P11 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr;  margin-right:0cm; text-indent:-0.7cm; }
     .P12 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; }
     .P13 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; }
     .P14 { font-size:12pt; line-height:150%; margin-bottom:0.247cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; }
@@ -117,19 +117,20 @@
 <!-- footer -->
 <span class="spacer">
 </span>
-<container id="footer_" class="container sticky-bottom my-auto">
-    <footer class="pt-4 mt-4 footer mt-auto sticky-bottom">
+
+        <div id="" class="position-relative">
+
+
+            <div class="container">
+                <div class="position-absolute bottom-0 start-50 translate-middle-x">
+                    <!--hidden when full width -->
+                    <p>© 2022 IHI asso</p>
+                </div>
+            </div>
 
 
 
-        <p class="text-center text-muted ">
-            <!--hidden when full width -->
-            © 2022 IHI asso
-        </p>
-
-    </footer>
-
-</container>
+        </div>
 </container_main>
 </body>
 <script type='text/javascript' src='../css_js/js/popper.min.js'></script>

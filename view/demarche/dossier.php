@@ -157,7 +157,7 @@ $sql = "SELECT * FROM users where users.id = $var";
                 echo "<td class='margin'>" . $var3 . "</td> </tr>";
 
                 echo "<tr class='margin'>
-                    <td class='margin'> date expiration de la pièce d'identité</td>
+                    <td class='margin'> date d'expiration de la pièce d'identité</td>
                 ";
                 $var4 =    htmlspecialchars($row["date"], ENT_QUOTES, 'UTF-8');
                     echo "<td class='margin'>" . $var4 . "</td> </tr>";
@@ -181,7 +181,7 @@ $sql = "SELECT * FROM users where users.id = $var";
                     echo "<td class='margin'>" . $var5 . "</td>  </tr> ";
 
                 echo "<tr class='margin'>
-                    <td class='margin'> telephone </td>  
+                    <td class='margin'> téléphone </td>  
                ";
                 $var6 = htmlspecialchars($row["telephone"], ENT_QUOTES, 'UTF-8');
                     echo "<td >" . $var6 . "</td>";

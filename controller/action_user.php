@@ -273,7 +273,7 @@ if (isset($_POST["action"])) {
             // Validate credentials
             if (empty($username_err) && empty($password_err)) {
                 // Prepare a select statement
-                $sql = "SELECT id, username, password FROM users WHERE username = ?";
+                $sql = "SELECT id, username, password, role FROM users WHERE username = ?";
 
                 if ($stmt = mysqli_prepare($c, $sql)) {
                     // Bind variables to the prepared statement as parameters
@@ -290,7 +290,7 @@ if (isset($_POST["action"])) {
                         // Check if username exists, if yes then verify password
                         if (mysqli_stmt_num_rows($stmt) == 1) {
                             // Bind result variables
-                            mysqli_stmt_bind_result($stmt, $id, $_SESSION["username"], $hashed_password);
+                            mysqli_stmt_bind_result($stmt, $id,$_SESSION["username"], $hashed_password, $_SESSION['role']);
                             if (mysqli_stmt_fetch($stmt)) {
                                 if (password_verify($password, $hashed_password)) {
                                     // Password is correct, so start a new session
@@ -299,7 +299,8 @@ if (isset($_POST["action"])) {
                                     // Store data in session variables
                                     $_SESSION["loggedin"] = true;
                                     $_SESSION["id_user"] = $id;
-                                    // $_SESSION["username"] = $username;
+                                    // $_SESSION["username"] = $username; already set by the mysqli stmt bind result
+
 
                                     // Redirect user to volunteer page
                                     // header("location: view/volunteer.php");

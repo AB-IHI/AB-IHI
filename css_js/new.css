@@ -1,0 +1,454 @@
+* {
+    font-family: "Mulish-VariableFont_wght";
+    src: url("Mulish-VariableFont_wght.woff") format("woff"),
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url("Mulish-VariableFont_wght.ttf") format("truetype");
+
+    font-family: Mulish, sans-serif;
+    /* margin: 0;
+      padding: 0; */
+    box-sizing: border-box;
+}
+
+/*boostrap */
+.position-relative {
+    position: relative !important;
+}
+.position-absolute {
+    position: absolute !important;
+}
+.bottom-0 {
+    bottom: 0 !important;
+}
+.start-50 {
+    left: 50% !important;
+}
+.translate-middle-x {
+    transform: translateX(-50%) !important;
+}
+
+
+body {
+    min-height: 100vh !important;
+    background-color: white;
+    letter-spacing: 1px;
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+    margin-left: 2cm;
+    margin-right: 2cm;
+}
+
+h1 {
+    font-size: 49px;
+    line-height: 150%;
+    color: #282828;
+    font-weight: bold;
+    margin-bottom: 28px;
+    min-width: 574px;
+}
+
+.hide_list {
+    list-style: none;
+}
+
+
+
+.TS {
+    font-size: 20px !important;
+}
+
+.horiz_spacin {
+    text-indent: -0.7cm;
+    margin-bottom: 15px;
+}
+
+.horiz_spacin_2 {
+    margin-bottom: 15px;
+}
+
+/*noinspection ALL*/
+.custom_ul {
+    /* margin-left: 82px; */
+}
+
+.custom_ul_2 {
+    /* margin-left: 109px; */
+}
+
+.custom_btm_space {
+    margin-bottom: 95px;
+}
+
+
+
+.T7U {
+    /*see also T12U*/
+    color: #000000;
+    font-family: Tahoma;
+
+    font-weight: bold;
+    background-color: #ffffff;
+}
+
+.T1U {
+    color: #00a933;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+
+    /*noinspection ALL*/
+    .dropdown-menu .submenu {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: -7px;
+    }
+
+    /*noinspection ALL*/
+    .dropdown-menu .submenu-left {
+        right: 100%;
+        left: auto;
+    }
+
+    .dropdown-menu > li:hover {
+        background-color: #f1f1f1;
+    }
+
+    /*noinspection ALL*/
+    .dropdown-menu > li:hover > .submenu {
+        display: block;
+    }
+
+
+/* ============ mobile view ============ */
+@media all and (max-width: 991px) {
+    .container {
+        border: none;
+
+        display: flex;
+    }
+
+    container {
+        /* min-height: 100% !important;
+        height: 100% !important;
+        important to comment out
+        https://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page
+         */
+        margin-left: 0px;
+        margin-right: 0px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .h2 {
+        font-size: 3em;
+    }
+
+    .h3 {
+        font-size: 1.5em;
+    }
+
+    .T4 {
+        margin-bottom: 2%;
+    }
+
+    /*noinspection ALL*/
+    .P1,.T3,.P10,.P11,.P12,.P13,.P14,.P15,.P16,.P17,.P2,.P3,P4,.P5,.P6,.P7,.P8,.P9,.T1,.T10,.T11,.T17,.T2,.T4,.T8,.T9,.TC {
+        font-size: 2.9rem !important;
+    }
+
+    /*noinspection ALL*/
+    .T12,.T13,.T6,.T7,.T14,.T16,.SML,.T12U {
+        font-size: 2rem;
+    }
+
+
+    .T4U {
+        color: #2a6099;
+        font-size: 66px !important;
+        margin-bottom: 75px;
+    }
+    .T2 {
+        font-size: 49pt !important;
+    }
+
+    .TS,.P16,.T6,.T5 {
+        font-size: 2.9rem !important;
+    }
+
+    ol ul li {
+        margin-left: 145px;
+    }
+
+    ol li {
+        margin-bottom: 0.499cm;
+        margin-left: 106px;
+        text-indent: -34px;
+    }
+
+    ul li {
+        margin-bottom: 0.499cm;
+        margin-left: 79px;
+        list-style-type: disc;
+    }
+
+    ul li {    /*  exemple liste   :not(ol) > */
+        margin-bottom: 0.499cm;
+        margin-left: 59px;
+        text-indent: 0.7px;
+    }
+
+    ol > :not(ul) li { /* goal mission indent 1)*/
+        text-indent: -37px;
+        margin-left: 91px;
+    }
+
+    li {
+        font-size: 2.9rem;
+    }
+
+    li span {
+        font-size: 2.9rem;
+    }
+
+    .T1U {
+        color: #00a933;
+        font-weight: bold;
+        margin-bottom: 25px;
+        font-size: 2.9rem;
+        height: 98px;
+    }
+
+    .T3U, .T01U {
+
+        font-size: 2.9rem !important;
+
+    }
+
+    .T7U {
+        font-size: 2rem;
+    }
+
+    #progH {
+        margin-top: 20px;
+    }
+
+    #ofs {
+        margin-top: 50px;
+    }
+
+    .put_rght_div {
+        width: 100%;
+    }
+
+    .offcanvas-header {
+        display: block;
+    }
+
+    .mobile-offcanvas,  .hidetitl {
+        visibility: hidden;
+        transform: translateX(-100%);
+        border-radius: 0;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 80%;
+        z-index: 1200;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    .mobile-offcanvas.show {
+        visibility: visible;
+        transform: translateX(0);
+    }
+    .mobile-offcanvas .container,  .mobile-offcanvas .container-fluid {
+        display: block;
+        width: 80%;
+        height: 100vw;
+    }
+
+    #nav_top {
+        margin-top: 0px;
+    }
+    #nav_top,  #button_contenu {
+        visibility: hidden;
+    }
+
+    /*.navbar_top {
+            position: static;
+      }*/
+
+    .btn-xl {
+        padding: 10px 30px;
+        font-size: 50px;
+        border-radius: 10px;
+    }
+
+    .btn-xl-center {
+        position: relative;
+        margin-top: 0px;
+        margin-left: 25%;
+        left: 30%;
+        margin: 30px;
+        margin-bottom: 50px;
+        padding: 30px;
+        font-size: 50px !important;
+        border-radius: 8%;
+        width: 89%;
+        top: 0px;
+    }
+
+    .btn-lg,  .btn-group-lg > .btn {
+        padding: 0.5rem 1rem !important;
+        font-size: 4.25rem !important;
+        border-radius: 0.3rem !important;
+    }
+
+    .a_cre {
+        margin-top: 25%;
+    }
+
+    .nav-link,  .dropdown-item {
+        font-size: 50px;
+        height: 120px;
+    }
+
+    .btn-xl-right {
+        padding: 10px 20px;
+        font-size: 70px;
+        border-radius: 10px;
+
+        margin-right: 15%;
+    }
+
+    .btn-close, .offcanvas-header {
+        margin-right: 15%;
+    }
+
+    .btn_dem {
+        display: block !important;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        background-color: transparent;
+        border: 3px solid;
+        padding: 0.375rem 0.75rem;
+        /* font-size: 1rem !important; */
+        border-radius: 0.25rem !important;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+        left: 0% !important;
+    }
+
+    #title_one {
+        margin-top: 33%;
+        margin-left: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: fit-content;
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+    }
+
+    #footer_ {
+        margin-top: 29% !important;
+    }
+    article {
+        /* min-height: 100% !important;
+        height: 100% !important;
+        important to comment out
+        https://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page
+         */
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: 25%;
+        margin-bottom: 50%;
+    }
+
+    .column {
+        width: fit-content;
+    }
+
+    .hid_btn_xl {
+        visibility: visible;
+    }
+
+    .footer {
+        /* , ul, li, a  */
+        height: 100%;
+    }
+
+    .social_ic {
+        height: 47% !important;
+    }
+
+    .pt-5,
+    .mt-5 {
+        padding-top: 30rem !important;
+        margin-top: 20rem !important;
+    }
+
+    /* not needed since we use em which adapts to screen size while keeping proportions
+         update : font-size needs to be automated so user can choose size of text*/
+    h4 {
+        font-size: 2.9em !important;
+        letter-spacing: 0.15px;
+        line-height: 1.23;
+        letter-spacing: 0.36px;
+    }
+    a {
+        font-size: 2.9rem;
+    }
+
+    #button_one {
+        /* min-width: initial;
+            max-width: 100%;
+            margin-top: 0px;
+            margin-left: 25%; */
+    }
+
+    h1 {
+        font-size: 75px;
+        min-width: initial;
+        margin-top: 4%;
+        margin-bottom: -3%;
+    }
+
+    img {
+    }
+    #main_pic {
+        height: 400px;
+        width: 557px;
+        margin-left: 7.5%;
+    }
+
+    /* manage the multiplevel dropdown but for mobile */
+
+    .dropdown-menu .dropdown-menu {
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+        margin-bottom: 0.5rem;
+    }
+    /* ============ mobile view .end// ============ */
+}

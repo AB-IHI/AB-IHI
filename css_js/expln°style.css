@@ -10,12 +10,34 @@
   box-sizing: border-box;
 }
 
+
+
+/*boostrap */
+.position-relative {
+  position: relative !important;
+}
+.position-absolute {
+  position: absolute !important;
+}
+.bottom-0 {
+  bottom: 0 !important;
+}
+.start-50 {
+  left: 50% !important;
+}
+.translate-middle-x {
+  transform: translateX(-50%) !important;
+}
+
+
 body {
   min-height: 100vh !important;
   background-color: white;
   letter-spacing: 1px;
-  margin-right: 0px;
-  /* margin-bottom: 0px !important; */
+  margin-top: 2cm;
+  margin-bottom: 2cm;
+  margin-left: 2cm;
+  margin-right: 2cm;
 }
 
 h1 {
@@ -640,6 +662,9 @@ select.form-control:focus::-ms-value {
     font-size: 1.5em;
   }
 
+  .P11 {
+    text-indent: -1.7cm;
+  }
   .T4 {
     margin-bottom: 2%;
   }
