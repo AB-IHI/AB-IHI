@@ -1,3 +1,19 @@
+<?php
+ if (isset($_SESSION['loggedin']) && $_SESSION["loggedin"] == true) {
+        // Unset all of the session variables
+        $_SESSION = array();
+
+        // Destroy the session.
+        session_destroy();
+
+        // Redirect to login page
+        // header("location: login.php");
+        // exit;
+        $_SESSION['view'] = 'view';
+        $_SESSION['page'] = 'home';
+     header('Location: .');
+        }
+ ?>
 <!DOCTYPE html>
 <html>
 
@@ -82,6 +98,6 @@
 
     </form>
 
-    <a class="btn-inscription a_cre" href="?page=register" role="button">creer un compte</a>
+    <a class="btn-inscription a_cre" href="?page=register" role="button">créer un compte</a>
 </container>
 </container>

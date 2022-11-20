@@ -147,7 +147,7 @@ container_main {
 
 .responsive2 {
   width: 100%;
-  max-width:100%
+  max-width:100%;
   height: auto;
 }
 
@@ -332,6 +332,10 @@ html {
         max-width: 100%;*/
   margin-top: 2%;
   margin-left: 1.7vw;
+}
+
+.deconnexion {
+  font-size: 24px;
 }
 
 #don {

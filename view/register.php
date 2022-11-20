@@ -1,3 +1,20 @@
+<?php
+if (isset($_SESSION['loggedin']) && $_SESSION["loggedin"] == true) {
+    // Unset all of the session variables
+    $_SESSION = array();
+
+    // Destroy the session.
+    session_destroy();
+
+    // Redirect to login page
+    // header("location: login.php");
+    // exit;
+    $_SESSION['view'] = 'view';
+    $_SESSION['page'] = 'home';
+    header('Location: .');
+}
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -47,7 +64,7 @@
         <a class=" position-absolute top-0 start-0" href=".">retour</a>
 
     <legend>
-        <h1>creer compte</h1>
+        <h1>creer un compte en tant que volontaire </h1>
     </legend>
     <h2 class="hidetitl">Créer un compte</h2>
 
@@ -132,8 +149,8 @@
 
 
 
-        <input type="submit" class=" cnx-sub btn_dem btn-lg mx-auto btn-outline-dark" value="creer">
-        <p>Vous avez deja un compte? <a href=".?page=login">Connectez vous</a>.</p>
+        <input type="submit" class=" cnx-sub btn_dem btn-lg mx-auto btn-outline-dark" value="créer">
+        <p>Vous avez déjà un compte? <a href=".?page=login">Connectez-vous</a>.</p>
     </form>
     <!-- <a href="#" class="btn-inscription">test</a> -->
 
