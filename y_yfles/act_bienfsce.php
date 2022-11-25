@@ -268,6 +268,9 @@
 
 
 
+    <container class="auto-mx hid_btn_xl">
+            <!--  spacer between footer and main section -->
+    </container>
 
 
     <!-- footer -->
