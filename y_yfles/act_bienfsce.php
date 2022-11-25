@@ -24,6 +24,8 @@
 
 
 
+
+
         <div class="T1U">
             <a id="a_​_Voir_" class=" " href="../y_storage/1.%20Règlement%20sur%20les%20PB%20et%20les%20PH.pdf"> <span class="T1U">Lien vers le texte intégral</span></a>
         </div>
@@ -107,7 +109,15 @@
             </li>
         </ul>
         <!--end of list-->
-
+        <p class="P10">
+      <span class="T11"
+      >Un programme humanitaire sera élaboré par le président (ci-après –
+        Président) du bureau de l'Association, il entre en vigueur après
+        discussion et approbation lors d'une réunion de l'Assemblée Générale et
+        constitue un document de référence pour les participants à ce programme
+        humanitaire.</span
+      >
+        </p>
         <!--spacer-->
         <p class="P6_borderStart" />
         <p class="P7_borderEnd" />
@@ -118,7 +128,6 @@
         qui déterminent l'agenda humanitaire de l’Association sont:</span
             >
         </p>
-        <!-- list dots-->
         <ul class="custom_ul_2">
             <li>
          <span class="T12 TC"
@@ -137,54 +146,121 @@
          ><span class="odfLiEnd" />
                 </p>
             </li>
-        </ul>
-        <!--end of dotted list-->
-        <p class="P6_borderStart" />
-        <!--    links-->
-        <p class="P8" />
-        <p id="ref_j" class="P5">
+            </l>
+            <p class="P6_borderStart" />
+
+            <!--new paragraph blue text-->
+            <p class="P9" />
+            <p class="P10">
+      <span class="T5 TC"
+      >Chaque projet de bienfaisance et programme humanitairecomprend</span
+      ><span class="T11">:</span>
+            </p>
+            <!--    end of new paragraph-->
+            <!--    start list-->
+            <l class="custom_ul_2">
+                <li>
+
+          <span class="T11"
+          >le nom d'une mission de l'Association, la date de son
+            approbation par l'Assemblée Générale, ainsi que la durée de sa
+            validité;</span
+          ><span class="odfLiEnd" />
+                    </p>
+                </li>
+                <li>
+
+          <span class="T11"
+          >un préambule déterminant l'objet et les principes directeurs de la
+            mission;</span
+          ><span class="odfLiEnd" />
+                    </p>
+                </li>
+                <li>
+
+          <span class="T11"
+          >une description de la mission, son budget, ainsi que ses sources de
+            financement;</span
+          ><span class="odfLiEnd" />
+                    </p>
+                </li>
+                <li>
+
+          <span class="T11"
+          >des critères de l’accessibilité des personnes aux droits de
+            recevoir une aide ou l’assistance de l’Association dans le cadre de
+            la mission prévue;</span
+          ><span class="odfLiEnd" />
+                    </p>
+                </li>
+                <li>
+
+          <span class="T11"
+          >des règles régissant les activités et l'interaction des
+            participants à la mission;</span
+          ><span class="odfLiEnd" />
+                    </p>
+                </li>
+                <li>
+
+          <span class="T11"
+          >une procédure de déclaration et de contrôle des dépenses de
+            ressources matérielles et de l'aide fournie;</span
+          ><span class="odfLiEnd" />
+                    </p>
+                </li>
+                <li>
+
+          <span class="T7 TC"
+          >une signature du Président.</span
+          ><span class="odfLiEnd" />
+                    </p>
+                </li>
+            </l>
+            <!--    end list-->
+            <!--    links-->
+            <p class="P8" />
+            <p id="ref_j" class="P5">
       <span class="T12U">Références juridiques:<br /></span
       ><a
-                    href="https://www.associations.gouv.fr/IMG/pdf/Circulaire_Interieur_23_juin_2010_liberalites_au_culte_et_rescrit_administratif-2.pdf"
-                    class="Internet_20_link"
-            ><span class="Internet_20_link"
-                ><span class="T13"
-                    >La circulaire du ministère de l’Intérieur du 23 juin 2010</span
-                    ></span
-                ></a
-            ><span class="T9"> </span>
-        </p>
-        <p class="P14">
-            <span class="T12U">En savoir + :</span><span class="T14"><br /></span
-            ><a
-                    href="https://www.associations.gouv.fr/association-a-but-exclusif-d-assistance-et-de-bienfaisance.html"
-                    class="Internet_20_link"
-            ><span class="Internet_20_link"
-                ><span class="T14"
-                    >Association à but exclusif d’assistance et de bienfaisance</span
-                    ></span
-                ></a
+                        href="https://www.associations.gouv.fr/IMG/pdf/Circulaire_Interieur_23_juin_2010_liberalites_au_culte_et_rescrit_administratif-2.pdf"
+                        class="Internet_20_link"
+                ><span class="Internet_20_link"
+                    ><span class="T13"
+                        >La circulaire du ministère de l’Intérieur du 23 juin 2010</span
+                        ></span
+                    ></a
+                ><span class="T9"> </span>
+            </p>
+            <p class="P14">
+                <span class="T12U">En savoir + :</span><span class="T14"><br /></span
+                ><a
+                        href="https://www.associations.gouv.fr/association-a-but-exclusif-d-assistance-et-de-bienfaisance.html"
+                        class="Internet_20_link"
+                ><span class="Internet_20_link"
+                    ><span class="T14"
+                        >Association à but exclusif d’assistance et de bienfaisance</span
+                        ></span
+                    ></a
+                ><span class="T14"><br /></span>
+            </p>
+            <!--    end of links-->
+            <!--  spacer-->
+            <p class="P6_borderStart" />
+            <p class="P7_borderEnd" />
+            <p class="P6_borderStart" />
+            <p class="P7_borderEnd" />
+            <p class="P6_borderStart" />
+            <p class="P7_borderEnd" />
+            <!--  end spacer-->
+            <p class="P15"></p>
+
+
+
+
+            <a id="a_​_Voir_" href="../y_storage/1.%20Règlement%20sur%20les%20PB%20et%20les%20PH.pdf">
+                <span class="T1 custom_btm_space">Lien vers le texte intégral</span></a
             >
-        </p>
-        <!--    end of links-->
-        <!--  spacer-->
-        <p class="P6_borderStart" />
-        <p class="P7_borderEnd" />
-        <p class="P6_borderStart" />
-        <p class="P7_borderEnd" />
-        <p class="P6_borderStart" />
-        <p class="P7_borderEnd" />
-        <!--  end spacer-->
-        <p class="P15"></p>
-
-
-
-
-        <a id="a_​_Voir_" href="../y_storage/1.%20Règlement%20sur%20les%20PB%20et%20les%20PH.pdf">
-            <span class="T1 custom_btm_space">Lien vers le texte intégral</span></a
-        >
-
-
 
 
     </container>
