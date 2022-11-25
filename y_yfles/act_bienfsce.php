@@ -146,7 +146,7 @@
          ><span class="odfLiEnd" />
                 </p>
             </li>
-            </l>
+            </ul>
             <p class="P6_borderStart" />
 
             <!--new paragraph blue text-->
@@ -158,7 +158,7 @@
             </p>
             <!--    end of new paragraph-->
             <!--    start list-->
-            <l class="custom_ul_2">
+            <ul class="custom_ul_2">
                 <li>
 
           <span class="T11"
@@ -216,7 +216,7 @@
           ><span class="odfLiEnd" />
                     </p>
                 </li>
-            </l>
+            </ul>
             <!--    end list-->
             <!--    links-->
             <p class="P8" />
@@ -244,21 +244,11 @@
                     ></a
                 ><span class="T14"><br /></span>
             </p>
-            <!--    end of links-->
-            <!--  spacer-->
-            <p class="P6_borderStart" />
-            <p class="P7_borderEnd" />
-            <p class="P6_borderStart" />
-            <p class="P7_borderEnd" />
-            <p class="P6_borderStart" />
-            <p class="P7_borderEnd" />
-            <!--  end spacer-->
-            <p class="P15"></p>
 
 
 
 
-            <a id="a_​_Voir_" href="../y_storage/1.%20Règlement%20sur%20les%20PB%20et%20les%20PH.pdf">
+            <a id="a_Voir_" href="../y_storage/1.%20Règlement%20sur%20les%20PB%20et%20les%20PH.pdf">
                 <span class="T1 custom_btm_space">Lien vers le texte intégral</span></a
             >
 
@@ -268,17 +258,11 @@
 
 
 
-    <container class="auto-mx hid_btn_xl">
-            <!--  spacer between footer and main section -->
-    </container>
 
 
     <!-- footer -->
-    <span class="spacer">
-</span>
-
+    <div>
     <div id="" class="position-relative">
-
 
         <div class="container">
             <div class="position-absolute bottom-0 start-50 translate-middle-x">
@@ -287,9 +271,10 @@
             </div>
         </div>
 
-
-
     </div>
+    </div>
+    <!-- end footer-->
+
 </container_main>
 </body>
 <script type='text/javascript' src='../css_js/js/popper.min.js'></script>

@@ -166,21 +166,11 @@
                 ></a
             >
         </p>
-        <!--    end of links-->
-        <!--  spacer-->
-        <p class="P6_borderStart" />
-        <p class="P7_borderEnd" />
-        <p class="P6_borderStart" />
-        <p class="P7_borderEnd" />
-        <p class="P6_borderStart" />
-        <p class="P7_borderEnd" />
-        <!--  end spacer-->
-        <p class="P15"></p>
 
 
 
 
-        <a id="a_​_Voir_" href="../y_storage/1.%20Règlement%20sur%20les%20PB%20et%20les%20PH.pdf">
+        <a id="a_Voir_" href="../y_storage/1.%20Règlement%20sur%20les%20PB%20et%20les%20PH.pdf">
             <span class="T1 custom_btm_space">Lien vers le texte intégral</span></a
         >
 
@@ -194,9 +184,7 @@
 
 
 
-    <!-- footer -->
-    <span class="spacer">
-</span>
+
 
     <div id="" class="position-relative">
 
@@ -211,6 +199,7 @@
 
 
     </div>
+
 </container_main>
 </body>
 <script type='text/javascript' src='../css_js/js/popper.min.js'></script>

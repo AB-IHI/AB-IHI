@@ -181,9 +181,15 @@ form {
 }
 
 .sml_spcr {
+
     margin-bottom: 1.199cm;
 }
 
+#a_Voir_ {
+    margin-top: 52px;
+    margin-bottom: 85px;
+
+}
 .footer {
     bottom: 0;
     margin-bottom: 0px !important;
@@ -209,7 +215,7 @@ container {
     display: flex;
     flex-direction: column;
     margin-top: 0%; /*12*/
-    margin-bottom: 19%;
+    /*margin-bottom: 19%;*/
 }
 
 container_main {
@@ -713,6 +719,13 @@ select.form-control:focus::-ms-value {
         right: 0;
         display: flex;
         flex-direction: column;
+
+    }
+
+    #a_Voir_ {
+        margin-top: 100px;
+        margin-bottom: 95px;
+
     }
 
     .h2 {
@@ -815,9 +828,7 @@ select.form-control:focus::-ms-value {
         margin-top: 50px;
     }
 
-    .put_rght_div {
-        width: 100%;
-    }
+
 
     .offcanvas-header {
         display: block;
@@ -1006,7 +1017,7 @@ select.form-control:focus::-ms-value {
     h1 {
         font-size: 75px;
         min-width: initial;
-        margin-top: 4%;
+
         margin-bottom: -3%;
     }
 
