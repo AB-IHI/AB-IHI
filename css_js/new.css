@@ -1,3 +1,4 @@
+/*css file for default thing of text page*/
 * {
     font-family: "Mulish-VariableFont_wght";
     src: url("Mulish-VariableFont_wght.woff") format("woff"),
@@ -9,6 +10,8 @@
       padding: 0; */
     box-sizing: border-box;
 }
+
+
 
 /*boostrap */
 .position-relative {
@@ -47,11 +50,392 @@ h1 {
     min-width: 574px;
 }
 
+@page {  }
+table { border-collapse:collapse; border-spacing:0; empty-cells:show }
+td, th { vertical-align:top; font-size:12pt;}
+h1, h2, h3, h4, h5, h6 { clear:both;}
+ol, ul { margin:0; padding:0;}
+li { list-style: none; margin:0; padding:0;}
+/* "li span.odfLiEnd" - IE 7 issue*/
+li span. { clear: both; line-height:0; width:0; height:0; margin:0; padding:0; }
+span.footnodeNumber {
+    padding-right:1em;
+}
+span.annotation_style_by_filter {
+    font-size:95%;
+    font-family:Arial;
+    background-color:#fff000;
+    margin:0; border:0; padding:0;
+}
+span.heading_numbering {
+    margin-right: 0.8rem;
+}                                                           * { margin:0;}
+.P1 { font-size:12pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; }
+.P10 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; }
+.P11 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr;  margin-right:0cm; text-indent:-0.7cm; }
+.P12 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; }
+.P13 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; }
+.P14 { font-size:12pt; line-height:150%; margin-bottom:0.247cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; }
+.P15 { font-size:10pt; line-height:150%; margin-bottom:0.247cm; margin-top:0cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; }
+.P16 { font-size:12pt; line-height:150%; margin-bottom:0.247cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; }
+.P3 { font-size:18pt; font-weight:bold; margin-bottom:0.212cm; margin-top:0.423cm; text-align:left ! important; font-family:Liberation Sans; writing-mode:horizontal-tb; direction:ltr; line-height:150%; }
+.P4 { font-size:18pt; font-weight:bold; margin-bottom:0.212cm; margin-top:0.423cm; text-align:left ! important; font-family:Liberation Sans; writing-mode:horizontal-tb; direction:ltr; line-height:150%; }
+.P5 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; }
+.P6_borderStart { font-size:6pt; line-height:150%; margin-top:0cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-bottom:0.499cm;  border-bottom-style:none; }
+.P6 { font-size:6pt; line-height:150%; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-bottom:0.499cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
+.P6_borderEnd { font-size:6pt; line-height:150%; margin-bottom:0.499cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
+.P7_borderStart { font-size:12pt; line-height:150%; margin-top:0cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-bottom:0.499cm;  border-bottom-style:none; }
+.P7 { font-size:12pt; line-height:150%; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-bottom:0.499cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
+.P7_borderEnd { font-size:12pt; line-height:150%; margin-bottom:0.499cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
+.P8_borderStart { font-size:10pt; line-height:150%; margin-top:0cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; font-weight:bold; background-color:#ffffff; padding-bottom:0.499cm;  border-bottom-style:none; }
+.P8 { font-size:10pt; line-height:150%; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; font-weight:bold; background-color:#ffffff; padding-bottom:0.499cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
+.P8_borderEnd { font-size:10pt; line-height:150%; margin-bottom:0.499cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; font-weight:bold; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
+.P9_borderStart { font-size:6pt; line-height:150%; margin-top:0cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#2a6099; font-weight:bold; background-color:#ffffff; padding-bottom:0.499cm;  border-bottom-style:none; }
+.P9 { font-size:6pt; line-height:150%; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#2a6099; font-weight:bold; background-color:#ffffff; padding-bottom:0.499cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
+.P9_borderEnd { font-size:6pt; line-height:150%; margin-bottom:0.499cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#2a6099; font-weight:bold; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
+.Internet_20_link { color:#000080; text-decoration:underline; }
+.ListLabel_20_1 { font-size:12pt; font-weight:normal; }
+.T1 { color:#00a933;  font-size:14pt; font-weight:bold; }
+.T11 {  background-color:#ffffff; }
+.T12 {  font-size:12pt; background-color:#ffffff; }
+.T13 {  font-size:10pt;  }
+.T14 {  font-size:10pt; }
+.T2 { color:#00a933;  font-size:14pt; font-weight:bold; }
+.T3 { color:#2a6099;  font-size:26pt; font-weight:bold; }
+.T5 { color:#2a6099;  font-size:16pt; font-weight:bold; background-color:#ffffff; }
+.T6 { color:#000000;  background-color:#ffffff; }
+.T7 { color:#000000;  font-size:12pt; font-weight:normal; background-color:#ffffff; }
+.T8 { color:#000000;  font-size:10pt; font-weight:bold; background-color:#ffffff; }
+.T9 { color:#000000;  font-size:10pt; font-weight:normal; background-color:#ffffff; }
+/* ODF styles with no properties representable as CSS */
+.ListLabel_20_10 .ListLabel_20_11 .ListLabel_20_12 .ListLabel_20_13 .ListLabel_20_14 .ListLabel_20_15 .ListLabel_20_16 .ListLabel_20_17 .ListLabel_20_18 .ListLabel_20_19 .ListLabel_20_2 .ListLabel_20_3 .ListLabel_20_4 .ListLabel_20_5 .ListLabel_20_6 .ListLabel_20_7 .ListLabel_20_8 .ListLabel_20_9  { }
+
+#title_two {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#h2_assoc {
+    margin-bottom: 2%;
+}
+
+#welcome {
+    margin-top: 0.3rem;
+}
+.hid_btn_xl {
+    visibility: hidden;
+}
+.quisn {
+    margin-top: -50px;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    height: fit-content;
+    color: gray;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: red;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: red;
+}
+
+.col-md-12 {
+    flex: 0 0 auto;
+    /* width: 100%; */
+    /* margin-left: 8%; */
+    padding-left: 1.5rem !important;
+    margin-right: 36%;
+    margin-bottom: 7%;
+}
+
+.right_div {
+    display: flex;
+    flex-direction: column;
+}
+
+#ofs {
+    margin-top: -20px;
+}
+
+.row {
+    display: flex;
+}
+
+.row-p {
+    margin-top: 0%;
+}
+
+.sml_spcr {
+    margin-bottom: 1.199cm;
+}
+
+.footer {
+    bottom: 0;
+    margin-bottom: 0px !important;
+    position: relative !important;
+}
+
+.social_ic {
+    width: 101% !important;
+    height: 25% !important;
+    display: inline-block;
+}
+
+container {
+    /* min-height: 100% !important;
+      height: 100% !important;
+      important to comment out
+      https://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page
+       */
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0%; /*12*/
+    margin-bottom: 19%;
+}
+
+container_main {
+    /* min-height: 100% !important;
+      previous property needs to be removed and use vh instead as follows
+      https://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page */
+    height: 100vh !important;
+
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.spacer {
+    /* verticall spacer use 0 1 auto for horizontal one
+       https://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page */
+    flex: 1;
+}
+
+p {
+    font-size: 1.3em;
+    letter-spacing: 0.15px;
+
+    line-height: 1.23;
+    letter-spacing: 0.36px;
+}
+
+label {
+    font-size: 2.3em;
+    letter-spacing: 0.15px;
+
+    line-height: 1.23;
+    letter-spacing: 0.36px;
+}
+
+.row {
+    height: max-content;
+    margin-top: 6%;
+
+    padding-bottom: 10%;
+}
+
+img {
+}
+
+#main_pic {
+    margin-left: 25.9%;
+    width: 400px;
+    height: 300px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.btn_dem {
+    display: block !important;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid;
+
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem !important;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    font-size: medium;
+}
+
+cnx-sub {
+    display: block !important;
+    position: absolute !important;
+}
+.btn-lg,
+.btn-group-lg > .btn {
+    padding: 0.5rem 1rem !important;
+    font-size: 1.25rem;
+    border-radius: 0.3rem !important;
+}
+
+.btn-xl-center {
+    position: absolute;
+    margin-top: 0px;
+    /*margin-left: 100px;
+      margin-bottom: 50px;
+      padding-top: -130px ; */
+    font-size: 30px;
+    border-radius: 10px;
+    /* width: 15%; */
+    /* top: 650px; */
+}
+
+html {
+    min-height: 100% !important;
+
+    margin-right: 0;
+
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    margin-bottom: 0px;
+}
+
+#nav_top {
+    margin-left: -8vw;
+    margin-right: -8vw;
+    font-size: 13px;
+    top: 0px;
+    margin-top: 82px;
+}
+
+#navbar_top {
+    font-size: 13px;
+    width: 100%; /*fallback*/
+    width: 100vw;
+    left: 0;
+    position: absolute;
+}
+
+#login {
+    right: 0;
+}
+
+.navbar {
+    top: 0px;
+    height: 80px;
+}
+
+.navbar2 {
+    margin-top: 4.5%;
+    height: 80px;
+    margin-bottom: 6%;
+}
+
+.T4U {
+    color: #2a6099;
+
+    font-size: 26pt;
+}
+
+.T12U { /* universel used at the end for small bold text*/
+    color: #000000;
+    font-family: Tahoma;
+    font-size: 10pt;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.T01U { /* universel */
+    font-size: 12pt;
+    font-weight: normal;
+    background-color: #ffffff;
+}
+.T3U {
+    color: #2a6099;
+    font-size: 12pt;
+    font-weight: bold;
+    background-color: #ffffff;
+}
+
+
+
+/* div ul li {
+  text-indent: 0.7px;
+} */
+
+ol li {
+    margin-bottom: 0.499cm;
+    margin-left: 67px;
+    text-indent: -34px;
+}
+
+l li {
+    margin-bottom: 0.499cm;
+}
+
+ul li {    /*  exemple liste   :not(ol) > */
+    margin-bottom: 0.499cm;
+    margin-left: 59px;
+    text-indent: 0.7px;
+}
+
+ul li {
+    margin-bottom: 0.499cm;
+    margin-left: 60px;
+    list-style-type: disc;
+}
+
+ol ul li {
+    margin-left: 98px;
+}
+
+ol ol li {
+    margin-left: 98px;
+}
+/* li {
+  list-style: inherit;
+  margin-left: px;
+} */
+
+.show_list {
+    list-style: inside !important;
+}
 .hide_list {
     list-style: none;
 }
 
-
+#list_1 {
+    margin-left: 1.7cm;
+    margin-bottom: 3%;
+}
 
 .TS {
     font-size: 20px !important;
@@ -66,8 +450,7 @@ h1 {
     margin-bottom: 15px;
 }
 
-/*noinspection ALL*/
-.custom_ul {
+#custom_ul,.custom_ul {
     /* margin-left: 82px; */
 }
 
@@ -75,11 +458,9 @@ h1 {
     /* margin-left: 109px; */
 }
 
-.custom_btm_space {
-    margin-bottom: 95px;
+#custom_ul_end,.custom_ul_end {
+    /* margin-left: 48px; */
 }
-
-
 
 .T7U {
     /*see also T12U*/
@@ -97,7 +478,200 @@ h1 {
 }
 
 
-    /*noinspection ALL*/
+
+.P13U {
+    font-size: 12pt;
+    line-height: 150%;
+    margin-bottom: 0.499cm;
+    margin-top: 0cm;
+    text-align: left !important;
+    font-family: Liberation Serif;
+    writing-mode: horizontal-tb;
+    direction: ltr;
+    margin-left: 0cm;
+    margin-right: 0cm;
+    text-indent: 0cm;
+}
+
+.custom_btm_space {
+    margin-bottom: 95px;
+}
+
+.bottom_space {
+    margin-bottom: 0.7cm;
+}
+
+.article {
+    margin-bottom: 8%;
+}
+
+.article2 {
+    margin-bottom: 11%;
+}
+
+.article3 {
+    margin-bottom: 8%;
+}
+
+#title_one {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    /* grid-template-rows: 80px 600px 80px; */
+    /* display: flex;
+      flex-direction: column; */
+    min-width: 1083px;
+
+    right: 0%;
+}
+
+#button_one {
+    /* min-width: initial;
+          max-width: 100%;*/
+    margin-top: 2%;
+    margin-left: 1.7vw;
+}
+
+#don {
+    margin-left: 26%;
+}
+
+.light-gray {
+    background-color: #bfd1ec;
+}
+
+.beige {
+    background-color: #e6dbb9;
+}
+
+.bold {
+    font-weight: bold;
+}
+/* css side bar probably*/
+
+body.offcanvas-active {
+    overflow: hidden;
+}
+
+.offcanvas-header {
+    display: none;
+}
+
+.screen-darken {
+    height: 100%;
+    width: 0%;
+    z-index: 30;
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(34, 34, 34, 0.6);
+    transition: opacity 0.2s linear, visibility 0.2s, width 2s ease-in;
+}
+
+.screen-darken.active {
+    z-index: 10;
+    transition: opacity 0.3s ease, width 0s;
+    opacity: 1;
+    width: 100%;
+    visibility: visible;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    /* background-color: #fff; */
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    -webkit-transition: border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+    -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+    .form-control {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+}
+.form-control::-ms-expand {
+    background-color: transparent;
+    border: 0;
+}
+.form-control:focus {
+    color: #495057;
+    /* background-color: #fff; */
+    border-color: #80bdff;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.form-control::-webkit-input-placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+.form-control::-ms-input-placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+.form-control::placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
+}
+
+select.form-control:focus::-ms-value {
+    color: #495057;
+    background-color: #fff;
+}
+
+.form-control-file,
+.form-control-range {
+    display: block;
+    width: 100%;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+/* manages the multi level of the dropdown NOT MOBILE*/
+
+@media all and (min-width: 992px) {
+    .dropdown-menu li {
+        position: relative;
+    }
+
     .dropdown-menu .submenu {
         display: none;
         position: absolute;
@@ -105,7 +679,6 @@ h1 {
         top: -7px;
     }
 
-    /*noinspection ALL*/
     .dropdown-menu .submenu-left {
         right: 100%;
         left: auto;
@@ -115,11 +688,10 @@ h1 {
         background-color: #f1f1f1;
     }
 
-    /*noinspection ALL*/
     .dropdown-menu > li:hover > .submenu {
         display: block;
     }
-
+}
 
 /* ============ mobile view ============ */
 @media all and (max-width: 991px) {
@@ -151,21 +723,24 @@ h1 {
         font-size: 1.5em;
     }
 
+    .P11 {
+        text-indent: -1.7cm;
+    }
     .T4 {
         margin-bottom: 2%;
     }
 
-    /*noinspection ALL*/
-    .P1,.T3,.P10,.P11,.P12,.P13,.P14,.P15,.P16,.P17,.P2,.P3,P4,.P5,.P6,.P7,.P8,.P9,.T1,.T10,.T11,.T17,.T2,.T4,.T8,.T9,.TC {
+    .P1,.T3,.P10,.P11,.P12,.P13,.P14,.P15,.P16,.P17,.P2,.P3,.P4_,.P4,.P4_,.P5,.P6,.P7,.P8,.P9,.Int,.T1,.T10,.T11,.T17,.T2,.T4,.T8,.T9,.TC {
         font-size: 2.9rem !important;
     }
 
-    /*noinspection ALL*/
-    .T12,.T13,.T6,.T7,.T14,.T16,.SML,.T12U {
+    .T12,.T13,.T6,.T7,.T15,.T14,.T16,.SML,.T12U {
         font-size: 2rem;
     }
 
-
+    .custom_font_size {
+        font-size: 62px;
+    }
     .T4U {
         color: #2a6099;
         font-size: 66px !important;
@@ -217,7 +792,7 @@ h1 {
     .T1U {
         color: #00a933;
         font-weight: bold;
-        margin-bottom: 25px;
+        margin-bottom: 60px;
         font-size: 2.9rem;
         height: 98px;
     }

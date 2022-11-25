@@ -8,59 +8,8 @@
 
     <!-- <link rel="stylesheet" type="text/css" href="css_js/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css_js/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/> -->
-    <style >
-@page {  }
-    table { border-collapse:collapse; border-spacing:0; empty-cells:show }
-    td, th { vertical-align:top; font-size:12pt;}
-    h1, h2, h3, h4, h5, h6 { clear:both;}
-    ol, ul { margin:0; padding:0;}
-    li { list-style: none; margin:0; padding:0;}
-    /* "li span.odfLiEnd" - IE 7 issue*/
-    li span. { clear: both; line-height:0; width:0; height:0; margin:0; padding:0; }
-    span.footnodeNumber { padding-right:1em; }
-    span.annotation_style_by_filter { font-size:95%; font-family:Arial; background-color:#fff000;  margin:0; border:0; padding:0;  }
-    span.heading_numbering { margin-right: 0.8rem; }* { margin:0;}
-    .P1 { font-size:12pt; margin-bottom:0cm; margin-top:0cm; text-align:center ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; }
-    .P10 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; }
-    .P11 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr;  margin-right:0cm; text-indent:-0.7cm; }
-    .P12 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; }
-    .P13 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; }
-    .P14 { font-size:12pt; line-height:150%; margin-bottom:0.247cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; }
-    .P15 { font-size:10pt; line-height:150%; margin-bottom:0.247cm; margin-top:0cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; }
-    .P16 { font-size:12pt; line-height:150%; margin-bottom:0.247cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; }
-    .P3 { font-size:18pt; font-weight:bold; margin-bottom:0.212cm; margin-top:0.423cm; text-align:left ! important; font-family:Liberation Sans; writing-mode:horizontal-tb; direction:ltr; line-height:150%; }
-    .P4 { font-size:18pt; font-weight:bold; margin-bottom:0.212cm; margin-top:0.423cm; text-align:left ! important; font-family:Liberation Sans; writing-mode:horizontal-tb; direction:ltr; line-height:150%; }
-    .P5 { font-size:12pt; line-height:150%; margin-bottom:0.499cm; margin-top:0cm; text-align:left ! important; font-family:Liberation Serif; writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; }
-    .P6_borderStart { font-size:6pt; line-height:150%; margin-top:0cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-bottom:0.499cm;  border-bottom-style:none; }
-    .P6 { font-size:6pt; line-height:150%; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-bottom:0.499cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
-    .P6_borderEnd { font-size:6pt; line-height:150%; margin-bottom:0.499cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
-    .P7_borderStart { font-size:12pt; line-height:150%; margin-top:0cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-bottom:0.499cm;  border-bottom-style:none; }
-    .P7 { font-size:12pt; line-height:150%; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-bottom:0.499cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
-    .P7_borderEnd { font-size:12pt; line-height:150%; margin-bottom:0.499cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
-    .P8_borderStart { font-size:10pt; line-height:150%; margin-top:0cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; font-weight:bold; background-color:#ffffff; padding-bottom:0.499cm;  border-bottom-style:none; }
-    .P8 { font-size:10pt; line-height:150%; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; font-weight:bold; background-color:#ffffff; padding-bottom:0.499cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
-    .P8_borderEnd { font-size:10pt; line-height:150%; margin-bottom:0.499cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#000000; font-weight:bold; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
-    .P9_borderStart { font-size:6pt; line-height:150%; margin-top:0cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#2a6099; font-weight:bold; background-color:#ffffff; padding-bottom:0.499cm;  border-bottom-style:none; }
-    .P9 { font-size:6pt; line-height:150%; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#2a6099; font-weight:bold; background-color:#ffffff; padding-bottom:0.499cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
-    .P9_borderEnd { font-size:6pt; line-height:150%; margin-bottom:0.499cm; text-align:left ! important;  writing-mode:horizontal-tb; direction:ltr; margin-left:0cm; margin-right:0cm; text-indent:0cm; color:#2a6099; font-weight:bold; background-color:#ffffff; padding-top:0cm;  border-top-style:none;}
-    .Internet_20_link { color:#000080; text-decoration:underline; }
-    .ListLabel_20_1 { font-size:12pt; font-weight:normal; }
-    .T1 { color:#00a933;  font-size:14pt; font-weight:bold; }
-    .T11 {  background-color:#ffffff; }
-    .T12 {  font-size:12pt; background-color:#ffffff; }
-    .T13 {  font-size:10pt;  }
-    .T14 {  font-size:10pt; }
-    .T2 { color:#00a933;  font-size:14pt; font-weight:bold; }
-    .T3 { color:#2a6099;  font-size:26pt; font-weight:bold; }
-    .T5 { color:#2a6099;  font-size:16pt; font-weight:bold; background-color:#ffffff; }
-    .T6 { color:#000000;  background-color:#ffffff; }
-    .T7 { color:#000000;  font-size:12pt; font-weight:normal; background-color:#ffffff; }
-    .T8 { color:#000000;  font-size:10pt; font-weight:bold; background-color:#ffffff; }
-    .T9 { color:#000000;  font-size:10pt; font-weight:normal; background-color:#ffffff; }
-    /* ODF styles with no properties representable as CSS */
-    .ListLabel_20_10 .ListLabel_20_11 .ListLabel_20_12 .ListLabel_20_13 .ListLabel_20_14 .ListLabel_20_15 .ListLabel_20_16 .ListLabel_20_17 .ListLabel_20_18 .ListLabel_20_19 .ListLabel_20_2 .ListLabel_20_3 .ListLabel_20_4 .ListLabel_20_5 .ListLabel_20_6 .ListLabel_20_7 .ListLabel_20_8 .ListLabel_20_9  { }
-    </style>
-    <link rel="stylesheet" type="text/css" href="../css_js/expln°style.css" />
+
+    <link rel="stylesheet" type="text/css" href="../css_js/new.css" />
 
 
 </head>
@@ -69,68 +18,199 @@
 
 
 
-    <container_main class="container">
-
+<container_main class="container">
+    <!--begin main section-->
     <container class="auto-mx ">
 
-<div id="" class=" d-flex align-items-center justify-content-center">
-    <?php 
-    include_once "Activités de bienfaisance et humanitaire.html"; 
-    ?>
-</div>
-
-</container>
-
-<container class="auto-mx hid_btn_xl">
-<!-- 
-<article class="article">
-    <div class="container px-4 py-5">
-        <div id="featured" class="d-flex align-items-center justify-content-center">
-            <a id="a_​_Voir_" href="y_storage/Règlement sur les bénévoles.pdf"><div class="T2 Tcustom">Lien vers le texte intégral</div></a>
-            <h1 class="T4 Tcustom pb-2 border-bottom ">​ Dons faits au profit d'organismes étrangers   </h1>
-        
-        <div class="">
-            <div class="wrapper ">
-                <p>
-                
-    
 
 
-                </p>
-            </div>
+        <div class="T1U">
+            <a id="a_​_Voir_" class=" " href="../y_storage/1.%20Règlement%20sur%20les%20PB%20et%20les%20PH.pdf"> <span class="T1U">Lien vers le texte intégral</span></a>
         </div>
-    </div>
-</article> -->
-
-     
-     
-     <!-- end -->
 
 
 
-</container>
+        <h1 class="T4U Tcustom pb-2 border-bottom">
+            Activités de bienfaisance et humanitaire
+        </h1>
 
-</div>
+        <!-- 1st paragraph-->
+        <p class="P5 T6 TC">
+      <span >
+          L'association de bienfaisance « Initiative Humanitaire Internationale »
+        (ci-après – l'Association) exerce des activités de bienfaisance et
+        humanitaires.
+      </span>
+        </p>
+        <!-- end of 1st paragraph -->
+        <!--  spacer-->
+        <p class="P6_borderStart" />
+        <p class="P7_borderEnd" />
+        <!--  end spacer-->
+        <!--2nd paragraph with bold blue text and br-->
+        <p class="P10">
+            <span class="T5 TC">Les activités de bienfaisance</span >
+            <span class="T11">
+        de l'Association sont menées dans le cadre de projets de bienfaisance –
+        il s'agit d'actions n'ayant pas un caractère d'intérêt personnel, visant
+        à améliorer les conditions de vie de personnes en situation précaire ou
+        difficile.<br />Les situations précaires ou difficiles des personnes
+        visées ne recouvrent pas systématiquement le niveau de ressources de ces
+        personnes. Il peut s’agir du handicap, de la maladie, de l’isolement, de
+        la vieillesse, de la discrimination, etc.</span
+            >
+        </p>
+        <!-- end of 2nd paragraph-->
+        <!--3rd paragraph-->
+        <p class="P5 T6 TC">
+      <span >
+          Un projet de bienfaisance sera élaboré par le directeur (ci-après –
+        Directeur) d’un office de l'Association, il entre en vigueur après
+        discussion et approbation lors d'une réunion de l'assemblée générale
+        (ci-après – l'Assemblée Générale) de l'Association et constitue un
+        document de référence pour les participants à ce projet de
+        bienfaisance.</span >
+        </p>
+        <!--end of 3rd paragraph-->
+        <!--spacer-->
+        <p class="P6_borderStart" />
+        <p class="P7_borderEnd" />
+        <!--end of spacer-->
+        <!--new paragraph with bold blue text-->
+        <p class="P10">
+            <span class="T5 TC">L'activité humanitaire</span>
+            <span class="T11"> de l'Association consiste en:</span>
+        </p>
+        <!--end of new paragraph-->
+        <!--list-->
+        <ul class="hide_list">
+            <li class="hide_list">
+                <p class="P11" >
+          <span class="T11"
+          >1) la mise en œuvre de programmes humanitaires visant les actions
+            d'urgence ainsi que les actions requises en vue de la satisfaction
+            des besoins indispensables des populations en situation de détresse
+            ou de misère et en vue de contribuer à leur insertion
+            sociale;</span
+          ><span class="odfLiEnd" />
+                </p>
+            </li>
+            <li class="hide_list">
+                <p class="P11" >
+          <span class="T6 TC"
+          >2) la promotion des idées d'humanisme, la coordination des efforts
+            et l’interaction en matière de réponse humanitaire avec d'autres
+            associations, organismes internationaux et étatiques, ainsi qu'avec
+            des administrations territoriales.</span
+          ><span class="odfLiEnd" />
+                </p>
+            </li>
+        </ul>
+        <!--end of list-->
+
+        <!--spacer-->
+        <p class="P6_borderStart" />
+        <p class="P7_borderEnd" />
+        <!--end of spacer-->
+        <p class="P10">
+      <span class="T5 TC">Les sources des critères</span
+      ><span class="T11">
+        qui déterminent l'agenda humanitaire de l’Association sont:</span
+            >
+        </p>
+        <!-- list dots-->
+        <ul class="custom_ul_2">
+            <li>
+         <span class="T12 TC"
+         >en France : la Constitution, la Déclaration des droits de l'homme
+            et du citoyen, la Charte de l'environnement, ainsi que les autres
+            accords internationaux touchant à des questions humanitaires
+            auxquels la République française a adhéré;</span
+         ><span class="odfLiEnd" />
+                </p>
+            </li>
+            <li>
+         <span class="T6 TC"
+         >dans le pays d'accréditation de l'Association: par la législation
+            en vigueur de ce pays concernant les questions humanitaires, compte
+            tenu des traités internationaux auxquels il a adhéré.</span
+         ><span class="odfLiEnd" />
+                </p>
+            </li>
+        </ul>
+        <!--end of dotted list-->
+        <p class="P6_borderStart" />
+        <!--    links-->
+        <p class="P8" />
+        <p id="ref_j" class="P5">
+      <span class="T12U">Références juridiques:<br /></span
+      ><a
+                    href="https://www.associations.gouv.fr/IMG/pdf/Circulaire_Interieur_23_juin_2010_liberalites_au_culte_et_rescrit_administratif-2.pdf"
+                    class="Internet_20_link"
+            ><span class="Internet_20_link"
+                ><span class="T13"
+                    >La circulaire du ministère de l’Intérieur du 23 juin 2010</span
+                    ></span
+                ></a
+            ><span class="T9"> </span>
+        </p>
+        <p class="P14">
+            <span class="T12U">En savoir + :</span><span class="T14"><br /></span
+            ><a
+                    href="https://www.associations.gouv.fr/association-a-but-exclusif-d-assistance-et-de-bienfaisance.html"
+                    class="Internet_20_link"
+            ><span class="Internet_20_link"
+                ><span class="T14"
+                    >Association à but exclusif d’assistance et de bienfaisance</span
+                    ></span
+                ></a
+            >
+        </p>
+        <!--    end of links-->
+        <!--  spacer-->
+        <p class="P6_borderStart" />
+        <p class="P7_borderEnd" />
+        <p class="P6_borderStart" />
+        <p class="P7_borderEnd" />
+        <p class="P6_borderStart" />
+        <p class="P7_borderEnd" />
+        <!--  end spacer-->
+        <p class="P15"></p>
 
 
 
-<!-- footer -->
-<span class="spacer">
+
+        <a id="a_​_Voir_" href="../y_storage/1.%20Règlement%20sur%20les%20PB%20et%20les%20PH.pdf">
+            <span class="T1 custom_btm_space">Lien vers le texte intégral</span></a
+        >
+
+
+
+
+    </container>
+    <!--end main section-->
+
+
+
+
+
+    <!-- footer -->
+    <span class="spacer">
 </span>
 
-        <div id="" class="position-relative">
+    <div id="" class="position-relative">
 
 
-            <div class="container">
-                <div class="position-absolute bottom-0 start-50 translate-middle-x">
-                    <!--hidden when full width -->
-                    <p>© 2022 IHI asso</p>
-                </div>
+        <div class="container">
+            <div class="position-absolute bottom-0 start-50 translate-middle-x">
+                <!--hidden when full width -->
+                <p>© 2022 IHI asso</p>
             </div>
-
-
-
         </div>
+
+
+
+    </div>
 </container_main>
 </body>
 <script type='text/javascript' src='../css_js/js/popper.min.js'></script>
