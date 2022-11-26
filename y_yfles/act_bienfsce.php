@@ -259,8 +259,9 @@
 
 
 
-
+    <span class="spacer"><!-- spacer pushes div footer down so its not in the middle of page --></span>
     <!-- footer -->
+
     <div>
     <div id="" class="position-relative">
 
