@@ -186,7 +186,7 @@
 
 
 
-    <span class="spacer"><!-- spacer pushes div footer down so its not in the middle of page --></span>
+    <span class="spacer"><!-- spacer pushes div footer down so its not in the middle of page, needed when there is not enough text to fill page --></span>
     <!-- footer -->
 
     <div id="" class="position-relative">
@@ -194,7 +194,6 @@
 
         <div class="container">
             <div class="position-absolute bottom-0 start-50 translate-middle-x">
-                <!--hidden when full width -->
                 <p>© 2022 IHI asso</p>
             </div>
         </div>

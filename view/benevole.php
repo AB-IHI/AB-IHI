@@ -256,14 +256,16 @@ echo '<img class= "responsive" src="uploads/'. $photo  .'" alt="My profile pic">
                 </a> et je m'engage à le respecter
   </label>
 </div>
+    
                 <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
   <label class="form-check-label" for="flexCheckCheckedDisabled">
   J'ai pris connaissance des conditions du <a href="#">
                     projet de bienfaisance
-                </a> et je m'engage à les respecter
+                </a>, <a href="y_storage/1.%20Protection%20temporaire.pdf">prgramme humanitaire</a>  et je m'engage à les respecter
   </label>
-</div>
+                </div>
+    
 <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
   <label class="form-check-label" for="flexCheckCheckedDisabled">
