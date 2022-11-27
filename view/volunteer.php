@@ -1,9 +1,9 @@
 <?php 
-echo "<!--";
+echo "<!-- volunteer.php ; view :";
 var_dump($_SESSION['view']) ;
-echo " view   and  ";
+echo "     and page :  ";
 var_dump($_SESSION['page']);
-echo "-->";
+echo ";-->";
 
 include_once $_SESSION['page'] . ".php";
 // include_once  "footer.php";

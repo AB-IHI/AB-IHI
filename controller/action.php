@@ -91,12 +91,12 @@ if (isset($_GET['page'])) { // test almost same if above but both needed
         header('Location: ./view/options.php');
     }
 
-} else {
+} /*else {
 
 
     // $_SESSION['page'] = 'home'; // not needed anymore since creationn of volunteer
     // var_dump($_SESSION['page']);
-}
+}*/
 
 include_once "action_user.php";
 

@@ -3,7 +3,7 @@
 if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin') { // test almost same if above
 
 
-    header('Location: .');
+/*    header('Location: .');*/
 
 
 }?>

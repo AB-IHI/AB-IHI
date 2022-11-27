@@ -100,4 +100,3 @@
 
     <a class="btn-inscription a_cre" href="?page=register" role="button">créer un compte</a>
 </container>
-</container>
