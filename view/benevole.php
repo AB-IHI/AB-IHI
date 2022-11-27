@@ -260,9 +260,9 @@ echo '<img class= "responsive" src="uploads/'. $photo  .'" alt="My profile pic">
                 <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
   <label class="form-check-label" for="flexCheckCheckedDisabled">
-  J'ai pris connaissance des conditions du <a href="#">
+  J'ai pris connaissance des conditions du <a href="y_storage/1. L'aube de l'espoir.pdf">
                     projet de bienfaisance
-                </a>, <a href="y_storage/1.%20Protection%20temporaire.pdf">prgramme humanitaire</a>  et je m'engage à les respecter
+                </a>, <a href="y_storage/1.%20Protection%20temporaire.pdf">programme humanitaire</a>  et je m'engage à les respecter
   </label>
                 </div>
     

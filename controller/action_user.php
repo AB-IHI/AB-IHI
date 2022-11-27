@@ -318,7 +318,8 @@ if (isset($_POST["action"])) {
                             // Display an error message if username doesn't exist
                             $username_err = "No account found with that username.";
                             $_SESSION['page'] = "login";
-                            echo "executed 3";
+                            echo "
+                            executed 3";
                         }
                     } else {
                         echo "Oops! Something went wrong. Please try again later.";

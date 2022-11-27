@@ -130,9 +130,9 @@ if (isset($_SESSION['loggedin']) && $_SESSION["loggedin"] == true) {
         <div class="form-check">
             <input class="form-check-input" type="checkbox" name="condition" value="1" id="flexCheckDefault2" required="">
             <label class="form-check-label" for="flexCheckDefault2">
-                J'ai pris connaissance des conditions du <a href="#">
+                J'ai pris connaissance des conditions du <a href="y_storage/1. L'aube de l'espoir.pdf">
                     projet de bienfaisance
-                </a> et je m'engage à les respecter
+                </a>, <a href="y_storage/1.%20Protection%20temporaire.pdf">programme humanitaire</a>  et je m'engage à les respecter
             </label>
         </div>
         <!-- 2eme  1. Règlement sur les PB et les PH.pdf-->
