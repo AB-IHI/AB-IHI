@@ -116,29 +116,32 @@ if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin') { // test almost s
 
 
 
-            <!-- footer -->
-            <span class="spacer">
+
+
+    </container>
+        <span class="spacer">
             </span>
-            <container id="footer_" class="container sticky-bottom my-auto">
-                <footer class="pt-4 mt-4 footer mt-auto sticky-bottom">
+        <!-- footer -->
+        <container id="footer_" class="container sticky-bottom my-auto">
+            <footer class="pt-4 mt-4 footer mt-auto sticky-bottom">
 
 
-                    <div class="d-flex justify-content-between py-4 my-4 border-top">
-                        <!-- <p class="hidetitl">
-                /*hidden when min width */
-            © 2022 IHI asso
-            </p> -->
+                <div class="d-flex justify-content-between py-4 my-4 border-top">
+                    <!-- <p class="hidetitl">
+            /*hidden when min width */
+        © 2022 IHI asso
+        </p> -->
 
-                    </div>
-                    <p class="text-center text-muted ">
-                        <!--hidden when full width -->
-                        © 2022 IHI asso
-                    </p>
+                </div>
+                <p class="text-center text-muted ">
+                    <!--hidden when full width -->
+                    © 2022 IHI asso
+                </p>
 
-                </footer>
+            </footer>
 
-            </container>
-    </container_main>
+        </container>
+        </container_main>
 </body>
 <script type='text/javascript' src='css_js/js/popper.min.js'></script>
 <script type='text/javascript' src='css_js/js/bootstrap.js'></script>
