@@ -41,18 +41,11 @@ if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin') { // test almost s
         </header>
 
         <container class="">
+            <?php
 
-
-
-
-
-
-
-            </div>
-
-
-
-
+            modification_compte();
+            ?>
+        </container>
 
             <container>
                 <?php

@@ -141,14 +141,95 @@ function recup_role($user)
     return $role;
 }
 
-function modification_compte($id, $nick, $password, $mail, $user)
-{
-    global $c;
-    $sql = "UPDATE `users` SET `mdp` = '" . $password . "', `email` = '" . $mail . "', `nick` = '" . $nick . "' WHERE `users`.`id` = '" . $id . "'";
-    $sql2 = "UPDATE `media` SET `createur` = '" . $nick . "' WHERE `createur` = '" . $user . "'";
-    //echo $sql;
-    mysqli_query($c, $sql);
-    mysqli_query($c, $sql2);
+function modification_compte()
+{            /* Define variables and initialize with empty values*/
+    $passport = $date = $pays = $adress = $email = $rib = $telephone = "";
+    $passport_err = $date_err = $pays_err = $adress_err = $email_err = $rib_err = $telephone_err = "";
+
+   ?> <form action="." method="post" class="signin-form">
+                <input type="hidden" name="action" value="info_add">
+                <div class="col-12">
+
+                    <div class="col-12 <?php echo (!empty($passport_err)) ? 'has-error' : ''; ?>">
+                        <input type="text" class="form-control btn-lg" name="passport" id="passport" value="<?php //echo $nom;
+                                                                                                            ?>" placeholder="pièce d'identité  " required="">
+                        <span class="help-block"><?php echo $passport_err;
+                                                    ?></span>
+<!-- <div class="invalid-feedback ">
+    passeport is required.
+</div> -->
+
+<input type="text" class="form-control btn-lg" name="date" id="date" placeholder="date expiration de la pièce d'identité" required="">
+<span class="help-block"><?php echo $date_err;
+    ?></span>
+<!-- <div class="invalid-feedback ">
+    date is required.
+</div> -->
+</div>
+
+
+<div class="col-12 <?php echo (!empty($pays_err)) ? 'has-error' : ''; ?>">
+
+    <input type="text" name="pays" class="form-control btn-lg" name="pays" id="pays" value="<?php //echo $pays;
+    ?>" placeholder="nationalité" required="">
+    <span class="help-block"><?php echo $pays_err;
+        ?></span>
+    <!-- <div class="invalid-feedback ">
+pays is required.-->
+</div>
+<div class="form-group <?php echo (!empty($adress_err)) ? 'has-error' : ''; ?>">
+
+    <input type="adress" name="adress" class="form-control btn-lg" name="adress" id="adress" value="<?php //echo $adress;
+    ?>" placeholder=" adress" required="">
+    <span class="help-block"><?php echo $adress_err;
+        ?></span>
+    <!-- <div class="invalid-feedback">
+Valid adress is required.-->
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="col-12 ">
+
+
+</div>
+
+<!--<div class="form-group <?php /*echo (!empty($email_err)) ? 'has-error' : ''; */?>">
+                    <input type="email" name="email" class="form-control btn-lg" id="pw" value="<?php /*echo $email; */?>" placeholder=" email" >
+                    <span class="help-block"><?php /*echo $email_err; */?></span>
+                    <div class="invalid-feedback">
+            email is required.
+                </div>-->
+
+<div class="form-group <?php echo (!empty($telephone_err)) ? 'has-error' : ''; ?>">
+    <input type="text" class="form-control btn-lg" name="telephone" id="telephone" placeholder="N° telephone" required="">
+    <span class="help-block"><?php echo $telephone_err; ?></span>
+    <!-- <div class="invalid-feedback">
+        Please enter a telephone address.
+    </div> -->
+
+</div>
+
+<div class="form-group <?php echo (!empty($rib_err)) ? 'has-error' : ''; ?>">
+    <input type="text" class="form-control btn-lg" name="rib" id="rib" placeholder="IBAN facultatif" >
+    <span class="help-block"><?php echo $rib_err; ?></span>
+    <!-- <div class="invalid-feedback">
+        Please enter a rib address.
+    </div> -->
+
+</div>
+
+
+
+
+<input type="submit" class=" cnx-sub btn_dem btn-lg mx-auto btn-outline-dark" value="enregistrer">
+
+</form> <?php
 }
 
 function suppression($id)

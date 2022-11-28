@@ -196,7 +196,7 @@ if (isset($_POST["action"])) {
 
                         // Validate RIB if available (user not forced to provide rib)
                         if (!empty(trim($_POST["rib"]))) {
-                            if (strlen(trim($_POST["rib"])) < 16) {
+                            if (strlen(trim($_POST["rib"])) != 16 ) {
 //                                $rib_err = "rib must have atleast 16 characters.";
                                 echo "rib must have at least 16 characters.";
                             } else {
@@ -206,7 +206,7 @@ if (isset($_POST["action"])) {
 
             // Check input errors before inserting in database
             if (empty($passport_err) && empty($date_err) && empty($pays_err) 
-            && empty($adress_err) && empty($telephone_err) ) {
+            && empty($adress_err) && empty($telephone_err)  && empty($rib_err)) {
 
                 // Prepare an insert statement UPDATE `users` SET `date` = '11/01/02' WHERE `users`.`id` = 4; 
 
