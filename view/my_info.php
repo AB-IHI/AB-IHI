@@ -1,5 +1,6 @@
 <!--  -->
 <?php
+unset($_GET['page']); /*unset get page variable so it can go back(using back button browser) without breaking the app (blank page when broken)*/
 if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin') { // test almost same if above
 
 
