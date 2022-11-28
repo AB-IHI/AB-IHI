@@ -1,3 +1,6 @@
+<?php
+unset($_GET['page']); /*unset get page variable so it can go back(using back button browser) without breaking the app (blank page when broken)*/
+?>
 <!DOCTYPE html>
 <html>
 
@@ -14,21 +17,7 @@
 </head>
 <body class="mb-0">
 
-<!-- http://www.w3.org/2000/svg -->
 
-
-<container_main class="container">
-    <span class="screen-darken"></span>
-
-
-
-
-
-
-
-    <header>
-
-    </header>
 
     <container_main class="container">
 
@@ -246,7 +235,6 @@ echo '<img class= "responsive" src="uploads/'. $photo  .'" alt="My profile pic">
                 ?>
 
 
-                <p> <a href="#">top</a>.</p>
 
                 <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
@@ -297,33 +285,35 @@ echo '<img class= "responsive" src="uploads/'. $photo  .'" alt="My profile pic">
 
 
 
-    </container_main>
 
 
 
+
+    <span class="spacer"><!-- spacer pushes div footer down so its not in the middle of page, needed when there is not enough text to fill page --></span>
     <!-- footer -->
-    <span class="spacer">
-    </span>
-    <container id="footer_" class="container sticky-bottom my-auto">
-        <footer class="pt-4 mt-4 footer mt-auto sticky-bottom">
+
+        <container id="footer_" class="container sticky-bottom my-auto">
+            <p class=""> <a href="#">top</a>.</p>
+            <footer class="pt-4 mt-4 footer mt-auto sticky-bottom">
 
 
-            <div class="d-flex justify-content-between py-4 my-4 border-top">
-                <!-- <p class="hidetitl">
+                <div class="d-flex justify-content-between py-4 my-4 border-top">
+                    <!-- <p class="hidetitl">
             /*hidden when min width */
         © 2022 IHI asso
         </p> -->
 
-            </div>
-            <p class="text-center text-muted ">
-                <!--hidden when full width -->
-                © 2022 IHI asso
-            </p>
+                </div>
+                <p class="text-center text-muted ">
+                    <!--hidden when full width -->
+                    © 2022 IHI asso
+                </p>
 
-        </footer>
+            </footer>
 
-    </container>
-</container_main>
+        </container>
+    </container_main>
+
 </body>
 <script type='text/javascript' src='css_js/js/popper.min.js'></script>
 <script type='text/javascript' src='css_js/js/bootstrap.js'></script>

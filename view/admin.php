@@ -78,10 +78,9 @@ if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin') { // test almost s
         </container>
 
 
+        <span class="spacer"><!-- spacer pushes div footer down so its not in the middle of page, needed when there is not enough text to fill page --></span>
 
         <!-- footer -->
-        <span class="spacer">
-            </span>
         <container id="footer_" class="container sticky-bottom my-auto">
             <footer class="pt-4 mt-4 footer mt-auto sticky-bottom">
 
