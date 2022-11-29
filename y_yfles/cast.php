@@ -20,6 +20,15 @@
 
 <container_main class="container">
 <!--begin main section-->
+    <span class="spacer"><!-- spacer pushes div footer down so its not in the middle of page, needed when there is not enough text to fill page --></span>
+<!--end main section-->
+
+
+
+
+
+
+
     <container class="auto-mx ">
 
 
@@ -112,6 +121,40 @@
         <p class="P6_borderStart" />
         <p class="P7_borderEnd" />
         <!--end of spacer-->
+        <!--secondary title after 1st title at the beggining-->
+        <p class="TTL2">Personnes en situation précaire ou difficile</p>
+        <!--end of secondary title after 1st title at the beggining-->
+        <!--ol ul li-->
+        <ol>
+            <ul>
+                <li>
+                    <p class="P12" >
+                        <span>l’aide sociale (indigents, vieillards, infirmes, malades),</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="P12" >
+                        <span>l’assistance à l’enfant,</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="P12" >
+                        <span>pensions militaires d'invalidité,</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="P12" >
+                        <span>pensions aux victimes de guerre</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="P12" >
+                        <span> etc. ;</span>
+                    </p>
+                </li>
+            </ul>
+        </ol>
+        <!--end of ol ul li-->
         <p class="P10">
       <span class="T5 TC">Les sources des critères</span
       ><span class="T11">
@@ -139,8 +182,8 @@
             </li>
         </ul>
         <!--end of dotted list-->
-        <p class="P6_borderStart" />
-        <!--    links-->
+        <p class="P6_borderStart" /><!--probably smaller spacer-->
+        <!--    links and ref-->
         <p class="P8" />
         <p id="ref_j" class="P5">
       <span class="T12U">Références juridiques:<br /></span
@@ -166,27 +209,18 @@
                 ></a
             >
         </p>
-
+        <!-- end of links and ref-->
 
 
 
         <a id="a_Voir_" href="../y_storage/1.%20Règlement%20sur%20les%20PB%20et%20les%20PH.pdf">
-            <span class="T1 custom_btm_space">Lien vers le texte intégral</span></a
+            <span class="T1U">Lien vers le texte intégral</span></a
         >
 
 
 
 
     </container>
-<!--end main section-->
-
-
-
-
-
-
-
-    <span class="spacer"><!-- spacer pushes div footer down so its not in the middle of page, needed when there is not enough text to fill page --></span>
     <!-- footer -->
 
     <div id="" class="position-relative">

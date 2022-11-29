@@ -50,6 +50,19 @@ h1 {
     min-width: 574px;
 }
 
+.TTL2 {
+    color: #2a6099;
+    font-size: 18pt;
+    line-height: 150%;
+    writing-mode: horizontal-tb;
+    direction: ltr;
+    font-weight: bold;
+    background-color: #ffffff;
+    padding-bottom: 0.499cm;
+    padding-top: 0cm;
+    border-top-style: none;
+    border-bottom-style: none;
+}
 @page {  }
 table { border-collapse:collapse; border-spacing:0; empty-cells:show }
 td, th { vertical-align:top; font-size:12pt;}
@@ -478,6 +491,7 @@ ol ol li {
 }
 
 .T1U {
+    margin-top: min(60px);
     color: #00a933;
     font-weight: bold;
     margin-bottom: 60px;
@@ -753,6 +767,10 @@ select.form-control:focus::-ms-value {
 
     .custom_font_size {
         font-size: 62px;
+    }
+
+    .TTL2 {
+        font-size: 38pt;;
     }
     .T4U {
         color: #2a6099;
