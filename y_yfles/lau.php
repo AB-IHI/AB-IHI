@@ -8,7 +8,7 @@
 
     <!-- <link rel="stylesheet" type="text/css" href="css_js/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css_js/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/> -->
-    <style type="text/css">
+    <style >
 
 @page {  }
     table { border-collapse:collapse; border-spacing:0; empty-cells:show }
@@ -44,7 +44,7 @@
     .T6 { color:#ea7500;  font-size:18pt; font-weight:bold; background-color:#ffffff; }
     /* ODF styles with no properties representable as CSS */
     .T1  { }</style>
-    <link rel="stylesheet" type="text/css" href="../css_js/expln°style.css" />
+    <link rel="stylesheet" type="text/css" href="../css_js/new.css" />
 
 
 </head>
@@ -58,62 +58,56 @@
     <container class="auto-mx ">
 
 <div id="" class=" d-flex align-items-center justify-content-center">
-    <?php 
-    include_once "01. L'aube de l'espoir.php"; 
-    ?>
+    <div class="T1U"><a class="a_Voir_" href="../y_storage/1. L'aube de l'espoir.pdf">
+            Lien vers le texte intégral</a></div>
+
+    <p class="P6"><span class="T3">Projet de bienfaisance</span></p>
+
+    <h1 class="T4U Tcustom pb-2 border-bottom ">L'aube de l'espoir </h1>
+
+    <p class="P5">&nbsp;</p>
+
+    <p class="P8_borderStart" />
+    <p class="P8_borderEnd" />
+    <p class="bottom_space P9"> <span class="T6">Consulter une section:</span>                                      </p>
+    <p class="bottom_space P10"><a href="../y_xlau/goal_mission.php"><span class="T5">Objet et principes directeurs de la mission</span>               </a>       </p>
+    <p class="bottom_space P4"> <a href="../y_xlau/explain_mi.php"><span class="T5">Description de la mission</span>                      </a>                   </p>
+    <p class="bottom_space P4"> <a href="../y_xlau/finance.php"><span class="T5">Budget et sources de financement</span>                     </a>             </p>
+    <p class="bottom_space P4"> <a href="../y_xlau/admiss.php"><span class="T5">Admissibilité à l'aide</span>                      </a>                          </p>
+    <p class="bottom_space P4"> <a href="../y_xlau/interact.php"><span class="T5">Interaction des participants à la mission</span>                 </a>         </p>
+    <p class="bottom_space P4"><a href="Act_internat°al.php"><span class="T5">Activités de bienfaisance et humanitaires internationales</span></a></p>
+    <p class="bottom_space P4"> <a href="../y_xlau/dec&ctrl.php"><span class="T5">Procédure de déclaration et de contrôle</span>                 </a>       </p>
+    <p class="P7"></p>
+    <p class="P5">&nbsp;</p>
+    <div class="a_Voir_"><a class="T1U" href="
+../y_storage/1. L'aube de l'espoir.pdf">Lien vers le texte intégral</a></div>
+
+
 </div>
 
 </container>
 
-<container class="auto-mx hid_btn_xl">
-<!-- 
-<article class="article">
-    <div class="container px-4 py-5">
-        <div id="featured" class="d-flex align-items-center justify-content-center">
-            <a id="a_​_Voir_" href="y_storage/Règlement sur les bénévoles.pdf"><div class="T2 Tcustom">Lien vers le texte intégral</div></a>
-            <h1 class="T4 Tcustom pb-2 border-bottom ">​ Dons faits au profit d'organismes étrangers   </h1>
-        
-        <div class="">
-            <div class="wrapper ">
-                <p>
-                
-    
 
 
-                </p>
+
+
+      <span class="spacer"><!-- spacer pushes div footer down so its not in the middle of page, needed when there is not enough text to fill page --></span>
+
+        <!--  footer -->
+
+        <div id="" class="position-relative">
+
+
+            <div class="container">
+                <div class="position-absolute bottom-0 start-50 translate-middle-x">
+                    <p>© 2022 IHI asso</p>
+                </div>
             </div>
+
+
+
         </div>
-    </div>
-</article> -->
-
-     
-     
-     <!-- end -->
-
-
-
-</container>
-
-</div>
-
-
-
-<!-- footer -->
-<span class="spacer">
-</span>
-<container id="footer_" class="container sticky-bottom my-auto">
-    <footer class="pt-4 mt-4 footer mt-auto sticky-bottom">
-
-
-
-        <p class="text-center text-muted ">
-            <!--hidden when full width -->
-            © 2022 IHI asso
-        </p>
-
-    </footer>
-
-</container>
+        <!-- end footer -->
 </container_main>
 </body>
 <script type='text/javascript' src='../css_js/js/popper.min.js'></script>

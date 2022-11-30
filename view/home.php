@@ -109,14 +109,14 @@ include_once "header.php";
                 <p> Les situations précaires ou difficiles des personnes visées ne recouvrent pas systématiquement le niveau de ressources de ces personnes. Il peut s’agir du handicap, de la maladie, de l’isolement, de la vieillesse, de la discrimination, etc.
                 </p>
                 <p>
-                L'<a href="y_storage/1. Protection temporaire.pdf">activité humanitaire</a> de l'Association consiste en :
+                L'<a href="y_storage/1. Protection temporaire.pdf">activité humanitaire</a> de l'Association consiste en:
                 </p>
 
                 <ul class="hide_list ">
                     <li class=" hide_list horiz_spacin" >
                     <p>
                         1)  mise en œuvre de programmes humanitaires visant les actions d'urgence ainsi que les actions requises en vue de la satisfaction
-                        des besoins indispensables des populations en situation de détresse ou de misère et en vue de contribuer à leur insertion sociale ;
+                        des besoins indispensables des populations en situation de détresse ou de misère et en vue de contribuer à leur insertion sociale;
                     </p></li>
                 <li class="hide_list horiz_spacin" >
                 <p>

@@ -35,8 +35,6 @@ body {
     min-height: 100vh !important;
     background-color: white;
     letter-spacing: 1px;
-    margin-top: 2cm;
-    margin-bottom: 2cm;
     margin-left: 2cm;
     margin-right: 2cm;
 }
@@ -494,7 +492,7 @@ ol ol li {
     margin-top: min(60px);
     color: #00a933;
     font-weight: bold;
-    margin-bottom: 60px;
+    margin-bottom: 85px;
 }
 
 
@@ -717,7 +715,7 @@ select.form-control:focus::-ms-value {
 @media all and (max-width: 991px) {
     .container {
         border: none;
-
+        min-width: fit-content;
         display: flex;
     }
 
@@ -738,7 +736,7 @@ select.form-control:focus::-ms-value {
 
     #a_Voir_ {
         margin-top: 100px;
-        margin-bottom: 95px;
+        margin-bottom: 168px;
 
     }
 
@@ -823,9 +821,11 @@ select.form-control:focus::-ms-value {
     .T1U {
         color: #00a933;
         font-weight: bold;
+        margin-top: min(100px);
         margin-bottom: 60px;
         font-size: 2.9rem;
         height: 98px;
+        padding-bottom: 20px;
     }
 
     .T3U, .T01U {
@@ -1000,7 +1000,7 @@ select.form-control:focus::-ms-value {
 
     .footer {
         /* , ul, li, a  */
-        height: 100%;
+
     }
 
     .social_ic {

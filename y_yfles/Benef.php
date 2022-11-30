@@ -107,7 +107,7 @@
             <li class="hide_list">
                 <p class="P11" >
           <span class="T11"
-          >1)  n'ont aucun moyen de subsistance ;  </span
+          >1)  n'ont aucun moyen de subsistance;  </span
           ><span class="odfLiEnd" />
                 </p>
             </li>
@@ -157,7 +157,7 @@
             <li class="hide_list">
                 <p class="P11" >
           <span class="T11"
-          >3) sont en situation de :   </span
+          >3) sont en situation de:   </span
           ><span class="odfLiEnd" />
                 </p>
             </li>
@@ -194,7 +194,7 @@
         <!-- 1st paragraph-->
         <p class="P5 T6 TC">
       <span >
-           Chaque personne en situation précaire ou difficile a le droit :
+           Chaque personne en situation précaire ou difficile a le droit:
       </span>
         </p>
         <!-- end of 1st paragraph -->

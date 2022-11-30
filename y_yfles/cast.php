@@ -19,14 +19,6 @@
 
 
 <container_main class="container">
-<!--begin main section-->
-    <span class="spacer"><!-- spacer pushes div footer down so its not in the middle of page, needed when there is not enough text to fill page --></span>
-<!--end main section-->
-
-
-
-
-
 
 
     <container class="auto-mx ">
@@ -34,7 +26,7 @@
 
 
         <div class="T1U">
-            <a id="a_​_Voir_" class=" " href="../y_storage/1.%20Règlement%20sur%20les%20PB%20et%20les%20PH.pdf"> <span class="T1U">Lien vers le texte intégral</span></a>
+            <a id="a_Voir_" class=" " href="../y_storage/1.%20Règlement%20sur%20les%20PB%20et%20les%20PH.pdf"> <span class="T1U">Lien vers le texte intégral</span></a>
         </div>
 
 
@@ -101,7 +93,7 @@
             des besoins indispensables des populations en situation de détresse
             ou de misère et en vue de contribuer à leur insertion
             sociale;</span
-          ><span class="odfLiEnd" />
+          >
                 </p>
             </li>
             <li class="hide_list">
@@ -111,7 +103,7 @@
             et l’interaction en matière de réponse humanitaire avec d'autres
             associations, organismes internationaux et étatiques, ainsi qu'avec
             des administrations territoriales.</span
-          ><span class="odfLiEnd" />
+          >
                 </p>
             </li>
         </ul>
@@ -169,7 +161,7 @@
             et du citoyen, la Charte de l'environnement, ainsi que les autres
             accords internationaux touchant à des questions humanitaires
             auxquels la République française a adhéré;</span
-         ><span class="odfLiEnd" />
+         >
                 </p>
             </li>
             <li>
@@ -177,7 +169,7 @@
          >dans le pays d'accréditation de l'Association: par la législation
             en vigueur de ce pays concernant les questions humanitaires, compte
             tenu des traités internationaux auxquels il a adhéré.</span
-         ><span class="odfLiEnd" />
+         >
                 </p>
             </li>
         </ul>
@@ -195,7 +187,7 @@
                     >La circulaire du ministère de l’Intérieur du 23 juin 2010</span
                     ></span
                 ></a
-            ><span class="T9"> </span>
+            ><span class="T9"><br /> </span>
         </p>
         <p class="P14">
             <span class="T12U">En savoir + :</span><span class="T14"><br /></span
@@ -206,7 +198,7 @@
                 ><span class="T14"
                     >Association à but exclusif d’assistance et de bienfaisance</span
                     ></span
-                ></a
+                ><br /></a
             >
         </p>
         <!-- end of links and ref-->
@@ -214,27 +206,30 @@
 
 
         <a id="a_Voir_" href="../y_storage/1.%20Règlement%20sur%20les%20PB%20et%20les%20PH.pdf">
-            <span class="T1U">Lien vers le texte intégral</span></a
-        >
+            <span class="T1U">Lien vers le texte intégral</span></a>
+
+
+        <!--begin main section-->
+        <span class="spacer"><!-- spacer pushes div footer down so its not in the middle of page, needed when there is not enough text to fill page --></span>
+        <!--end main section-->
+
+        <!--  footer -->
+
+        <div id="footer" class="position-relative">
+
+
+            <div class="container">
+                <div class="position-absolute bottom-0 start-50 translate-middle-x">
+                    <p>© 2022 IHI asso</p>
+                </div>
+            </div>
 
 
 
+        </div>
+        <!-- end footer -->
 
     </container>
-    <!-- footer -->
-
-    <div id="" class="position-relative">
-
-
-        <div class="container">
-            <div class="position-absolute bottom-0 start-50 translate-middle-x">
-                <p>© 2022 IHI asso</p>
-            </div>
-        </div>
-
-
-
-    </div>
 
 </container_main>
 </body>
