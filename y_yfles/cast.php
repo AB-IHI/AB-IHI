@@ -26,7 +26,8 @@
 
 
         <div class="T1U">
-            <a id="a_Voir_" class=" " href="../y_storage/1.%20Règlement%20sur%20les%20PB%20et%20les%20PH.pdf"> <span class="T1U">Lien vers le texte intégral</span></a>
+            <a id="a_Voir_" class=" " href="..">
+                Accueil</a>
         </div>
 
 
@@ -87,23 +88,23 @@
         <ul class="hide_list">
             <li class="hide_list">
                 <p class="P11" >
-          <span class="T11"
-          >1) la mise en œuvre de programmes humanitaires visant les actions
+          <span class="T11">
+              1) la mise en œuvre de programmes humanitaires visant les actions
             d'urgence ainsi que les actions requises en vue de la satisfaction
             des besoins indispensables des populations en situation de détresse
             ou de misère et en vue de contribuer à leur insertion
-            sociale;</span
-          >
+            sociale;
+          </span>
                 </p>
             </li>
             <li class="hide_list">
                 <p class="P11" >
-          <span class="T6 TC"
-          >2) la promotion des idées d'humanisme, la coordination des efforts
+          <span class="T6 TC">
+              2) la promotion des idées d'humanisme, la coordination des efforts
             et l’interaction en matière de réponse humanitaire avec d'autres
             associations, organismes internationaux et étatiques, ainsi qu'avec
-            des administrations territoriales.</span
-          >
+            des administrations territoriales.
+          </span>
                 </p>
             </li>
         </ul>
@@ -160,8 +161,8 @@
          >en France : la Constitution, la Déclaration des droits de l'homme
             et du citoyen, la Charte de l'environnement, ainsi que les autres
             accords internationaux touchant à des questions humanitaires
-            auxquels la République française a adhéré;</span
-         >
+            auxquels la République française a adhéré;
+         </span>
                 </p>
             </li>
             <li>
@@ -174,32 +175,26 @@
             </li>
         </ul>
         <!--end of dotted list-->
-        <p class="P6_borderStart" /><!--probably smaller spacer-->
+        <p class="P6_borderStart" />        <p class="P8" /><!--probably smaller spacer-->
         <!--    links and ref-->
-        <p class="P8" />
+
         <p id="ref_j" class="P5">
-      <span class="T12U">Références juridiques:<br /></span
-      ><a
-                    href="https://www.associations.gouv.fr/IMG/pdf/Circulaire_Interieur_23_juin_2010_liberalites_au_culte_et_rescrit_administratif-2.pdf"
-                    class="Internet_20_link"
-            ><span class="Internet_20_link"
-                ><span class="T13"
-                    >La circulaire du ministère de l’Intérieur du 23 juin 2010</span
-                    ></span
-                ></a
-            ><span class="T9"><br /> </span>
+      <span class="T12U">Références juridiques:<br /></span>
+            <a href="https://www.associations.gouv.fr/IMG/pdf/Circulaire_Interieur_23_juin_2010_liberalites_au_culte_et_rescrit_administratif-2.pdf"
+                    class="Internet_20_link"><span class="Internet_20_link">
+                    <span class="T13">
+                        La circulaire du ministère de l’Intérieur du 23 juin 2010
+                    </span></span></a>
+            <span class="T9"><br /> </span>
         </p>
         <p class="P14">
-            <span class="T12U">En savoir + :</span><span class="T14"><br /></span
-            ><a
-                    href="https://www.associations.gouv.fr/association-a-but-exclusif-d-assistance-et-de-bienfaisance.html"
-                    class="Internet_20_link"
-            ><span class="Internet_20_link"
-                ><span class="T14"
-                    >Association à but exclusif d’assistance et de bienfaisance</span
-                    ></span
-                ><br /></a
-            >
+            <span class="T12U">En savoir + :</span><span class="T14"><br /></span>
+            <a  href="https://www.associations.gouv.fr/association-a-but-exclusif-d-assistance-et-de-bienfaisance.html"
+                    class="Internet_20_link" ><span class="Internet_20_link" >
+                    <span class="T14">
+                        Association à but exclusif d’assistance et de bienfaisance
+                    </span ></span><br/>
+            </a >
         </p>
         <!-- end of links and ref-->
 

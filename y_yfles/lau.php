@@ -58,8 +58,8 @@
     <container class="auto-mx ">
 
 <div id="" class=" d-flex align-items-center justify-content-center">
-    <div class="T1U"><a class="a_Voir_" href="../y_storage/1. L'aube de l'espoir.pdf">
-            Lien vers le texte intégral</a></div>
+    <div class="T1U"><a class="a_Voir_" href="..">
+            Accueil</a></div>
 
     <p class="P6"><span class="T3">Projet de bienfaisance</span></p>
 

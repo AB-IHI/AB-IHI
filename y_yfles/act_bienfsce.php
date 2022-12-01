@@ -27,7 +27,8 @@
 
 
         <div class="T1U">
-            <a id="a_​_Voir_" class=" " href="../y_storage/1.%20Règlement%20sur%20les%20PB%20et%20les%20PH.pdf"> <span class="T1U">Lien vers le texte intégral</span></a>
+            <a id="a_​_Voir_" class=" " href="..">
+                Accueil</a>
         </div>
 
 
