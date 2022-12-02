@@ -149,38 +149,36 @@
         </ol>
         <!--end of ol ul li-->
         <p class="P10">
-      <span class="T5 TC">Les sources des critères</span
-      ><span class="T11">
-        qui déterminent l'agenda humanitaire de l’Association sont:</span
-            >
+      <span class="T5 TC">Les sources des critères</span>
+            <span class="T11">
+        qui déterminent l'agenda humanitaire de l’Association sont:
+            </span>
         </p>
-        <!-- list dots-->
+            <!-- list dots-->
         <ul class="custom_ul_2">
             <li>
-         <span class="T12 TC"
-         >en France : la Constitution, la Déclaration des droits de l'homme
+         <span class="T12 TC">
+             en France : la Constitution, la Déclaration des droits de l'homme
             et du citoyen, la Charte de l'environnement, ainsi que les autres
             accords internationaux touchant à des questions humanitaires
             auxquels la République française a adhéré;
          </span>
-                </p>
             </li>
             <li>
-         <span class="T6 TC"
-         >dans le pays d'accréditation de l'Association: par la législation
+         <span class="T6 TC">
+             dans le pays d'accréditation de l'Association: par la législation
             en vigueur de ce pays concernant les questions humanitaires, compte
-            tenu des traités internationaux auxquels il a adhéré.</span
-         >
-                </p>
+            tenu des traités internationaux auxquels il a adhéré.
+         </span>
             </li>
         </ul>
-        <!--end of dotted list-->
+            <!--end of dotted list-->
         <p class="P6_borderStart" />        <p class="P8" /><!--probably smaller spacer-->
         <!--    links and ref-->
 
         <p id="ref_j" class="P5">
       <span class="T12U">Références juridiques:<br /></span>
-            <a href="https://www.associations.gouv.fr/IMG/pdf/Circulaire_Interieur_23_juin_2010_liberalites_au_culte_et_rescrit_administratif-2.pdf"
+            <a href="https://wwwassociationadministratifpdf"
                     class="Internet_20_link"><span class="Internet_20_link">
                     <span class="T13">
                         La circulaire du ministère de l’Intérieur du 23 juin 2010
@@ -189,7 +187,7 @@
         </p>
         <p class="P14">
             <span class="T12U">En savoir + :</span><span class="T14"><br /></span>
-            <a  href="https://www.associations.gouv.fr/association-a-but-exclusif-d-assistance-et-de-bienfaisance.html"
+            <a  href="httpshtml"
                     class="Internet_20_link" ><span class="Internet_20_link" >
                     <span class="T14">
                         Association à but exclusif d’assistance et de bienfaisance
