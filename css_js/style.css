@@ -27,6 +27,19 @@ h1 {
   min-width: 574px;
 }
 
+h1_ {
+  font-size: 49px;
+  line-height: 126%;
+  color: #282828;
+  font-weight: bold;
+  margin-bottom: 0px;
+  min-width: 574px;
+}
+
+#descrip° {
+  line-height : 140%;
+}
+
 #title_two {
   margin-left: 15%;
   margin-right: 15%;
@@ -34,6 +47,10 @@ h1 {
 
 #h2_assoc {
   margin-bottom: 2%;
+}
+
+#h2_ {
+  margin-bottom: 5%;
 }
 
 #welcome {
@@ -334,10 +351,23 @@ html {
   margin-bottom: 8%;
 }
 
+
+
 #title_one {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   /* grid-template-rows: 80px 600px 80px; */
+  /* display: flex;
+    flex-direction: column; */
+  min-width: 1083px;
+
+  right: 0%;
+}
+
+#main_grid {
+  display: grid;
+  grid-template-columns: 1.5fr 800px;  /* 1.5fraction and 2nd column 800 pixels wide*/
+   grid-template-rows: auto 400px;  /* 1st clmn auto second 400pixel high */
   /* display: flex;
     flex-direction: column; */
   min-width: 1083px;
@@ -577,6 +607,14 @@ select.form-control:focus::-ms-value {
 
   .h3 {
     font-size: 1.5em;
+  }
+
+
+
+  .txt_blw {
+    margin-bottom: 15%;
+    margin-top: 15%;
+
   }
 
   .respsv_cell {
@@ -878,12 +916,14 @@ select.form-control:focus::-ms-value {
         margin-left: 25%; */
   }
 
-  h1 {
+  h1,h1_ {
     font-size: 75px;
     min-width: initial;
     margin-top: 4%;
     margin-bottom: -3%;
   }
+
+
 
   img {
   }
