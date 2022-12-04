@@ -75,18 +75,117 @@
             </div>
 
 
-            <?php
-            include "inside_nav.php";
-            ?>
+            <!--start inside nav-->
+            <!--<ul class="navbar-nav">
+                <li class="nav-item "  >
+                    <a class="nav-link " href="?page=home" > Accueil </a>
+                </li>
+            </ul>-->
+
+            <ul class="navbar-nav">
 
 
 
 
+                    <a class="nav-link " href="?page=home" > IHI </a>
+
+
+            </ul>
+
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Місія </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href=".?explain=act_bienfsce"> Règlement sur les missions</a></li>
+                        <li><a class="dropdown-item" href=".?explain=lau"> L'aube de l'espoir</a></li>
+                        <li><a class="dropdown-item" href="y_storage/1. Protection temporaire.pdf"> Тимчасовий захист</a></li>
+                        <li><a class="dropdown-item" href="y_storage/Règlement sur la procéd.de l’usage des serv.ling.pdf"> Перекладачі</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item ">
+                    <a class="nav-link " href="#" >Бенефіціари</a>
+
+                </li>
+            </ul>
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Донатори </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href=".?explain=mecenes">Благодійники </a></li>
+                        <li><a class="dropdown-item" href=".?explain=parrains">Спонсори </a></li>
+                        <li><a class="dropdown-item" href=".?explain=Act_internat°al">Activités internationales </a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!--<ul class="navbar-nav">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Parrainage </a>
+                    <ul class="dropdown-menu">
+
+                        <li><a class="dropdown-item" href=".?explain=parrains"> Parrain </a></li>
+
+                    </ul>
+                </li>
+            </ul>-->
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Bénévoles </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href=".?explain=explanation"> Devenir bénevole </a></li>
+                        <li><a class="dropdown-item" href="y_storage/Règlement sur les bénévoles.pdf"> Règlement sur les bénévoles</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+
+
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Корисна інформація </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://www.annecy-ukraine.org/uk/otrymaty-dopomohu/">Отримати допомогу</a></li>
+                        <li><a class="dropdown-item" href="https://refugies.info/uk">refugies.info</a></li>
+
+                    </ul>
+                </li>
+
+            </ul>
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Упоминание в СМИ </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://www.jeveuxaider.gouv.fr/organisations/14315-initiative-humanitaire-international">Je veux aider.gouv.fr</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+
+
+            <!-- end inside nav-->
+
+            <!--right space (ms-auto) automatically pushes to the left until equilibrium with the 1st ms-auto on the left-->
             <ul class="navbar-nav ms-auto">
-                <!--right space (ms-auto) automatically pushes to the left until equilibrium with the 1st ms-auto on the left-->
+
                 <li class="nav-item"><a href="#" class="nav-link link-dark px-2 small"></a></li>
             </ul>
 
+            <!--login&signUp-->
             <ul class="navbar-nav hid_btn_xl">
                 <li class="nav-item">
                     <div class="dropdown">
@@ -104,8 +203,9 @@
 
 
         </div> <!-- container-fluid.// -->
+
+        <!--Left space (col-md-1) automatically pushes to the right until equilibrium with the 2 ms-auto on the right-->
         <div class="bg-light ms-auto">
-            <!--Left space (col-md-1) automatically pushes to the right until equilibrium with the 2 ms-auto on the right-->
         </div>
     </nav>
 
@@ -156,14 +256,7 @@
             }
             ?>
 
-
-
-
-
-
             <!-- end of test area -->
-
-
 
         </div>
     </nav>
@@ -176,13 +269,11 @@
 
     <container class="">
 
-
         <!--3rd navbar-->
 
-
         <button data-trigger="navbar_main" id="button_contenu" class="d-lg-none btn btn-warning beige " type="button"> Contenu </button>
-        <!--  -->
 
+        <!-- old code used as spacer -->
         <nav id="navbar_main" class="mobile-offcanvas navbar  navbar-expand-lg ">
             <div class="container-fluid hstack gap-3">
                 <div class="offcanvas-header">
@@ -201,8 +292,6 @@
 
                 </ul>
 
-
-
                 <ul class="navbar-nav">
 
                     <li class="nav-item ">
@@ -210,29 +299,6 @@
                     </li>
 
                 </ul>
-
-                <ul class="navbar-nav">
-
-                    <li class="nav-item dropdown">
-
-                    </li>
-                </ul>
-
-                <ul class="navbar-nav">
-
-                    <li class="nav-item dropdown">
-
-                    </li>
-                </ul>
-
-                <ul class="navbar-nav">
-
-                    <li class="nav-item dropdown">
-
-                    </li>
-                </ul>
-
-
 
                 <ul class="navbar-nav ms-auto">
                     <!--right space (ms-auto) automatically pushes to the left until equilibrium with the 1st ms-auto on the left-->
@@ -248,16 +314,14 @@
         <right_div class="right_div">
 
             <p id="h2_" class="h2">
-                Programme Humanitaire
+                Гуманітарна програма
             </p>
             <h1_ class="">
-                PROTECTION TEMPORAIRE
+                ТИМЧАСОВИЙ ЗАХИСТ
             </h1_>
             <div class="h3 txt_blw  ">
-                <p id="descrip°" class="h1"> aux personnes fuyant <br> la guerre en Ukraine </p>
+                <p id="descrip°" class="h1"> осіб, які втекли <br> від війни в Україні </p>
             </div>
-
-
 
         </right_div>
         <div class="column hidetitl">
@@ -265,7 +329,7 @@
             <div id="don">
                 <a href="https://www.payasso.fr/protection-temporaire/don">
                     <button type="button" class="btn btn-primary btn-xl-center " id="button_one" alt="test">
-                        Je fais un don</button></a>
+                        Я роблю пожертву</button></a>
 
             </div>
         </div>
