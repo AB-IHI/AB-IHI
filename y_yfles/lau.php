@@ -61,7 +61,7 @@
     <div class="T1U"><a class="a_Voir_" href="..">
             Accueil</a></div>
 
-    <p class="P6"><span class="T3">Projet de bienfaisance</span></p>
+    <p class="P6"><span class="T5">Projet de bienfaisance</span></p>
 
     <h1 class="T4U Tcustom pb-2 border-bottom ">L'aube de l'espoir </h1>
 
@@ -93,21 +93,25 @@
 
       <span class="spacer"><!-- spacer pushes div footer down so its not in the middle of page, needed when there is not enough text to fill page --></span>
 
-        <!--  footer -->
 
-        <div id="" class="position-relative">
-
-
-            <div class="container">
-                <div class="position-absolute bottom-0 start-50 translate-middle-x">
-                    <p>© 2022 IHI asso</p>
-                </div>
-            </div>
+        <container id="footer_" class="container sticky-bottom my-auto">
+            <footer class="pt-4 mt-4 footer mt-auto sticky-bottom">
 
 
+                <div class="d-flex justify-content-between py-4 my-4 border-top">
+                    <!-- <p class="hidetitl">
+                        /*hidden when min width */
+                    © 2022 IHI asso
+                    </p> -->
 
-        </div>
-        <!-- end footer -->
+                <p class="position-absolute bottom-0 start-50 translate-middle-x ">
+                    <!--hidden when full width -->
+                    © 2022 IHI asso
+                </p>
+
+            </footer>
+
+        </container>
 </container_main>
 </body>
 <script type='text/javascript' src='../css_js/js/popper.min.js'></script>

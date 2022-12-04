@@ -17,21 +17,21 @@
 <body class="mb-0">
 
 
-
+<!--begin main section-->
 <container_main class="container">
 
 
     <container class="auto-mx ">
 
 
-
+        <!--Accueil lien-->
         <div class="T1U">
             <a id="a_Voir_" class=" " href="..">
                 Accueil</a>
         </div>
 
 
-
+        <!--titre principal-->
         <h1 class="T4U Tcustom pb-2 border-bottom">
             Activités de bienfaisance et humanitaire
         </h1>
@@ -44,11 +44,11 @@
         humanitaires.
       </span>
         </p>
-        <!-- end of 1st paragraph -->
-        <!--  spacer-->
-        <p class="P6_borderStart" />
-        <p class="P7_borderEnd" />
-        <!--  end spacer-->
+
+        <!--  spacer_dual-->
+        <div><p class="P6_borderStart"/>
+            <p class="P7_borderEnd"/></div>
+
         <!--2nd paragraph with bold blue text and br-->
         <p class="P10">
             <span class="T5 TC">Les activités de bienfaisance</span >
@@ -62,7 +62,7 @@
         la vieillesse, de la discrimination, etc.</span
             >
         </p>
-        <!-- end of 2nd paragraph-->
+
         <!--3rd paragraph-->
         <p class="P5 T6 TC">
       <span >
@@ -73,17 +73,17 @@
         document de référence pour les participants à ce projet de
         bienfaisance.</span >
         </p>
-        <!--end of 3rd paragraph-->
-        <!--spacer-->
-        <p class="P6_borderStart" />
-        <p class="P7_borderEnd" />
-        <!--end of spacer-->
+
+        <!--  spacer_dual-->
+        <div><p class="P6_borderStart"/>
+            <p class="P7_borderEnd"/></div>
+
         <!--new paragraph with bold blue text-->
         <p class="P10">
             <span class="T5 TC">L'activité humanitaire</span>
             <span class="T11"> de l'Association consiste en:</span>
         </p>
-        <!--end of new paragraph-->
+
         <!--list-->
         <ul class="hide_list">
             <li class="hide_list">
@@ -108,15 +108,15 @@
                 </p>
             </li>
         </ul>
-        <!--end of list-->
 
-        <!--spacer-->
-        <p class="P6_borderStart" />
-        <p class="P7_borderEnd" />
-        <!--end of spacer-->
+
+        <!--  spacer_dual-->
+        <div><p class="P6_borderStart"/>
+            <p class="P7_borderEnd"/></div>
+
         <!--secondary title after 1st title at the beggining-->
         <p class="TTL2">Personnes en situation précaire ou difficile</p>
-        <!--end of secondary title after 1st title at the beggining-->
+
         <!--ol ul li-->
         <ol>
             <ul>
@@ -148,12 +148,15 @@
             </ul>
         </ol>
         <!--end of ol ul li-->
+
+        <!--blue text ++ than p + paragraph-->
         <p class="P10">
       <span class="T5 TC">Les sources des critères</span>
             <span class="T11">
         qui déterminent l'agenda humanitaire de l’Association sont:
             </span>
         </p>
+
             <!-- list dots-->
         <ul class="custom_ul_2">
             <li>
@@ -172,10 +175,11 @@
          </span>
             </li>
         </ul>
-            <!--end of dotted list-->
-        <p class="P6_borderStart" />        <p class="P8" /><!--probably smaller spacer-->
-        <!--    links and ref-->
 
+        <div><p class="P6_borderStart"/>
+            <p class="P8"/></div><!--probably smaller spacer-->
+
+        <!--    links and ref-->
         <p id="ref_j" class="P5">
       <span class="T12U">Références juridiques:<br /></span>
             <a href="https://wwwassociationadministratifpdf"
@@ -194,17 +198,16 @@
                     </span ></span><br/>
             </a >
         </p>
-        <!-- end of links and ref-->
 
 
 
+        <!--lien text integral-->
         <a id="a_Voir_" href="../y_storage/1.%20Règlement%20sur%20les%20PB%20et%20les%20PH.pdf">
             <span class="T1U">Lien vers le texte intégral</span></a>
 
 
-        <!--begin main section-->
+
         <span class="spacer"><!-- spacer pushes div footer down so its not in the middle of page, needed when there is not enough text to fill page --></span>
-        <!--end main section-->
 
         <!--  footer -->
 
@@ -220,7 +223,7 @@
 
 
         </div>
-        <!-- end footer -->
+
 
     </container>
 
