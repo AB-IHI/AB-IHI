@@ -216,7 +216,8 @@ label {
   padding-bottom: 10%;
 }
 
-img {
+.c_img {
+  height: 450px;
 }
 
 #main_pic {
@@ -367,7 +368,7 @@ html {
 #main_grid {
   display: grid;
   grid-template-columns: 470px 800px;  /* 1.5fraction and 2nd column 800 pixels wide | pixels and fractions don't mix*/
-   grid-template-rows: auto 400px;  /* 1st clmn auto second 400pixel high */
+   grid-template-rows: 400px 400px;  /* 1st clmn auto second 400pixel high */
   /* display: flex;
     flex-direction: column; */
   min-width: 1083px;

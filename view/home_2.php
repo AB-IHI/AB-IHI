@@ -58,9 +58,7 @@
 
     <!-- Ninja nav-bar at the top, ninja means it adapts to mobile -->
 
-
     <button data-trigger="navbar_top" id="button_menu" class="d-lg-none btn btn-warning beige btn-xl" type="button"> Menu </button>
-
 
     <!-- end  First nav-bar with links and language -->
 
@@ -69,6 +67,8 @@
         <div class="bg-light ms-auto">
             <!--Left space (col-md-1) automatically pushes to the right until equilibrium with the 2 ms-auto on the right-->
         </div>
+
+        <!--inside this dive hides insides previously named navbar(.php)-->
         <div class="container_fluid hstack  justify-content-center py-3">
             <div class="offcanvas-header">
                 <button class="btn-close float-end btn-xl-right "></button>
@@ -84,24 +84,18 @@
 
             <ul class="navbar-nav">
 
-
-
-
                     <a class="nav-link " href="?page=home" > IHI </a>
-
 
             </ul>
 
 
             <ul class="navbar-nav">
-
                 <li class="nav-item dropdown">
                     <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Місія </a>
                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="ua_v/1. Гуманітарна програма.pdf"> Тимчасовий захист</a></li>
+                        <li><a class="dropdown-item" href="ua_v/Règlement sur la procéd.de l’usage des serv.ling.pdf"> Перекладачі</a></li>
                         <li><a class="dropdown-item" href=".?explain=act_bienfsce"> Règlement sur les missions</a></li>
-                        <li><a class="dropdown-item" href=".?explain=lau"> L'aube de l'espoir</a></li>
-                        <li><a class="dropdown-item" href="y_storage/1. Protection temporaire.pdf"> Тимчасовий захист</a></li>
-                        <li><a class="dropdown-item" href="y_storage/Règlement sur la procéd.de l’usage des serv.ling.pdf"> Перекладачі</a></li>
                     </ul>
                 </li>
             </ul>
@@ -109,7 +103,7 @@
             <ul class="navbar-nav">
 
                 <li class="nav-item ">
-                    <a class="nav-link " href="#" >Бенефіціари</a>
+                    <a class="nav-link " href="ua_v/6. Благодійник.pdf" >Бенефіціари</a>
 
                 </li>
             </ul>
@@ -119,8 +113,8 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Донатори </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href=".?explain=mecenes">Благодійники </a></li>
-                        <li><a class="dropdown-item" href=".?explain=parrains">Спонсори </a></li>
+                        <li><a class="dropdown-item" href="ua_v/6. Благодійник.pdf">Благодійники </a></li>
+                        <li><a class="dropdown-item" href="ua_v/7. Спонсор.pdf">Спонсори </a></li>
                         <li><a class="dropdown-item" href=".?explain=Act_internat°al">Activités internationales </a></li>
                     </ul>
                 </li>
@@ -292,14 +286,6 @@
 
                 </ul>
 
-                <ul class="navbar-nav">
-
-                    <li class="nav-item ">
-
-                    </li>
-
-                </ul>
-
                 <ul class="navbar-nav ms-auto">
                     <!--right space (ms-auto) automatically pushes to the left until equilibrium with the 1st ms-auto on the left-->
 
@@ -326,7 +312,7 @@
         </right_div>
         <div class="column hidetitl">
             <!--hidden when min width -->
-            <div id="don">
+            <div id="<!--don-->">
                 <a href="https://www.payasso.fr/protection-temporaire/don">
                     <button type="button" class="btn btn-primary btn-xl-center " id="button_one" alt="test">
                         Я роблю пожертву</button></a>
@@ -340,13 +326,19 @@
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="y_ymages/palm_of_hand_6.png" class="d-block w-100" alt="...">
+                        <img src="y_ymages/1.png" class="d-block w-100 c_img" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="y_ymages/bandeau_1.png" class="d-block w-100" alt="...">
+                        <img src="y_ymages/2.png" class="d-block w-100 c_img" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="y_ymages/sky-clouds-4-3561685669.png" class="d-block w-100" alt="...">
+                        <img src="y_ymages/3.png" class="d-block w-100 c_img" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="y_ymages/4.png" class="d-block w-100 c_img" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="y_ymages/5.png" class="d-block w-100 c_img" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

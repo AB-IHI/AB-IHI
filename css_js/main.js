@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
 });
-// below code to manage the multilevel dropdown on mobile
+// below code to manage the multilevel dropdown on mobile /*update it's unused*/
 
 //	window.addEventListener("resize", function() {
 //		"use strict"; window.location.reload();
