@@ -321,6 +321,7 @@
         </div>
     </div>
 
+    <!--carousel-->
     <div class="column">
         <left_div>
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -364,10 +365,7 @@
 
 </div>
 
-
 </div>
-
-
 
 </container>
 

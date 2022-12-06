@@ -216,7 +216,7 @@ Valid adress is required.-->
 </div>
 
 <div class="form-group <?php echo (!empty($rib_err)) ? 'has-error' : ''; ?>">
-    <input type="text" class="form-control btn-lg" name="rib" id="rib" placeholder="IBAN facultatif" >
+    <input type="text" class="form-control btn-lg" name="rib" id="rib" placeholder="IBAN facultatif 16characters" >
     <span class="help-block"><?php echo $rib_err; ?></span>
     <!-- <div class="invalid-feedback">
         Please enter a rib address.
