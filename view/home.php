@@ -1,20 +1,4 @@
-<!-- <?php
-if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
-?>
-    <div class="page-header">
-        <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
-    </div>-->
-<?php
-    echo '
-        <a href=".?page=reset_password" class="btn btn-warning">Reset Your Password</a>
-        <a href=".?page=logout" class="btn btn-danger">Sign Out of Your Account</a>
-        ';
-    echo "<header><h1>Page d'administration</h1>";
-} else {
-    echo ' <a href=".?page=login" class="btn btn-primary">Sign in</a>';
-}
-include_once "header.php";
-?>
+
 
 <div id="title_one" class="col-md-12">
     <div class=" column">

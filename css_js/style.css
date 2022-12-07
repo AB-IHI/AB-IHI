@@ -393,15 +393,15 @@ html {
 #button_one {
   /* min-width: initial;
         max-width: 100%;*/
-  margin-top: 2%;
+  margin-top: 20px;
   margin-left: 1.7vw;
 }
 
 #button_two {
   /* min-width: initial;
         max-width: 100%;*/
-  margin-top: -3%;
-  margin-left: 3.7vw;
+  margin-top: -30px;
+  margin-left: 45px;
 }
 
 .deconnexion {

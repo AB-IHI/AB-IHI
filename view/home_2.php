@@ -94,17 +94,22 @@
                     <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Місія </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="ua_v/1. Гуманітарна програма.pdf"> Тимчасовий захист</a></li>
-                        <li><a class="dropdown-item" href="ua_v/Règlement sur la procéd.de l’usage des serv.ling.pdf"> Перекладачі</a></li>
+                        <li><a class="dropdown-item" href="#"> Перекладачі</a></li>
                         <li><a class="dropdown-item" href=".?explain=act_bienfsce"> Règlement sur les missions</a></li>
                     </ul>
                 </li>
             </ul>
 
+
+
             <ul class="navbar-nav">
 
-                <li class="nav-item ">
-                    <a class="nav-link " href="ua_v/6. Благодійник.pdf" >Бенефіціари</a>
-
+                <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Бенефіціари </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="ua_v/4. Право на отримання допомоги.pdf">Право на отримання допомоги </a></li>
+                        <li><a class="dropdown-item" href="ua_v/5. Права та обов'язки бенефіц.pdf">Права та обов'язки бенефіціарів </a></li>
+                    </ul>
                 </li>
             </ul>
 
@@ -162,7 +167,7 @@
             <ul class="navbar-nav">
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Упоминание в СМИ </a>
+                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Партнерство </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="https://www.jeveuxaider.gouv.fr/organisations/14315-initiative-humanitaire-international">Je veux aider.gouv.fr</a></li>
 
@@ -220,21 +225,9 @@
             <!-- test area -->
 
 
-            <?php
-            if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
-                echo '<h2 id="welcome">compte de :      </h2> ';
-                echo ' <button href="index.php?page=user_acc" class="btn btn-secondary dropdown-toggle float-end light-gray" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-' .    htmlspecialchars($_SESSION["username"]) .
-                    '</button>';
 
-                echo '<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li>        <a href=".?page=reset_password" class="dropdown-item ">Reset Your Password</a></li>
-    <li><a href=".?page=logout" class="dropdown-item">Sign Out of Your Account</a></li>
-    </ul>
-        ';
-                // echo "<header><h1>Page d'administration</h1>";
-            } else {
-                echo '<ul class="nav">
+
+             <ul class="nav">
     <li class="nav-item">
         <div class="dropdown">
             <button href="index.php?page=connexion" class=" btn btn-secondary dropdown-toggle float-end light-gray" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -246,9 +239,8 @@
             </ul>
         </div>
     </li>
-</ul> ';
-            }
-            ?>
+</ul>
+
 
             <!-- end of test area -->
 
