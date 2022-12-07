@@ -296,7 +296,7 @@
 
 
 <div id="main_grid" class="col-md-12">
-    <div class=" column">
+    <div class=" column one">
         <right_div class="right_div">
 
             <p id="h2_" class="h2">
@@ -310,19 +310,20 @@
             </div>
 
         </right_div>
-        <div class="column hidetitl">
-            <!--hidden when min width -->
-            <div id="<!--don-->">
-                <a href="https://www.payasso.fr/protection-temporaire/don">
-                    <button type="button" class="btn btn-primary btn-xl-center " id="button_one" alt="test">
-                        Я роблю пожертву</button></a>
 
-            </div>
+    </div>
+    <div class="column <!--column hidetitl--> three">
+        <!--hidden when min width -->
+        <div id="<!--don-->">
+            <a href="https://www.payasso.fr/protection-temporaire/don">
+                <button type="button" class="btn btn-primary btn-xl-center " id="button_one" alt="test">
+                    Я роблю пожертву</button></a>
+
         </div>
     </div>
 
     <!--carousel-->
-    <div class="column">
+    <div class="column two">
         <left_div>
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -355,14 +356,14 @@
         </left_div>
     </div>
 
-    <div class="column  hid_btn_xl">
-        <!--hidden when full width -->
+    <!----<div class="column  hid_btn_xl">
+        --hidden when full width -
 
         <a href="https://www.payasso.fr/protection-temporaire/don">
             <button type="button" class="btn btn-primary btn-xl-center " id="button_one">
                 Je fais un don</button></a>
-    </div>
-
+    </div>-
+-->
 </div>
 
 </div>

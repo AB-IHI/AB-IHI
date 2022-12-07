@@ -376,6 +376,20 @@ html {
   right: 0%;
 }
 
+.one {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+.two {
+  grid-column: 2 / 2;
+  grid-row: 1 / 2;
+}
+
+.three {
+  grid-column: 1;
+  grid-row: 2 / 4;
+}
 #button_one {
   /* min-width: initial;
         max-width: 100%;*/
@@ -572,6 +586,10 @@ select.form-control:focus::-ms-value {
     font-size: 35px;
   }
 
+  #descrip° {
+    line-height : unset;
+  }
+
   container {
     /* min-height: 100% !important;
     height: 100% !important;
@@ -751,7 +769,7 @@ select.form-control:focus::-ms-value {
     position: relative;
     margin-top: 0px;
     margin-left: 25%;
-    left: 30%;
+    left: 10%;
     margin: 30px;
     margin-bottom: 50px;
     padding: 30px;
@@ -814,7 +832,7 @@ select.form-control:focus::-ms-value {
     left: 0% !important;
   }
 
-  #title_one {
+  #title_one, #main_grid  {
     margin-top: 33%;
     margin-left: 0px;
     margin-left: auto;
@@ -824,6 +842,21 @@ select.form-control:focus::-ms-value {
     display: flex;
     flex-direction: column;
     margin-bottom: 2%;
+  }
+
+  .one {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .two {
+    grid-column: 1 ;
+    grid-row: 2;
+  }
+
+  .three {
+    grid-column: 1;
+    grid-row: 3 ;
   }
 
   #footer_ {
@@ -850,18 +883,19 @@ select.form-control:focus::-ms-value {
   }
 
   /* tchast otvechaiuchia za na verx nijniu a verxniu v niz*/
-  #title_one {
+  #title_one, #main_grid {
     display: grid;
     grid-template-columns:  1fr;
+    grid-template-rows: auto auto;
     /*grid-auto-flow: dense; !* NEW *!*/
   }
 
-  #title_one>.a {
+  #title_one, #main_grid >.a {
     grid-column: 1;
     grid-row: 2 ;
   }
 
-  #title_one>.b {
+  #title_one, #main_grid >.b {
     grid-column: 1;
     grid-row: 1 ;
   }
@@ -876,7 +910,7 @@ select.form-control:focus::-ms-value {
   }*/
   /* konets persmechenia https://stackoverflow.com/questions/45383042/reverse-order-of-columns-in-css-grid-layout*/
 
-  #title_one {
+  #title_one, #main_grid  {
     margin-top: 0%;
   }
   .hid_btn_xl {
@@ -912,9 +946,9 @@ select.form-control:focus::-ms-value {
 
   #button_one {
     /* min-width: initial;
-        max-width: 100%;
-        margin-top: 0px;
-        margin-left: 25%; */
+        max-width: 100%;*/
+        margin-top: 16%;
+        margin-left: 3.5%;
   }
 
   h1,h1_ {
