@@ -397,6 +397,13 @@ html {
   margin-left: 1.7vw;
 }
 
+#button_two {
+  /* min-width: initial;
+        max-width: 100%;*/
+  margin-top: -3%;
+  margin-left: 3.7vw;
+}
+
 .deconnexion {
   font-size: 24px;
 }
@@ -944,11 +951,18 @@ select.form-control:focus::-ms-value {
     font-size: 2.9rem;
   }
 
-  #button_one {
+  #button_one{
     /* min-width: initial;
         max-width: 100%;*/
         margin-top: 16%;
-        margin-left: 3.5%;
+        margin-left: 21.5%;
+  }
+
+  #button_two{
+    /* min-width: initial;
+        max-width: 100%;*/
+    margin-top: 16%;
+    margin-left: 3.5%;
   }
 
   h1,h1_ {
