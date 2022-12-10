@@ -972,7 +972,9 @@ select.form-control:focus::-ms-value {
     margin-bottom: -3%;
   }
 
-
+  h1_ {
+    margin-bottom: -12%;
+  }
 
   img {
   }
