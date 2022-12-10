@@ -1,4 +1,7 @@
+<!-- <?php
 
+include_once "header.php";
+?>
 
 <div id="title_one" class="col-md-12">
     <div class=" column">
