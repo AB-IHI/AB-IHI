@@ -121,6 +121,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
 });
 
-
+/* part responsible for triggering the carousel otherwise it doesn't start on it's own*/
+let carousel = document.querySelector('.carousel-item');
+carousel.classList.add("active")
 
 // DOMContentLoaded  end

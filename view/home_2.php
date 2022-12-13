@@ -336,21 +336,16 @@
         <left_div>
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="y_ymages/1.png" class="d-block w-100 c_img" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="y_ymages/2.png" class="d-block w-100 c_img" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="y_ymages/3.png" class="d-block w-100 c_img" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="y_ymages/4.png" class="d-block w-100 c_img" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="y_ymages/5.png" class="d-block w-100 c_img" alt="...">
-                    </div>
+
+                    <?php
+                    $path = "y_ymages/photos";
+                    foreach(glob($path.'/*.*') as $file) {
+                        echo '<div class="carousel-item ">
+                            <img src="' . $file . '" class="d-block w-100 c_img" alt="photo refugee">
+                        </div>';
+                    }
+                    ?>
+
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
