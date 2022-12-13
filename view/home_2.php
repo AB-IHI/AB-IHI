@@ -227,7 +227,7 @@
 
             <?php
             if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
-                echo 'vous êtes deja connecte <a class="" href=".?page=benevole"> Entrer</a>';
+                echo 'already logged in <a class="" href=".?page=benevole"> Enter</a>';
 
                 /* header("location:./?page=logout");*/
                 /*   echo '<h2 id="welcome">compte de :      </h2> ';
