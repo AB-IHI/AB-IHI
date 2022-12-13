@@ -225,9 +225,25 @@
             <!-- test area -->
 
 
+            <?php
+            if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+                echo 'vous êtes deja connecte <a class="" href=".?page=benevole"> Entrer</a>';
 
+                /* header("location:./?page=logout");*/
+                /*   echo '<h2 id="welcome">compte de :      </h2> ';
+                  echo ' <button href="index.php?page=user_acc" class="btn btn-secondary dropdown-toggle float-end light-gray" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        ' .    htmlspecialchars($_SESSION["username"]) .
+                      '</button>';
 
-             <ul class="nav">
+                  echo '<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li>        <a href=".?page=reset_password" class="dropdown-item ">Reset Your Password</a></li>
+          <li><a href=".?page=logout" class="dropdown-item">Sign Out of Your Account</a></li>
+          </ul>
+              ';
+                  // echo "<header><h1>Page d'administration</h1>";*/
+
+            } else {
+                echo '<ul class="nav">
     <li class="nav-item">
         <div class="dropdown">
             <button href="index.php?page=connexion" class=" btn btn-secondary dropdown-toggle float-end light-gray" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -239,8 +255,9 @@
             </ul>
         </div>
     </li>
-</ul>
-
+</ul> ';
+            }
+            ?>
 
             <!-- end of test area -->
 
