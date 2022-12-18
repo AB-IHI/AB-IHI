@@ -1,8 +1,8 @@
 <?php
-if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin') { // test almost same if above
+if (!isset($_SESSION['role']) || $_SESSION['role'] != 'admin') { // test almost same if above
 
 
-//    header('Location: .');
+    header('Location: .?page=logout');
 
 
 }?>
@@ -58,7 +58,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin') { // test almost s
             // $i++;
                 $var2 = htmlspecialchars($row["id"], ENT_QUOTES, 'UTF-8');
                 echo "<cell><h2 class='offcanvas-header'>id</h2>
-                    <a href='?page=a_view_usr&?a_v_usr=" . $var2 . "'>" . $var2 . "</a>
+                    <a href='?page=a_view_usr&a_v_usr=" . $var2 . "'>" . $var2 . "</a>
            </cell>";
                 $var3 = htmlspecialchars($row["nom"], ENT_QUOTES, 'UTF-8');
                 echo "<cell><h2 class='offcanvas-header'>nom</h2>

@@ -1,7 +1,12 @@
 <?php
+if (!isset($_SESSION['role']) || $_SESSION['role'] != 'admin') { // test almost same if above
 
-?>
-<!DOCTYPE html>
+
+    header('Location: .?page=logout');
+
+
+}?>
+    <!DOCTYPE html>
 <html>
 
 <head>
@@ -61,7 +66,7 @@
 
 <container>
                 <?php
-                $var = strval($_SESSION['id_user']);
+                $var = strval($_SESSION['a_v_usr']);
 
 
 
@@ -142,6 +147,10 @@ echo '<img class= "responsive" src="uploads/'. $photo  .'" alt="My profile pic">
                ";
                 $var6 = htmlspecialchars($row["telephone"], ENT_QUOTES, 'UTF-8');
                     echo "<td >" . $var6 . "</td>";
+
+                echo "</tr>";
+                $var6 = htmlspecialchars($row["telephone"], ENT_QUOTES, 'UTF-8');
+                echo "<td >" . $var6 . "</td>";
 
                 echo "</tr>";
                 $i = 0;
