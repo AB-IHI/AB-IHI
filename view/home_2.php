@@ -341,7 +341,7 @@
                     $path = "y_ymages/photos";
                     foreach(glob($path.'/*.*') as $file) {
                         echo '<div class="carousel-item ">
-                            <img src="' . $file . '" class="d-block w-100 c_img" alt="photo refugee">
+                            <img src="' . $file . '" class="d-block <!--w-100--> c_img" alt="photo refugee">
                         </div>';
                     }
                     ?>
