@@ -156,9 +156,12 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Корисна інформація </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="https://www.annecy-ukraine.org/uk/otrymaty-dopomohu/">Отримати допомогу</a></li>
+                        <li><a class="dropdown-item" href="https://www.annecy-ukraine.org/uk/otrymaty-dopomohu/">Annecy-Ukraine
+                            </a></li>
                         <li><a class="dropdown-item" href="https://refugies.info/uk">refugies.info</a></li>
-
+                        <li><a class="dropdown-item" href="
+                        https://www.haute-savoie.gouv.fr/Demarches-administratives/Etrangers-en-Haute-Savoie/Ressortissants-ukrainiens">Préfecture</a></li>
+                        <li><a class="dropdown-item" href="ua_v/compte-bancaire-ukraine-UK.pdf">банківський рахунок</a></li>
                     </ul>
                 </li>
 
