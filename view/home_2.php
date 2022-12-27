@@ -162,6 +162,8 @@
                         <li><a class="dropdown-item" href="
                         https://www.haute-savoie.gouv.fr/Demarches-administratives/Etrangers-en-Haute-Savoie/Ressortissants-ukrainiens">Préfecture</a></li>
                         <li><a class="dropdown-item" href="ua_v/compte-bancaire-ukraine-UK.pdf">банківський рахунок</a></li>
+                        <li><a class="dropdown-item" href="https://t.me/FranceUkraineNews">Журнал Допомога"</a></li>
+                        <li><a class="dropdown-item" href="https://web.telegram.org/k/#-1769788799">Волонтери України Ансі</a></li>
                     </ul>
                 </li>
 
