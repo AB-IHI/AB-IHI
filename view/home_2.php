@@ -275,7 +275,7 @@
 
     </header>
 
-    <container class="">
+    <container2 class="">
 
         <!--3rd navbar-->
 
@@ -377,7 +377,7 @@
 
 </div>
 
-</container>
+</container2>
 
 
 

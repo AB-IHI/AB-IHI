@@ -126,7 +126,7 @@ form {
   display: inline-block;
 }
 
-container {
+container, container2 {
   /* min-height: 100% !important;
     height: 100% !important;
     important to comment out
@@ -142,6 +142,9 @@ container {
   margin-bottom: 19%;
 }
 
+container2 {
+  margin-bottom: 10%;
+}
 container_main {
   /* min-height: 100% !important; 
     previous property needs to be removed and use vh instead as follows
