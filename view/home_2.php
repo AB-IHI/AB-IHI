@@ -94,7 +94,7 @@
                     <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Місія </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="ua_v/1. Гуманітарна програма.pdf"> Тимчасовий захист</a></li>
-                        <li><a class="dropdown-item" href="#"> Перекладачі</a></li>
+                        <li><a class="dropdown-item" href="ua_v/лінгвістичні послуги1.pdf"> Перекладачі</a></li>
                         <li><a class="dropdown-item" href=".?explain=act_bienfsce"> Règlement sur les missions</a></li>
                     </ul>
                 </li>
