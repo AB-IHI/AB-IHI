@@ -646,7 +646,8 @@ select.form-control:focus::-ms-value {
   }
 
   .h2 {
-    font-size: 3em;
+    font-size: 3.6em !important;
+    margin-bottom: 1.5%;
   }
 
   .h3 {
