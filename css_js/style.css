@@ -791,7 +791,8 @@ select.form-control:focus::-ms-value {
 
   .box img {
     width: 675px !important;
-    height: 360px;
+    height: 602px;/*380*/
+    margin-bottom: 20px;
 
   }
   .btn-xl {
