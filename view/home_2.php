@@ -84,7 +84,7 @@
 
             <ul class="navbar-nav">
 
-                    <a class="nav-link " href="?page=home" > IHI </a>
+                    <a class="nav-link " href="?page=home_2" > IHI </a>
 
             </ul>
 
