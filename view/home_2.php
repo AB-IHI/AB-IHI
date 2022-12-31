@@ -84,9 +84,11 @@
 
             <ul class="navbar-nav">
 
-                    <a class="nav-link " href="?page=home_2" > IHI </a>
+                    <a class="nav-link " href="?page=home" > IHI </a>
 
             </ul>
+
+
 
 
             <ul class="navbar-nav">
@@ -125,17 +127,7 @@
                 </li>
             </ul>
 
-            <!--<ul class="navbar-nav">
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Parrainage </a>
-                    <ul class="dropdown-menu">
-
-                        <li><a class="dropdown-item" href=".?explain=parrains"> Parrain </a></li>
-
-                    </ul>
-                </li>
-            </ul>-->
 
             <ul class="navbar-nav">
 
@@ -161,6 +153,8 @@
                         <li><a class="dropdown-item" href="https://refugies.info/uk">refugies.info</a></li>
                         <li><a class="dropdown-item" href="
                         https://www.haute-savoie.gouv.fr/Demarches-administratives/Etrangers-en-Haute-Savoie/Ressortissants-ukrainiens">Préfecture</a></li>
+                        <li><a class="dropdown-item" href="
+                            https://www.annecy.fr/715-soutien-a-l-ukraine.htm">Annecy agglo </a></li>
                         <li><a class="dropdown-item" href="ua_v/compte-bancaire-ukraine-UK.pdf">банківський рахунок</a></li>
                         <li><a class="dropdown-item" href="https://t.me/FranceUkraineNews">Журнал Допомога</a></li>
                         <li><a class="dropdown-item" href="https://web.telegram.org/k/#-1769788799">Волонтери України Ансі</a></li>
