@@ -37,7 +37,7 @@
         </div>
         <p class="text-center text-muted ">
             <!--hidden when full width -->
-            © 2022 IHI asso
+               &copy; IHI asso 2022-<?php echo date("Y"); ?>
         </p>
 
     </footer>
