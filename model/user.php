@@ -152,7 +152,7 @@ function modification_compte()
 
                     <div class="col-12 <?php echo (!empty($passport_err)) ? 'has-error' : ''; ?>">
                         <input type="text" class="form-control btn-lg" name="passport" id="passport" value="<?php //echo $nom;
-                                                                                                            ?>" placeholder="pièce d'identité  " required="">
+                                                                                                            ?>" placeholder="pièce d'identité 12 characters " required="">
                         <span class="help-block"><?php echo $passport_err;
                                                     ?></span>
 <!-- <div class="invalid-feedback ">

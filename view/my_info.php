@@ -57,11 +57,6 @@ if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin') { // test almost s
 
                 $result = mysqli_query($c, $sql);
 
-                // 3/3 -> AFFICHAGE
-                // Récupère chaque ligne de la BD dans un tableau "$row"
-
-
-
 
 
 
@@ -71,7 +66,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin') { // test almost s
       <tbody> ";
                 echo "<tr class='margin'>";
 
-                echo "<td class='margin'> pièce d'identité 12 characters</td>";
+                echo "<td class='margin'> pièce d'identité </td>";
                 echo "<td class='margin'> date d'expiration de la pièce d'identité</td>";
                 echo "<td class='margin'> nationalité </td>";
                 echo "<td class='margin'> adresse </td>";
