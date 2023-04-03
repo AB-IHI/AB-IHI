@@ -153,6 +153,42 @@ echo '<img class= "responsive" src="uploads/'. $photo  .'" alt="My profile pic">
                 echo "<td >" . $var6 . "</td>";
 
                 echo "</tr>";
+$var7 = htmlspecialchars($row["role"], ENT_QUOTES, 'UTF-8');
+echo '<!--<td ><form class="d-flex">
+                        <input class=" me-2" type="search" value="
+' . $var7 . ' 
+" aria-label="Search" disabled>
+<input type="text" list="cars"  " />
+<datalist id="cars">
+  <option>Benevole</option>
+  <option>Volontaire</option>
+  
+</datalist>
+                        <button class="btn btn-outline-primary" type="submit">update</button>
+                    </form></td>-->';
+
+?>
+    </tr>
+
+<td >
+    <form action='.' method='post' class="" >
+<div class="input-group mb-3">
+
+      <input type="hidden" name="action" value="update_role">
+      <label class="input-group-text" for="role"><?php echo $var7 ; ?></label>
+  <select class="form-select" id="inputGroupSelect01" name="new_role">
+
+    <option value="Benevole">Benevole</option>
+    <option value="Volontaire">Volontaire</option>
+
+  </select>
+    <input class="btn btn-outline-primary" type="submit" value="Update">
+
+</div>
+    </form>
+</td>
+<?php
+echo "</tr>";
                 $i = 0;
 
                     $i++;

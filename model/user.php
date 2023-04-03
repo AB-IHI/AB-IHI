@@ -70,8 +70,70 @@ function ajouterUserInfo($c)
     global $c;
 }
 
+function check_not_admin()
+{   //this function checks that role is not admin
+    if ($_SESSION['role'] !== 'admin') {
+        die('You do not have permission to perform this action.');
+    }
+}
+function update_role($c)
+{
+    // Check if user is logged in as admin
+    if ($_SESSION['role'] !== 'admin') {
+        die('You do not have permission to perform this action.');
+    }
 
-// old functions
+// Get user ID and new role from form submission
+    $user_id = $_SESSION['a_v_usr'];
+    $new_role = $_POST['new_role'];
+
+// Make sure user cannot be updated to admin role
+    if ($new_role === 'admin') {
+        die('You cannot update a user to an admin role.');
+    }
+
+// Connect to database
+    /*$servername = "localhost";
+    $username = "username";
+    $password = "password";
+    $dbname = "myDB";
+
+    $c = new mysqli($servername, $username, $password, $dbname);
+    */
+
+// Check connection
+    if ($c->connect_error) {
+        die("Connection failed: " . $c->connect_error);
+    }
+
+// Prepare and execute SQL statement to update user role
+    $stmt = $c->prepare("UPDATE users SET role = ? WHERE id = ?");
+    $stmt->bind_param("si", $new_role, $user_id);
+    $stmt->execute();
+
+// Check if update was successful
+    if ($stmt->affected_rows > 0) {
+        echo "User role updated successfully.";
+    } else {
+        echo "Error updating user role: " . $c->error;
+    }
+
+// Close database connection
+    $stmt->close();
+    //$c->close();
+}
+
+function recup_role($user)
+{   /*should take in current user of session and return bolean, however variable of user role if already stored*/
+    global $c;
+    $sql = "SELECT `role` FROM `users` WHERE nick = '$user'";
+    $resultat = mysqli_query($c, $sql);
+    $row = mysqli_fetch_assoc($resultat);
+    $role = $row["role"];
+    return $role;
+}
+
+// old functions *****************************************************************************************************
 
 function ajouterUser($user, $email, $mdp)
 {
@@ -131,7 +193,7 @@ function recup_nick_user($user)
     return $row["nick"];
 }
 
-function recup_role($user)
+function recup_role_old($user)
 {
     global $c;
     $sql = "SELECT `role` FROM `users` WHERE nick = '$user'";

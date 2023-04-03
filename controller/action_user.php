@@ -2,7 +2,14 @@
 
 
 
+/*here admin updates user role */
+if (isset($_POST["action"])) {
 
+    if ($_POST["action"] == "update_role") {
+        update_role($c);
+    }
+}
+/* end of admin updating user role */
 
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {

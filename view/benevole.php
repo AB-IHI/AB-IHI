@@ -107,12 +107,15 @@ unset($_GET['page']); /*unset get page variable so it can go back(using back but
 
             <div class="b">
                 <h1 class="">
-                    Volontaire
+                    <?php
+                    $role_cleaned = htmlspecialchars($_SESSION['role'], ENT_QUOTES, 'UTF-8');
+                    echo $role_cleaned;
+                    ?>
                 </h1>
                 <?php
                 if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin') { // test almost same if above
 
-                    echo '<a href="?page=admin">Admin</a>';
+                    echo '<a href="?page=admin">Gérer membres</a>';
 
 
                 }

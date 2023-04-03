@@ -31,7 +31,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin') { // test almost s
     <container_main class="container">
 
 
-        <h1>Informations personnel</h1>
+        <h1>Informations personnelle</h1>
 
         <a class="position-absolute top-0 end-0 deconnexion" href="?page=logout">Déconnexion</a>
 

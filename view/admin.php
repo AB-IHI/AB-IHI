@@ -32,7 +32,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] != 'admin') { // test almost 
 <container_main class="container">
 
 
-    <h1>Admin</h1>
+    <h1>Membres</h1>
 
     <a class="position-absolute top-0 end-0 deconnexion" href="?page=logout">Déconnexion</a>
 
