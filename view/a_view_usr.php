@@ -178,7 +178,7 @@ echo '<!--<td ><form class="d-flex">
       <label class="input-group-text" for="role"><?php echo $var7 ; ?></label>
   <select class="form-select" id="inputGroupSelect01" name="new_role">
 
-    <option value="Bénévole">Benevole</option>
+    <option value="Bénévole">Bénévole</option>
     <option value="Volontaire">Volontaire</option>
 
   </select>
