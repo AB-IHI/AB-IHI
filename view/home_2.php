@@ -16,11 +16,11 @@
 
 <body class="mb-0">
 
-<!-- <p>Make up your mind already is the site under developement or is it done?
+<!-- <p>
 
 </p>
-<p> it can be pretty but it will be slower</p>
-<p> don't look up for such insignificants elements </p> -->
+<p> </p>
+<p>  </p> -->
 
 
 
