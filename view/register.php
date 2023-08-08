@@ -12,6 +12,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION["loggedin"] == true) {
     $_SESSION['view'] = 'view';
     $_SESSION['page'] = 'home';
     header('Location: .');
+    echo "you have been disconnected";
 }
 ?>
 
@@ -66,7 +67,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION["loggedin"] == true) {
         <a class=" position-absolute top-0 start-0" href=".">retour</a>
 
     <legend>
-        <h1>creer un compte en tant que volontaire </h1>
+        <h1>Créer un compte en tant que volontaire </h1>
     </legend>
     <h2 class="hidetitl">Créer un compte</h2>
 
@@ -93,7 +94,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION["loggedin"] == true) {
             </div>
             <div class="col-12 <?php echo (!empty($prenom_err)) ? 'has-error' : ''; ?>">
 
-                <input type="text" name="prenom" class="form-control btn-lg" id="nick" value="<?php echo $prenom; ?>" placeholder="prenom" required="">
+                <input type="text" name="prenom" class="form-control btn-lg" id="nick" value="<?php echo $prenom; ?>" placeholder="prénom" required="">
                 <span class="help-block"><?php echo $prenom_err; ?></span>
                 <!-- <div class="invalid-feedback ">
                         nick is required.-->
@@ -105,6 +106,15 @@ if (isset($_SESSION['loggedin']) && $_SESSION["loggedin"] == true) {
                 <span class="help-block"><?php echo $email_err; ?></span>
                 <!-- <div class="invalid-feedback">
         email is required.-->
+            </div>
+
+            <div class="form-group <?php echo (!empty($telephone_err)) ? 'has-error' : ''; ?>">
+                <input type="text" class="form-control btn-lg" name="telephone" id="telephone" placeholder="N° téléphone" required="">
+                <span class="help-block"><?php echo $telephone_err; ?></span>
+                <!-- <div class="invalid-feedback">
+                    Please enter a telephone address.
+                </div> -->
+
             </div>
 
             <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
@@ -124,8 +134,8 @@ if (isset($_SESSION['loggedin']) && $_SESSION["loggedin"] == true) {
             <input class="form-check-input" type="checkbox" name="reglement" value="1" id="flexCheckDefault" required="">
             <label class="form-check-label" for="flexCheckDefault1">
                 J'ai pris connaissance du <a class="" href="y_storage/Règlement sur les bénévoles.pdf">
-                    Reglement sur les benevoles
-                </a> et je m'engage à le respecter
+                    Règlement sur les bénévoles</a>
+                et je m'engage à le respecter
             </label>
         </div>
 
@@ -133,8 +143,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION["loggedin"] == true) {
             <input class="form-check-input" type="checkbox" name="condition" value="1" id="flexCheckDefault2" required="">
             <label class="form-check-label" for="flexCheckDefault2">
                 J'ai pris connaissance des conditions du <a href="y_storage/1. L'aube de l'espoir.pdf">
-                    projet de bienfaisance
-                </a>, <a href="y_storage/1.%20Protection%20temporaire.pdf">programme humanitaire</a>  et je m'engage à les respecter
+                    projet de bienfaisance</a>, <a href="y_storage/1.%20Protection%20temporaire.pdf">programme humanitaire</a>  et je m'engage à les respecter
             </label>
         </div>
         <!-- 2eme  1. Règlement sur les PB et les PH.pdf-->
@@ -151,7 +160,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION["loggedin"] == true) {
 
 
 
-        <input type="submit" class=" cnx-sub btn_dem btn-lg mx-auto btn-outline-dark" value="créer">
+        <input type="submit" class=" cnx-sub btn_dem btn-lg mx-auto btn-outline-dark" value="Créer">
         <p>Vous avez déjà un compte? <a href=".?page=login">Connectez-vous</a>.</p>
     </form>
     <!-- <a href="#" class="btn-inscription">test</a> -->

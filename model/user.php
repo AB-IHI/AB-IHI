@@ -268,14 +268,7 @@ Valid adress is required.-->
             email is required.
                 </div>-->
 
-<div class="form-group <?php echo (!empty($telephone_err)) ? 'has-error' : ''; ?>">
-    <input type="text" class="form-control btn-lg" name="telephone" id="telephone" placeholder="N° telephone" required="">
-    <span class="help-block"><?php echo $telephone_err; ?></span>
-    <!-- <div class="invalid-feedback">
-        Please enter a telephone address.
-    </div> -->
 
-</div>
 
 <div class="form-group <?php echo (!empty($rib_err)) ? 'has-error' : ''; ?>">
     <input type="text" class="form-control btn-lg" name="rib" id="rib" placeholder="IBAN facultatif 16characters" >

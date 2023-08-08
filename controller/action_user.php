@@ -193,13 +193,7 @@ if (isset($_POST["action"])) {
             }*/
 
             // Validate telephone
-            if (empty(trim($_POST["telephone"]))) {
-                $telephone_err = "Please enter a telephone.";
-            } elseif (strlen(trim($_POST["telephone"])) < 3) {
-                $telephone_err = "telephone must have atleast 3 characters.";
-            } else {
-                $telephone = trim($_POST["telephone"]);
-            }
+
 
                         // Validate RIB if available (user not forced to provide rib)
                         if (!empty(trim($_POST["rib"]))) {
@@ -354,8 +348,8 @@ if (isset($_POST["action"])) {
 
 
 // Define variables and initialize with empty values
-$username = $nom = $prenom = $email = $password = $confirm_password = "";
-$username_err = $nom_err = $prenom_err = $email_err = $password_err = $confirm_password_err = "";
+$username = $nom = $prenom = $email = $password = $confirm_password = $telephone_err = "";
+$username_err = $nom_err = $prenom_err = $email_err = $password_err = $confirm_password_err = $telephone ="";
 
 if (isset($_POST["action"])) {
 
@@ -463,7 +457,15 @@ if (isset($_POST["action"])) {
                 }
             }
 
+            // Validate telephone
 
+            if (empty(trim($_POST["telephone"]))) {
+                $telephone_err = "Please enter a telephone.";
+            } elseif (strlen(trim($_POST["telephone"])) != 10) {
+                $telephone_err = "telephone must have 10 characters.";
+            } else {
+                $telephone = trim($_POST["telephone"]);
+            }
 
             // Validate confirm password
             // if (empty(trim($_POST["confirm_password"]))) {
@@ -478,15 +480,15 @@ if (isset($_POST["action"])) {
             // Check input errors before inserting in database
             if (
                 empty($username_err) && empty($password_err) && empty($nom_err)
-                && empty($prenom_err) && empty($condition_err) && empty($reglement_err) && empty($email_err)
+                && empty($prenom_err) && empty($condition_err) && empty($reglement_err) && empty($email_err) && empty($telephone)
             ) {
 
                 // Prepare an insert statement
-                $sql = "INSERT INTO users (username, password, nom, prenom, email) VALUES (?, ?, ?, ?, ?)";
+                $sql = "INSERT INTO users (username, password, nom, prenom, email, telephone) VALUES (?, ?, ?, ?, ?, ?)";
 
                 if ($stmt = mysqli_prepare($c, $sql)) {
                     // Bind variables to the prepared statement as parameters
-                    mysqli_stmt_bind_param($stmt, "sssss", $param_username, $param_password, $param_nom, $param_prenom, $param_email);
+                    mysqli_stmt_bind_param($stmt, "ssssss", $param_username, $param_password, $param_nom, $param_prenom, $param_email, $param_telephone);
 
                     // Set parameters
                     $param_username = $username;
@@ -494,6 +496,7 @@ if (isset($_POST["action"])) {
                     $param_nom = $nom;
                     $param_prenom = $prenom;
                     $param_email = $email;
+                    $param_telephone = $telephone;
                     // Attempt to execute the prepared statement
                     if (mysqli_stmt_execute($stmt)) {
                         // Redirect to login page

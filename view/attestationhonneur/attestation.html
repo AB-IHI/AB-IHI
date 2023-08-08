@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Attestation Generator</title>
+    <link rel="stylesheet" type="text/css" href="../../css_js/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../../css_js/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/css/bootstrap.min.css">-->
+    <style>
+        .container {
+            margin-top: 50px;
+        }
+        
+        .card {
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap-utilities.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h3>Attestation Generator 3000</h3>
+            <form>
+                <!--
+          <label for="language" class="form-label">Choose a Language:</label>
+          <select class="form-select" id="language">
+            <option value="Python">Python</option>
+            <option value="PHP">PHP</option>
+            <option value="Java">Java</option>
+            
+          </select>
+        </div> -->
+
+                <div class="mb-3">
+                    <label for="title" class="form-label"  title="your title e. Mr. ">La civilité</label>
+                    <input class="form-control" list="datalistOptions" id="title" placeholder="Click me to select..">
+                    <datalist id="datalistOptions">
+
+                      <option value="Monsieur">
+                      <option value="Madame">
+                      <option value="Mademoiselle">
+
+                    </datalist>
+                </div>
+
+                <div class="mb-3">
+                    <label for="prenom" class="form-label" title="First name">Votre prénom</label>
+                    <input type="text" class="form-control" id="prenom">
+                </div>
+
+                <div class="mb-3">
+                    <label for="nom" class="form-label" title="name">Votre nom</label>
+                    <input type="text" class="form-control" id="nom">
+                </div>
+
+                <div class="mb-3">
+                    <label for="adresse" class="form-label" title="adresse">Adresse</label>
+                    <input type="text" class="form-control" id="adresse">
+                </div>
+
+                <div class="mb-3">
+                    <label for="heb_chez" class="form-label" title="You are hosted by Mr Jhon Doe">Vous êtes hébergé chez (civilité, nom, prénom)</label>
+                    <input type="text" class="form-control" id="heb_chez">
+                </div>
+
+                <div class="mb-3">
+                    <label for="zip_code" class="form-label" title="ZIP code">Code postale</label>
+                    <input type="text" class="form-control" maxlength="6" max="999999" id="zip_code">
+                </div>
+
+                <div class="mb-3">
+                    <label for="commune" class="form-label" title="municipality">Commune</label>
+                    <input type="text" class="form-control" id="commune">
+                </div>
+
+                <div class="mb-3">
+                    <label for="telephone" class="form-label" title="your phone number" >n° de téléphone </label>
+                    <input type="text" class="form-control" id="telephone" placeholder="+XX (0)X XX XX XX XX ">
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label" title="your email">Votre email</label>
+                    <input type="text" class="form-control" id="email">
+                </div>
+
+                <div class="mb-3">
+                    <label for="entry_date" class="form-label" title="Date of entry into France dd/mm/yyyy">Date d'entré en France</label>
+                    <input type="date" class="form-control" id="entry_date">
+                </div>
+
+                <div class="mb-3">
+                    <label for="birth_date" class="form-label" title="Date of your birth dd/mm/yyyy">Date de votre naissance</label>
+                    <input type="date" class="form-control" id="birth_date">
+                </div>
+
+                <div class="mb-3">
+                    <label for="ville_birth" class="form-label" title="your birth city">Ville de naissance</label>
+                    <input type="text" class="form-control" id="ville_birth">
+                </div>
+
+                <div class="mb-3">
+                    <label for="country_birth" class="form-label" title="your birth country">Pays de naissance</label>
+                    <input type="text" class="form-control" id="country_birth">
+                </div>
+
+                <div class="mb-3">
+                    <label for="aps_num" class="form-label" title="APS number">Numéro d'attestation provisoire de séjour (APS)</label>
+                    <input type="text" class="form-control" id="aps_num">
+                </div>
+
+                <div class="mb-3">
+                    <label for="expire_date" class="form-label" title="expire date?">Date de validité de l’APS</label>
+                    <input type="date" class="form-control" id="expire_date">
+                </div>
+
+                <h4>Un personne qui est entré en France avec vous :</h4>
+                <div class="card">
+                    <div class="mb-3">
+                        <label for="lien_1" class="form-label person_1" title="family bond e. mari, femme, fils, fille ...">Lien familial </label>
+                        <div class="mb-3">
+                            <select name="cars" class="person_1" id="lien_1">
+                                <option disabled selected value> -- select an option -- </option>
+                                <option value="mari">mari</option>
+                                <option value="femme">femme</option>
+                                <option value="fils">fils</option>
+                                <option value="fille">fille</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="prenom_1" class="form-label" title="first name">le prénom</label>
+                        <input type="text" class="form-control person_1" id="prenom_1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nom_1" class="form-label" title="name">le nom</label>
+                        <input type="text" class="form-control person_1" id="nom_1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="birth_date_1" class="form-label" title="birth date dd/mm/yyyy">date de naissance</label>
+                        <input type="date" class="form-control person_1" id="birth_date_1">
+                    </div>
+                </div>
+
+                <h4>Ajoutez une personne entré en France avec vous :</h4>
+                <div class="card">
+                    <div class="mb-3">
+                        <label for="lien_2" class="form-label" title="family bond e. mari, femme, fils, fille ...">Lien familial </label>
+                        <div class="mb-3">
+                        <select name="cars" id="lien_2">
+                            <option disabled selected value> -- select an option -- </option>
+                            <option value="mari">mari</option>
+                            <option value="femme">femme</option>
+                            <option value="fils">fils</option>
+                            <option value="fille">fille</option>
+                        </select>
+                            </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="prenom_2" class="form-label" title="first name">le prénom</label>
+                        <input type="text" class="form-control" id="prenom_2">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nom_2" class="form-label" title="name">le nom</label>
+                        <input type="text" class="form-control" id="nom_2">
+                    </div>
+                    <div class="mb-3">
+                        <label for="birth_date_2" class="form-label" title="birth date dd/mm/yyyy">date de naissance</label>
+                        <input type="date" class="form-control" id="birth_date_2">
+                    </div>
+                </div>
+
+
+                <button type="submit" id="submit" class="btn btn-primary">Generate Prompt</button>
+            </form>
+        </div>
+        <div id="output" class="card" style="display: none;">
+            <h4>Generated Prompt:</h4>
+            <pre id="prompt"></pre>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

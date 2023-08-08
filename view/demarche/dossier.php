@@ -131,14 +131,6 @@ $sql = "SELECT * FROM users where users.id = $var";
 
                 // 3/3 -> AFFICHAGE
                 // Récupère chaque ligne de la BD dans un tableau "$row"
-
-
-
-
-
-
-                // 3/3 -> AFFICHAGE
-                // Récupère chaque ligne de la BD dans un tableau "$row"
                 $row = mysqli_fetch_assoc($result);
 
                 echo "<h2><a href='.?page=my_info'>Mes informations</a>.</h2>";

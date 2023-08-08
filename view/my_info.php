@@ -13,7 +13,10 @@ if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin') { // test almost s
 
 <head>
     <meta charset="UTF-8">
-    <title>volunteer</title>
+    <title> <?php
+        $role_cleaned = htmlspecialchars($_SESSION['role'], ENT_QUOTES, 'UTF-8');
+        echo $role_cleaned;
+        ?></title>
 
     <link rel="stylesheet" type="text/css" href="css_js/css/bootstrap.css" />
     <!-- <link rel="stylesheet" type="text/css" href="css_js/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>  -->

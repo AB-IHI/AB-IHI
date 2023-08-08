@@ -12,6 +12,7 @@
         $_SESSION['view'] = 'view';
         $_SESSION['page'] = 'home';
      header('Location: .');
+     echo "you have been disconnected";
         }
  ?>
 <!DOCTYPE html>
@@ -73,7 +74,7 @@
         <div class="row g-10">
             <div class="col-12 <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <label for="pseudo" class="form-label ">pseudo</label>
-                <input type="text" name="username" class="form-control btn-lg" id="pseudo" value="<?php echo $username; ?>" placeholder="nick " required="">
+                <input type="text" name="username" class="form-control btn-lg" id="pseudo" value="<?php echo $username; ?>" placeholder="pseudo " required="">
                 <span class="help-block"><?php echo $username_err; ?></span>
                 <!-- <div class="invalid-feedback ">
                     nick is required.
@@ -94,10 +95,10 @@
 
         </div>
 
-         <input type="submit" class="cnx-sub btn_dem btn-lg mx-auto btn-outline-dark" value="connexion">
+         <input type="submit" class="cnx-sub btn_dem btn-lg mx-auto btn-outline-dark" value="Connexion">
         <!--<a href="?page=dev"><input class="cnx-sub btn_dem btn-lg  btn-outline-dark" value="connexion">Retour</a>-->
 
     </form>
 
-    <a class="btn-inscription a_cre" href="?page=register" role="button">créer un compte</a>
+    <a class="btn-inscription a_cre" href="?page=register" role="button">Créer un compte</a>
 </container>
