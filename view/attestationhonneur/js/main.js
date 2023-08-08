@@ -90,22 +90,27 @@ document.querySelector('form').addEventListener('submit', function(event) {
     const commune = document.getElementById("commune").value;
     const telephone = document.querySelector('#telephone').value;
     const email = document.querySelector('#email').value;
-    const entry_date = document.querySelector('#entry_date').value;
-    const birth_date = document.querySelector('#birth_date').value;
+    var entry_date = document.querySelector('#entry_date').value;
+    var entry_date = convertDate(entry_date);
+    var birth_date = document.querySelector('#birth_date').value;
+    var birth_date = convertDate(birth_date);
     const ville_birth = document.querySelector('#ville_birth').value;
     const country_birth = document.getElementById("country_birth").value;
     const aps_num = document.querySelector('#aps_num').value;
-    const expire_date = document.querySelector('#expire_date').value;
+    var expire_date = document.querySelector('#expire_date').value;
+    var expire_date = convertDate(expire_date);
 
     const lien_1 = document.querySelector('#lien_1').value;
     const prenom_1 = document.querySelector('#prenom_1').value;
     const nom_1 = document.querySelector('#nom_1').value;
-    const birth_date_1 = document.querySelector('#birth_date_1').value;
+    var birth_date_1 = document.querySelector('#birth_date_1').value;
+    var birth_date_1 = convertDate(birth_date_1);
 
     const lien_2 = document.querySelector('#lien_2').value;
     const prenom_2 = document.querySelector('#prenom_2').value;
     const nom_2 = document.getElementById("nom_2").value;
-    const birth_date_2 = document.querySelector('#birth_date_2').value;
+    var birth_date_2 = document.querySelector('#birth_date_2').value;
+    var birth_date_2 =  convertDate(birth_date_2);
 
     // console.log(obj.init);
     // stringify (obj.init);
@@ -205,12 +210,12 @@ document.querySelector('form').addEventListener('submit', function(event) {
             }
 
             if (!un_champs_vide) {
-                var pers2 = "\n Je suis entré en France avec ${role} ${lien_1} ${prenom_1} ${nom_1}, née le ${birth_date_1}.";
+                var pers2 = "\nJe suis entré en France avec ${role} ${lien_1} ${prenom_1} ${nom_1}, née le ${birth_date_1}.";
                 pers2 = pers2.replace("${role}", role);
-                pers2 = pers2.replace("${lien_1}", document.getElementById("lien_1").value);
+                pers2 = pers2.replace("${lien_1}", lien_1);
                 pers2 = pers2.replace("${prenom_1}", document.getElementById("prenom_1").value);
                 pers2 = pers2.replace("${nom_1}", document.getElementById("nom_1").value);
-                pers2 = pers2.replace("${birth_date_1}", document.getElementById("birth_date_1").value);
+                pers2 = pers2.replace("${birth_date_1}", birth_date_1);
 
                 return pers2;
             } else {
@@ -222,8 +227,8 @@ document.querySelector('form').addEventListener('submit', function(event) {
 
     var obj2 = {
         init: function () {
-            document.getElementById('submit').onclick = obj.validate;
-            return obj.validate(); // Call the validate function and return its result
+            document.getElementById('submit').onclick = obj2.validate;
+            return obj2.validate(); // Call the validate function and return its result
         },
 
         validate: function () {
@@ -240,12 +245,12 @@ document.querySelector('form').addEventListener('submit', function(event) {
             }
 
             if (!un_champs_vide) {
-                var pers3 = "\nJe suis entré en France avec ${role} ${lien_1} ${prenom_1} ${nom_1}, née le ${birth_date_1}.";
+                var pers3 = "\nJe suis entré en France avec ${role} ${lien_2} ${prenom_2} ${nom_2}, née le ${birth_date_2}.";
                 pers3 = pers3.replace("${role}", role2);
-                pers3 = pers3.replace("${lien_2}", document.getElementById("lien_1").value);
-                pers3 = pers3.replace("${prenom_2}", document.getElementById("prenom_1").value);
-                pers3 = pers3.replace("${nom_2}", document.getElementById("nom_1").value);
-                pers3 = pers3.replace("${birth_date_2}", document.getElementById("birth_date_1").value);
+                pers3 = pers3.replace("${lien_2}", lien_2);
+                pers3 = pers3.replace("${prenom_2}", prenom_2);
+                pers3 = pers3.replace("${nom_2}", nom_2);
+                pers3 = pers3.replace("${birth_date_2}", birth_date_2);
 
                 return pers3;
             } else {
@@ -274,7 +279,7 @@ Objet: demande d’inscription au programme humanitaire
 Mesdames, Messieurs,
 Je vous demande de m'inscrire au programme humanitaire "Protection temporaire 
 aux personnes fuyant la guerre en Ukraine" en tant que bénéficiaire d'aide humanitaire.
-Je suis entrée en France le ${entry_date}, ma date de naissance est le ${birth_date}.${obj.init()}
+Je suis entrée en France le ${entry_date}, ma date de naissance est le ${birth_date}.${obj.init()}${obj2.init()}
 Mon APS de bénéficiaire de la protection temporaire n°${aps_num} est valable jusqu'au ${expire_date}.
 J'ai pris connaissance du contenu du programme humanitaire, accepte et m'engage à remplir les 
 obligations dans le cadre de ce programme.
