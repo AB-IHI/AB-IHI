@@ -220,6 +220,41 @@ document.querySelector('form').addEventListener('submit', function(event) {
         },
     };
 
+    var obj2 = {
+        init: function () {
+            document.getElementById('submit').onclick = obj.validate;
+            return obj.validate(); // Call the validate function and return its result
+        },
+
+        validate: function () {
+            var check = document.getElementsByClassName('person_2');
+            var len = check.length;
+            var un_champs_vide = false;
+            for (var i = 0; i < len; i++) {
+                if (check[i].value === '') {
+                    un_champs_vide = true;
+                    console.log("loop 2 work");
+                    console.log(un_champs_vide);
+                    break; // Exit the loop once we find an empty field
+                }
+            }
+
+            if (!un_champs_vide) {
+                var pers3 = "\nJe suis entré en France avec ${role} ${lien_1} ${prenom_1} ${nom_1}, née le ${birth_date_1}.";
+                pers3 = pers3.replace("${role}", role2);
+                pers3 = pers3.replace("${lien_2}", document.getElementById("lien_1").value);
+                pers3 = pers3.replace("${prenom_2}", document.getElementById("prenom_1").value);
+                pers3 = pers3.replace("${nom_2}", document.getElementById("nom_1").value);
+                pers3 = pers3.replace("${birth_date_2}", document.getElementById("birth_date_1").value);
+
+                return pers3;
+            } else {
+                return "";
+                // window.alert("un des champs de personnes entree avec vous est vide");
+            }
+        },
+    };
+
     let prompt = `
 ${title} ${prenom} ${nom}
 ${adresse}
@@ -239,7 +274,7 @@ Objet: demande d’inscription au programme humanitaire
 Mesdames, Messieurs,
 Je vous demande de m'inscrire au programme humanitaire "Protection temporaire 
 aux personnes fuyant la guerre en Ukraine" en tant que bénéficiaire d'aide humanitaire.
-Je suis entrée en France le ${entry_date}, ma date de naissance est le ${birth_date}. ${obj.init()}
+Je suis entrée en France le ${entry_date}, ma date de naissance est le ${birth_date}.${obj.init()}
 Mon APS de bénéficiaire de la protection temporaire n°${aps_num} est valable jusqu'au ${expire_date}.
 J'ai pris connaissance du contenu du programme humanitaire, accepte et m'engage à remplir les 
 obligations dans le cadre de ce programme.

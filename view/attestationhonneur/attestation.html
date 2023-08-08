@@ -78,7 +78,7 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="telephone" class="form-label" title="your phone number" >n° de téléphone </label>
+                    <label for="telephone" class="form-label" title="your phone number FR +33" >n° de téléphone </label>
                     <input type="text" class="form-control" id="telephone" placeholder="+XX (0)X XX XX XX XX ">
                 </div>
 
@@ -126,6 +126,10 @@
                                 <option disabled selected value> -- select an option -- </option>
                                 <option value="mari">mari</option>
                                 <option value="femme">femme</option>
+                                <option value="femme">concubine</option>
+                                <option value="mari">concubin</option>
+                                <option value="femme">pacsé</option>
+                                <option value="mari">pacsée</option>
                                 <option value="fils">fils</option>
                                 <option value="fille">fille</option>
                             </select>
@@ -150,10 +154,14 @@
                     <div class="mb-3">
                         <label for="lien_2" class="form-label" title="family bond e. mari, femme, fils, fille ...">Lien familial </label>
                         <div class="mb-3">
-                        <select name="cars" id="lien_2">
+                        <select name="cars" class="person_2" id="lien_2">
                             <option disabled selected value> -- select an option -- </option>
                             <option value="mari">mari</option>
                             <option value="femme">femme</option>
+                            <option value="femme">concubine</option>
+                            <option value="mari">concubin</option>
+                            <option value="femme">pacsé</option>
+                            <option value="mari">pacsée</option>
                             <option value="fils">fils</option>
                             <option value="fille">fille</option>
                         </select>
@@ -161,24 +169,24 @@
                     </div>
                     <div class="mb-3">
                         <label for="prenom_2" class="form-label" title="first name">le prénom</label>
-                        <input type="text" class="form-control" id="prenom_2">
+                        <input type="text" class="form-control person_2" id="prenom_2">
                     </div>
                     <div class="mb-3">
                         <label for="nom_2" class="form-label" title="name">le nom</label>
-                        <input type="text" class="form-control" id="nom_2">
+                        <input type="text" class="form-control person_2" id="nom_2">
                     </div>
                     <div class="mb-3">
                         <label for="birth_date_2" class="form-label" title="birth date dd/mm/yyyy">date de naissance</label>
-                        <input type="date" class="form-control" id="birth_date_2">
+                        <input type="date" class="form-control person_2" id="birth_date_2">
                     </div>
                 </div>
 
 
-                <button type="submit" id="submit" class="btn btn-primary">Generate Prompt</button>
+                <button type="submit" id="submit" class="btn btn-primary">Generate Attestation</button>
             </form>
         </div>
         <div id="output" class="card" style="display: none;">
-            <h4>Generated Prompt:</h4>
+            <h4>Generated Attestation:</h4>
             <pre id="prompt"></pre>
         </div>
     </div>
