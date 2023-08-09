@@ -85,7 +85,11 @@ document.querySelector('form').addEventListener('submit', function(event) {
     const prenom = document.querySelector('#prenom').value;
     const nom = document.querySelector('#nom').value;
     const adresse = document.querySelector('#adresse').value;
-    const heb_chez = document.querySelector('#heb_chez').value;
+    var heb_chez =  document.querySelector('#heb_chez').value;
+    if (heb_chez) {
+        var heb_chez = `\nchez `+ heb_chez;
+    }
+
     const zip_code = document.querySelector('#zip_code').value;
     const commune = document.getElementById("commune").value;
     const telephone = document.querySelector('#telephone').value;
@@ -186,7 +190,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
         role2 += 'mon';
     }
 
-    if (lien_1 === "femme" || lien_1 === "fille") {
+    if (lien_2 === "femme" || lien_2 === "fille") {
         role2 += 'ma';
     }
 
@@ -210,7 +214,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
             }
 
             if (!un_champs_vide) {
-                var pers2 = "\nJe suis entré en France avec ${role} ${lien_1} ${prenom_1} ${nom_1}, née le ${birth_date_1}.";
+                var pers2 = "\n- ${role} ${lien_1} ${prenom_1} ${nom_1}, née le ${birth_date_1}.";
                 pers2 = pers2.replace("${role}", role);
                 pers2 = pers2.replace("${lien_1}", lien_1);
                 pers2 = pers2.replace("${prenom_1}", document.getElementById("prenom_1").value);
@@ -245,7 +249,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
             }
 
             if (!un_champs_vide) {
-                var pers3 = "\nJe suis entré en France avec ${role} ${lien_2} ${prenom_2} ${nom_2}, née le ${birth_date_2}.";
+                var pers3 = "\n- ${role} ${lien_2} ${prenom_2} ${nom_2}, née le ${birth_date_2}.";
                 pers3 = pers3.replace("${role}", role2);
                 pers3 = pers3.replace("${lien_2}", lien_2);
                 pers3 = pers3.replace("${prenom_2}", prenom_2);
@@ -260,10 +264,20 @@ document.querySelector('form').addEventListener('submit', function(event) {
         },
     };
 
+
+
+
+
+
+    if ((obj.init() === "") && (obj2.init() ==="")) {
+        var av = ".";
+    }
+    else {
+        var av = " avec:";
+    }
     let prompt = `
 ${title} ${prenom} ${nom}
-${adresse}
-chez ${heb_chez}
+${adresse}${heb_chez}
 ${zip_code} ${commune}
 tél.: ${telephone}
 \t
@@ -279,7 +293,7 @@ Objet: demande d’inscription au programme humanitaire
 Mesdames, Messieurs,
 Je vous demande de m'inscrire au programme humanitaire "Protection temporaire 
 aux personnes fuyant la guerre en Ukraine" en tant que bénéficiaire d'aide humanitaire.
-Je suis entrée en France le ${entry_date}, ma date de naissance est le ${birth_date}.${obj.init()}${obj2.init()}
+Je suis entrée en France le ${entry_date}${av}${obj.init()}${obj2.init()}
 Mon APS de bénéficiaire de la protection temporaire n°${aps_num} est valable jusqu'au ${expire_date}.
 J'ai pris connaissance du contenu du programme humanitaire, accepte et m'engage à remplir les 
 obligations dans le cadre de ce programme.
@@ -335,5 +349,6 @@ Pièces jointes:
     // Display the generated prompt
     document.querySelector('#output').style.display = 'block';
     document.querySelector('#prompt').textContent = prompt;
+    window.location.href="#output"
 });
 
