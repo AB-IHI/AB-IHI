@@ -93,11 +93,15 @@ document.querySelector('form').addEventListener('submit', function(event) {
     const zip_code = document.querySelector('#zip_code').value;
     const commune = document.getElementById("commune").value;
     const telephone = document.querySelector('#telephone').value;
+    var telephone2 =  document.querySelector('#telephone2').value;
+    if (telephone2) {
+        var telephone2 = `\ntél. en Ukraine :`+ telephone2;
+    }
     const email = document.querySelector('#email').value;
     var entry_date = document.querySelector('#entry_date').value;
     var entry_date = convertDate(entry_date);
-    var birth_date = document.querySelector('#birth_date').value;
-    var birth_date = convertDate(birth_date);
+    // var birth_date = document.querySelector('#birth_date').value;
+    // var birth_date = convertDate(birth_date);
     const ville_birth = document.querySelector('#ville_birth').value;
     const country_birth = document.getElementById("country_birth").value;
     const aps_num = document.querySelector('#aps_num').value;
@@ -249,7 +253,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
             }
 
             if (!un_champs_vide) {
-                var pers3 = "\n- ${role} ${lien_2} ${prenom_2} ${nom_2}, née le ${birth_date_2}.";
+                var pers3 = "\n          - ${role} ${lien_2} ${prenom_2} ${nom_2}, née le ${birth_date_2}.";
                 pers3 = pers3.replace("${role}", role2);
                 pers3 = pers3.replace("${lien_2}", lien_2);
                 pers3 = pers3.replace("${prenom_2}", prenom_2);
@@ -279,15 +283,14 @@ document.querySelector('form').addEventListener('submit', function(event) {
 ${title} ${prenom} ${nom}
 ${adresse}${heb_chez}
 ${zip_code} ${commune}
-tél.: ${telephone}
-\t
+tél. en France : ${telephone}${telephone2}
 mail: ${email}
 
-                                                                Association de bienfaisance
-                                                                "Initiative Humanitaire Internationale"
-                                                                14 boulevard Jacques Replat
-                                                                74000 Annecy
-                                                                    Fait à Annecy, le ${currentTime}
+                              Association de bienfaisance
+                              "Initiative Humanitaire Internationale"
+                              14 boulevard Jacques Replat
+                              74000 Annecy
+                                                    Fait à Annecy, le ${currentTime}
 Objet: demande d’inscription au programme humanitaire
 
 Mesdames, Messieurs,
