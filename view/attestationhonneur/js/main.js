@@ -3,6 +3,15 @@ function convertDate(inputFormat) {
     var d = new Date(inputFormat)
     return [pad(d.getDate()), pad(d.getMonth()+1), d.getFullYear()].join('/')
 }
+/*editor.js aka jspdf script in attestation.html*/
+var jsPDF = window.jspdf.jsPDF;
+$(document).ready(function() {
+    if (jsPDF && jsPDF.version) {
+        $('#dversion').text('Version ' + jsPDF.version);
+    }
+});
+
+
 
 var pers2 = "";
 
@@ -95,7 +104,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
     const telephone = document.querySelector('#telephone').value;
     var telephone2 =  document.querySelector('#telephone2').value;
     if (telephone2) {
-        var telephone2 = `\ntél. en Ukraine :`+ telephone2;
+        var telephone2 = `\ntél.:`+ telephone2;
     }
     const email = document.querySelector('#email').value;
     var entry_date = document.querySelector('#entry_date').value;
@@ -103,6 +112,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
     // var birth_date = document.querySelector('#birth_date').value;
     // var birth_date = convertDate(birth_date);
     const ville_birth = document.querySelector('#ville_birth').value;
+    const ville = document.querySelector('#ville').value;
     const country_birth = document.getElementById("country_birth").value;
     const aps_num = document.querySelector('#aps_num').value;
     var expire_date = document.querySelector('#expire_date').value;
@@ -283,14 +293,14 @@ document.querySelector('form').addEventListener('submit', function(event) {
 ${title} ${prenom} ${nom}
 ${adresse}${heb_chez}
 ${zip_code} ${commune}
-tél. en France : ${telephone}${telephone2}
+tél. : ${telephone}${telephone2}
 mail: ${email}
 
                               Association de bienfaisance
                               "Initiative Humanitaire Internationale"
                               14 boulevard Jacques Replat
                               74000 Annecy
-                                                    Fait à Annecy, le ${currentTime}
+                                                    Fait à ${Ville}, le ${currentTime}
 Objet: demande d’inscription au programme humanitaire
 
 Mesdames, Messieurs,
@@ -298,8 +308,8 @@ Je vous demande de m'inscrire au programme humanitaire "Protection temporaire
 aux personnes fuyant la guerre en Ukraine" en tant que bénéficiaire d'aide humanitaire.
 Je suis entrée en France le ${entry_date}${av}${obj.init()}${obj2.init()}
 Mon APS de bénéficiaire de la protection temporaire n°${aps_num} est valable jusqu'au ${expire_date}.
-J'ai pris connaissance du contenu du programme humanitaire, accepte et m'engage à remplir les 
-obligations dans le cadre de ce programme.
+J'ai pris connaissance du contenu du programme humanitaire, accepte et m'engage à remplir 
+les obligations dans le cadre de ce programme.
 Je m'engage également à informer sans délai l'Association de toute modification de ma 
 situation financière et sociale.
 Veuillez agréer, Mesdames, Messieurs, l’expression de mon profond respect.
@@ -309,7 +319,7 @@ Pièces jointes:
     1) autorisation provisoire de séjour
     2) déclaration sur l’honneur
     `;
-
+    // export { prompt };
 
 
     // if (isEmphasis) {
@@ -353,5 +363,6 @@ Pièces jointes:
     document.querySelector('#output').style.display = 'block';
     document.querySelector('#prompt').textContent = prompt;
     window.location.href="#output"
+
 });
 

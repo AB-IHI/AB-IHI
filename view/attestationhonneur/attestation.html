@@ -175,6 +175,18 @@
                     </div>
                 </div>
 
+                <div class="mb-3">
+                    <label for="title" class="form-label"  title="done in ">Fait à</label>
+                    <input class="form-control" list="datalistOptions" id="ville" placeholder="Click me to select.. or write">
+                    <datalist id="datalistOptions">
+
+                        <option value="Annecy">
+                        <option value="Thônes">
+                        <option value="Annemasse">
+
+                    </datalist>
+                </div>
+
 
                 <button type="submit" id="submit" class="btn btn-primary">Generate Attestation</button>
             </form>
@@ -182,10 +194,50 @@
         <div id="output" class="card" style="display: none;">
             <h4>Generated Attestation:</h4>
             <pre id="prompt"></pre>
+            <div class="row-fluid">
+
+                <div class="span5 no-gutter" style="width: 49%;float:left">
+
+                 
+
+                </div>
+
+                <div id="editor" class="bypass" style="width: 49%;"></div>
+
+                <div class="controls" style="width: 49%;">
+                    <div class="pull-right">
+                        <!--<a href="#" class="btn btn-primary">Download Your Code</a>-->
+                        <a href="#" class="btn btn-primary download-pdf">Download PDF</a>
+                    </div>
+
+
+                </div>
+            </div>
         </div>
     </div>
+    <!-- /container -->
+
+
+    <!-- Scripts down here -->
+
+    <script src="js/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript" src="js/polyfills.umd.js"></script>
+    <script type="text/javascript" src="js/jspdf.umd.js"></script>
 
     <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- Code editor -->
+
+    <script src="js/ace.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- Scripts in development mode -->
+    <script type="text/javascript" src="js/pdfobject.min.js"></script>
+    <script type="text/javascript" src="js/editor.js"></script>
+
+
+
+
 </body>
 
 </html>
