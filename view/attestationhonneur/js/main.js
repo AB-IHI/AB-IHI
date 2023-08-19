@@ -300,7 +300,7 @@ mail: ${email}
                               "Initiative Humanitaire Internationale"
                               14 boulevard Jacques Replat
                               74000 Annecy
-                                                    Fait à ${Ville}, le ${currentTime}
+                                                    Fait à ${ville}, le ${currentTime}
 Objet: demande d’inscription au programme humanitaire
 
 Mesdames, Messieurs,
