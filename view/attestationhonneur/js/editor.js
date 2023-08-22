@@ -120,7 +120,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
                 source += element;
 
                 //console.log(source);
-                source += 'jsPDF`, 16, 16);\n';
+                source += '`, 16, 16);\n';
 
                 editor.setValue(source);
                 editor.gotoLine(0);
