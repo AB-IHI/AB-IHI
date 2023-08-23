@@ -1,14 +1,6 @@
-/*console.log("editorjs");
-import { prompt } from '../main.js'
-
-console.log(prompt);
-
-var element = prompt;
-
-console.log(element);*/
 
 document.querySelector('form').addEventListener('submit', function(event) {
-    var element = document.getElementById("prompt").innerHTML;
+    var element2 = document.getElementById("att_h").innerHTML;
     //console.log(element);
 
 
@@ -21,7 +13,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
      * @return {[type]} [description]
      */
     var jsPDFEditor = (function() {
-        var editor,
+        var editor2,
             demos = {
                 "images.js": "Images",
                 "font-faces.js": "Font faces, text alignment and rotation",
@@ -46,17 +38,17 @@ document.querySelector('form').addEventListener('submit', function(event) {
             };
 
         var aceEditor = function() {
-            editor = ace.edit("editor");
-            editor.setTheme("ace/theme/github");
-            editor.setOptions({
+            editor2 = ace.edit("editor2");
+            editor2.setTheme("ace/theme/github");
+            editor2.setOptions({
                 fontFamily: "monospace",
                 fontSize: "12px"
             });
-            editor.getSession().setMode("ace/mode/javascript");
-            editor.getSession().setUseWorker(false); // prevent "SecurityError: DOM Exception 18"
+            editor2.getSession().setMode("ace/mode/javascript");
+            editor2.getSession().setUseWorker(false); // prevent "SecurityError: DOM Exception 18"
 
             var timeout;
-            editor.getSession().on("change", function() {
+            editor2.getSession().on("change", function() {
                 // Hacky workaround to disable auto refresh on user input
                 if (
                     $("#auto-refresh").is(":checked") &&
@@ -94,8 +86,8 @@ document.querySelector('form').addEventListener('submit', function(event) {
             $.get(
                 "examples/js/" + $("#template").val(),
                 function(response) {
-                    editor.setValue(response);
-                    editor.gotoLine(0);
+                    editor2.setValue(response);
+                    editor2.gotoLine(0);
 
                     // If autorefresh isn't on, then force it when we change examples
                     if (!$("#auto-refresh").is(":checked")) {
@@ -109,21 +101,21 @@ document.querySelector('form').addEventListener('submit', function(event) {
                 );
 
                 // Fallback source code
-                var source = "// You'll need to make your image into a Data URL\n";
+                var source2 = "// You'll need to make your image into a Data URL\n";
 
-                source += "\n";
-                source += "var doc = new jsPDF();\n";
-                source += "\n";
-                source += "doc.setFontSize(12);\n";
-                source += 'doc.text(`';
+                source2 += "\n";
+                source2 += "var doc = new jsPDF();\n";
+                source2 += "\n";
+                source2 += "doc.setFontSize(12);\n";
+                source2 += 'doc.text(`';
 
-                source += element;
+                source2 += element2;
 
                 //console.log(source);
-                source += '`, 16, 16);\n';
+                source2 += '`, 16, 16);\n';
 
-                editor.setValue(source);
-                editor.gotoLine(0);
+                editor2.setValue(source2);
+                editor2.gotoLine(0);
             });
         };
 
@@ -149,13 +141,13 @@ document.querySelector('form').addEventListener('submit', function(event) {
 
                 eval(
                     "try{" +
-                    editor.getValue() +
+                    editor2.getValue() +
                     "} catch(e) { console.error(e.message,e.stack,e); }"
                 );
 
                 var file = demos[$("#template").val()];
                 if (file === undefined) {
-                    file = "attestation_honneur";
+                    file = "declaration_honneur";
                 }
                 if (typeof doc !== "undefined") {
                     doc.save(file + ".pdf");
@@ -199,7 +191,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
                     if (!skipEval) {
                         eval(
                             "try{" +
-                            editor.getValue() +
+                            editor2.getValue() +
                             "} catch(e) { console.error(e.message,e.stack,e); }"
                         );
                     }

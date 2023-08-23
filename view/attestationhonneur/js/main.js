@@ -563,13 +563,38 @@ Pièces jointes:
     //
     // }
 
+    let att_h = `
+
+
+
+
+
+                                                                                 Association de bienfaisance
+                                                                                 "Initiative Humanitaire Internationale"
+                                                                                 14 boulevard Jacques Replat
+                                                                                 74000 Annecy
+                                                                                 
+                                                                                         Fait à ${ville}, le ${currentTime}
+                                                    
+Objet: déclaration sur l’honneur
+
+
+Je soussignée, ${title} ${prenom} ${nom}, née le ${birth_date_1} à ${ville_birth} en ${country_birth}, bénéficiaire de la protection temporaire et
+détentrice de l’autorisation provisoire de séjour n° ${aps_num}, valable jusqu'au ${expire_date}, déclare sur
+l'honneur être la seule personne constituant mon foyer fiscal en France.
+En cas de changement dans la composition de mon foyer fiscal, je m'engage à en informer l'association.
+
+
+
+    `;
 
 
 
     // Display the generated prompt
     document.querySelector('#output').style.display = 'block';
     document.querySelector('#prompt').textContent = prompt;
-    window.location.href="#output"
+    document.querySelector('#att_h').textContent = att_h;
+    window.location.href="#output";
 
 });
 

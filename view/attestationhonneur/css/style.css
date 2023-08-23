@@ -17,6 +17,12 @@
     display: none;
 }
 
+
+.hide_att_h {
+    display: none;
+}
+
+
 @media (max-width: 1024px) {
     .hide_container {
         display: none;
