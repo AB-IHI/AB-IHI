@@ -1,0 +1,24 @@
+.container {
+    margin-top: 50px;
+}
+
+.card {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/*output is hidden*/
+.hide_result {
+    display: none;
+}
+
+/*more input for children are hidden*/
+#hide_more {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .hide_container {
+        display: none;
+    }
+}

@@ -9,6 +9,17 @@ $(function() {
 
 /*end of section cloner*/
 
+/*show on click hidden more children*/
+var show_inputs = function() {
+
+    document.getElementById("hide_more").style.display = 'block';
+    document.getElementById("show_more").style.display = 'none';
+
+    // console.log("triggered");
+}
+
+document.getElementById('show_more').onclick = show_inputs;
+
 
 // $(function() {
 //
@@ -107,6 +118,13 @@ function stringify (x) {
 
 
 // stringify (obj.init);
+
+// document.querySelector('#show_more').addEventListener('submit', function(event) {
+//     //display more input options
+//     document.querySelector('#hide_more').style.display = 'block';
+// }
+
+
 
 document.querySelector('form').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -293,8 +311,8 @@ document.querySelector('form').addEventListener('submit', function(event) {
             for (var i = 0; i < len; i++) {
                 if (check[i].value === '') {
                     un_champs_vide = true;
-                    console.log("loop work");
-                    console.log(un_champs_vide);
+                    // console.log("loop work");
+                    // console.log(un_champs_vide);
                     break; // Exit the loop once we find an empty field
                 }
             }
@@ -328,8 +346,8 @@ document.querySelector('form').addEventListener('submit', function(event) {
             for (var i = 0; i < len; i++) {
                 if (check[i].value === '') {
                     un_champs_vide = true;
-                    console.log("loop 2 work");
-                    console.log(un_champs_vide);
+                    // console.log("loop 2 work");
+                    // console.log(un_champs_vide);
                     break; // Exit the loop once we find an empty field
                 }
             }
@@ -363,8 +381,8 @@ document.querySelector('form').addEventListener('submit', function(event) {
             for (var i = 0; i < len; i++) {
                 if (check[i].value === '') {
                     un_champs_vide = true;
-                    console.log("loop 2 work");
-                    console.log(un_champs_vide);
+                    // console.log("loop 2 work");
+                    // console.log(un_champs_vide);
                     break; // Exit the loop once we find an empty field
                 }
             }
@@ -398,8 +416,8 @@ document.querySelector('form').addEventListener('submit', function(event) {
             for (var i = 0; i < len; i++) {
                 if (check[i].value === '') {
                     un_champs_vide = true;
-                    console.log("loop 2 work");
-                    console.log(un_champs_vide);
+                    // console.log("loop 2 work");
+                    // console.log(un_champs_vide);
                     break; // Exit the loop once we find an empty field
                 }
             }
@@ -433,8 +451,8 @@ document.querySelector('form').addEventListener('submit', function(event) {
             for (var i = 0; i < len; i++) {
                 if (check[i].value === '') {
                     un_champs_vide = true;
-                    console.log("loop 2 work");
-                    console.log(un_champs_vide);
+                    // console.log("loop 2 work");
+                    // console.log(un_champs_vide);
                     break; // Exit the loop once we find an empty field
                 }
             }
@@ -544,6 +562,8 @@ Pièces jointes:
     //     prompt += language;
     //
     // }
+
+
 
 
     // Display the generated prompt
