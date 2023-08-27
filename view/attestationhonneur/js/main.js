@@ -120,17 +120,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
 
     var myrole = "";
 
-    if (title === "Monsieur") {
-        gender = 'seul';
 
-    }
-    else if (title === "Madame") {
-        gender = "seule";
-
-    }
-    else  {
-        gender = "";
-    }
 
     var currentTime = new Date();
     currentTime = convertDate(currentTime);
@@ -413,16 +403,29 @@ document.querySelector('form').addEventListener('submit', function(event) {
 
 
 
+    //gender is used to determine if it f/m word of seul
+    gender = "";
 
-
-    if ( (obj2.init() ==="") && (obj3.init() ==="") && (obj4.init() ==="") && (obj5.init() ==="")) {
+    //check if there are no people then add seul else add list of people
+    if ( (obj.init() ==="") && (obj2.init() ==="") && (obj3.init() ==="") && (obj4.init() ==="") && (obj5.init() ==="")) {
         var av = ".";
         // gender +=".";
+
+        if (title === "Monsieur") {
+            gender = 'seul.';
+
+        }
+        else if (title === "Madame") {
+            gender = "seule.";
+
+        }
+
     }
     else {
         var av = " avec:";
 
     }
+    console.log(gender);
     let prompt = `
 ${title} ${prenom} ${nom}
 ${adresse}${heb_chez}

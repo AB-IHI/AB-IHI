@@ -96,7 +96,10 @@
 
                 <div class="mb-3">
                     <label for="country_birth" class="form-label" title="your birth country">Pays de naissance</label>
-                    <input type="text" class="form-control" id="country_birth" placeholder="Ukraine">
+                    <input class="form-control" list="datalist" id="country_birth" placeholder="Ukraine">
+                    <datalist id="datalist">
+                        <option value="Ukraine">
+                    </datalist>
                 </div>
 
                 <div class="mb-3">
@@ -112,6 +115,18 @@
                 <div class="mb-3">
                     <label for="expire_date" class="form-label" title="expire date?">Date de fin de validité de l’APS</label>
                     <input type="date" class="form-control" id="expire_date">
+                </div>
+
+                <div class="mb-3">
+                    <label for="title" class="form-label"  title="done in ">Fait à</label>
+                    <input class="form-control" list="datalist" id="ville" placeholder="Click me to select.. or write">
+                    <datalist id="datalist">
+
+                        <option value="Annemasse">
+                        <option value="Thônes">
+                        <option value="Annecy">
+
+                    </datalist>
                 </div>
 
                 <h4 title="add a person who came with you in France :">Une personne qui est entré en France avec vous :</h4>
@@ -279,17 +294,7 @@
 <!--                <input id="clone_trigger" type="button" value="Ajouter une autre personne" />-->
                 </div>
                 <input id="show_more" type="button" value="Ajouter 3 enfants" />
-                <div class="mb-3">
-                    <label for="title" class="form-label"  title="done in ">Fait à</label>
-                    <input class="form-control" list="datalist" id="ville" placeholder="Click me to select.. or write">
-                    <datalist id="datalist">
 
-                        <option value="Annemasse">
-                        <option value="Thônes">
-                        <option value="Annecy">
-
-                    </datalist>
-                </div>
 
 
                 <button type="submit" id="submit" class="btn btn-primary">Generate Attestation</button>
