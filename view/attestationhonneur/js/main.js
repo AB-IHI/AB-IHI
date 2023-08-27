@@ -95,25 +95,25 @@ document.querySelector('form').addEventListener('submit', function(event) {
     birth_date_1 = convertDate(birth_date_1);
     const aps_num_2 = document.querySelector('#aps_num_2').value;
 
-    const lien_2 = document.querySelector('#lien_2').value;
+    var lien_2 = document.querySelector('#lien_2').value;
     const prenom_2 = document.querySelector('#prenom_2').value;
     const nom_2 = document.getElementById("nom_2").value;
     var birth_date_2 = document.querySelector('#birth_date_2').value;
     birth_date_2 =  convertDate(birth_date_2);
 
-    const lien_3 = document.querySelector('#lien_3').value;
+    var lien_3 = document.querySelector('#lien_3').value;
     const prenom_3 = document.querySelector('#prenom_3').value;
     const nom_3 = document.getElementById("nom_3").value;
     var birth_date_3 = document.querySelector('#birth_date_3').value;
     birth_date_3 =  convertDate(birth_date_3);
 
-    const lien_4 = document.querySelector('#lien_4').value;
+    var lien_4 = document.querySelector('#lien_4').value;
     const prenom_4 = document.querySelector('#prenom_4').value;
     const nom_4 = document.getElementById("nom_4").value;
     var birth_date_4 = document.querySelector('#birth_date_4').value;
     birth_date_4 =  convertDate(birth_date_4);
 
-    const lien_5 = document.querySelector('#lien_5').value;
+    var lien_5 = document.querySelector('#lien_5').value;
     const prenom_5 = document.querySelector('#prenom_5').value;
     const nom_5 = document.getElementById("nom_5").value;
     var birth_date_5 = document.querySelector('#birth_date_5').value;
@@ -121,8 +121,10 @@ document.querySelector('form').addEventListener('submit', function(event) {
 
     var myrole = "";
 
-
-
+    universal_gender =""; //no time to change everything to universal
+    if (title === "Madame") {
+        universal_gender = "e";
+    }
     var currentTime = new Date();
     currentTime = convertDate(currentTime);
     var role = "";
@@ -225,6 +227,8 @@ document.querySelector('form').addEventListener('submit', function(event) {
             }
         },
     };
+
+    /***************************************start counting ppl*****************************************/
 
     var obj = {
         init: function () {
@@ -407,6 +411,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
     //gender is used to determine if it f/m word of seul
     gender = "";
 
+
     //check if there are no people then add seul else add list of people
     if ( (obj.init() ==="") && (obj2.init() ==="") && (obj3.init() ==="") && (obj4.init() ==="") && (obj5.init() ==="")) {
         var av = ".";
@@ -418,6 +423,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
         }
         else if (title === "Madame") {
             gender = "seule.";
+            universal_gender = "e";
 
         }
 
@@ -448,7 +454,7 @@ Mesdames, Messieurs,
 
 Je vous demande de m'inscrire au programme humanitaire "Protection temporaire 
 aux personnes fuyant la guerre en Ukraine" en tant que bénéficiaire d'aide humanitaire.
-Je suis entrée en France le ${entry_date}${av}${obj.init()}${obj2.init()}${obj3.init()}${obj4.init()}${obj5.init()}
+Je suis entré${universal_gender} en France le ${entry_date}${av}${obj.init()}${obj2.init()}${obj3.init()}${obj4.init()}${obj5.init()}
 Mon APS de bénéficiaire de la protection temporaire n°${aps_num} est valable jusqu'au 
 ${expire_date}. J'ai pris connaissance du contenu du programme humanitaire, accepte et 
 m'engage à remplir les obligations dans le cadre de ce programme.
@@ -484,9 +490,9 @@ Pièces jointes:
 Objet : déclaration sur l’honneur
 
 
-Je soussignée, 
+Je soussigné${universal_gender}, 
          ${title} ${prenom} ${nom},
-         née le ${birth_date} à ${ville_birth} en ${country_birth},
+         né${universal_gender} le ${birth_date} à ${ville_birth} en ${country_birth},
          APS n°${aps_num}, valable jusqu'au ${expire_date},
 déclare sur l'honneur que mon foyer fiscal en France se compose de moi ${gender}${obj0.init()}
                                                         
