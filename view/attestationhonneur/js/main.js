@@ -93,6 +93,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
     const nom_1 = document.querySelector('#nom_1').value;
     var birth_date_1 = document.querySelector('#birth_date_1').value;
     birth_date_1 = convertDate(birth_date_1);
+    const aps_num_ = document.querySelector('#aps_num_2').value;
 
     const lien_2 = document.querySelector('#lien_2').value;
     const prenom_2 = document.querySelector('#prenom_2').value;
@@ -205,13 +206,13 @@ document.querySelector('form').addEventListener('submit', function(event) {
             }
 
             if (!un_champs_vide) {
-                var pers1 = "et mon \n${lien_1} ${civ} ${prenom_1} ${nom_1}, née le ${birth_date_1}, APS n° ${aps_num}.";
+                var pers1 = "et mon \n${lien_1} ${civ} ${prenom_1} ${nom_1}, née le ${birth_date_1}, APS n° ${aps_num_2}.";
                 pers1 = pers1.replace("${role}", role);
                 pers1 = pers1.replace("${lien_1}", lien_1);
                 pers1 = pers1.replace("${prenom_1}", prenom_1);
                 pers1 = pers1.replace("${nom_1}", nom_1);
                 pers1 = pers1.replace("${birth_date_1}", birth_date_1);
-                pers1 = pers1.replace("${aps_num}", aps_num);
+                pers1 = pers1.replace("${aps_num_2}", aps_num_2);
                 pers1 = pers1.replace("${civ}", civ);
                 // console.log(pers1);
                 // console.log("c");
@@ -483,8 +484,10 @@ Pièces jointes:
 Objet : déclaration sur l’honneur
 
 
-Je soussignée, ${title} ${prenom} ${nom}, née le ${birth_date} à ${ville_birth} en ${country_birth}, bénéficiaire
-de la protection temporaire et détentrice de l’autorisation provisoire de séjour n° ${aps_num}, \nvalable jusqu'au ${expire_date}, 
+Je soussignée, 
+             ${title} ${prenom} ${nom},
+             née le ${birth_date} à ${ville_birth} en ${country_birth},
+             APS n°${aps_num}, valable jusqu'au ${expire_date},
 déclare sur l'honneur que mon foyer fiscal en France se compose de moi ${gender}${obj0.init()}
                                                         
 
