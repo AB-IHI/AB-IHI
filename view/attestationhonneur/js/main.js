@@ -21,13 +21,7 @@ var show_inputs = function() {
 document.getElementById('show_more').onclick = show_inputs;
 
 
-// $(function() {
-//
-//     $('#clone_trigger').click(function() {
-//         $('.cloneitem:first').clone().appendTo('#container');
-//     });
-//
-// });
+
 
 /*convert dat it's obivious look at function title*/
 function convertDate(inputFormat) {
@@ -45,70 +39,7 @@ $(document).ready(function() {
 /*end of editor.js ini*/
 
 
-var pers2 = "";
-
-// old code
-// var obj = {
-// init : function(){
-//     document.getElementById('submit').onclick = obj.validate;
-//     return pers2;
-// },
-//
-// validate : function(){
-//     var check = document.getElementsByClassName('person_1');
-//     var len = check.length;
-//     var un_champs_vide = false;
-//     for(var i=0;i<len;i++) {
-//         if (check[i].value ==='')
-//         {
-//             un_champs_vide = true;
-//             console.log("loop work");
-//             console.log(un_champs_vide);
-//
-//         }
-//     }
-//     if (un_champs_vide) {
-//         let pers2 = "\n\n Je suis entré en France avec ${role} ${lien_1} ${prenom_1} ${nom_1}, née le ${birth_date_1}.";
-//
-//     }
-//     return pers2;
-//
-// },
-//
-// };
-
-//  chatgpt failed attempt
-// var obj = {
-//     init: function () {
-//         document.getElementById('submit').onclick = obj.validate;
-//         return obj.validate(); // Call the validate function and return its result
-//     },
-//
-//     validate: function () {
-//         var check = document.getElementsByClassName('person_1');
-//         var len = check.length;
-//         var un_champs_vide = false;
-//         for (var i = 0; i < len; i++) {
-//             if (check[i].value === '') {
-//                 un_champs_vide = true;
-//                 console.log("loop work");
-//                 console.log(un_champs_vide);
-//             }
-//         }
-//
-//         // Declare pers2 outside of the if block
-//         let pers2 = "\n\n Je suis entré en France avec ${role} ${lien_1} ${prenom_1} ${nom_1}, née le ${birth_date_1}.";
-//
-//
-//         // Check if any field was empty
-//         if (un_champs_vide) {
-//             // Do something when there is an empty field (if needed)
-//         }
-//
-//         // Return the resulting pers2 string
-//         return pers2;
-//     },
-// };
+// var pers2 = "";
 
 
 
@@ -135,7 +66,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
     const adresse = document.querySelector('#adresse').value;
     var heb_chez =  document.querySelector('#heb_chez').value;
     if (heb_chez) {
-        var heb_chez = `\nchez `+ heb_chez;
+        heb_chez = `\nchez `+ heb_chez;
     }
 
     const zip_code = document.querySelector('#zip_code').value;
@@ -143,102 +74,63 @@ document.querySelector('form').addEventListener('submit', function(event) {
     const telephone = document.querySelector('#telephone').value;
     var telephone2 =  document.querySelector('#telephone2').value;
     if (telephone2) {
-        var telephone2 = `\ntél.: `+ telephone2;
+        telephone2 = `\ntél.: `+ telephone2;
     }
     const email = document.querySelector('#email').value;
     var entry_date = document.querySelector('#entry_date').value;
-    var entry_date = convertDate(entry_date);
-    // var birth_date = document.querySelector('#birth_date').value;
-    // var birth_date = convertDate(birth_date);
+    entry_date = convertDate(entry_date);
+    var birth_date = document.querySelector('#birth_date').value;
+    birth_date = convertDate(birth_date);
     const ville_birth = document.querySelector('#ville_birth').value;
     const ville = document.querySelector('#ville').value;
     const country_birth = document.getElementById("country_birth").value;
     const aps_num = document.querySelector('#aps_num').value;
     var expire_date = document.querySelector('#expire_date').value;
-    var expire_date = convertDate(expire_date);
+    expire_date = convertDate(expire_date);
 
     var lien_1 = document.querySelector('#lien_1').value;
     const prenom_1 = document.querySelector('#prenom_1').value;
     const nom_1 = document.querySelector('#nom_1').value;
     var birth_date_1 = document.querySelector('#birth_date_1').value;
-    var birth_date_1 = convertDate(birth_date_1);
+    birth_date_1 = convertDate(birth_date_1);
 
     const lien_2 = document.querySelector('#lien_2').value;
     const prenom_2 = document.querySelector('#prenom_2').value;
     const nom_2 = document.getElementById("nom_2").value;
     var birth_date_2 = document.querySelector('#birth_date_2').value;
-    var birth_date_2 =  convertDate(birth_date_2);
+    birth_date_2 =  convertDate(birth_date_2);
 
     const lien_3 = document.querySelector('#lien_3').value;
     const prenom_3 = document.querySelector('#prenom_3').value;
     const nom_3 = document.getElementById("nom_3").value;
     var birth_date_3 = document.querySelector('#birth_date_3').value;
-    var birth_date_3 =  convertDate(birth_date_3);
+    birth_date_3 =  convertDate(birth_date_3);
 
     const lien_4 = document.querySelector('#lien_4').value;
     const prenom_4 = document.querySelector('#prenom_4').value;
     const nom_4 = document.getElementById("nom_4").value;
     var birth_date_4 = document.querySelector('#birth_date_4').value;
-    var birth_date_4 =  convertDate(birth_date_4);
+    birth_date_4 =  convertDate(birth_date_4);
 
     const lien_5 = document.querySelector('#lien_5').value;
     const prenom_5 = document.querySelector('#prenom_5').value;
     const nom_5 = document.getElementById("nom_5").value;
     var birth_date_5 = document.querySelector('#birth_date_5').value;
-    var birth_date_5 =  convertDate(birth_date_5);
+    birth_date_5 =  convertDate(birth_date_5);
 
-    // console.log(obj.init);
-    // stringify (obj.init);
-    // console.log(obj.init);
+    var myrole = "";
 
-    // var obj = {
-    //     propertyName: "propertyValue",
-    //     init: function () {
-    //         console.log("loop work");
-    //         document.getElementById('submit').onclick = obj.validate;
-    //         return obj.validate(); // Call the validate function and return its result
-    //     },
-    //
-    //     validate: function () {
-    //         console.log('validate called');
-    //         var check = document.getElementsByClassName('person_1');
-    //         var len = check.length;
-    //         var un_champs_vide = false;
-    //         let pers2 = ""; // Initialize pers2 to an empty string
-    //         for (var i = 0; i < len; i++) {
-    //             if (check[i].value === '') {
-    //                 un_champs_vide = true;
-    //                 console.log("loop work");
-    //                 console.log(un_champs_vide);
-    //                 break; // Exit the loop once we find an empty field
-    //             }
-    //         }
-    //
-    //
-    //
-    //         if (!un_champs_vide) {
-    //             // All fields are filled, populate the pers2 string
-    //             pers2 = "\n\n Je suis entré en France avec ${role} ${lien_1} ${prenom_1} ${nom_1}, née le ${birth_date_1}.";
-    //             // You can perform replacements if needed, as shown in the previous response.
-    //         }
-    //
-    //         // Return the resulting pers2 string
-    //         return pers2;
-    //     },
-    // };
+    if (title === "Monsieur") {
+        gender = 'seul';
 
+    }
+    else if (title === "Madame") {
+        gender = "seule";
 
-
-
-    // let result_I_need = obj.toString();
-    // console.log(result_I_need);
-    // console.log(obj.toString());
-
-
-
-
-    // var result = obj.init(); // Call init function
-    // console.log(result);     // Log the result
+    }
+    else  {
+        gender = "";
+    }
 
     var currentTime = new Date();
     currentTime = convertDate(currentTime);
@@ -247,6 +139,8 @@ document.querySelector('form').addEventListener('submit', function(event) {
     var role3 = "";
     var role4 = "";
     var role5 = "";
+
+    var civ = "";
     // console.log(lien_1 == "mari" || lien_1 == "fils");
 
     // const code = document.querySelector('#code').checked;
@@ -254,10 +148,13 @@ document.querySelector('form').addEventListener('submit', function(event) {
 
     if (lien_1 === "mari" || lien_1 === "compagnon" || lien_1 === "concubin") {
         role = 'mon';
+        civ = 'Monsieur';
     }
+    // console.log(civ);
 
     if (lien_1 === "femme" || lien_1 === "compagne" || lien_1 === "epouse" ) {
         role += 'ma';
+        civ = 'Madame';
     }
 
     if (lien_1 === "epouse" ) {
@@ -298,6 +195,46 @@ document.querySelector('form').addEventListener('submit', function(event) {
         role5 += 'mon';
     }
 
+    var obj0 = {
+        init: function () {
+            document.getElementById('submit').onclick = obj0.validate;
+            return obj0.validate(); // Call the validate function and return its result
+        },
+
+        validate: function () {
+            var check = document.getElementsByClassName('person_1');
+            var len = check.length;
+            var un_champs_vide = false;
+            for (var i = 0; i < len; i++) {
+                if (check[i].value === '') {
+                    un_champs_vide = true;
+                    // console.log("loop 2 work");
+                    // console.log(un_champs_vide);
+                    break; // Exit the loop once we find an empty field
+                }
+            }
+
+            if (!un_champs_vide) {
+                var pers1 = "et mon \n${lien_1} ${civ} ${prenom_1} ${nom_1}, née le ${birth_date_1}, APS n° ${aps_num}.";
+                pers1 = pers1.replace("${role}", role);
+                pers1 = pers1.replace("${lien_1}", lien_1);
+                pers1 = pers1.replace("${prenom_1}", prenom_1);
+                pers1 = pers1.replace("${nom_1}", nom_1);
+                pers1 = pers1.replace("${birth_date_1}", birth_date_1);
+                pers1 = pers1.replace("${aps_num}", aps_num);
+                pers1 = pers1.replace("${civ}", civ);
+                // console.log(pers1);
+                // console.log("c");
+                // console.log(civ);
+                // console.log("c");
+                return pers1;
+            } else {
+                return "";
+                // window.alert("un des champs de personnes entree avec vous est vide");
+            }
+        },
+    };
+
     var obj = {
         init: function () {
             document.getElementById('submit').onclick = obj.validate;
@@ -311,24 +248,24 @@ document.querySelector('form').addEventListener('submit', function(event) {
             for (var i = 0; i < len; i++) {
                 if (check[i].value === '') {
                     un_champs_vide = true;
-                    // console.log("loop work");
+                    // console.log("loop 2 work");
                     // console.log(un_champs_vide);
                     break; // Exit the loop once we find an empty field
                 }
             }
 
             if (!un_champs_vide) {
-                var pers2 = "\n       - ${role} ${lien_1} ${prenom_1} ${nom_1}, née le ${birth_date_1}.";
-                pers2 = pers2.replace("${role}", role);
-                pers2 = pers2.replace("${lien_1}", lien_1);
-                pers2 = pers2.replace("${prenom_1}", document.getElementById("prenom_1").value);
-                pers2 = pers2.replace("${nom_1}", document.getElementById("nom_1").value);
-                pers2 = pers2.replace("${birth_date_1}", birth_date_1);
-
-                return pers2;
+                var pers1 = "\n       - ${role} ${lien_1} ${prenom_1} ${nom_1}, née le ${birth_date_1}.";
+                pers1 = pers1.replace("${role}", role);
+                pers1 = pers1.replace("${lien_1}", lien_1);
+                pers1 = pers1.replace("${prenom_1}", prenom_1);
+                pers1 = pers1.replace("${nom_1}", nom_1);
+                pers1 = pers1.replace("${birth_date_1}", birth_date_1);
+                console.log(pers1);
+                return pers1;
             } else {
                 return "";
-                // window.alert("un des champs de personnes entree avec vous est vide");
+                window.alert("un des champs de personnes entree avec vous est vide");
             }
         },
     };
@@ -430,7 +367,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
                 pers5 = pers5.replace("${nom_4}", nom_4);
                 pers5 = pers5.replace("${birth_date_4}", birth_date_4);
 
-                return pers3;
+                return pers5;
             } else {
                 return "";
                 // window.alert("un des champs de personnes entree avec vous est vide");
@@ -462,7 +399,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
                 pers6 = pers6.replace("${role}", role5);
                 pers6 = pers6.replace("${lien_2}", lien_5);
                 pers6 = pers6.replace("${prenom_2}", prenom_5);
-                pers6 = pers6.replace("${nom_2}", nom_2);
+                pers6 = pers6.replace("${nom_2}", nom_5);
                 pers6 = pers6.replace("${birth_date_2}", birth_date_5);
 
                 return pers6;
@@ -478,11 +415,13 @@ document.querySelector('form').addEventListener('submit', function(event) {
 
 
 
-    if ((obj.init() === "") && (obj2.init() ==="") && (obj3.init() ==="") && (obj4.init() ==="") && (obj5.init() ==="")) {
+    if ( (obj2.init() ==="") && (obj3.init() ==="") && (obj4.init() ==="") && (obj5.init() ==="")) {
         var av = ".";
+        // gender +=".";
     }
     else {
         var av = " avec:";
+
     }
     let prompt = `
 ${title} ${prenom} ${nom}
@@ -498,7 +437,7 @@ mail.: ${email}
                                                                                  
                                                                                          Fait à ${ville}, le ${currentTime}
                                                     
-Objet: demande d’inscription au programme humanitaire
+Objet : demande d’inscription au programme humanitaire
 
 
 Mesdames, Messieurs,
@@ -524,44 +463,6 @@ Pièces jointes:
     1) autorisation provisoire de séjour
     2) déclaration sur l’honneur
     `;
-    // export { prompt };
-
-
-    // if (isEmphasis) {
-    //     prompt += `\n\nyou are a ${Vanilla} ${language} expert.   `;
-    //     prompt += `\n\n` + request + `\n\n`;
-    // }
-
-    // if (isVanilla) {
-    //     var Vanilla = "";
-    // }
-    // prompt += request;
-    // prompt += `\n`;
-    //
-    // if (isEmphasis) {
-    //     prompt += `\n\nyou are a ${Vanilla} ${language} expert.   `;
-    //     prompt += `\n\n` + request + `\n\n`;
-    // }
-    //
-    //
-    //
-    // if (isMethod) {
-    //     prompt += ` don't use methods `;
-    // }
-
-    // prompt += `\n` + process;
-    //
-    // prompt += `\n` + objects;
-    //
-    // prompt += `\n` + variable;
-    //
-    // prompt += `\n` + explain;
-    //
-    // if (code) {
-    //     prompt += "start the output with ```";
-    //     prompt += language;
-    //
-    // }
 
     let att_h = `
 
@@ -576,17 +477,20 @@ Pièces jointes:
                                                                                  
                                                                                          Fait à ${ville}, le ${currentTime}
                                                     
-Objet: déclaration sur l’honneur
+Objet : déclaration sur l’honneur
 
 
-Je soussignée, ${title} ${prenom} ${nom}, née le ${birth_date_1} à ${ville_birth} en ${country_birth}, bénéficiaire de la protection temporaire et
-détentrice de l’autorisation provisoire de séjour n° ${aps_num}, valable jusqu'au ${expire_date}, déclare sur
-l'honneur être la seule personne constituant mon foyer fiscal en France.
-En cas de changement dans la composition de mon foyer fiscal, je m'engage à en informer l'association.
+Je soussignée, ${title} ${prenom} ${nom}, née le ${birth_date} à ${ville_birth} en ${country_birth}, bénéficiaire
+de la protection temporaire et détentrice de l’autorisation provisoire de séjour n° ${aps_num}, \nvalable jusqu'au ${expire_date}, 
+déclare sur l'honneur que mon foyer fiscal en France se compose de moi ${gender}${obj0.init()}
+                                                        
+
+En cas de changement dans la composition de mon foyer fiscal, je m'engage à en \ninformer l'association.
 
 
 
     `;
+    // console.log(gender);
 
 
 
@@ -598,3 +502,190 @@ En cas de changement dans la composition de mon foyer fiscal, je m'engage à en 
 
 });
 
+
+
+
+
+
+
+
+
+// export { prompt };
+
+
+// if (isEmphasis) {
+//     prompt += `\n\nyou are a ${Vanilla} ${language} expert.   `;
+//     prompt += `\n\n` + request + `\n\n`;
+// }
+
+// if (isVanilla) {
+//     var Vanilla = "";
+// }
+// prompt += request;
+// prompt += `\n`;
+//
+// if (isEmphasis) {
+//     prompt += `\n\nyou are a ${Vanilla} ${language} expert.   `;
+//     prompt += `\n\n` + request + `\n\n`;
+// }
+//
+//
+//
+// if (isMethod) {
+//     prompt += ` don't use methods `;
+// }
+
+// prompt += `\n` + process;
+//
+// prompt += `\n` + objects;
+//
+// prompt += `\n` + variable;
+//
+// prompt += `\n` + explain;
+//
+// if (code) {
+//     prompt += "start the output with ```";
+//     prompt += language;
+//
+// }
+
+
+
+
+
+
+
+// old code
+// var obj = {
+// init : function(){
+//     document.getElementById('submit').onclick = obj.validate;
+//     return pers2;
+// },
+//
+// validate : function(){
+//     var check = document.getElementsByClassName('person_1');
+//     var len = check.length;
+//     var un_champs_vide = false;
+//     for(var i=0;i<len;i++) {
+//         if (check[i].value ==='')
+//         {
+//             un_champs_vide = true;
+//             console.log("loop work");
+//             console.log(un_champs_vide);
+//
+//         }
+//     }
+//     if (un_champs_vide) {
+//         let pers2 = "\n\n Je suis entré en France avec ${role} ${lien_1} ${prenom_1} ${nom_1}, née le ${birth_date_1}.";
+//
+//     }
+//     return pers2;
+//
+// },
+//
+// };
+
+//  chatgpt failed attempt
+// var obj = {
+//     init: function () {
+//         document.getElementById('submit').onclick = obj.validate;
+//         return obj.validate(); // Call the validate function and return its result
+//     },
+//
+//     validate: function () {
+//         var check = document.getElementsByClassName('person_1');
+//         var len = check.length;
+//         var un_champs_vide = false;
+//         for (var i = 0; i < len; i++) {
+//             if (check[i].value === '') {
+//                 un_champs_vide = true;
+//                 console.log("loop work");
+//                 console.log(un_champs_vide);
+//             }
+//         }
+//
+//         // Declare pers2 outside of the if block
+//         let pers2 = "\n\n Je suis entré en France avec ${role} ${lien_1} ${prenom_1} ${nom_1}, née le ${birth_date_1}.";
+//
+//
+//         // Check if any field was empty
+//         if (un_champs_vide) {
+//             // Do something when there is an empty field (if needed)
+//         }
+//
+//         // Return the resulting pers2 string
+//         return pers2;
+//     },
+// };
+
+
+
+
+
+
+
+
+
+
+// console.log(obj.init);
+// stringify (obj.init);
+// console.log(obj.init);
+
+// var obj = {
+//     propertyName: "propertyValue",
+//     init: function () {
+//         console.log("loop work");
+//         document.getElementById('submit').onclick = obj.validate;
+//         return obj.validate(); // Call the validate function and return its result
+//     },
+//
+//     validate: function () {
+//         console.log('validate called');
+//         var check = document.getElementsByClassName('person_1');
+//         var len = check.length;
+//         var un_champs_vide = false;
+//         let pers2 = ""; // Initialize pers2 to an empty string
+//         for (var i = 0; i < len; i++) {
+//             if (check[i].value === '') {
+//                 un_champs_vide = true;
+//                 console.log("loop work");
+//                 console.log(un_champs_vide);
+//                 break; // Exit the loop once we find an empty field
+//             }
+//         }
+//
+//
+//
+//         if (!un_champs_vide) {
+//             // All fields are filled, populate the pers2 string
+//             pers2 = "\n\n Je suis entré en France avec ${role} ${lien_1} ${prenom_1} ${nom_1}, née le ${birth_date_1}.";
+//             // You can perform replacements if needed, as shown in the previous response.
+//         }
+//
+//         // Return the resulting pers2 string
+//         return pers2;
+//     },
+// };
+
+
+
+
+// let result_I_need = obj.toString();
+// console.log(result_I_need);
+// console.log(obj.toString());
+
+
+
+
+// var result = obj.init(); // Call init function
+// console.log(result);     // Log the result
+
+
+
+// $(function() {
+//
+//     $('#clone_trigger').click(function() {
+//         $('.cloneitem:first').clone().appendTo('#container');
+//     });
+//
+// });

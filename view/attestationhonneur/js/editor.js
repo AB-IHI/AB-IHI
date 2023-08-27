@@ -155,7 +155,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
 
                 var file = demos[$("#template").val()];
                 if (file === undefined) {
-                    file = "attestation_honneur";
+                    file = "demande_inscription";
                 }
                 if (typeof doc !== "undefined") {
                     doc.save(file + ".pdf");
