@@ -93,7 +93,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
     const nom_1 = document.querySelector('#nom_1').value;
     var birth_date_1 = document.querySelector('#birth_date_1').value;
     birth_date_1 = convertDate(birth_date_1);
-    const aps_num_ = document.querySelector('#aps_num_2').value;
+    const aps_num_2 = document.querySelector('#aps_num_2').value;
 
     const lien_2 = document.querySelector('#lien_2').value;
     const prenom_2 = document.querySelector('#prenom_2').value;
@@ -485,9 +485,9 @@ Objet : déclaration sur l’honneur
 
 
 Je soussignée, 
-             ${title} ${prenom} ${nom},
-             née le ${birth_date} à ${ville_birth} en ${country_birth},
-             APS n°${aps_num}, valable jusqu'au ${expire_date},
+         ${title} ${prenom} ${nom},
+         née le ${birth_date} à ${ville_birth} en ${country_birth},
+         APS n°${aps_num}, valable jusqu'au ${expire_date},
 déclare sur l'honneur que mon foyer fiscal en France se compose de moi ${gender}${obj0.init()}
                                                         
 
