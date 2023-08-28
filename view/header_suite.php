@@ -30,7 +30,7 @@ include "inside_nav.php";
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <li><a class="dropdown-item" href=".?page=login">Entrer</a></li>
                         <li><a class="dropdown-item" href=".?page=register">Créer mon compte</a></li>
-                        <li><a class="dropdown-item" href="view/attestationhonneur/attestation.html" title="Beneficiary registration" >Enregistrement bénéficiaire</a></li>
+
                     </ul>
                 </div>
             </li>
@@ -52,7 +52,7 @@ include "inside_nav.php";
             <li class="nav-item">
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-outline-success" type="submit" title=" not available yet">Search</button>
                 </form>
             </li>
         </ul>
@@ -85,9 +85,8 @@ include "inside_nav.php";
                 Connexion
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href=".?page=login">Entrer</a></li>
+                <li><a class="dropdown-item" href=".?page=login">Se connecter</a></li>
                 <li><a class="dropdown-item" href=".?page=register">Créer mon compte</a></li>
-<li><a class="dropdown-item" href="view/attestationhonneur/attestation.html" title="Beneficiary registration" >Enregistrement bénéficiaire</a></li>
             </ul>
         </div>
     </li>

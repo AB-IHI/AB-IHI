@@ -148,16 +148,16 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Корисна інформація </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="https://www.annecy-ukraine.org/uk/otrymaty-dopomohu/">Annecy-Ukraine
-                            </a></li>
+
                         <li><a class="dropdown-item" href="https://refugies.info/uk">refugies.info</a></li>
                         <li><a class="dropdown-item" href="
                         https://www.haute-savoie.gouv.fr/Demarches-administratives/Etrangers-en-Haute-Savoie/Ressortissants-ukrainiens">Préfecture</a></li>
-                        <li><a class="dropdown-item" href="
-                            https://www.annecy.fr/715-soutien-a-l-ukraine.htm">Annecy agglo </a></li>
+
                         <li><a class="dropdown-item" href="ua_v/compte-bancaire-ukraine-UK.pdf">банківський рахунок</a></li>
                         <li><a class="dropdown-item" href="https://t.me/FranceUkraineNews">Журнал Допомога</a></li>
                         <li><a class="dropdown-item" href="https://web.telegram.org/k/#-1769788799">Волонтери України Ансі</a></li>
+                        <li><a class="dropdown-item" href="view/attestationhonneur/attestation.html" title="Beneficiary registration" >Formulaire bénéficiaire</a></li>
+
                     </ul>
                 </li>
 
@@ -251,7 +251,7 @@
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                 <li><a class="dropdown-item" href=".?page=login">Entrer</a></li>
                 <li><a class="dropdown-item" href=".?page=register">Créer mon compte</a></li>
-                <li><a class="dropdown-item" href="view/attestationhonneur/attestation.html" title="Beneficiary registration" >Enregistrement bénéficiaire</a></li>
+                
             </ul>
         </div>
     </li>
