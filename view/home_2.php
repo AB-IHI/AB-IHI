@@ -251,6 +251,7 @@
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                 <li><a class="dropdown-item" href=".?page=login">Entrer</a></li>
                 <li><a class="dropdown-item" href=".?page=register">Créer mon compte</a></li>
+                <li><a class="dropdown-item" href="view/attestationhonneur/attestation.html" title="Beneficiary registration" >Enregistrement bénéficiaire</a></li>
             </ul>
         </div>
     </li>
