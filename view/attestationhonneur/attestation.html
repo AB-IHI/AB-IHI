@@ -38,14 +38,13 @@
 
                 <div class="mb-3">
                     <label for="title" class="form-label"  title="your title e. Mr. ">Civilité</label>
-                    <input class="form-control" list="datalistOptions" id="title" placeholder="Click me to select..">
-                    <datalist id="datalistOptions">
-
-                      <option value="Monsieur">
-                      <option value="Madame">
-
-
-                    </datalist>
+                    <div class="mb-3">
+                    <select name="cars" class="person_4" id="title">
+                        <option disabled selected value> -- select an option -- </option>
+                        <option value="Monsieur">Monsieur</option>
+                        <option value="Madame">Madame</option>
+                    </select>
+                    </div>
                 </div>
 
                 <div class="mb-3">
@@ -105,8 +104,8 @@
 
                 <div class="mb-3">
                     <label for="country_birth" class="form-label" title="your birth country">Pays de naissance</label>
-                    <input class="form-control" list="datalist" id="country_birth" placeholder="Ukraine">
-                    <datalist id="datalist">
+                    <input class="form-control" list="datalist2" id="country_birth" placeholder="Ukraine">
+                    <datalist id="datalist2">
                         <option value="Ukraine">
                     </datalist>
                 </div>
