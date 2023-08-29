@@ -111,6 +111,7 @@
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="ua_v/4. Право на отримання допомоги.pdf">Право на отримання допомоги </a></li>
                         <li><a class="dropdown-item" href="ua_v/5. Права та обов'язки бенефіц.pdf">Права та обов'язки бенефіціарів </a></li>
+                        <li><a class="dropdown-item" href="view/attestationhonneur/attestation.html" title="Beneficiary registration" >Formulaire bénéficiaire</a></li>
                     </ul>
                 </li>
             </ul>
@@ -156,7 +157,7 @@
                         <li><a class="dropdown-item" href="ua_v/compte-bancaire-ukraine-UK.pdf">банківський рахунок</a></li>
                         <li><a class="dropdown-item" href="https://t.me/FranceUkraineNews">Журнал Допомога</a></li>
                         <li><a class="dropdown-item" href="https://web.telegram.org/k/#-1769788799">Волонтери України Ансі</a></li>
-                        <li><a class="dropdown-item" href="view/attestationhonneur/attestation.html" title="Beneficiary registration" >Formulaire bénéficiaire</a></li>
+
 
                     </ul>
                 </li>
