@@ -427,7 +427,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
         }
 
     } else {
-        var av = "et j'y habite actuellement avec:";
+        var av = " et j'y habite actuellement avec:";
 
     }
     console.log(gender);
