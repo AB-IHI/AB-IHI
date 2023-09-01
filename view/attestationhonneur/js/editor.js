@@ -115,6 +115,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
                 source += "var doc = new jsPDF();\n";
                 source += "\n";
                 source += "doc.setFontSize(12);\n";
+                // source += "doc.setFontStyle("underline");\n"; //doesn't work
                 source += 'doc.text(`';
 
                 source += element;

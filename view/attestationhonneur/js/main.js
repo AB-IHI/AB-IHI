@@ -27,7 +27,7 @@ document.getElementById('show_more').onclick = show_inputs;
 function convertDate(inputFormat) {
     function pad(s) { return (s < 10) ? '0' + s : s; }
     var d = new Date(inputFormat)
-    return [pad(d.getDate()), pad(d.getMonth()+1), d.getFullYear()].join('/')
+    return [pad(d.getDate()), pad(d.getMonth() + 1), d.getFullYear()].join('/')
 }
 /*editor.js aka jspdf script in attestation.html*/
 var jsPDF = window.jspdf.jsPDF;
@@ -43,7 +43,7 @@ $(document).ready(function() {
 
 
 
-function stringify (x) {
+function stringify(x) {
     console.log(Object.prototype.toString.call(x));
 }
 
@@ -64,17 +64,17 @@ document.querySelector('form').addEventListener('submit', function(event) {
     const prenom = document.querySelector('#prenom').value;
     const nom = document.querySelector('#nom').value;
     const adresse = document.querySelector('#adresse').value;
-    var heb_chez =  document.querySelector('#heb_chez').value;
+    var heb_chez = document.querySelector('#heb_chez').value;
     if (heb_chez) {
-        heb_chez = `\nchez `+ heb_chez;
+        heb_chez = `\nchez ` + heb_chez;
     }
 
     const zip_code = document.querySelector('#zip_code').value;
     const commune = document.getElementById("commune").value;
     const telephone = document.querySelector('#telephone').value;
-    var telephone2 =  document.querySelector('#telephone2').value;
+    var telephone2 = document.querySelector('#telephone2').value;
     if (telephone2) {
-        telephone2 = `\ntél.: `+ telephone2;
+        telephone2 = `\ntél.: ` + telephone2;
     }
     const email = document.querySelector('#email').value;
     var entry_date = document.querySelector('#entry_date').value;
@@ -99,29 +99,29 @@ document.querySelector('form').addEventListener('submit', function(event) {
     const prenom_2 = document.querySelector('#prenom_2').value;
     const nom_2 = document.getElementById("nom_2").value;
     var birth_date_2 = document.querySelector('#birth_date_2').value;
-    birth_date_2 =  convertDate(birth_date_2);
+    birth_date_2 = convertDate(birth_date_2);
 
     var lien_3 = document.querySelector('#lien_3').value;
     const prenom_3 = document.querySelector('#prenom_3').value;
     const nom_3 = document.getElementById("nom_3").value;
     var birth_date_3 = document.querySelector('#birth_date_3').value;
-    birth_date_3 =  convertDate(birth_date_3);
+    birth_date_3 = convertDate(birth_date_3);
 
     var lien_4 = document.querySelector('#lien_4').value;
     const prenom_4 = document.querySelector('#prenom_4').value;
     const nom_4 = document.getElementById("nom_4").value;
     var birth_date_4 = document.querySelector('#birth_date_4').value;
-    birth_date_4 =  convertDate(birth_date_4);
+    birth_date_4 = convertDate(birth_date_4);
 
     var lien_5 = document.querySelector('#lien_5').value;
     const prenom_5 = document.querySelector('#prenom_5').value;
     const nom_5 = document.getElementById("nom_5").value;
     var birth_date_5 = document.querySelector('#birth_date_5').value;
-    birth_date_5 =  convertDate(birth_date_5);
+    birth_date_5 = convertDate(birth_date_5);
 
     var myrole = "";
 
-    universal_gender =""; //no time to change everything to universal
+    universal_gender = ""; //no time to change everything to universal
     if (title === "Madame") {
         universal_gender = "e";
     }
@@ -145,18 +145,18 @@ document.querySelector('form').addEventListener('submit', function(event) {
     }
     // console.log(civ);
 
-    if (lien_1 === "femme" || lien_1 === "compagne" || lien_1 === "epouse" ) {
+    if (lien_1 === "femme" || lien_1 === "compagne" || lien_1 === "epouse") {
         role += 'ma';
         civ = 'Madame';
     }
 
-    if (lien_1 === "epouse" ) {
+    if (lien_1 === "epouse") {
         lien_1 = "épouse";
     }
 
 
 
-    if ( lien_2 === "fils") {
+    if (lien_2 === "fils") {
         role2 += 'mon';
     }
 
@@ -189,12 +189,12 @@ document.querySelector('form').addEventListener('submit', function(event) {
     }
 
     var obj0 = {
-        init: function () {
+        init: function() {
             document.getElementById('submit').onclick = obj0.validate;
             return obj0.validate(); // Call the validate function and return its result
         },
 
-        validate: function () {
+        validate: function() {
             var check = document.getElementsByClassName('person_1');
             var len = check.length;
             var un_champs_vide = false;
@@ -231,12 +231,12 @@ document.querySelector('form').addEventListener('submit', function(event) {
     /***************************************start counting ppl*****************************************/
 
     var obj = {
-        init: function () {
+        init: function() {
             document.getElementById('submit').onclick = obj.validate;
             return obj.validate(); // Call the validate function and return its result
         },
 
-        validate: function () {
+        validate: function() {
             var check = document.getElementsByClassName('person_1');
             var len = check.length;
             var un_champs_vide = false;
@@ -266,12 +266,12 @@ document.querySelector('form').addEventListener('submit', function(event) {
     };
 
     var obj2 = {
-        init: function () {
+        init: function() {
             document.getElementById('submit').onclick = obj2.validate;
             return obj2.validate(); // Call the validate function and return its result
         },
 
-        validate: function () {
+        validate: function() {
             var check = document.getElementsByClassName('person_2');
             var len = check.length;
             var un_champs_vide = false;
@@ -301,12 +301,12 @@ document.querySelector('form').addEventListener('submit', function(event) {
     };
 
     var obj3 = {
-        init: function () {
+        init: function() {
             document.getElementById('submit').onclick = obj3.validate;
             return obj3.validate(); // Call the validate function and return its result
         },
 
-        validate: function () {
+        validate: function() {
             var check = document.getElementsByClassName('person_3');
             var len = check.length;
             var un_champs_vide = false;
@@ -336,12 +336,12 @@ document.querySelector('form').addEventListener('submit', function(event) {
     };
 
     var obj4 = {
-        init: function () {
+        init: function() {
             document.getElementById('submit').onclick = obj4.validate;
             return obj4.validate(); // Call the validate function and return its result
         },
 
-        validate: function () {
+        validate: function() {
             var check = document.getElementsByClassName('person_4');
             var len = check.length;
             var un_champs_vide = false;
@@ -371,12 +371,12 @@ document.querySelector('form').addEventListener('submit', function(event) {
     };
 
     var obj5 = {
-        init: function () {
+        init: function() {
             document.getElementById('submit').onclick = obj5.validate;
             return obj5.validate(); // Call the validate function and return its result
         },
 
-        validate: function () {
+        validate: function() {
             var check = document.getElementsByClassName('person_5');
             var len = check.length;
             var un_champs_vide = false;
@@ -413,23 +413,21 @@ document.querySelector('form').addEventListener('submit', function(event) {
 
 
     //check if there are no people then add seul else add list of people
-    if ( (obj.init() ==="") && (obj2.init() ==="") && (obj3.init() ==="") && (obj4.init() ==="") && (obj5.init() ==="")) {
+    if ((obj.init() === "") && (obj2.init() === "") && (obj3.init() === "") && (obj4.init() === "") && (obj5.init() === "")) {
         var av = ".";
         // gender +=".";
 
         if (title === "Monsieur") {
             gender = 'seul.';
 
-        }
-        else if (title === "Madame") {
+        } else if (title === "Madame") {
             gender = "seule.";
             universal_gender = "e";
 
         }
 
-    }
-    else {
-        var av = " avec:";
+    } else {
+        var av = "et j'y habite actuellement avec:";
 
     }
     console.log(gender);
@@ -501,8 +499,8 @@ En cas de changement dans la composition de mon foyer fiscal, je m'engage à en 
 
 
 
-    `;
-    // console.log(gender);
+   `;
+    // console.log(gender); <u>mispeled</u> 𝙾̲𝚋̲𝚓̲𝚎̲𝚝̲
 
 
 
@@ -510,7 +508,7 @@ En cas de changement dans la composition de mon foyer fiscal, je m'engage à en 
     document.querySelector('#output').style.display = 'block';
     document.querySelector('#prompt').textContent = prompt;
     document.querySelector('#att_h').textContent = att_h;
-    window.location.href="#output";
+    window.location.href = "#output";
 
 });
 
