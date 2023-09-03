@@ -443,7 +443,8 @@ mail.: ${email}
                                                                                  14 boulevard Jacques Replat
                                                                                  74000 Annecy
                                                                                  
-                                                                                         Fait à ${ville}, le ${currentTime}
+                                                                                       Fait à ${ville}, le ${currentTime}
+    
                                                     
 Objet : demande d’inscription au programme humanitaire
 
@@ -483,7 +484,7 @@ Pièces jointes:
                                                                                  14 boulevard Jacques Replat
                                                                                  74000 Annecy
                                                                                  
-                                                                                         Fait à ${ville}, le ${currentTime}
+                                                                                       Fait à ${ville}, le ${currentTime}
                                                     
 Objet : déclaration sur l’honneur
 

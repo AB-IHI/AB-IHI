@@ -115,6 +115,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
                 source += "var doc = new jsPDF();\n";
                 source += "\n";
                 source += "doc.setFontSize(12);\n";
+                //element = doc.splitTextToSize(element, 180);
                 // source += "doc.setFontStyle("underline");\n"; //doesn't work
                 source += 'doc.text(`';
 
@@ -122,6 +123,8 @@ document.querySelector('form').addEventListener('submit', function(event) {
 
                 //console.log(source);
                 source += '`, 16, 16);\n';
+                //prevent overflow
+
 
                 editor.setValue(source);
                 editor.gotoLine(0);
