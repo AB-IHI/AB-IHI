@@ -455,7 +455,8 @@ Je vous demande de m'inscrire au programme humanitaire "Protection temporaire
 aux personnes fuyant la guerre en Ukraine" en tant que bénéficiaire d'aide humanitaire.
 Je suis entré${universal_gender} en France le ${entry_date}${av}${obj.init()}${obj2.init()}${obj3.init()}${obj4.init()}${obj5.init()}
 Mon APS de bénéficiaire de la protection temporaire n°${aps_num} est valable jusqu'au 
-${expire_date}. J'ai pris connaissance du contenu du programme humanitaire, accepte et 
+${expire_date}. 
+J'ai pris connaissance du contenu du programme humanitaire, accepte et 
 m'engage à remplir les obligations dans le cadre de ce programme.
 Je m'engage également à informer sans délai l'Association de toute modification de ma 
 situation financière et sociale.
