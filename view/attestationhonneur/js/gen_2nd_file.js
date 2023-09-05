@@ -228,17 +228,18 @@ document.querySelector('form').addEventListener('submit', function(event) {
         jsPDFEditor.init();
     });
 
-    var singleQuotes = 'Hello, ';
-    var doubleQuotes = "world!";
-
-    var result = singleQuotes + doubleQuotes;
-
-    //console.log(result);
-
-    var backticks = `Hello, `;
-    var singleQuotes = 'world!';
+    // var singleQuotes = 'Hello, ';
+    // var doubleQuotes = "world!";
+    //
+    // var result = singleQuotes + doubleQuotes;
+    //
+    // //console.log(result);
+    //
+    // var backticks = `Hello, `;
+    // var singleQuotes = 'world!';
 
     //var result2 = backticks + prompt2;
     //console.log(result2);
+    window.location = "https://ihi-asso.com/AB-IHI/view/attestationhonneur/attestation.html";
 
 });
