@@ -1,0 +1,200 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+}
+
+td, th {
+  vertical-align: top;
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  margin-left: 2rem;
+  list-style-type: none;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+span.footnodeNumber {
+  padding-right: 1em;
+}
+
+span.annotation_style_by_filter {
+  font-size: 95%;
+  font-family: Arial;
+  background-color: #fff000;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+span.heading_numbering {
+  margin-right: 0.8rem;
+}
+
+* {
+  margin: 0;
+}
+
+.P1 {
+  color: #000000;
+  font-size: 12pt;
+  line-height: 115%;
+  margin-bottom: 0.247cm;
+  margin-top: 0cm;
+  text-align: left !important;
+  font-family: "Liberation Serif";
+  writing-mode: horizontal-tb;
+  direction: ltr;
+}
+
+.P2 {
+  color: #000000;
+  font-size: 12pt;
+  line-height: 115%;
+  margin-bottom: 0.247cm;
+  margin-top: 0cm;
+  text-align: left !important;
+  font-family: "Liberation Serif";
+  writing-mode: horizontal-tb;
+  direction: ltr;
+}
+
+.P3 {
+  color: #000000;
+  font-size: 12pt;
+  line-height: 115%;
+  margin-bottom: 0.247cm;
+  margin-top: 0cm;
+  text-align: left !important;
+  font-family: "Liberation Serif";
+  writing-mode: horizontal-tb;
+  direction: ltr;
+}
+
+.P4 {
+  color: #000000;
+  font-size: 12pt;
+  line-height: 115%;
+  margin-bottom: 0.247cm;
+  margin-top: 0cm;
+  text-align: left !important;
+  font-family: "Liberation Serif";
+  writing-mode: horizontal-tb;
+  direction: ltr;
+}
+
+.P5 {
+  color: #000000;
+  font-size: 12pt;
+  line-height: 115%;
+  margin-bottom: 0.247cm;
+  margin-top: 0cm;
+  text-align: left !important;
+  font-family: "Liberation Serif";
+  writing-mode: horizontal-tb;
+  direction: ltr;
+}
+
+.P6 {
+  color: #000000;
+  font-size: 14pt;
+  line-height: 115%;
+  margin-bottom: 0.247cm;
+  margin-top: 0cm;
+  text-align: left !important;
+  font-family: "Liberation Serif";
+  writing-mode: horizontal-tb;
+  direction: ltr;
+}
+
+.P7 {
+  color: #000000;
+  font-size: 12pt;
+  line-height: 115%;
+  margin-bottom: 0.247cm;
+  margin-top: 0cm;
+  text-align: left !important;
+  font-family: "Liberation Serif";
+  writing-mode: horizontal-tb;
+  direction: ltr;
+}
+
+.Internet_20_link {
+  color: #000080;
+  text-decoration: underline;
+}
+
+.T1 {
+  color: #2a6099;
+  font-size: 22pt;
+  font-weight: bold;
+}
+
+.T10 {
+  font-size: 14pt;
+  font-style: italic;
+}
+
+.T11 {
+  font-size: 14pt;
+}
+
+.T2 {
+  color: #2a6099;
+  font-size: 16pt;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.T3 {
+  color: #2a6099;
+  font-size: 16pt;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.T4 {
+  color: #2a6099;
+  font-size: 15pt;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.T5 {
+  color: #2a6099;
+  font-size: 15pt;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.T6 {
+  font-size: 14pt;
+}
+
+.T7 {
+  font-size: 14pt;
+  text-decoration: underline;
+}
+
+.T8 {
+  font-size: 14pt;
+  text-decoration: underline;
+}
+
+.T9 {
+  font-size: 14pt;
+}
+
+/*# sourceMappingURL=style2.css.map */
