@@ -111,7 +111,7 @@
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="ua_v/4. Право на отримання допомоги.pdf">Право на отримання допомоги </a></li>
                         <li><a class="dropdown-item" href="ua_v/5. Права та обов'язки бенефіц.pdf">Права та обов'язки бенефіціарів </a></li>
-                        <li><a class="dropdown-item" href="attestation/attestation.html" title="Beneficiary registration" >Formulaire bénéficiaire</a></li>
+                        <li><a class="dropdown-item" href="attestation/attestation.html" title="Beneficiary registration" >Формуляр бенефіціарів</a></li>
                     </ul>
                 </li>
             </ul>
