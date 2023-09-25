@@ -24,16 +24,28 @@ h1, h2, h3, h4, h5, h6 { clear:both;
 }
 
 ul {
-  margin:0;
-  padding:0;
-  margin-left:2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style-type: none;
+  margin: 0.5rem 0;
+  margin-left: 2rem;
 }
 
-li { list-style:none;
-  margin:0;
-  padding:0;
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 0.3rem;
+  margin: 0.5rem 0;
+  .ListLabel_20{
+    padding-right: 0.7rem;
+  }
 }
+
 
 span.footnodeNumber { padding-right:1em;
 }
@@ -55,8 +67,8 @@ span.heading_numbering { margin-right:0.8rem;
 
 .P1 { color:#000000;
   font-size:12pt;
-  margin-bottom:0.247cm;
   margin-top:0cm;
+  margin: 0.5rem 0;
   text-align:left ! important;
   font-family:'Liberation Serif';
   writing-mode:horizontal-tb;
@@ -65,8 +77,6 @@ span.heading_numbering { margin-right:0.8rem;
 
 .P2 { color:#000000;
   font-size:12pt;
-  line-height:115%;
-  margin-bottom:0.247cm;
   margin-top:0cm;
   text-align:left ! important;
   font-family:'Liberation Serif';
@@ -76,8 +86,6 @@ span.heading_numbering { margin-right:0.8rem;
 
 .P3 { color:#000000;
   font-size:12pt;
-  line-height:115%;
-  margin-bottom:0.247cm;
   margin-top:0cm;
   text-align:left ! important;
   font-family:'Liberation Serif';
@@ -87,8 +95,6 @@ span.heading_numbering { margin-right:0.8rem;
 
 .P4 { color:#000000;
   font-size:12pt;
-  line-height:115%;
-  margin-bottom:0.247cm;
   margin-top:0cm;
   text-align:left ! important;
   font-family:'Liberation Serif';
@@ -98,8 +104,6 @@ span.heading_numbering { margin-right:0.8rem;
 
 .P5 { color:#000000;
   font-size:12pt;
-  line-height:115%;
-  margin-bottom:0.247cm;
   margin-top:0cm;
   text-align:left ! important;
   font-family:'Liberation Serif';
@@ -109,8 +113,6 @@ span.heading_numbering { margin-right:0.8rem;
 
 .P6 { color:#000000;
   font-size:14pt;
-  line-height:115%;
-  margin-bottom:0.247cm;
   margin-top:0cm;
   text-align:left ! important;
   font-family:'Liberation Serif';
@@ -120,8 +122,6 @@ span.heading_numbering { margin-right:0.8rem;
 
 .P7 { color:#000000;
   font-size:12pt;
-  line-height:115%;
-  margin-bottom:0.247cm;
   margin-top:0cm;
   text-align:left ! important;
   font-family:'Liberation Serif';
@@ -189,7 +189,7 @@ span.heading_numbering { margin-right:0.8rem;
     font-size: 2rem;
   }
 
-  .T6, P1 {
-    font-size: unset;
+  .T6, .P1, .P1 *, .T7, .T9, .T8 {
+    font-size: 2rem;
   }
 }

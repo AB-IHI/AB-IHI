@@ -25,16 +25,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
-  margin-left: 2rem;
   list-style-type: none;
+  margin: 0.5rem 0;
+  margin-left: 2rem;
 }
 
 li {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-left: 0.3rem;
+  margin: 0.5rem 0;
+}
+li .ListLabel_20 {
+  padding-right: 0.7rem;
 }
 
 span.footnodeNumber {
@@ -57,8 +66,8 @@ span.heading_numbering {
 .P1 {
   color: #000000;
   font-size: 12pt;
-  margin-bottom: 0.247cm;
   margin-top: 0cm;
+  margin: 0.5rem 0;
   text-align: left !important;
   font-family: "Liberation Serif";
   writing-mode: horizontal-tb;
@@ -68,8 +77,6 @@ span.heading_numbering {
 .P2 {
   color: #000000;
   font-size: 12pt;
-  line-height: 115%;
-  margin-bottom: 0.247cm;
   margin-top: 0cm;
   text-align: left !important;
   font-family: "Liberation Serif";
@@ -80,8 +87,6 @@ span.heading_numbering {
 .P3 {
   color: #000000;
   font-size: 12pt;
-  line-height: 115%;
-  margin-bottom: 0.247cm;
   margin-top: 0cm;
   text-align: left !important;
   font-family: "Liberation Serif";
@@ -92,8 +97,6 @@ span.heading_numbering {
 .P4 {
   color: #000000;
   font-size: 12pt;
-  line-height: 115%;
-  margin-bottom: 0.247cm;
   margin-top: 0cm;
   text-align: left !important;
   font-family: "Liberation Serif";
@@ -104,8 +107,6 @@ span.heading_numbering {
 .P5 {
   color: #000000;
   font-size: 12pt;
-  line-height: 115%;
-  margin-bottom: 0.247cm;
   margin-top: 0cm;
   text-align: left !important;
   font-family: "Liberation Serif";
@@ -116,7 +117,6 @@ span.heading_numbering {
 .P6 {
   color: #000000;
   font-size: 14pt;
-  margin-bottom: 0.247cm;
   margin-top: 0cm;
   text-align: left !important;
   font-family: "Liberation Serif";
@@ -127,7 +127,6 @@ span.heading_numbering {
 .P7 {
   color: #000000;
   font-size: 12pt;
-  margin-bottom: 0.247cm;
   margin-top: 0cm;
   text-align: left !important;
   font-family: "Liberation Serif";
@@ -206,8 +205,8 @@ span.heading_numbering {
     margin: 0;
     font-size: 2rem;
   }
-  .T6, .P1, .P1 *, .P2, .T8, .T7, .T6, .T1, .T2, .P3, .T9, .T3, .T4, .T5, .T10, .P4, .P5 {
-    font-size: unset;
+  .T6, .P1, .P1 *, .T7, .T9, .T8 {
+    font-size: 2rem;
   }
 }
 
