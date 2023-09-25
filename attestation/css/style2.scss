@@ -1,3 +1,15 @@
+* {
+  margin:0;
+
+}
+
+body {
+  margin-top: 2cm;
+  margin-bottom: 2cm;
+  margin-left: 5%;
+  margin-right: 2rem;
+}
+
 table {
   border-collapse:collapse;
   border-spacing:0;
@@ -38,14 +50,11 @@ span.annotation_style_by_filter {
 span.heading_numbering { margin-right:0.8rem;
 }
 
-* { margin:0;
-  }
 
 
 
 .P1 { color:#000000;
   font-size:12pt;
-  line-height:115%;
   margin-bottom:0.247cm;
   margin-top:0cm;
   text-align:left ! important;
@@ -172,4 +181,15 @@ span.heading_numbering { margin-right:0.8rem;
 }
 
 .T9 { font-size:14pt;
+}
+
+@media (max-width: 1024px) {
+  * {
+    margin:0;
+    font-size: 2rem;
+  }
+
+  .T6, P1 {
+    font-size: unset;
+  }
 }
