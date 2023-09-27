@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  font-size: 2rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0.5rem 0;
+  margin-left: 2rem;
+}
+
+.same_line, ul li, .block-0, .block- {
+  display: flex;
+}
+
+.block-0, .block- {
+  flex-direction: column;
+}
+
+.gap-1 {
+  gap: 3rem;
+}
+
+.gap-2 {
+  gap: 6rem;
+}
+
+/*# sourceMappingURL=style0.css.map */
