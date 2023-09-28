@@ -116,7 +116,6 @@ span.heading_numbering {
 
 .P6 {
   color: #000000;
-  font-size: 14pt;
   margin-top: 0cm;
   text-align: left !important;
   font-family: "Liberation Serif";
@@ -139,31 +138,34 @@ span.heading_numbering {
   text-decoration: underline;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .T1 {
   color: #2a6099;
-  font-size: 22pt;
+  font-size: 2rem;
   font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.T2, .T3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .T10 {
-  font-size: 14pt;
   font-style: italic;
-}
-
-.T11 {
-  font-size: 14pt;
 }
 
 .T2 {
   color: #2a6099;
-  font-size: 16pt;
   font-style: italic;
   font-weight: bold;
 }
 
 .T3 {
   color: #2a6099;
-  font-size: 16pt;
   font-style: italic;
   font-weight: bold;
 }
@@ -180,24 +182,6 @@ span.heading_numbering {
   font-size: 15pt;
   font-style: italic;
   font-weight: bold;
-}
-
-.T6 {
-  font-size: 14pt;
-}
-
-.T7 {
-  font-size: 14pt;
-  text-decoration: underline;
-}
-
-.T8 {
-  font-size: 14pt;
-  text-decoration: underline;
-}
-
-.T9 {
-  font-size: 14pt;
 }
 
 @media (max-width: 1024px) {
