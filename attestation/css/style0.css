@@ -1,6 +1,10 @@
 * {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.8rem;
+}
+
+.block-0, .block-, li {
+  width: 100%;
 }
 
 main {
@@ -28,7 +32,7 @@ ul .num {
   margin-right: 1rem;
 }
 ul .arrow {
-  margin-left: 2.3rem;
+  margin-left: 3.1rem;
 }
 
 .same_line, ul li, .block-0, .block-, main {
@@ -53,6 +57,7 @@ ul .arrow {
   }
   main {
     margin: 2rem 2rem;
+    margin-right: 4rem;
   }
   h1 {
     font-size: 1.7rem;
@@ -62,6 +67,9 @@ ul .arrow {
   }
   ul {
     margin-left: 0;
+  }
+  ul .arrow {
+    margin-left: 2.3rem;
   }
 }
 
