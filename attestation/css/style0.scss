@@ -37,13 +37,13 @@ ul {
 }
 
 
-.same_line, ul li, .block-0, .block-, main {
+.same_line, ul li, .block-0, .block-, main, .enbl_gap {
   display: flex;
 }
 
 
 
-.block-0, .block-, main {
+.block-0, .block-, main, .enbl_gap {
   flex-direction: column;
 
 }
