@@ -24,6 +24,12 @@ ul {
   margin: 0.5rem 0;
   margin-left: 2rem;
 }
+ul .num {
+  margin-right: 1rem;
+}
+ul .arrow {
+  margin-left: 2.3rem;
+}
 
 .same_line, ul li, .block-0, .block-, main {
   display: flex;
@@ -34,11 +40,11 @@ ul {
 }
 
 .gap-1 {
-  gap: 3rem;
+  gap: 1.5rem;
 }
 
 .gap-2 {
-  gap: 6rem;
+  gap: 3rem;
 }
 
 @media (min-width: 1024px) {
