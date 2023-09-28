@@ -28,6 +28,21 @@
   --title-line-height: 1.75rem;
 }
 
+#header {
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+.header__back {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  margin: 2.25rem;
+  font-size: 1.3rem;
+  height: 3rem;
+}
+
 .card h3 {
   color : #0c63e4;
 }
@@ -63,9 +78,19 @@
   }
   form {
     display: flex;
+    flex-direction: column;
   }
   .hide_container {
     display: none;
+  }
+
+  .container {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: 3%;
+    margin-left: 3%;
+    max-width: none;
   }
 
 }
