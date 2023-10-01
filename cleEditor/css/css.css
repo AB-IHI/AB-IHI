@@ -1,0 +1,25 @@
+h2 {
+    margin: 2rem 0 4rem 0;
+}
+
+.cleditorMain {
+    z-index: 1;
+    position: relative;
+    margin-top: -1rem;
+    padding-top: 1rem;
+}
+
+.cleditorToolbar {
+    position: absolute;
+    z-index: 0;
+    margin-top: -3rem;
+    padding-top: 0rem;
+}
+
+.spcr {
+    border: medium;
+    width: 792px;
+    height: 1500px;
+    display: none;
+    padding-top: 20px;
+}
