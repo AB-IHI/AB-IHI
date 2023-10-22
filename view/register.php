@@ -109,7 +109,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION["loggedin"] == true) {
             </div>
 
             <div class="form-group <?php echo (!empty($telephone_err)) ? 'has-error' : ''; ?>">
-                <input type="text" class="form-control btn-lg" name="telephone" id="telephone" placeholder="N° téléphone" required="">
+                <input type="text" class="form-control btn-lg" name="telephone" id="telephone" value="<?php echo $telephone; ?>" placeholder="N° téléphone" required="">
                 <span class="help-block"><?php echo $telephone_err; ?></span>
                 <!-- <div class="invalid-feedback">
                     Please enter a telephone address.
@@ -124,10 +124,10 @@ if (isset($_SESSION['loggedin']) && $_SESSION["loggedin"] == true) {
                 <!-- <div class="invalid-feedback">
                         Valid mot de passe is required.-->
             </div>
-            <!-- <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
+            <!-- <div class="form-group <?php //echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
 
-                <input type="password" name="confirm_password" class="form-control btn-lg" id="confirm_pw" value="<?php echo $confirm_password; ?>" placeholder="mot de passe" required="">
-                <span class="help-block"><?php echo $confirm_password_err; ?></span>
+                <input type="password" name="confirm_password" class="form-control btn-lg" id="confirm_pw" value="<?php //echo $confirm_password; ?>" placeholder="mot de passe" required="">
+                <span class="help-block"><?php //echo $confirm_password_err; ?></span>
             </div> -->
         </div>
         <div class="form-check">

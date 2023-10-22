@@ -1,12 +1,12 @@
 <?php
-
-
+//echo "action user was called";
+// crazy registration/ update info / add folder
 
 /*here admin updates user role */
 if (isset($_POST["action"])) {
 
     if ($_POST["action"] == "update_role") {
-        update_role($c);
+        update_role($c); //it's an include thus ide lying c is defined
     }
 }
 /* end of admin updating user role */
@@ -174,23 +174,7 @@ if (isset($_POST["action"])) {
                 $adress = trim($_POST["adress"]);
             }
 
-            // Validate email
-            /*if (empty(trim($_POST["email"]))) {
-                // $email_err = "Please enter a email.";
-            } else {
-                $email = trim($_POST["email"]);
-                if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                    // valid address
-                    $type = "email";
-                    if (dispo_in_db($email, $type, $c)) {
-                        // unavailable address
-                        $email_err = "Adresse email indisponible";
-                    }
-                } else {
-                    // invalid address
-                    $email_err = "Please enter valid email.";
-                }
-            }*/
+
 
             // Validate telephone
 
@@ -349,14 +333,17 @@ if (isset($_POST["action"])) {
 
 // Define variables and initialize with empty values
 $username = $nom = $prenom = $email = $password = $confirm_password = $telephone_err = "";
-$username_err = $nom_err = $prenom_err = $email_err = $password_err = $confirm_password_err = $telephone ="";
+$username_err = $nom_err = $prenom_err = $email_err = $password_err = $confirm_password_err = $telephone = "";
 
 if (isset($_POST["action"])) {
 
     if ($_POST["action"] == "register") {
+        //echo "action register was called";
+
         $_SESSION['page'] = "register";
         // Processing form data when form is submitted
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            //echo "action  was  posted called";
 
             // Validate username
             if (empty(trim($_POST["username"]))) {
@@ -386,7 +373,7 @@ if (isset($_POST["action"])) {
                         }
                     } else {
                         echo "1Oops! Something went wrong. Please try again later.";
-//                        var_dump($stmt);
+                        var_dump($stmt);
                     }
 
                     // Close statement
@@ -405,6 +392,16 @@ if (isset($_POST["action"])) {
                 $password = trim($_POST["password"]);
             }
 
+            // Validate confirm password
+            // if (empty(trim($_POST["confirm_password"]))) {
+            //     $confirm_password_err = "Please confirm password.";
+            // } else {
+            //     $confirm_password = trim($_POST["confirm_password"]);
+            //     if (empty($password_err) && ($password != $confirm_password)) {
+            //         $confirm_password_err = "Password did not match.";
+            //     }
+            // }
+
             // Validate nom
             if (empty(trim($_POST["nom"]))) {
                 $nom_err = "Please enter a nom.";
@@ -415,7 +412,7 @@ if (isset($_POST["action"])) {
             } else {
                 $nom = trim($_POST["nom"]);
             }
-//            var_dump($password_err);
+            var_dump($password_err);
             // Validate prenom
             if (empty(trim($_POST["prenom"]))) {
                 $prenom_err = "Please enter a prenom.";
@@ -467,29 +464,21 @@ if (isset($_POST["action"])) {
                 $telephone = trim($_POST["telephone"]);
             }
 
-            // Validate confirm password
-            // if (empty(trim($_POST["confirm_password"]))) {
-            //     $confirm_password_err = "Please confirm password.";
-            // } else {
-            //     $confirm_password = trim($_POST["confirm_password"]);
-            //     if (empty($password_err) && ($password != $confirm_password)) {
-            //         $confirm_password_err = "Password did not match.";
-            //     }
-            // }
+
 
             // Check input errors before inserting in database
-            if (
-                empty($username_err) && empty($password_err) && empty($nom_err)
-                && empty($prenom_err) && empty($condition_err) && empty($reglement_err) && empty($email_err) && empty($telephone)
+            if (            empty($username_err) && empty($password_err) && empty($nom_err)
+                && empty($prenom_err) && empty($condition_err) && empty($reglement_err) && empty($email_err) && empty($telephone_err)
             ) {
 
                 // Prepare an insert statement
                 $sql = "INSERT INTO users (username, password, nom, prenom, email, telephone) VALUES (?, ?, ?, ?, ?, ?)";
-
+//                echo $sql;
                 if ($stmt = mysqli_prepare($c, $sql)) {
                     // Bind variables to the prepared statement as parameters
                     mysqli_stmt_bind_param($stmt, "ssssss", $param_username, $param_password, $param_nom, $param_prenom, $param_email, $param_telephone);
-
+//                    echo "stmt  was   called";
+                    //echo $stmt;
                     // Set parameters
                     $param_username = $username;
                     $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
@@ -502,15 +491,18 @@ if (isset($_POST["action"])) {
                         // Redirect to login page
                         // header("location: login.php");
                         $_SESSION['page'] = 'login';
-                        echo "executed 1";
+//                        echo "executed 1";
                     } else {
-                        echo "executed 2";
+//                        echo "executed 2";
                         echo "2Something went wrong. Please try again later.";
                     }
 
                     // Close statement
                     mysqli_stmt_close($stmt);
                 }
+            }
+            else {
+
             }
 
             // Close connection
