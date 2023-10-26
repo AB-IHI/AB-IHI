@@ -182,7 +182,7 @@ if (isset($_POST["action"])) {
                         // Validate RIB if available (user not forced to provide rib)
                         if (!empty(trim($_POST["rib"]))) {
                             if (strlen(trim($_POST["rib"])) != 16 ) {
-//                                $rib_err = "rib must have atleast 16 characters.";
+                                $rib_err = "rib must have atleast 16 characters.";
                                 //echo "rib must have at least 16 characters.";
                             } else {
                                 $rib = trim($_POST["rib"]);
@@ -195,11 +195,11 @@ if (isset($_POST["action"])) {
 
                 // Prepare an insert statement UPDATE `users` SET `date` = '11/01/02' WHERE `users`.`id` = 4; 
 
-                $sql = "UPDATE users SET passport =?, date=?, pays=?, adress=?, telephone=?, rib=?  WHERE users.id=?";
+                $sql = "UPDATE users SET passport =?, date=?, pays=?, adress=?, rib=?  WHERE users.id=?";
 
                 if ($stmt = mysqli_prepare($c, $sql)) {
                     // Bind variables to the prepared statement as parameters
-                    mysqli_stmt_bind_param($stmt, "sssssss", $passport, $date, $pays, $adress, $telephone, $rib, $_SESSION['id_user']);
+                    mysqli_stmt_bind_param($stmt, "sssssss", $passport, $date, $pays, $adress, $rib, $_SESSION['id_user']);
 
                     // Set parameters, useless
                     // $param_username = $username;
