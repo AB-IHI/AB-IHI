@@ -199,7 +199,7 @@ if (isset($_POST["action"])) {
 
                 if ($stmt = mysqli_prepare($c, $sql)) {
                     // Bind variables to the prepared statement as parameters
-                    mysqli_stmt_bind_param($stmt, "sssssss", $passport, $date, $pays, $adress, $rib, $_SESSION['id_user']);
+                    mysqli_stmt_bind_param($stmt, "ssssss", $passport, $date, $pays, $adress, $rib, $_SESSION['id_user']);
 
                     // Set parameters, useless
                     // $param_username = $username;
@@ -211,7 +211,7 @@ if (isset($_POST["action"])) {
                         // header("location: login.php");
                         $_SESSION['page'] = 'benevole';
                     } else {
-                        echo "2Something went wrong. Please try again later.";
+                        echo "2 Something went wrong. Please try again later.";
                     }
 
                     // Close statement
