@@ -2,7 +2,7 @@
       enctype="multipart/form-data">
     <input type="hidden" name="action" value="ajout_pic">
     <div class="form-row">
-        <div>Choisir image :</div>
+        <div>Choisir image : (max 1MB size, png, jpg, gif only)</div>
         <div>
             <input type="file" class="file-input" name="file-input">
         </div>
