@@ -131,7 +131,7 @@ echo '<img class= "responsive" src="uploads/'. $photo  .'" alt="My profile pic">
                 echo "<td class='margin'>" . $var5 . "</td>  </tr> ";
 
                 echo "<tr class='margin'>
-                    <td class='margin'> adress </td>     
+                    <td class='margin'> adresse </td>     
                  ";
                 $var6 = htmlspecialchars($row["adress"], ENT_QUOTES, 'UTF-8');
                     echo "<td >" . $var6 . "</td>  </tr> ";
