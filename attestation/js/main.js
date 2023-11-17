@@ -350,7 +350,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
 
             if (!un_champs_vide) {
                 var pers4 = "\n       - ${role} ${lien_3} ${prenom_3} ${nom_3}, née le ${birth_date_3}.";
-                pers4 = pers4.replace("${role}", role2);
+                pers4 = pers4.replace("${role}", role3);
                 pers4 = pers4.replace("${lien_3}", lien_3);
                 pers4 = pers4.replace("${prenom_3}", prenom_3);
                 pers4 = pers4.replace("${nom_3}", nom_3);
@@ -420,7 +420,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
 
             if (!un_champs_vide) {
                 var pers6 = "\n       - ${role} ${lien_2} ${prenom_2} ${nom_2}, née le ${birth_date_2}.";
-                pers6 = pers6.replace("${role}", role5);
+                pers6 = pers6.replace("${role}", role4);
                 pers6 = pers6.replace("${lien_2}", lien_5);
                 pers6 = pers6.replace("${prenom_2}", prenom_5);
                 pers6 = pers6.replace("${nom_2}", nom_5);
