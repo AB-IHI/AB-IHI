@@ -240,6 +240,5 @@ document.querySelector('form').addEventListener('submit', function(event) {
 
     //var result2 = backticks + prompt2;
     //console.log(result2);
-    reload();
 
 });
