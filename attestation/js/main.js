@@ -119,6 +119,18 @@ document.querySelector('form').addEventListener('submit', function(event) {
     var birth_date_5 = document.querySelector('#birth_date_5').value;
     birth_date_5 = convertDate(birth_date_5);
 
+    var lien_6 = document.querySelector('#lien_6').value;
+    const prenom_6 = document.querySelector('#prenom_6').value;
+    const nom_6 = document.getElementById("nom_6").value;
+    var birth_date_6 = document.querySelector('#birth_date_6').value;
+    birth_date_6 = convertDate(birth_date_6);
+
+    var lien_7 = document.querySelector('#lien_7').value;
+    const prenom_7 = document.querySelector('#prenom_7').value;
+    const nom_7 = document.getElementById("nom_7").value;
+    var birth_date_7 = document.querySelector('#birth_date_7').value;
+    birth_date_7 = convertDate(birth_date_7);
+
     var myrole = "";
 
     universal_gender = ""; //no time to change everything to universal
@@ -132,7 +144,8 @@ document.querySelector('form').addEventListener('submit', function(event) {
     var role3 = "";
     var role4 = "";
     var role5 = "";
-
+    var role6 = "";
+    var role7 = "";
     var civ = "";
     // console.log(lien_1 == "mari" || lien_1 == "fils");
 
@@ -186,6 +199,22 @@ document.querySelector('form').addEventListener('submit', function(event) {
 
     if (lien_5 === "fils") {
         role5 += 'mon';
+    }
+
+    if (lien_6 === "fille") {
+        role6 += 'ma';
+    }
+
+    if (lien_6 === "fils") {
+        role6 += 'mon';
+    }
+
+    if (lien_7 === "fille") {
+        role7 += 'ma';
+    }
+
+    if (lien_7 === "fils") {
+        role7 += 'mon';
     }
 
     var obj0 = {
@@ -405,6 +434,75 @@ document.querySelector('form').addEventListener('submit', function(event) {
         },
     };
 
+    var obj6 = {
+        init: function() {
+            document.getElementById('submit').onclick = obj6.validate;
+            return obj6.validate(); // Call the validate function and return its result
+        },
+
+        validate: function() {
+            var check = document.getElementsByClassName('person_6');
+            var len = check.length;
+            var un_champs_vide = false;
+            for (var i = 0; i < len; i++) {
+                if (check[i].value === '') {
+                    un_champs_vide = true;
+                    // console.log("loop 2 work");
+                    // console.log(un_champs_vide);
+                    break; // Exit the loop once we find an empty field
+                }
+            }
+
+            if (!un_champs_vide) {
+                var pers7 = "\n       - ${role} ${lien_2} ${prenom_2} ${nom_2}, née le ${birth_date_2}.";
+                pers7 = pers7.replace("${role}", role6);
+                pers7 = pers7.replace("${lien_2}", lien_6);
+                pers7 = pers7.replace("${prenom_2}", prenom_6);
+                pers7 = pers7.replace("${nom_2}", nom_6);
+                pers7 = pers7.replace("${birth_date_2}", birth_date_6);
+
+                return pers7;
+            } else {
+                return "";
+                // window.alert("un des champs de personnes entree avec vous est vide");
+            }
+        },
+    };
+
+    var obj7 = {
+        init: function() {
+            document.getElementById('submit').onclick = obj7.validate;
+            return obj7.validate(); // Call the validate function and return its result
+        },
+
+        validate: function() {
+            var check = document.getElementsByClassName('person_7');
+            var len = check.length;
+            var un_champs_vide = false;
+            for (var i = 0; i < len; i++) {
+                if (check[i].value === '') {
+                    un_champs_vide = true;
+                    // console.log("loop 2 work");
+                    // console.log(un_champs_vide);
+                    break; // Exit the loop once we find an empty field
+                }
+            }
+
+            if (!un_champs_vide) {
+                var pers8 = "\n       - ${role} ${lien_2} ${prenom_2} ${nom_2}, née le ${birth_date_2}.";
+                pers8 = pers8.replace("${role}", role7);
+                pers8 = pers8.replace("${lien_2}", lien_7);
+                pers8 = pers8.replace("${prenom_2}", prenom_7);
+                pers8 = pers8.replace("${nom_2}", nom_7);
+                pers8 = pers8.replace("${birth_date_2}", birth_date_7);
+
+                return pers8;
+            } else {
+                return "";
+                // window.alert("un des champs de personnes entree avec vous est vide");
+            }
+        },
+    };
 
 
 
@@ -413,7 +511,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
 
 
     //check if there are no people then add seul else add list of people
-    if ((obj.init() === "") && (obj2.init() === "") && (obj3.init() === "") && (obj4.init() === "") && (obj5.init() === "")) {
+    if ((obj.init() === "") && (obj2.init() === "") && (obj3.init() === "") && (obj4.init() === "") && (obj5.init() === "") && (obj6.init() === "") && (obj7.init() === "")) {
         var av = ".";
         // gender +=".";
 
@@ -453,7 +551,7 @@ Mesdames, Messieurs,
 
 Je vous demande de m'inscrire au programme humanitaire "Protection temporaire 
 aux personnes fuyant la guerre en Ukraine" en tant que bénéficiaire d'aide humanitaire.
-Je suis entré${universal_gender} en France le ${entry_date}${av}${obj.init()}${obj2.init()}${obj3.init()}${obj4.init()}${obj5.init()}
+Je suis entré${universal_gender} en France le ${entry_date}${av}${obj.init()}${obj2.init()}${obj3.init()}${obj4.init()}${obj5.init()}${obj6.init()}${obj7.init()}
 Mon APS de bénéficiaire de la protection temporaire n°${aps_num} est valable jusqu'au 
 ${expire_date}. 
 J'ai pris connaissance du contenu du programme humanitaire, accepte et 
