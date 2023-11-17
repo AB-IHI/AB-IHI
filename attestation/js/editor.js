@@ -254,3 +254,8 @@ document.querySelector('form').addEventListener('submit', function(event) {
     //console.log(result2);
 
 });
+
+document.querySelector(".download-pdf").addEventListener('click', function(event) {
+    location.reload();
+
+});
