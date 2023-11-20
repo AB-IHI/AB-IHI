@@ -151,8 +151,7 @@
                     <ul class="dropdown-menu">
 
                         <li><a class="dropdown-item" href="https://refugies.info/uk">refugies.info</a></li>
-                        <li><a class="dropdown-item" href="
-                        https://www.haute-savoie.gouv.fr/Demarches-administratives/Etrangers-en-Haute-Savoie/Ressortissants-ukrainiens">Préfecture</a></li>
+                        <li><a class="dropdown-item" href="ua_v/prv.html">Провідник</a></li>
 
                         <li><a class="dropdown-item" href="ua_v/compte-bancaire-ukraine-UK.pdf">банківський рахунок</a></li>
                         <li><a class="dropdown-item" href="https://t.me/FranceUkraineNews">Журнал Допомога</a></li>
