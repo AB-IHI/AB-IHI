@@ -243,16 +243,16 @@ function addEventListenerChild(nthChild) {
 addChildInputField()
 // console.log("240")
 
-    function determineLink(lien) {
+function determineLink(lien) {
     let role = ""
-        if (lien === "fils") { //1st child aka 3rd person
-            role += 'mon';
-        }
-        else {
-            role += 'ma';
-        }
-        return role
+    if (lien === "fils") { //1st child aka 3rd person
+        role += 'mon';
     }
+    else {
+        role += 'ma';
+    }
+    return role
+}
 
     function loopThroughAllElementsToGetValues() {
         for (let i = 1; i < counter + 1; i++) {
