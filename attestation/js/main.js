@@ -213,13 +213,13 @@ function addEventListenerChild(nthChild) {
                 }
             }
 
-                if (!un_champs_vide) {
-                    let pers = "\n       - ${role} ${lien} ${prenom} ${nom}, née le ${birth_date}.";
-                    pers = pers.replace("${lien}", lien); //
-                    pers = pers.replace("${prenom}", prenom);
-                    pers = pers.replace("${role}", role);
-                    pers = pers.replace("${nom}", nom);
-                    pers = pers.replace("${birth_date}", birth_date);
+            if (!un_champs_vide) {
+                let pers = "\n       - ${role} ${lien} ${prenom} ${nom}, née le ${birth_date}.";
+                pers = pers.replace("${lien}", lien); //
+                pers = pers.replace("${prenom}", prenom);
+                pers = pers.replace("${role}", role);
+                pers = pers.replace("${nom}", nom);
+                pers = pers.replace("${birth_date}", birth_date);
 
 
                     return pers;
