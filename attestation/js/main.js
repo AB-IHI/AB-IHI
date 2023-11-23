@@ -173,11 +173,11 @@ let  additionalChildrenstr = ""
 function addEventListenerChild(nthChild) {
     // document.querySelector('form').addEventListener('submit', function(event) {
     //     event.preventDefault();
-        let lien = document.querySelector('#lien' + nthChild).value;
-        const prenom = document.querySelector('#prenom' + nthChild).value;
-        const nom = document.getElementById("nom"  + nthChild).value;
-        let birth_date = document.querySelector('#birth_date' + nthChild).value;
-        birth_date = convertDate(birth_date);
+    let lien = document.querySelector('#lien' + nthChild).value;
+    const prenom = document.querySelector('#prenom' + nthChild).value;
+    const nom = document.getElementById("nom"  + nthChild).value;
+    let birth_date = document.querySelector('#birth_date' + nthChild).value;
+    birth_date = convertDate(birth_date);
 
         let role = "";
 
