@@ -67,7 +67,7 @@ function addChildInputField() {
     });
 }
 
- function  genererInputField() {
+function  genererInputField() {
     const whereAddChild = document.querySelector("#glue_here");
     const container = document.createElement("div"); //ajouter conteneur de l'enfant (enfnt irl)
     container.classList.add('cloneitem')
