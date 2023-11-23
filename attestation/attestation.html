@@ -15,196 +15,196 @@
 <body>
 
 
-    <div class="container">
+<div class="container">
 
-        <header id="header" class="card">
+    <header id="header" class="card">
 
-            <a class="header__back" href="../?page=home_2"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></a>
+        <a class="header__back" href="../?page=home_2"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></a>
 
-        </header>
+    </header>
 
-        <div class="card">
-            <p title="our association name, Humanitarian program “Temporary protection for people fleeing the war in Ukraine”">
-                Association de bienfaisance IHI <br> Programme humanitaire « Protection temporaire aux personnes fuyant la guerre en Ukraine »
-            </p>
+    <div class="card">
+        <p title="our association name, Humanitarian program “Temporary protection for people fleeing the war in Ukraine”">
+            Association de bienfaisance IHI <br> Programme humanitaire « Protection temporaire aux personnes fuyant la guerre en Ukraine »
+        </p>
 
-            <h3 title="Beneficiary form">Formulaire du bénéficiaire</h3>
-            <div class="mb-3">
-                <div  class="d-flex flex-row-reverse" title="">
-                    <a class="p-2 " href="Инструкция.html">Ось декілька порад стосовно його заповнення</a>
-                </div>
-
+        <h3 title="Beneficiary form">Formulaire du bénéficiaire</h3>
+        <div class="mb-3">
+            <div  class="d-flex flex-row-reverse" title="">
+                <a class="p-2 " href="Инструкция.html">Ось декілька порад стосовно його заповнення</a>
             </div>
-            <form>
+
+        </div>
+        <form>
 
 
+            <div class="mb-3">
+                <label for="title" class="form-label" title="your title e. Mr. ">Civilité</label>
                 <div class="mb-3">
-                    <label for="title" class="form-label" title="your title e. Mr. ">Civilité</label>
-                    <div class="mb-3">
-                        <select name="title" class="person_4" id="title">
+                    <select name="title" class="person_4" id="title">
                         <option disabled selected value> -- select an option -- </option>
                         <option value="Monsieur">Monsieur</option>
                         <option value="Madame">Madame</option>
                     </select>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="prenom" class="form-label" title="your Firstname">Prénom</label>
+                <input type="text" class="form-control" id="prenom" placeholder="Tetiana, Mykhailo">
+            </div>
+
+            <div class="mb-3">
+                <label for="nom" class="form-label" title="name">Nom</label>
+                <input type="text" class="form-control" id="nom" placeholder="OMELCHENKO">
+            </div>
+
+            <div class="mb-3">
+                <label for="adresse" class="form-label" title="adresse">Adresse</label>
+                <input type="text" class="form-control" id="adresse" placeholder="10, avenue de Chambéry">
+            </div>
+
+            <div class="mb-3">
+                <label for="heb_chez" class="form-label" title="You are hosted by Mr Jhon Doe">Vous êtes hébergé chez (civilité, nom, prénom)</label>
+                <input type="text" class="form-control" id="heb_chez" placeholder="Croix Rouge, Madame DUPONT, Monsieur DURANT">
+            </div>
+
+            <div class="mb-3">
+                <label for="zip_code" class="form-label" title="ZIP code">Code postal</label>
+                <input type="text" class="form-control" maxlength="6" max="999999" id="zip_code" placeholder="74100">
+            </div>
+
+            <div class="mb-3">
+                <label for="commune" class="form-label" title="municipality">Commune</label>
+                <input type="text" class="form-control" id="commune" placeholder="Annemasse">
+            </div>
+
+            <div class="mb-3">
+                <label for="telephone" class="form-label" title="your phone number FR +33">n° de téléphone en France </label>
+                <input type="text" class="form-control" id="telephone" placeholder="+33 X XX XX XX XX ">
+            </div>
+
+            <div class="mb-3">
+                <label for="telephone2" class="form-label" title="your phone number if any in Ukraine">n° de téléphone en Ukraine </label>
+                <input type="text" class="form-control" id="telephone2" placeholder="+XX X XX XX XX XX ">
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label" title="your email">Email</label>
+                <input type="text" class="form-control" id="email">
+            </div>
+
+            <div class="mb-3">
+                <label for="entry_date" class="form-label" title="Date of entry into France dd/mm/yyyy">Date d'entrée en France</label>
+                <input type="date" class="form-control" id="entry_date">
+            </div>
+
+            <div class="mb-3">
+                <label for="ville_birth" class="form-label" title="your birth city">Ville de naissance</label>
+                <input type="text" class="form-control" id="ville_birth" placeholder="Zvenigorod">
+            </div>
+
+            <div class="mb-3">
+                <label for="country_birth" class="form-label" title="your birth country">Pays de naissance</label>
+                <input class="form-control" list="datalist2" id="country_birth" placeholder="Ukraine">
+                <datalist id="datalist2">
+                    <option value="Ukraine">
+                </datalist>
+            </div>
+
+            <div class="mb-3">
+                <label for="birth_date" class="form-label" title="your birth date dd/mm/yyyy">Date de naissance</label>
+                <input type="date" class="form-control person_3" id="birth_date">
+            </div>
+
+            <div class="mb-3">
+                <label for="aps_num" class="form-label" title="APS number">Numéro d'attestation provisoire de séjour (APS)</label>
+                <input type="text" class="form-control" id="aps_num">
+            </div>
+
+            <div class="mb-3">
+                <label for="expire_date" class="form-label" title="expire date?">Date de fin de validité de l’APS</label>
+                <input type="date" class="form-control" id="expire_date">
+            </div>
+
+            <div class="mb-3">
+                <label for="ville" class="form-label" title="done in ">Fait à</label>
+                <input class="form-control" list="datalist" id="ville" placeholder="Click me to select.. or write">
+                <datalist id="datalist">
+
+                    <option value="Annemasse">
+                    <option value="Thônes">
+                    <option value="Annecy">
+
+                </datalist>
+            </div>
+
+            <h4 title="add a person who came with you in France :">Une personne qui est entrée en France avec vous :</h4>
+            <div class="card">
+                <div class="mb-3">
+                    <label for="lien" class="form-label person" title="family bond e. husband(mari), spouse(épouse) ... with the person you came with">Lien familial </label>
+                    <div class="mb-3">
+                        <select name="lien" class="person" id="lien">
+                            <option disabled selected > -- select an option -- </option>
+                            <!--  =""     value = "userPrenom"     value = "userNom"      value = "11/12/3111"       value = "123456"   selected      value-->
+                            <option value="mari" title="husband">Mari</option>
+                            <option value="epouse" title="wife">Épouse</option>
+                            <option value="concubine" title="concubine">Concubine</option>
+                            <option value="concubin" title="partner">Concubin</option>
+                            <option value="compagne" title="companion">Compagne</option>
+                            <option value="compagnon" title="companion">Compagnon</option>
+                        </select>
                     </div>
                 </div>
-
                 <div class="mb-3">
-                    <label for="prenom" class="form-label" title="your Firstname">Prénom</label>
-                    <input type="text" class="form-control" id="prenom" placeholder="Tetiana, Mykhailo">
+                    <label for="userPrenom" class="form-label" title="first name of your partner">Prénom</label>
+                    <input type="text" class="form-control person" id="userPrenom" placeholder="Tetiana, Mykhailo" >
                 </div>
-
                 <div class="mb-3">
-                    <label for="nom" class="form-label" title="name">Nom</label>
-                    <input type="text" class="form-control" id="nom" placeholder="OMELCHENKO">
+                    <label for="userNom" class="form-label" title="name of your partner">Nom</label>
+                    <input type="text" class="form-control person" id="userNom" placeholder="OMELCHENKO">
                 </div>
-
                 <div class="mb-3">
-                    <label for="adresse" class="form-label" title="adresse">Adresse</label>
-                    <input type="text" class="form-control" id="adresse" placeholder="10, avenue de Chambéry">
+                    <label for="userBirth_date" class="form-label" title="birth date dd/mm/yyyy of your partner">Date de naissance</label>
+                    <input type="date" class="form-control person" id="userBirth_date" placeholder="OMELCHENKO" >
                 </div>
-
                 <div class="mb-3">
-                    <label for="heb_chez" class="form-label" title="You are hosted by Mr Jhon Doe">Vous êtes hébergé chez (civilité, nom, prénom)</label>
-                    <input type="text" class="form-control" id="heb_chez" placeholder="Croix Rouge, Madame DUPONT, Monsieur DURANT">
+                    <label for="userAps_num" class="form-label" title="APS number">Numéro d'attestation provisoire de séjour (APS)</label>
+                    <input type="text" class="form-control" id="userAps_num" >
                 </div>
+            </div>
+            <!-- ************************* 3rd person (child) ****************************-->
+            <div class=" cloneitem">
+                <h4 title="add a minor child who came with you in France :">Ajoutez un enfant mineur qui est entré en France avec vous :</h4>
 
-                <div class="mb-3">
-                    <label for="zip_code" class="form-label" title="ZIP code">Code postal</label>
-                    <input type="text" class="form-control" maxlength="6" max="999999" id="zip_code" placeholder="74100">
-                </div>
-
-                <div class="mb-3">
-                    <label for="commune" class="form-label" title="municipality">Commune</label>
-                    <input type="text" class="form-control" id="commune" placeholder="Annemasse">
-                </div>
-
-                <div class="mb-3">
-                    <label for="telephone" class="form-label" title="your phone number FR +33">n° de téléphone en France </label>
-                    <input type="text" class="form-control" id="telephone" placeholder="+33 X XX XX XX XX ">
-                </div>
-
-                <div class="mb-3">
-                    <label for="telephone2" class="form-label" title="your phone number if any in Ukraine">n° de téléphone en Ukraine </label>
-                    <input type="text" class="form-control" id="telephone2" placeholder="+XX X XX XX XX XX ">
-                </div>
-
-                <div class="mb-3">
-                    <label for="email" class="form-label" title="your email">Email</label>
-                    <input type="text" class="form-control" id="email">
-                </div>
-
-                <div class="mb-3">
-                    <label for="entry_date" class="form-label" title="Date of entry into France dd/mm/yyyy">Date d'entrée en France</label>
-                    <input type="date" class="form-control" id="entry_date">
-                </div>
-
-                <div class="mb-3">
-                    <label for="ville_birth" class="form-label" title="your birth city">Ville de naissance</label>
-                    <input type="text" class="form-control" id="ville_birth" placeholder="Zvenigorod">
-                </div>
-
-                <div class="mb-3">
-                    <label for="country_birth" class="form-label" title="your birth country">Pays de naissance</label>
-                    <input class="form-control" list="datalist2" id="country_birth" placeholder="Ukraine">
-                    <datalist id="datalist2">
-                        <option value="Ukraine">
-                    </datalist>
-                </div>
-
-                <div class="mb-3">
-                    <label for="birth_date" class="form-label" title="your birth date dd/mm/yyyy">Date de naissance</label>
-                    <input type="date" class="form-control person_3" id="birth_date">
-                </div>
-
-                <div class="mb-3">
-                    <label for="aps_num" class="form-label" title="APS number">Numéro d'attestation provisoire de séjour (APS)</label>
-                    <input type="text" class="form-control" id="aps_num">
-                </div>
-
-                <div class="mb-3">
-                    <label for="expire_date" class="form-label" title="expire date?">Date de fin de validité de l’APS</label>
-                    <input type="date" class="form-control" id="expire_date">
-                </div>
-
-                <div class="mb-3">
-                    <label for="ville" class="form-label" title="done in ">Fait à</label>
-                    <input class="form-control" list="datalist" id="ville" placeholder="Click me to select.. or write">
-                    <datalist id="datalist">
-
-                        <option value="Annemasse">
-                        <option value="Thônes">
-                        <option value="Annecy">
-
-                    </datalist>
-                </div>
-
-                <h4 title="add a person who came with you in France :">Une personne qui est entrée en France avec vous :</h4>
-                <div class="card">
+                <div class="card to_clone ">
                     <div class="mb-3">
-                        <label for="lien" class="form-label person" title="family bond e. husband(mari), spouse(épouse) ... with the person you came with">Lien familial </label>
+                        <label for="lien1" class="form-label" title="family bond  son, daughter ...">Lien familial </label>
                         <div class="mb-3">
-                            <select name="lien" class="person" id="lien">
-                                <option disabled selected > -- select an option -- </option>
-<!--  =""     value = "userPrenom"     value = "userNom"      value = "11/12/3111"       value = "123456"   selected      value-->
-                                <option value="mari" title="husband">Mari</option>
-                                <option value="epouse" title="wife">Épouse</option>
-                                <option value="concubine" title="concubine">Concubine</option>
-                                <option value="concubin" title="partner">Concubin</option>
-                                <option value="compagne" title="companion">Compagne</option>
-                                <option value="compagnon" title="companion">Compagnon</option>
+                            <select  name="lien" class="person1" id="lien1">
+                                <option disabled="" selected> -- select an option -- </option>
+                                <!--=""         value = "prenom1Ch1"    value = "nom11"     value = "11/11/1111"                   value=""-->
+                                <option value="fils" title="son" >Fils</option>
+                                <option value="fille" title="daughter">Fille</option>
                             </select>
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="userPrenom" class="form-label" title="first name of your partner">Prénom</label>
-                        <input type="text" class="form-control person" id="userPrenom" placeholder="Tetiana, Mykhailo" >
+                        <label for="prenom1" class="form-label" title="first name of your child" >Prénom</label>
+                        <input type="text" class="form-control person1" id="prenom1" placeholder="Tetiana, Mykhailo" >
                     </div>
                     <div class="mb-3">
-                        <label for="userNom" class="form-label" title="name of your partner">Nom</label>
-                        <input type="text" class="form-control person" id="userNom" placeholder="OMELCHENKO">
+                        <label for="nom1" class="form-label" title="name of your child">Nom</label>
+                        <input type="text" class="form-control person1" id="nom1" placeholder="OMELCHENKO" >
                     </div>
                     <div class="mb-3">
-                        <label for="userBirth_date" class="form-label" title="birth date dd/mm/yyyy of your partner">Date de naissance</label>
-                        <input type="date" class="form-control person" id="userBirth_date" placeholder="OMELCHENKO" >
-                    </div>
-                    <div class="mb-3">
-                        <label for="userAps_num" class="form-label" title="APS number">Numéro d'attestation provisoire de séjour (APS)</label>
-                        <input type="text" class="form-control" id="userAps_num" >
+                        <label for="birth_date1" class="form-label" title="birth date dd/mm/yyyy of your child">Date de naissance</label>
+                        <input type="date" class="form-control person1" id="birth_date1" >
                     </div>
                 </div>
-                                     <!-- ************************* 3rd person (child) ****************************-->
-                <div class=" cloneitem">
-                    <h4 title="add a minor child who came with you in France :">Ajoutez un enfant mineur qui est entré en France avec vous :</h4>
+            </div>
 
-                    <div class="card to_clone ">
-                        <div class="mb-3">
-                            <label for="lien1" class="form-label" title="family bond  son, daughter ...">Lien familial </label>
-                            <div class="mb-3">
-                                <select  name="lien" class="person1" id="lien1">
-                                    <option disabled="" selected> -- select an option -- </option>
-<!--=""         value = "prenom1Ch1"    value = "nom11"     value = "11/11/1111"                   value=""-->
-                                    <option value="fils" title="son" >Fils</option>
-                                    <option value="fille" title="daughter">Fille</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="prenom1" class="form-label" title="first name of your child" >Prénom</label>
-                            <input type="text" class="form-control person1" id="prenom1" placeholder="Tetiana, Mykhailo" >
-                        </div>
-                        <div class="mb-3">
-                            <label for="nom1" class="form-label" title="name of your child">Nom</label>
-                            <input type="text" class="form-control person1" id="nom1" placeholder="OMELCHENKO" >
-                        </div>
-                        <div class="mb-3">
-                            <label for="birth_date1" class="form-label" title="birth date dd/mm/yyyy of your child">Date de naissance</label>
-                            <input type="date" class="form-control person1" id="birth_date1" >
-                        </div>
-                    </div>
-                </div>
-
-                                     <!-- ************************* end for 3rd person (child) ****************************-->
+            <!-- ************************* end for 3rd person (child) ****************************-->
 
 
 
@@ -213,93 +213,93 @@
 
 
 
-                    <div id="glue_here">
+            <div id="glue_here">
 
-                    </div>
+            </div>
 
-<!--                </div>-->
-                <input id="show_more" type="button" value="Ajouter 1 enfant" title="add another child" />
+            <!--                </div>-->
+            <input id="show_more" type="button" value="Ajouter 1 enfant" title="add another child" />
 
-                <div class="mb-3">
-                    <label  class="" title=""></label>
+            <div class="mb-3">
+                <label  class="" title=""></label>
 
-                </div>
+            </div>
 
-                <button type="submit" id="submit" class="btn btn-primary" title="Generate Attestation">Générer des documents</button>
-            </form>
-        </div>
-        <div id="output" class="card hide_result">
-            <h4 title="Application for the Humanitarian Program for Displaced Persons from Ukraine">Demande d'inscription au programme humanitaire pour les personnes déplacées d'Ukraine</h4>
+            <button type="submit" id="submit" class="btn btn-primary" title="Generate Attestation">Générer des documents</button>
+        </form>
+    </div>
+    <div id="output" class="card hide_result">
+        <h4 title="Application for the Humanitarian Program for Displaced Persons from Ukraine">Demande d'inscription au programme humanitaire pour les personnes déplacées d'Ukraine</h4>
 
-            <div class="hide_container">
-                <p title="Attention ! Avant d'enregistrer, vérifiez l'orthographe de vos données personnelles !">Attention ! Avant d'enregistrer, vérifiez l'orthographe de vos données personnelles !</p>
-                <pre id="prompt">
+        <div class="hide_container">
+            <p title="Attention ! Avant d'enregistrer, vérifiez l'orthographe de vos données personnelles !">Attention ! Avant d'enregistrer, vérifiez l'orthographe de vos données personnelles !</p>
+            <pre id="prompt">
                 </pre>
-            </div>
-            <div class="row-fluid">
+        </div>
+        <div class="row-fluid">
 
-                <div class="span5 no-gutter " style="width: 49%;float:left">
+            <div class="span5 no-gutter " style="width: 49%;float:left">
+            </div>
+
+            <div id="editor" class="bypass" style="width: 49%;"></div>
+
+            <div class="controls" style="width: 49%;">
+                <div class="pull-right">
+                    <!--<a href="#" class="btn btn-primary">Download Your Code</a>-->
+                    <a href="#" class="btn btn-primary download-pdf" title="Download PDF">Téléchargement PDF</a>
                 </div>
 
-                <div id="editor" class="bypass" style="width: 49%;"></div>
 
-                <div class="controls" style="width: 49%;">
-                    <div class="pull-right">
-                        <!--<a href="#" class="btn btn-primary">Download Your Code</a>-->
-                        <a href="#" class="btn btn-primary download-pdf" title="Download PDF">Téléchargement PDF</a>
-                    </div>
-
-
-                </div>
             </div>
         </div>
-        <div id="output_2" class="card hide_result">
+    </div>
+    <div id="output_2" class="card hide_result">
 
-            <div class="">
-                <p>Attention ! Avant d'enregistrer, vérifiez l'orthographe de vos données personnelles !</p>
-                <pre id="att_h"></pre>
-            </div>
-            <div id="editor2" class="bypass"></div>
+        <div class="">
+            <p>Attention ! Avant d'enregistrer, vérifiez l'orthographe de vos données personnelles !</p>
+            <pre id="att_h"></pre>
+        </div>
+        <div id="editor2" class="bypass"></div>
+
+    </div>
+</div>
+<!-- /container -->
+
+<div id="footer_" class="container sticky-bottom my-auto">
+    <footer class="pt-4 mt-4 footer mt-auto sticky-bottom">
+
+
+        <div class="d-flex justify-content-between py-4 my-4 border-top">
+            <!-- <p class="hidetitl">
+                /*hidden when min width */
+            © 2022 IHI asso
+            </p> -->
 
         </div>
-    </div>
-    <!-- /container -->
+        <p class="text-center text-muted ">
+            <!--hidden when full width -->
+            © IHI asso 2022-2023 </p>
 
-    <div id="footer_" class="container sticky-bottom my-auto">
-        <footer class="pt-4 mt-4 footer mt-auto sticky-bottom">
+    </footer>
 
+</div>
+<!-- Scripts down here -->
 
-            <div class="d-flex justify-content-between py-4 my-4 border-top">
-                <!-- <p class="hidetitl">
-                    /*hidden when min width */
-                © 2022 IHI asso
-                </p> -->
+<script src="js/jquery-1.7.1.min.js"></script>
 
-            </div>
-            <p class="text-center text-muted ">
-                <!--hidden when full width -->
-                © IHI asso 2022-2023 </p>
+<script type="text/javascript" src="js/polyfills.umd.js"></script>
+<script type="text/javascript" src="js/jspdf.umd.js"></script>
 
-        </footer>
+<script type="text/javascript" src="js/main.js"></script>
 
-    </div>
-    <!-- Scripts down here -->
+<!-- Code editor -->
 
-    <script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/ace.js" type="text/javascript" charset="utf-8"></script>
 
-    <script type="text/javascript" src="js/polyfills.umd.js"></script>
-    <script type="text/javascript" src="js/jspdf.umd.js"></script>
-
-    <script type="text/javascript" src="js/main.js"></script>
-
-    <!-- Code editor -->
-
-    <script src="js/ace.js" type="text/javascript" charset="utf-8"></script>
-
-    <!-- Scripts in development mode -->
-    <script type="text/javascript" src="js/pdfobject.min.js"></script>
-    <script type="text/javascript" src="js/editor.js"></script>
-    <script type="text/javascript" src="js/gen_2nd_file.js"></script>
+<!-- Scripts in development mode -->
+<script type="text/javascript" src="js/pdfobject.min.js"></script>
+<script type="text/javascript" src="js/editor.js"></script>
+<script type="text/javascript" src="js/gen_2nd_file.js"></script>
 
 
 
