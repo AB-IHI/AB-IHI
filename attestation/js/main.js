@@ -56,7 +56,7 @@ function stringify(x) {
 
 //-------------------------------1st generate form field child on click-----------------------------------------------------------
 let counter = 1
- function addChildInputField() {
+function addChildInputField() {
     const buttonAddChild = document.querySelector("#show_more");
     // console.log(buttonAddChild)
     buttonAddChild.addEventListener("click",  function (event) {
