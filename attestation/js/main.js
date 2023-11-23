@@ -501,8 +501,8 @@ function bigFunctionThatRetrievesValues() {
     }
     // returnAllneededResults()
 
-        // console.log( " 470 str :", additionalChildrenstr)
-        // console.log( " 483 myTestStr :", myTestStr)
+    // console.log( " 470 str :", additionalChildrenstr)
+    // console.log( " 483 myTestStr :", myTestStr)
 
     let prompt = `
 ${title} ${prenom} ${nom}
