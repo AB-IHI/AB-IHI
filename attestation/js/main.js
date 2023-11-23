@@ -488,18 +488,18 @@ function bigFunctionThatRetrievesValues() {
     console.log(counter)
     console.log("459 additionalChildrenArray avant le prompt donc avant le res final", additionalChildrenArray)
 
-        function returnAllneededResults() {
-            // console.log(additionalChildrenArray, '468 0')
-            let myTestStr = ""
-            additionalChildrenArray.forEach( child =>{
-                console.log(child, '468 0')
-                myTestStr += child
+    function returnAllneededResults() {
+        // console.log(additionalChildrenArray, '468 0')
+        let myTestStr = ""
+        additionalChildrenArray.forEach( child =>{
+            console.log(child, '468 0')
+            myTestStr += child
 
 
-            });
-            return myTestStr
-        }
-        // returnAllneededResults()
+        });
+        return myTestStr
+    }
+    // returnAllneededResults()
 
         // console.log( " 470 str :", additionalChildrenstr)
         // console.log( " 483 myTestStr :", myTestStr)
