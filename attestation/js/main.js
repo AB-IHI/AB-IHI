@@ -254,11 +254,11 @@ function determineLink(lien) {
     return role
 }
 
-    function loopThroughAllElementsToGetValues() {
-        for (let i = 1; i < counter + 1; i++) {
-            addEventListenerChild(i)
-        }
+function loopThroughAllElementsToGetValues() { //function needed to insure the proper order of execution of program otherwise don't work as values are added dynamically
+    for (let i = 1; i < counter + 1; i++) {
+        addEventListenerChild(i)
     }
+}
 //------------------------------------end generate form field child on click-----------------------------------------------------------
 
 function testIfEmpty(obj, obj1) {
