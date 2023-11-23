@@ -194,11 +194,11 @@ function addEventListenerChild(nthChild) {
         role += 'ma';
     }
 
-        let obj = { //actually nth person
-            init: function() {
-                document.getElementById('submit').onclick = obj.validate;
-                return obj.validate(); // Call the validate function and return its result
-            },
+    let obj = { //actually nth person
+        init: function() {
+            document.getElementById('submit').onclick = obj.validate;
+            return obj.validate(); // Call the validate function and return its result
+        },
 
             validate: function() {
                 let check = document.getElementsByClassName('person' + nthChild);
