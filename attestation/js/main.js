@@ -200,18 +200,18 @@ function addEventListenerChild(nthChild) {
             return obj.validate(); // Call the validate function and return its result
         },
 
-            validate: function() {
-                let check = document.getElementsByClassName('person' + nthChild);
-                let len = check.length;
-                let un_champs_vide = false;
-                for (let i = 0; i < len ; i++) {
-                    if (check[i].value === '') {
-                        un_champs_vide = true;
-                        // console.log("loop 2 work");
-                        // console.log(un_champs_vide);
-                        break; // Exit the loop once we find an empty field
-                    }
+        validate: function() {
+            let check = document.getElementsByClassName('person' + nthChild);
+            let len = check.length;
+            let un_champs_vide = false;
+            for (let i = 0; i < len ; i++) {
+                if (check[i].value === '') {
+                    un_champs_vide = true;
+                    // console.log("loop 2 work");
+                    // console.log(un_champs_vide);
+                    break; // Exit the loop once we find an empty field
                 }
+            }
 
                 if (!un_champs_vide) {
                     let pers = "\n       - ${role} ${lien} ${prenom} ${nom}, née le ${birth_date}.";
