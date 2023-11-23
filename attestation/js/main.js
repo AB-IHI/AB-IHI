@@ -222,15 +222,15 @@ function addEventListenerChild(nthChild) {
                 pers = pers.replace("${birth_date}", birth_date);
 
 
-                    return pers;
-                } else {
-                    return "";
-                }
-            },
-        };
-        let storeStrAtTheEnd = obj.init()
-        additionalChildrenArray.push(storeStrAtTheEnd); //+= obj.init();
-        console.log("233 additionalChildrenArray 1st when added", additionalChildrenArray)
+                return pers;
+            } else {
+                return "";
+            }
+        },
+    };
+    let storeStrAtTheEnd = obj.init()
+    additionalChildrenArray.push(storeStrAtTheEnd); //+= obj.init();
+    console.log("233 additionalChildrenArray 1st when added", additionalChildrenArray)
 
         additionalChildrenstr.concat(storeStrAtTheEnd)
         console.log("236 additionalChildrenstr 1st when added", additionalChildrenstr)
