@@ -186,13 +186,13 @@ function addEventListenerChild(nthChild) {
 
 
 
-        if (lien === "fils") { //1st child aka 3rd person
-            role += 'mon';
-        }
+    if (lien === "fils") { //1st child aka 3rd person
+        role += 'mon';
+    }
 
-        if (lien === "fille") {
-            role += 'ma';
-        }
+    if (lien === "fille") {
+        role += 'ma';
+    }
 
         let obj = { //actually nth person
             init: function() {
