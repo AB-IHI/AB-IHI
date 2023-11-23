@@ -10,27 +10,26 @@ $(function() {
 /*end of section cloner*/
 
 /*show on click hidden more children*/
-var show_inputs = function() {
+// let show_inputs = function() {
+//
+//     document.getElementById("hide_more").style.display = 'block';
+//     document.getElementById("show_more").style.display = 'none';
+//
+//     // console.log("triggered");
+// }
 
-    document.getElementById("hide_more").style.display = 'block';
-    document.getElementById("show_more").style.display = 'none';
-
-    // console.log("triggered");
-}
-
-document.getElementById('show_more').onclick = show_inputs;
 
 
 
 
 /*convert dat it's obivious look at function title*/
-function convertDate(inputFormat) {
+ function convertDate(inputFormat) {
     function pad(s) { return (s < 10) ? '0' + s : s; }
-    var d = new Date(inputFormat)
+    let d = new Date(inputFormat)
     return [pad(d.getDate()), pad(d.getMonth() + 1), d.getFullYear()].join('/')
 }
 /*editor.js aka jspdf script in attestation.html*/
-var jsPDF = window.jspdf.jsPDF;
+let jsPDF = window.jspdf.jsPDF;
 $(document).ready(function() {
     if (jsPDF && jsPDF.version) {
         $('#dversion').text('Version ' + jsPDF.version);
@@ -39,7 +38,7 @@ $(document).ready(function() {
 /*end of editor.js ini*/
 
 
-// var pers2 = "";
+// let pers2 = "";
 
 
 
@@ -55,16 +54,235 @@ function stringify(x) {
 //     document.querySelector('#hide_more').style.display = 'block';
 // }
 
+//-------------------------------1st generate form field child on click-----------------------------------------------------------
+let counter = 1
+ function addChildInputField() {
+    const buttonAddChild = document.querySelector("#show_more");
+    // console.log(buttonAddChild)
+    buttonAddChild.addEventListener("click",  function (event) {
+        counter +=1
+        genererInputField()
+        console.log(counter)
+
+    });
+}
+
+ function  genererInputField() {
+    const whereAddChild = document.querySelector("#glue_here");
+    const container = document.createElement("div"); //ajouter conteneur de l'enfant (enfnt irl)
+    container.classList.add('cloneitem')
+
+    const h4 = document.createElement("h4"); //ajouter titre
+    h4.title = "add a minor child who came with you in France :"
+    h4.innerHTML = "Ajoutez un enfant mineur qui est entré en France avec vous :"
+
+    const subContainer = document.createElement("div"); //ajouter subConteneur de l'enfant
+    subContainer.classList.add('card', 'to_clone')
+
+    whereAddChild.appendChild(container)
+    container.appendChild(h4)
+    container.appendChild(subContainer)
+    inputOptionsFieldInsideContener(subContainer, counter)
+    otherInputFieldInsideContener(subContainer, counter)
+
+}
+
+function inputOptionsFieldInsideContener(subContainer, nthperson) {
 
 
-document.querySelector('form').addEventListener('submit', function(event) {
-    event.preventDefault();
+    const label = document.createElement("label"); //ajouter titre
+    label.title = "family bond  son, daughter ..."
+    label.innerHTML = "Lien familial"
 
+    const input = document.createElement("select"); //ajouter subConteneur de l'enfant
+    input.classList.add('person_' + nthperson)
+    input.id = "lien" + nthperson
+
+    subContainer.appendChild(label)
+    subContainer.appendChild(input)
+    // create n add options to select
+    const option = document.createElement("option");
+    option.disabled = true
+    option.selected = true
+    option.value = ""
+
+    option.innerHTML = " -- select an option -- "
+
+    const option0 = document.createElement("option");
+    option0.title = "son"
+    option0.value = "fils"
+    option0.innerHTML = "Fils"
+
+
+    const option1 = document.createElement("option");
+    option1.title = "daughter"
+    option1.value = "fille"
+    option1.innerHTML = "Fille"
+
+    input.appendChild(option) //append to input select tag to show options
+    input.appendChild(option0)
+    input.appendChild(option1)
+
+
+}
+
+function otherInputFieldInsideContener(subContainer, nthperson) {
+
+
+    const label = document.createElement("label"); //ajouter prénom
+    label.title = "first name of your child"
+    label.innerHTML = "Prénom"
+
+    const input = document.createElement("input"); //ajouter input for prénom
+    input.classList.add('person' + nthperson)
+    input.id = "prenom" + nthperson
+
+    subContainer.appendChild(label)
+    subContainer.appendChild(input)
+
+
+    const label0 = document.createElement("label"); //ajouter nom
+    label0.title = "name of your child"
+    label0.innerHTML = "Nom"
+
+    const input0 = document.createElement("input"); //ajouter input for nom
+    input0.classList.add('person' + nthperson)
+    input0.id = "nom" + nthperson
+
+    subContainer.appendChild(label0)
+    subContainer.appendChild(input0)
+
+
+    const label1 = document.createElement("label"); //ajouter date de naissance
+    label1.title = "date birth of your child"
+    label1.innerHTML = "Date de naissance"
+
+    const input1 = document.createElement("input"); //ajouter input for date de naissance
+    input1.classList.add('person' + nthperson)
+    input1.type = "date"
+    input1.id = "birth_date" + nthperson
+
+    subContainer.appendChild(label1)
+    subContainer.appendChild(input1)
+
+}
+
+let additionalChildrenArray = []//nno need for array can be stored in str then added to final result
+let  additionalChildrenstr = ""
+//
+function addEventListenerChild(nthChild) {
+    // document.querySelector('form').addEventListener('submit', function(event) {
+    //     event.preventDefault();
+        let lien = document.querySelector('#lien' + nthChild).value;
+        const prenom = document.querySelector('#prenom' + nthChild).value;
+        const nom = document.getElementById("nom"  + nthChild).value;
+        let birth_date = document.querySelector('#birth_date' + nthChild).value;
+        birth_date = convertDate(birth_date);
+
+        let role = "";
+
+
+
+
+
+
+        if (lien === "fils") { //1st child aka 3rd person
+            role += 'mon';
+        }
+
+        if (lien === "fille") {
+            role += 'ma';
+        }
+
+        let obj = { //actually nth person
+            init: function() {
+                document.getElementById('submit').onclick = obj.validate;
+                return obj.validate(); // Call the validate function and return its result
+            },
+
+            validate: function() {
+                let check = document.getElementsByClassName('person' + nthChild);
+                let len = check.length;
+                let un_champs_vide = false;
+                for (let i = 0; i < len ; i++) {
+                    if (check[i].value === '') {
+                        un_champs_vide = true;
+                        // console.log("loop 2 work");
+                        // console.log(un_champs_vide);
+                        break; // Exit the loop once we find an empty field
+                    }
+                }
+
+                if (!un_champs_vide) {
+                    let pers = "\n       - ${role} ${lien} ${prenom} ${nom}, née le ${birth_date}.";
+                    pers = pers.replace("${lien}", lien); //
+                    pers = pers.replace("${prenom}", prenom);
+                    pers = pers.replace("${role}", role);
+                    pers = pers.replace("${nom}", nom);
+                    pers = pers.replace("${birth_date}", birth_date);
+
+
+                    return pers;
+                } else {
+                    return "";
+                }
+            },
+        };
+        let storeStrAtTheEnd = obj.init()
+        additionalChildrenArray.push(storeStrAtTheEnd); //+= obj.init();
+        console.log("233 additionalChildrenArray 1st when added", additionalChildrenArray)
+
+        additionalChildrenstr.concat(storeStrAtTheEnd)
+        console.log("236 additionalChildrenstr 1st when added", additionalChildrenstr)
+        return additionalChildrenstr
+
+    //})
+}
+
+// document.getElementById('show_more').onclick = addChildInputField(); useless don't uncoment
+addChildInputField()
+// console.log("240")
+
+    function determineLink(lien) {
+    let role = ""
+        if (lien === "fils") { //1st child aka 3rd person
+            role += 'mon';
+        }
+        else {
+            role += 'ma';
+        }
+        return role
+    }
+
+    function loopThroughAllElementsToGetValues() {
+        for (let i = 1; i < counter + 1; i++) {
+            addEventListenerChild(i)
+        }
+    }
+//------------------------------------end generate form field child on click-----------------------------------------------------------
+
+function testIfEmpty(obj, obj1) {
+    return ((obj.init() === "") && (obj1.init() === ""))
+}
+
+// async attempt to fix
+//check oc click if array is empty
+
+//but first store all the values on click in  an array
+// so to be able to perform the test
+//then whatever the result call the big function or test with smaller one to retrieve values
+
+//start of big async function that should be executed at the end of execution of addChildInputField()
+function bigFunctionThatRetrievesValues() {
+    //document.querySelector('form').addEventListener('submit', function(event) {
+    //event.preventDefault();
+
+    //1st person appears as sender of letter
     const title = document.getElementById("title").value;
     const prenom = document.querySelector('#prenom').value;
     const nom = document.querySelector('#nom').value;
     const adresse = document.querySelector('#adresse').value;
-    var heb_chez = document.querySelector('#heb_chez').value;
+    let heb_chez = document.querySelector('#heb_chez').value;
     if (heb_chez) {
         heb_chez = `\nchez ` + heb_chez;
     }
@@ -72,204 +290,89 @@ document.querySelector('form').addEventListener('submit', function(event) {
     const zip_code = document.querySelector('#zip_code').value;
     const commune = document.getElementById("commune").value;
     const telephone = document.querySelector('#telephone').value;
-    var telephone2 = document.querySelector('#telephone2').value;
+    let telephone2 = document.querySelector('#telephone2').value;
     if (telephone2) {
         telephone2 = `\ntél.: ` + telephone2;
     }
     const email = document.querySelector('#email').value;
-    var entry_date = document.querySelector('#entry_date').value;
+    let entry_date = document.querySelector('#entry_date').value;
     entry_date = convertDate(entry_date);
-    var birth_date = document.querySelector('#birth_date').value;
+    let birth_date = document.querySelector('#birth_date').value;
     birth_date = convertDate(birth_date);
     const ville_birth = document.querySelector('#ville_birth').value;
     const ville = document.querySelector('#ville').value;
     const country_birth = document.getElementById("country_birth").value;
     const aps_num = document.querySelector('#aps_num').value;
-    var expire_date = document.querySelector('#expire_date').value;
+    let expire_date = document.querySelector('#expire_date').value;
     expire_date = convertDate(expire_date);
-
-    var lien_1 = document.querySelector('#lien_1').value;
-    const prenom_1 = document.querySelector('#prenom_1').value;
-    const nom_1 = document.querySelector('#nom_1').value;
-    var birth_date_1 = document.querySelector('#birth_date_1').value;
+    //actually 2nd peron
+    let lien = document.querySelector('#lien').value;
+    // console.log(lien)
+    const userPrenom = document.querySelector('#userPrenom').value;
+    const userNom = document.querySelector('#userNom').value;
+    let userBirth_date = document.querySelector('#userBirth_date').value;
+    userBirth_date = convertDate(userBirth_date);
+    const userAps_num = document.querySelector('#userAps_num').value;
+    //1st child actually 3rd person
+    let lien_1 = document.querySelector('#lien1').value;
+    const prenom_1 = document.querySelector('#prenom1').value;
+    const nom_1 = document.getElementById("nom1").value;
+    let birth_date_1 = document.querySelector('#birth_date1').value;
     birth_date_1 = convertDate(birth_date_1);
-    const aps_num_2 = document.querySelector('#aps_num_2').value;
 
-    var lien_2 = document.querySelector('#lien_2').value;
-    const prenom_2 = document.querySelector('#prenom_2').value;
-    const nom_2 = document.getElementById("nom_2").value;
-    var birth_date_2 = document.querySelector('#birth_date_2').value;
-    birth_date_2 = convertDate(birth_date_2);
 
-    var lien_3 = document.querySelector('#lien_3').value;
-    const prenom_3 = document.querySelector('#prenom_3').value;
-    const nom_3 = document.getElementById("nom_3").value;
-    var birth_date_3 = document.querySelector('#birth_date_3').value;
-    birth_date_3 = convertDate(birth_date_3);
 
-    var lien_4 = document.querySelector('#lien_4').value;
-    const prenom_4 = document.querySelector('#prenom_4').value;
-    const nom_4 = document.getElementById("nom_4").value;
-    var birth_date_4 = document.querySelector('#birth_date_4').value;
-    birth_date_4 = convertDate(birth_date_4);
-
-    var lien_5 = document.querySelector('#lien_5').value;
-    const prenom_5 = document.querySelector('#prenom_5').value;
-    const nom_5 = document.getElementById("nom_5").value;
-    var birth_date_5 = document.querySelector('#birth_date_5').value;
-    birth_date_5 = convertDate(birth_date_5);
-
-    var lien_6 = document.querySelector('#lien_6').value;
-    const prenom_6 = document.querySelector('#prenom_6').value;
-    const nom_6 = document.getElementById("nom_6").value;
-    var birth_date_6 = document.querySelector('#birth_date_6').value;
-    birth_date_6 = convertDate(birth_date_6);
-
-    var lien_7 = document.querySelector('#lien_7').value;
-    const prenom_7 = document.querySelector('#prenom_7').value;
-    const nom_7 = document.getElementById("nom_7").value;
-    var birth_date_7 = document.querySelector('#birth_date_7').value;
-    birth_date_7 = convertDate(birth_date_7);
-
-    var myrole = "";
+    let myrole = "";
 
     universal_gender = ""; //no time to change everything to universal
     if (title === "Madame") {
-        universal_gender = "e";
+        universal_gender = "e"; //what is this it seems its for female[e] e at the end of word
     }
-    var currentTime = new Date();
+    let currentTime = new Date();
     currentTime = convertDate(currentTime);
-    var role = "";
-    var role2 = "";
-    var role3 = "";
-    var role4 = "";
-    var role5 = "";
-    var role6 = "";
-    var role7 = "";
-    var civ = "";
-    // console.log(lien_1 == "mari" || lien_1 == "fils");
+    let role = "";
+    let role1 = "";
+    let civ =""
 
-    // const code = document.querySelector('#code').checked;
-    // var Vanilla = "";
 
-    if (lien_1 === "mari" || lien_1 === "compagnon" || lien_1 === "concubin") {
+    if (lien === "mari" || lien === "compagnon" || lien === "concubin") { //user aka 2nd person
         role = 'mon';
         civ = 'Monsieur';
     }
-    // console.log(civ);
 
-    if (lien_1 === "femme" || lien_1 === "compagne" || lien_1 === "epouse") {
+
+    if (lien === "femme" || lien === "compagne" || lien === "epouse") {
         role += 'ma';
         civ = 'Madame';
     }
 
-    if (lien_1 === "epouse") {
-        lien_1 = "épouse";
+    if (lien === "epouse") {
+        lien = "épouse";
     }
 
 
 
-    if (lien_2 === "fils") {
-        role2 += 'mon';
+    if (lien_1 === "fils") { //1st child aka 3rd person
+        role1 += 'mon';
     }
 
-    if (lien_2 === "fille") {
-        role2 += 'ma';
+    if (lien_1 === "fille") {
+        role1 += 'ma';
     }
 
-    if (lien_3 === "fille") {
-        role3 += 'ma';
-    }
 
-    if (lien_3 === "fils") {
-        role3 += 'mon';
-    }
 
-    if (lien_4 === "fille") {
-        role4 += 'ma';
-    }
-
-    if (lien_4 === "fils") {
-        role4 += 'mon';
-    }
-
-    if (lien_5 === "fille") {
-        role5 += 'ma';
-    }
-
-    if (lien_5 === "fils") {
-        role5 += 'mon';
-    }
-
-    if (lien_6 === "fille") {
-        role6 += 'ma';
-    }
-
-    if (lien_6 === "fils") {
-        role6 += 'mon';
-    }
-
-    if (lien_7 === "fille") {
-        role7 += 'ma';
-    }
-
-    if (lien_7 === "fils") {
-        role7 += 'mon';
-    }
-
-    var obj0 = {
-        init: function() {
-            document.getElementById('submit').onclick = obj0.validate;
-            return obj0.validate(); // Call the validate function and return its result
-        },
-
-        validate: function() {
-            var check = document.getElementsByClassName('person_1');
-            var len = check.length;
-            var un_champs_vide = false;
-            for (var i = 0; i < len; i++) {
-                if (check[i].value === '') {
-                    un_champs_vide = true;
-                    // console.log("loop 2 work");
-                    // console.log(un_champs_vide);
-                    break; // Exit the loop once we find an empty field
-                }
-            }
-
-            if (!un_champs_vide) {
-                var pers1 = "et mon \n${lien_1} ${civ} ${prenom_1} ${nom_1}, née le ${birth_date_1}, APS n° ${aps_num_2}.";
-                pers1 = pers1.replace("${role}", role);
-                pers1 = pers1.replace("${lien_1}", lien_1);
-                pers1 = pers1.replace("${prenom_1}", prenom_1);
-                pers1 = pers1.replace("${nom_1}", nom_1);
-                pers1 = pers1.replace("${birth_date_1}", birth_date_1);
-                pers1 = pers1.replace("${aps_num_2}", aps_num_2);
-                pers1 = pers1.replace("${civ}", civ);
-                // console.log(pers1);
-                // console.log("c");
-                // console.log(civ);
-                // console.log("c");
-                return pers1;
-            } else {
-                return "";
-                // window.alert("un des champs de personnes entree avec vous est vide");
-            }
-        },
-    };
-
-    /***************************************start counting ppl*****************************************/
-
-    var obj = {
+    let obj = { //actually 2st person
         init: function() {
             document.getElementById('submit').onclick = obj.validate;
             return obj.validate(); // Call the validate function and return its result
         },
 
         validate: function() {
-            var check = document.getElementsByClassName('person_1');
-            var len = check.length;
-            var un_champs_vide = false;
-            for (var i = 0; i < len; i++) {
+            let check = document.getElementsByClassName('person');
+            let len = check.length;
+            let un_champs_vide = false;
+            for (let i = 0; i < len; i++) {
                 if (check[i].value === '') {
                     un_champs_vide = true;
                     // console.log("loop 2 work");
@@ -279,240 +382,73 @@ document.querySelector('form').addEventListener('submit', function(event) {
             }
 
             if (!un_champs_vide) {
-                var pers1 = "\n       - ${role} ${lien_1} ${prenom_1} ${nom_1}, née le ${birth_date_1}.";
-                pers1 = pers1.replace("${role}", role);
-                pers1 = pers1.replace("${lien_1}", lien_1);
-                pers1 = pers1.replace("${prenom_1}", prenom_1);
-                pers1 = pers1.replace("${nom_1}", nom_1);
-                pers1 = pers1.replace("${birth_date_1}", birth_date_1);
-                console.log(pers1);
+                let pers = " mon \n${lien} ${civ} ${prenom} ${nom}, née le ${birth_date}, APS n° ${aps_num}";
+                pers = pers.replace("${lien}", lien); //
+                pers = pers.replace("${prenom}", userPrenom);
+                pers = pers.replace("${role}", role);
+                pers = pers.replace("${nom}", userNom);
+                pers = pers.replace("${birth_date}", userBirth_date);
+                pers = pers.replace("${aps_num}", userAps_num);
+                pers = pers.replace("${civ}", civ);
+
+                return pers;
+            } else {
+                return "";
+            }
+        },
+    };
+
+    /***************************************start counting ppl*****************************************/
+
+    let obj1 = { //3nd person aka child
+        init: function() {
+            document.getElementById('submit').onclick = obj1.validate;
+            return obj1.validate(); // Call the validate function and return its result
+        },
+
+        validate: function() {
+            let check = document.getElementsByClassName('person1');
+            let len = check.length;
+            let un_champs_vide = false;
+            for (let i = 0; i < len; i++) {
+                if (check[i].value === '') {
+                    un_champs_vide = true;
+                    return "";
+                    break; // Exit the loop once we find an empty field
+                }
+            }
+
+            if (!un_champs_vide) {
+                let pers1 = "\n       - ${role} ${lien} ${prenom} ${nom}, née le ${birth_date}.";
+                pers1 = pers1.replace("${role}", role1);
+                pers1 = pers1.replace("${lien}", lien_1);
+                pers1 = pers1.replace("${prenom}", prenom_1);
+                pers1 = pers1.replace("${nom}", nom_1);
+                pers1 = pers1.replace("${birth_date}", birth_date_1);
+                // console.log(pers1);
                 return pers1;
             } else {
-                return "";
+                console.log("The error above is biased  ignore it")
                 window.alert("un des champs de personnes entree avec vous est vide");
+                return ""; //what is this? The error is biased
+
             }
         },
     };
 
-    var obj2 = {
-        init: function() {
-            document.getElementById('submit').onclick = obj2.validate;
-            return obj2.validate(); // Call the validate function and return its result
-        },
-
-        validate: function() {
-            var check = document.getElementsByClassName('person_2');
-            var len = check.length;
-            var un_champs_vide = false;
-            for (var i = 0; i < len; i++) {
-                if (check[i].value === '') {
-                    un_champs_vide = true;
-                    // console.log("loop 2 work");
-                    // console.log(un_champs_vide);
-                    break; // Exit the loop once we find an empty field
-                }
-            }
-
-            if (!un_champs_vide) {
-                var pers3 = "\n       - ${role} ${lien_2} ${prenom_2} ${nom_2}, née le ${birth_date_2}.";
-                pers3 = pers3.replace("${role}", role2);
-                pers3 = pers3.replace("${lien_2}", lien_2);
-                pers3 = pers3.replace("${prenom_2}", prenom_2);
-                pers3 = pers3.replace("${nom_2}", nom_2);
-                pers3 = pers3.replace("${birth_date_2}", birth_date_2);
-
-                return pers3;
-            } else {
-                return "";
-                // window.alert("un des champs de personnes entree avec vous est vide");
-            }
-        },
-    };
-
-    var obj3 = {
-        init: function() {
-            document.getElementById('submit').onclick = obj3.validate;
-            return obj3.validate(); // Call the validate function and return its result
-        },
-
-        validate: function() {
-            var check = document.getElementsByClassName('person_3');
-            var len = check.length;
-            var un_champs_vide = false;
-            for (var i = 0; i < len; i++) {
-                if (check[i].value === '') {
-                    un_champs_vide = true;
-                    // console.log("loop 2 work");
-                    // console.log(un_champs_vide);
-                    break; // Exit the loop once we find an empty field
-                }
-            }
-
-            if (!un_champs_vide) {
-                var pers4 = "\n       - ${role} ${lien_3} ${prenom_3} ${nom_3}, née le ${birth_date_3}.";
-                pers4 = pers4.replace("${role}", role3);
-                pers4 = pers4.replace("${lien_3}", lien_3);
-                pers4 = pers4.replace("${prenom_3}", prenom_3);
-                pers4 = pers4.replace("${nom_3}", nom_3);
-                pers4 = pers4.replace("${birth_date_3}", birth_date_3);
-
-                return pers4;
-            } else {
-                return "";
-                // window.alert("un des champs de personnes entree avec vous est vide");
-            }
-        },
-    };
-
-    var obj4 = {
-        init: function() {
-            document.getElementById('submit').onclick = obj4.validate;
-            return obj4.validate(); // Call the validate function and return its result
-        },
-
-        validate: function() {
-            var check = document.getElementsByClassName('person_4');
-            var len = check.length;
-            var un_champs_vide = false;
-            for (var i = 0; i < len; i++) {
-                if (check[i].value === '') {
-                    un_champs_vide = true;
-                    // console.log("loop 2 work");
-                    // console.log(un_champs_vide);
-                    break; // Exit the loop once we find an empty field
-                }
-            }
-
-            if (!un_champs_vide) {
-                var pers5 = "\n       - ${role} ${lien_4} ${prenom_4} ${nom_4}, née le ${birth_date_4}.";
-                pers5 = pers5.replace("${role}", role4);
-                pers5 = pers5.replace("${lien_4}", lien_4);
-                pers5 = pers5.replace("${prenom_4}", prenom_4);
-                pers5 = pers5.replace("${nom_4}", nom_4);
-                pers5 = pers5.replace("${birth_date_4}", birth_date_4);
-
-                return pers5;
-            } else {
-                return "";
-                // window.alert("un des champs de personnes entree avec vous est vide");
-            }
-        },
-    };
-
-    var obj5 = {
-        init: function() {
-            document.getElementById('submit').onclick = obj5.validate;
-            return obj5.validate(); // Call the validate function and return its result
-        },
-
-        validate: function() {
-            var check = document.getElementsByClassName('person_5');
-            var len = check.length;
-            var un_champs_vide = false;
-            for (var i = 0; i < len; i++) {
-                if (check[i].value === '') {
-                    un_champs_vide = true;
-                    // console.log("loop 2 work");
-                    // console.log(un_champs_vide);
-                    break; // Exit the loop once we find an empty field
-                }
-            }
-
-            if (!un_champs_vide) {
-                var pers6 = "\n       - ${role} ${lien_2} ${prenom_2} ${nom_2}, née le ${birth_date_2}.";
-                pers6 = pers6.replace("${role}", role4);
-                pers6 = pers6.replace("${lien_2}", lien_5);
-                pers6 = pers6.replace("${prenom_2}", prenom_5);
-                pers6 = pers6.replace("${nom_2}", nom_5);
-                pers6 = pers6.replace("${birth_date_2}", birth_date_5);
-
-                return pers6;
-            } else {
-                return "";
-                // window.alert("un des champs de personnes entree avec vous est vide");
-            }
-        },
-    };
-
-    var obj6 = {
-        init: function() {
-            document.getElementById('submit').onclick = obj6.validate;
-            return obj6.validate(); // Call the validate function and return its result
-        },
-
-        validate: function() {
-            var check = document.getElementsByClassName('person_6');
-            var len = check.length;
-            var un_champs_vide = false;
-            for (var i = 0; i < len; i++) {
-                if (check[i].value === '') {
-                    un_champs_vide = true;
-                    // console.log("loop 2 work");
-                    // console.log(un_champs_vide);
-                    break; // Exit the loop once we find an empty field
-                }
-            }
-
-            if (!un_champs_vide) {
-                var pers7 = "\n       - ${role} ${lien_2} ${prenom_2} ${nom_2}, née le ${birth_date_2}.";
-                pers7 = pers7.replace("${role}", role6);
-                pers7 = pers7.replace("${lien_2}", lien_6);
-                pers7 = pers7.replace("${prenom_2}", prenom_6);
-                pers7 = pers7.replace("${nom_2}", nom_6);
-                pers7 = pers7.replace("${birth_date_2}", birth_date_6);
-
-                return pers7;
-            } else {
-                return "";
-                // window.alert("un des champs de personnes entree avec vous est vide");
-            }
-        },
-    };
-
-    var obj7 = {
-        init: function() {
-            document.getElementById('submit').onclick = obj7.validate;
-            return obj7.validate(); // Call the validate function and return its result
-        },
-
-        validate: function() {
-            var check = document.getElementsByClassName('person_7');
-            var len = check.length;
-            var un_champs_vide = false;
-            for (var i = 0; i < len; i++) {
-                if (check[i].value === '') {
-                    un_champs_vide = true;
-                    // console.log("loop 2 work");
-                    // console.log(un_champs_vide);
-                    break; // Exit the loop once we find an empty field
-                }
-            }
-
-            if (!un_champs_vide) {
-                var pers8 = "\n       - ${role} ${lien_2} ${prenom_2} ${nom_2}, née le ${birth_date_2}.";
-                pers8 = pers8.replace("${role}", role7);
-                pers8 = pers8.replace("${lien_2}", lien_7);
-                pers8 = pers8.replace("${prenom_2}", prenom_7);
-                pers8 = pers8.replace("${nom_2}", nom_7);
-                pers8 = pers8.replace("${birth_date_2}", birth_date_7);
-
-                return pers8;
-            } else {
-                return "";
-                // window.alert("un des champs de personnes entree avec vous est vide");
-            }
-        },
-    };
-
+    // let testStr = "testStr :" + obj.init() + obj1.init()
+    // console.log(testStr)
+//nt child
 
 
     //gender is used to determine if it f/m word of seul
     gender = "";
+    let av = "";
 
 
     //check if there are no people then add seul else add list of people
-    if ((obj.init() === "") && (obj2.init() === "") && (obj3.init() === "") && (obj4.init() === "") && (obj5.init() === "") && (obj6.init() === "") && (obj7.init() === "")) {
-        var av = ".";
+    if (testIfEmpty(obj, obj1)) {
+        av = ".";
         // gender +=".";
 
         if (title === "Monsieur") {
@@ -525,10 +461,49 @@ document.querySelector('form').addEventListener('submit', function(event) {
         }
 
     } else {
-        var av = " et j'y habite actuellement avec:";
+        av = " et j'y habite actuellement avec:";
 
     }
-    console.log(gender);
+
+    let and =  "";
+
+
+    //check if there are no people then add seul else add list of people
+    if (obj1.init() !== '' && obj.init() !== ''){
+        and = " et ";
+    } else if ( obj1.init() == '' &&   obj.init() == '') {
+        and =  "";
+    }
+    // else if ( obj1.init() == '') {
+    //     and =  ".";
+    // }
+    // else if ( obj.init() == '') {
+    //     and =  ".";
+    // }
+
+
+    // console.log(gender);
+
+
+    console.log(counter)
+    console.log("459 additionalChildrenArray avant le prompt donc avant le res final", additionalChildrenArray)
+
+        function returnAllneededResults() {
+            // console.log(additionalChildrenArray, '468 0')
+            let myTestStr = ""
+            additionalChildrenArray.forEach( child =>{
+                console.log(child, '468 0')
+                myTestStr += child
+
+
+            });
+            return myTestStr
+        }
+        // returnAllneededResults()
+
+        // console.log( " 470 str :", additionalChildrenstr)
+        // console.log( " 483 myTestStr :", myTestStr)
+
     let prompt = `
 ${title} ${prenom} ${nom}
 ${adresse}${heb_chez}
@@ -551,7 +526,8 @@ Mesdames, Messieurs,
 
 Je vous demande de m'inscrire au programme humanitaire "Protection temporaire 
 aux personnes fuyant la guerre en Ukraine" en tant que bénéficiaire d'aide humanitaire.
-Je suis entré${universal_gender} en France le ${entry_date}${av}${obj.init()}${obj2.init()}${obj3.init()}${obj4.init()}${obj5.init()}${obj6.init()}${obj7.init()}
+Je suis entré${universal_gender} en France le ${entry_date}${av}${obj.init()}${and}${        returnAllneededResults()
+    }
 Mon APS de bénéficiaire de la protection temporaire n°${aps_num} est valable jusqu'au 
 ${expire_date}. 
 J'ai pris connaissance du contenu du programme humanitaire, accepte et 
@@ -592,7 +568,7 @@ Je soussigné${universal_gender},
          ${title} ${prenom} ${nom},
          né${universal_gender} le ${birth_date} à ${ville_birth} en ${country_birth},
          APS n°${aps_num}, valable jusqu'au ${expire_date},
-déclare sur l'honneur que mon foyer fiscal en France se compose de moi ${gender}${obj0.init()}
+déclare sur l'honneur que mon foyer fiscal en France se compose de moi ${gender}${obj.init()}
                                                         
 
 En cas de changement dans la composition de mon foyer fiscal, je m'engage à en \ninformer l'association.
@@ -610,192 +586,38 @@ En cas de changement dans la composition de mon foyer fiscal, je m'engage à en 
     document.querySelector('#att_h').textContent = att_h;
     window.location.href = "#output";
 
+// });
+}
+//end of big async function that should execute 2nd
+
+
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault(); // basically don't reload page unless u want to break it. forrgot this fact took much time to solve as oncleck reloads pages why?
+
+    loopThroughAllElementsToGetValues()//get all children after all the 3 bbut executed first to get all the values otherwise script might break/disfunction
+    bigFunctionThatRetrievesValues()  //at mort 3 1st ppl
+    additionalChildrenArray = []
 });
 
+// executeSecondPart()
 
 
-
-
-
-
-
-
-// export { prompt };
-
-
-// if (isEmphasis) {
-//     prompt += `\n\nyou are a ${Vanilla} ${language} expert.   `;
-//     prompt += `\n\n` + request + `\n\n`;
-// }
-
-// if (isVanilla) {
-//     var Vanilla = "";
-// }
-// prompt += request;
-// prompt += `\n`;
-//
-// if (isEmphasis) {
-//     prompt += `\n\nyou are a ${Vanilla} ${language} expert.   `;
-//     prompt += `\n\n` + request + `\n\n`;
-// }
 //
 //
 //
-// if (isMethod) {
-//     prompt += ` don't use methods `;
-// }
-
-// prompt += `\n` + process;
+// let myTestStr = ""
 //
-// prompt += `\n` + objects;
-//
-// prompt += `\n` + variable;
-//
-// prompt += `\n` + explain;
-//
-// if (code) {
-//     prompt += "start the output with ```";
-//     prompt += language;
-//
-// }
-
-
-
-
-
-
-
-// old code
-// var obj = {
-// init : function(){
-//     document.getElementById('submit').onclick = obj.validate;
-//     return pers2;
-// },
-//
-// validate : function(){
-//     var check = document.getElementsByClassName('person_1');
-//     var len = check.length;
-//     var un_champs_vide = false;
-//     for(var i=0;i<len;i++) {
-//         if (check[i].value ==='')
-//         {
-//             un_champs_vide = true;
-//             console.log("loop work");
-//             console.log(un_champs_vide);
-//
-//         }
-//     }
-//     if (un_champs_vide) {
-//         let pers2 = "\n\n Je suis entré en France avec ${role} ${lien_1} ${prenom_1} ${nom_1}, née le ${birth_date_1}.";
-//
-//     }
-//     return pers2;
-//
-// },
-//
-// };
-
-//  chatgpt failed attempt
-// var obj = {
-//     init: function () {
-//         document.getElementById('submit').onclick = obj.validate;
-//         return obj.validate(); // Call the validate function and return its result
-//     },
-//
-//     validate: function () {
-//         var check = document.getElementsByClassName('person_1');
-//         var len = check.length;
-//         var un_champs_vide = false;
-//         for (var i = 0; i < len; i++) {
-//             if (check[i].value === '') {
-//                 un_champs_vide = true;
-//                 console.log("loop work");
-//                 console.log(un_champs_vide);
-//             }
-//         }
-//
-//         // Declare pers2 outside of the if block
-//         let pers2 = "\n\n Je suis entré en France avec ${role} ${lien_1} ${prenom_1} ${nom_1}, née le ${birth_date_1}.";
+// function returnAllneededResults() {
+//     additionalChildrenArray.forEach((child) => {
+//         console.log(child, '468 0')
+//         myTestStr += child
 //
 //
-//         // Check if any field was empty
-//         if (un_champs_vide) {
-//             // Do something when there is an empty field (if needed)
-//         }
-//
-//         // Return the resulting pers2 string
-//         return pers2;
-//     },
-// };
-
-
-
-
-
-
-
-
-
-
-// console.log(obj.init);
-// stringify (obj.init);
-// console.log(obj.init);
-
-// var obj = {
-//     propertyName: "propertyValue",
-//     init: function () {
-//         console.log("loop work");
-//         document.getElementById('submit').onclick = obj.validate;
-//         return obj.validate(); // Call the validate function and return its result
-//     },
-//
-//     validate: function () {
-//         console.log('validate called');
-//         var check = document.getElementsByClassName('person_1');
-//         var len = check.length;
-//         var un_champs_vide = false;
-//         let pers2 = ""; // Initialize pers2 to an empty string
-//         for (var i = 0; i < len; i++) {
-//             if (check[i].value === '') {
-//                 un_champs_vide = true;
-//                 console.log("loop work");
-//                 console.log(un_champs_vide);
-//                 break; // Exit the loop once we find an empty field
-//             }
-//         }
-//
-//
-//
-//         if (!un_champs_vide) {
-//             // All fields are filled, populate the pers2 string
-//             pers2 = "\n\n Je suis entré en France avec ${role} ${lien_1} ${prenom_1} ${nom_1}, née le ${birth_date_1}.";
-//             // You can perform replacements if needed, as shown in the previous response.
-//         }
-//
-//         // Return the resulting pers2 string
-//         return pers2;
-//     },
-// };
-
-
-
-
-// let result_I_need = obj.toString();
-// console.log(result_I_need);
-// console.log(obj.toString());
-
-
-
-
-// var result = obj.init(); // Call init function
-// console.log(result);     // Log the result
-
-
-
-// $(function() {
-//
-//     $('#clone_trigger').click(function() {
-//         $('.cloneitem:first').clone().appendTo('#container');
 //     });
+//     return myTestStr
+// }
 //
-// });
+// returnAllneededResults()
+//
+// console.log('myTestStr:', myTestStr)
+//

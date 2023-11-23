@@ -30,26 +30,18 @@
 
             <h3 title="Beneficiary form">Formulaire du bénéficiaire</h3>
             <div class="mb-3">
-                <div for="" class="d-flex flex-row-reverse" title="">
+                <div  class="d-flex flex-row-reverse" title="">
                     <a class="p-2 " href="Инструкция.html">Ось декілька порад стосовно його заповнення</a>
                 </div>
 
             </div>
             <form>
-                <!--
-          <label for="language" class="form-label">Choose a Language:</label>
-          <select class="form-select" id="language">
-            <option value="Python">Python</option>
-            <option value="PHP">PHP</option>
-            <option value="Java">Java</option>
-            
-          </select>
-        </div> -->
+
 
                 <div class="mb-3">
                     <label for="title" class="form-label" title="your title e. Mr. ">Civilité</label>
                     <div class="mb-3">
-                        <select name="cars" class="person_4" id="title">
+                        <select name="title" class="person_4" id="title">
                         <option disabled selected value> -- select an option -- </option>
                         <option value="Monsieur">Monsieur</option>
                         <option value="Madame">Madame</option>
@@ -74,7 +66,7 @@
 
                 <div class="mb-3">
                     <label for="heb_chez" class="form-label" title="You are hosted by Mr Jhon Doe">Vous êtes hébergé chez (civilité, nom, prénom)</label>
-                    <input type="text" class="form-control" id="heb_chez" placeholder="Croix Rouge, Madame DUPONT, Monsieur LEFEVRE">
+                    <input type="text" class="form-control" id="heb_chez" placeholder="Croix Rouge, Madame DUPONT, Monsieur DURANT">
                 </div>
 
                 <div class="mb-3">
@@ -136,7 +128,7 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="title" class="form-label" title="done in ">Fait à</label>
+                    <label for="ville" class="form-label" title="done in ">Fait à</label>
                     <input class="form-control" list="datalist" id="ville" placeholder="Click me to select.. or write">
                     <datalist id="datalist">
 
@@ -150,233 +142,86 @@
                 <h4 title="add a person who came with you in France :">Une personne qui est entrée en France avec vous :</h4>
                 <div class="card">
                     <div class="mb-3">
-                        <label for="lien_1" class="form-label person_1" title="family bond e. husband(mari), spouse(épouse) ... with the person you came with">Lien familial </label>
+                        <label for="lien" class="form-label person" title="family bond e. husband(mari), spouse(épouse) ... with the person you came with">Lien familial </label>
                         <div class="mb-3">
-                            <select name="cars" class="person_1" id="lien_1">
-                                <option disabled selected value> -- select an option -- </option>
+                            <select name="lien" class="person" id="lien">
+                                <option disabled selected > -- select an option -- </option>
+<!--  =""     value = "userPrenom"     value = "userNom"      value = "11/12/3111"       value = "123456"   selected      value-->
                                 <option value="mari" title="husband">Mari</option>
                                 <option value="epouse" title="wife">Épouse</option>
                                 <option value="concubine" title="concubine">Concubine</option>
                                 <option value="concubin" title="partner">Concubin</option>
                                 <option value="compagne" title="companion">Compagne</option>
                                 <option value="compagnon" title="companion">Compagnon</option>
-<!--                                <option value="fils">fils</option>-->
-<!--                                <option value="fille">fille</option>-->
                             </select>
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="prenom_1" class="form-label" title="first name of your partner">Prénom</label>
-                        <input type="text" class="form-control person_1" id="prenom_1" placeholder="Tetiana, Mykhailo">
+                        <label for="userPrenom" class="form-label" title="first name of your partner">Prénom</label>
+                        <input type="text" class="form-control person" id="userPrenom" placeholder="Tetiana, Mykhailo" >
                     </div>
                     <div class="mb-3">
-                        <label for="nom_1" class="form-label" title="name of your partner">Nom</label>
-                        <input type="text" class="form-control person_1" id="nom_1" placeholder="OMELCHENKO">
+                        <label for="userNom" class="form-label" title="name of your partner">Nom</label>
+                        <input type="text" class="form-control person" id="userNom" placeholder="OMELCHENKO">
                     </div>
                     <div class="mb-3">
-                        <label for="birth_date_1" class="form-label" title="birth date dd/mm/yyyy of your partner">Date de naissance</label>
-                        <input type="date" class="form-control person_1" id="birth_date_1" placeholder="OMELCHENKO">
+                        <label for="userBirth_date" class="form-label" title="birth date dd/mm/yyyy of your partner">Date de naissance</label>
+                        <input type="date" class="form-control person" id="userBirth_date" placeholder="OMELCHENKO" >
                     </div>
                     <div class="mb-3">
-                        <label for="aps_num_2" class="form-label" title="APS number">Numéro d'attestation provisoire de séjour (APS)</label>
-                        <input type="text" class="form-control" id="aps_num_2">
+                        <label for="userAps_num" class="form-label" title="APS number">Numéro d'attestation provisoire de séjour (APS)</label>
+                        <input type="text" class="form-control" id="userAps_num" >
                     </div>
                 </div>
-
+                                     <!-- ************************* 3rd person (child) ****************************-->
                 <div class=" cloneitem">
                     <h4 title="add a minor child who came with you in France :">Ajoutez un enfant mineur qui est entré en France avec vous :</h4>
 
                     <div class="card to_clone ">
                         <div class="mb-3">
-                            <label for="lien_2" class="form-label" title="family bond  son, daughter ...">Lien familial </label>
+                            <label for="lien1" class="form-label" title="family bond  son, daughter ...">Lien familial </label>
                             <div class="mb-3">
-                                <select name="cars" class="person_2" id="lien_2">
-                            <option disabled selected value> -- select an option -- </option>
-                            <option value="fils" title="son">Fils</option>
-                            <option value="fille" title="daughter">Fille</option>
-                        </select>
+                                <select  name="lien" class="person1" id="lien1">
+                                    <option disabled="" selected> -- select an option -- </option>
+<!--=""         value = "prenom1Ch1"    value = "nom11"     value = "11/11/1111"                   value=""-->
+                                    <option value="fils" title="son" >Fils</option>
+                                    <option value="fille" title="daughter">Fille</option>
+                                </select>
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="prenom_2" class="form-label" title="first name of your child">Prénom</label>
-                            <input type="text" class="form-control person_2" id="prenom_2" placeholder="Tetiana, Mykhailo">
+                            <label for="prenom1" class="form-label" title="first name of your child" >Prénom</label>
+                            <input type="text" class="form-control person1" id="prenom1" placeholder="Tetiana, Mykhailo" >
                         </div>
                         <div class="mb-3">
-                            <label for="nom_2" class="form-label" title="name of your child">Nom</label>
-                            <input type="text" class="form-control person_2" id="nom_2" placeholder="OMELCHENKO">
+                            <label for="nom1" class="form-label" title="name of your child">Nom</label>
+                            <input type="text" class="form-control person1" id="nom1" placeholder="OMELCHENKO" >
                         </div>
                         <div class="mb-3">
-                            <label for="birth_date_2" class="form-label" title="birth date dd/mm/yyyy of your child">Date de naissance</label>
-                            <input type="date" class="form-control person_2" id="birth_date_2">
+                            <label for="birth_date1" class="form-label" title="birth date dd/mm/yyyy of your child">Date de naissance</label>
+                            <input type="date" class="form-control person1" id="birth_date1" >
                         </div>
                     </div>
                 </div>
 
-                <div id="hide_more">
-                    <div class=" cloneitem">
-                        <h4 title="add a minor child who came with you in France :">Ajoutez un enfant mineur qui est entré en France avec vous :</h4>
+                                     <!-- ************************* end for 3rd person (child) ****************************-->
 
-                        <div class="card to_clone ">
-                            <div class="mb-3">
-                                <label for="lien_2" class="form-label" title="family bond e. mari, femme, fils, fille ...">Lien familial </label>
-                                <div class="mb-3">
-                                    <select name="cars" class="person_3" id="lien_3">
-                                    <option disabled selected value> -- select an option -- </option>
-                                    <option value="fils">Fils</option>
-                                    <option value="fille">Fille</option>
-                                </select>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="prenom_3" class="form-label" title="first name">Prénom</label>
-                                <input type="text" class="form-control person_3" id="prenom_3" placeholder="Tetiana, Mykhailo">
-                            </div>
-                            <div class="mb-3">
-                                <label for="nom_3" class="form-label" title="name">Nom</label>
-                                <input type="text" class="form-control person_3" id="nom_3" placeholder="OMELCHENKO">
-                            </div>
-                            <div class="mb-3">
-                                <label for="birth_date_3" class="form-label" title="birth date dd/mm/yyyy">Date de naissance</label>
-                                <input type="date" class="form-control person_3" id="birth_date_3">
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class=" cloneitem">
-                        <h4 title="add a minor child who came with you in France :">Ajoutez un enfant mineur qui est entré en France avec vous :</h4>
 
-                        <div class="card to_clone ">
-                            <div class="mb-3">
-                                <label for="lien_4" class="form-label" title="family bond e. mari, femme, fils, fille ...">Lien familial </label>
-                                <div class="mb-3">
-                                    <select name="cars" class="person_4" id="lien_4">
-                                    <option disabled selected value> -- select an option -- </option>
-                                    <option value="fils">Fils</option>
-                                    <option value="fille">Fille</option>
-                                </select>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="prenom_4" class="form-label" title="first name">Prénom</label>
-                                <input type="text" class="form-control person_4" id="prenom_4" placeholder="Tetiana, Mykhailo">
-                            </div>
-                            <div class="mb-3">
-                                <label for="nom_4" class="form-label" title="name">Nom</label>
-                                <input type="text" class="form-control person_4" id="nom_4" placeholder="OMELCHENKO">
-                            </div>
-                            <div class="mb-3">
-                                <label for="birth_date_4" class="form-label" title="birth date dd/mm/yyyy">Date de naissance</label>
-                                <input type="date" class="form-control person_4" id="birth_date_4">
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class=" cloneitem">
-                        <h4 title="add a minor child who came with you in France :">Ajoutez un enfant mineur qui est entré en France avec vous :</h4>
 
-                        <div class="card to_clone ">
-                            <div class="mb-3">
-                                <label for="lien_5" class="form-label" title="family bond e. mari, femme, fils, fille ...">Lien familial </label>
-                                <div class="mb-3">
-                                    <select name="cars" class="person_5" id="lien_5">
-                                    <option disabled selected value> -- select an option -- </option>
-                                    <option value="fils">Fils</option>
-                                    <option value="fille">Fille</option>
-                                </select>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="prenom_5" class="form-label" title="firstname">Prénom</label>
-                                <input type="text" class="form-control person_5" id="prenom_5" placeholder="Tetiana, Mykhailo">
-                            </div>
-                            <div class="mb-3">
-                                <label for="nom_5" class="form-label" title="name">Nom</label>
-                                <input type="text" class="form-control person_5" id="nom_5" placeholder="OMELCHENKO">
-                            </div>
-                            <div class="mb-3">
-                                <label for="birth_date_5" class="form-label" title="birth date dd/mm/yyyy">Date de naissance</label>
-                                <input type="date" class="form-control person_5" id="birth_date_5">
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class=" cloneitem">
-                        <h4 title="add a minor child who came with you in France :">Ajoutez un enfant mineur qui est entré en France avec vous :</h4>
 
-                        <div class="card to_clone ">
-                            <div class="mb-3">
-                                <label for="lien_6" class="form-label" title="family bond e. mari, femme, fils, fille ...">Lien familial </label>
-                                <div class="mb-3">
-                                    <select name="cars" class="person_6" id="lien_6">
-                                        <option disabled selected value> -- select an option -- </option>
-                                        <option value="fils">Fils</option>
-                                        <option value="fille">Fille</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="prenom_6" class="form-label" title="firstname">Prénom</label>
-                                <input type="text" class="form-control person_6" id="prenom_6" placeholder="Tetiana, Mykhailo">
-                            </div>
-                            <div class="mb-3">
-                                <label for="nom_6" class="form-label" title="name">Nom</label>
-                                <input type="text" class="form-control person_6" id="nom_6" placeholder="OMELCHENKO">
-                            </div>
-                            <div class="mb-3">
-                                <label for="birth_date_6" class="form-label" title="birth date dd/mm/yyyy">Date de naissance</label>
-                                <input type="date" class="form-control person_6" id="birth_date_6">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" cloneitem">
-                        <h4 title="add a minor child who came with you in France :">Ajoutez un enfant mineur qui est entré en France avec vous :</h4>
-
-                        <div class="card to_clone ">
-                            <div class="mb-3">
-                                <label for="lien_7" class="form-label" title="family bond e. mari, femme, fils, fille ...">Lien familial </label>
-                                <div class="mb-3">
-                                    <select name="cars" class="person_7" id="lien_7">
-                                        <option disabled selected value> -- select an option -- </option>
-                                        <option value="fils">Fils</option>
-                                        <option value="fille">Fille</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="prenom_7" class="form-label" title="firstname">Prénom</label>
-                                <input type="text" class="form-control person_7" id="prenom_7" placeholder="Tetiana, Mykhailo">
-                            </div>
-                            <div class="mb-3">
-                                <label for="nom_7" class="form-label" title="name">Nom</label>
-                                <input type="text" class="form-control person_7" id="nom_7" placeholder="OMELCHENKO">
-                            </div>
-                            <div class="mb-3">
-                                <label for="birth_date_7" class="form-label" title="birth date dd/mm/yyyy">Date de naissance</label>
-                                <input type="date" class="form-control person_7" id="birth_date_7">
-                            </div>
-                        </div>
-                    </div>
 
                     <div id="glue_here">
 
-
-                        <!--                    <div id="container"></div>-->
-
-                        <!--                    <div class="cloneitem">-->
-                        <!--                        <div>another div</div>clone</div>-->
-
-                        <!--                    <input id="clone_trigger" type="button" value="clone it" />-->
-
-
                     </div>
 
-                    <!--                <input id="clone_trigger" type="button" value="Ajouter une autre personne" />-->
-                </div>
-                <input id="show_more" type="button" value="Ajouter 5 enfants" title="add more children" />
+<!--                </div>-->
+                <input id="show_more" type="button" value="Ajouter 1 enfant" title="add another child" />
 
                 <div class="mb-3">
-                    <label for="" class="" title=""></label>
+                    <label  class="" title=""></label>
 
                 </div>
 
@@ -420,7 +265,7 @@
     </div>
     <!-- /container -->
 
-    <container id="footer_" class="container sticky-bottom my-auto">
+    <div id="footer_" class="container sticky-bottom my-auto">
         <footer class="pt-4 mt-4 footer mt-auto sticky-bottom">
 
 
@@ -437,7 +282,7 @@
 
         </footer>
 
-    </container>
+    </div>
     <!-- Scripts down here -->
 
     <script src="js/jquery-1.7.1.min.js"></script>
@@ -458,7 +303,7 @@
 
 
 
-
+<!-- bit buggy can generate more files than needed-->
 </body>
 
 </html>
