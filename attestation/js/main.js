@@ -179,7 +179,7 @@ function addEventListenerChild(nthChild) {
     let birth_date = document.querySelector('#birth_date' + nthChild).value;
     birth_date = convertDate(birth_date);
 
-        let role = "";
+    let role = "";
 
 
 
