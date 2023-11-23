@@ -9,21 +9,10 @@ console.log(element);*/
 
 document.querySelector('form').addEventListener('submit', function(event) {
     var element = document.getElementById("prompt").innerHTML;
+    //console.log(element);
 
 
-    //
-    // function returnAllneededResults() {
-    //
-    //     additionalChildrenArray.forEach((child) => {
-    //         console.log(child, '468 0')
-    //         myTestStr += child
-    //
-    //
-    //     });
-    //     return myTestStr
-    // }
 
-    // returnAllneededResults()
 
 
     /* global ace, $, PDFObject, pdf, doc */
