@@ -22,8 +22,8 @@ $(function() {
 
 
 
-/*convert dat it's obivious look at function title*/
- function convertDate(inputFormat) {
+/*convert date from input to usable date to display*/
+function convertDate(inputFormat) {
     function pad(s) { return (s < 10) ? '0' + s : s; }
     let d = new Date(inputFormat)
     return [pad(d.getDate()), pad(d.getMonth() + 1), d.getFullYear()].join('/')
