@@ -181,8 +181,8 @@ if (isset($_POST["action"])) {
 
                         // Validate RIB if available (user not forced to provide rib)
                         if (!empty(trim($_POST["rib"]))) {
-                            if (strlen(trim($_POST["rib"])) != 16 ) {
-                                $rib_err = "rib must have atleast 16 characters.";
+                            if (strlen(trim($_POST["rib"])) < 28 ) {
+                                $rib_err = "rib must have at least 16 characters.";
                                 //echo "rib must have at least 16 characters.";
                             } else {
                                 $rib = trim($_POST["rib"]);
