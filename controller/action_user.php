@@ -180,14 +180,14 @@ if (isset($_POST["action"])) {
 
 
                         // Validate RIB if available (user not forced to provide rib)
-                        if (!empty(trim($_POST["rib"]))) {
-                            if (strlen(trim($_POST["rib"])) < 28 ) {
-                                $rib_err = "rib must have at least 16 characters.";
-                                //echo "rib must have at least 16 characters.";
-                            } else {
-                                $rib = trim($_POST["rib"]);
-                            }
-                        } 
+//                        if (!empty(trim($_POST["rib"]))) {
+//                            if (strlen(trim($_POST["rib"])) < 28 ) {
+//                                $rib_err = "rib must have at least 16 characters.";
+//                                //echo "rib must have at least 16 characters.";
+//                            } else {
+//                                $rib = trim($_POST["rib"]);
+//                            }
+//                        }
 
             // Check input errors before inserting in database
             if (empty($passport_err) && empty($date_err) && empty($pays_err) 
