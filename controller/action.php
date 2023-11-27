@@ -175,6 +175,34 @@ if (isset($_GET['page'])) {
     // }
 }
 
+//rm user from db
+if (isset($_GET["action"])) {
+
+    //---------------------------------------------
+    if ($_GET["action"] == "delete") {
+        if (isset($_GET["id"])) {
+            $id = $_GET['id']; // $id is now defined
+            //echo $id;
+            if (!isset($_SESSION['role']) || $_SESSION['role'] != 'admin') { // test almost same if above
+
+
+                header('Location: .?page=logout');
+
+
+            } else {
+                //needs to check that it's not deleting the admin
+                if (recup_roleViaId($id) != "admin") {
+                    delete_user($c, $id);
+
+                }
+
+            }
+
+            header("Location: controller/PRG.php"); // pour eviter le problème de la redirection (submit twice)
+        }
+    }
+}
+
 // include_once "view_controller.php";
 echo "<!-- ";
 var_dump($_SESSION['view']);
