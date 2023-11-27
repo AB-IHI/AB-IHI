@@ -134,6 +134,26 @@ function recup_role($user)
     return $role;
 }
 
+//getRoleAdmin  via id function could be improved by making comparison inside and return bool instead
+function recup_roleViaId($id)
+{   /*should take in current user of session and return bolean, however variable of user role if already stored*/
+    global $c;
+    $sql = "SELECT `role` FROM `users` WHERE id = '$id'";
+    $resultat = mysqli_query($c, $sql);
+    $row = mysqli_fetch_assoc($resultat);
+    $role = $row["role"];
+    return $role;
+}
+
+//delete user from db
+function delete_user($c, $id)
+{
+    $sql = "DELETE FROM users WHERE id='" . $id . "'";
+//echo $sql;
+    mysqli_query($c, $sql);
+//mysqli_close($c);
+}
+
 // old functions *****************************************************************************************************
 
 function ajouterUser($user, $email, $mdp)
