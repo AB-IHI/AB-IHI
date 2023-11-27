@@ -127,7 +127,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin') { // test almost s
                 </div>
                 <p class="text-center text-muted ">
                     <!--hidden when full width -->
-                    © 2022 IHI asso
+                    © 2023 IHI asso
                 </p>
 
             </footer>
