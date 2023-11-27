@@ -123,6 +123,7 @@ function update_role($c)
     //$c->close();
 }
 
+//check role via nick
 function recup_role($user)
 {   /*should take in current user of session and return bolean, however variable of user role if already stored*/
     global $c;
