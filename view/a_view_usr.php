@@ -150,7 +150,7 @@ echo '<img class= "responsive" src="uploads/'. $photo  .'" alt="My profile pic">
 
                 echo "</tr>";
                 $var6 = htmlspecialchars($row["telephone"], ENT_QUOTES, 'UTF-8');
-                echo "<td >" . $var6 . "</td>";
+                echo "<td><a class='button' href=\"index.php?action=delete&id=" . $row['id'] . "\">Delete</a></td>";
 
                 echo "</tr>";
 $var7 = htmlspecialchars($row["role"], ENT_QUOTES, 'UTF-8');
