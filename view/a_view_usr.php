@@ -22,6 +22,12 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] != 'admin') { // test almost 
 </head>
 <body class="mb-0">
 
+<div class="edit_banner center" style="display:none ">
+    <div class="center"><i class="fa-regular fa-pen-to-square"></i>
+        <p> Mode edition</p>
+    </div>
+</div>
+
 <!-- http://www.w3.org/2000/svg -->
 
 
@@ -266,15 +272,16 @@ echo "</tr>";
 </body>
 <script type='text/javascript' src='css_js/js/popper.min.js'></script>
 <script type='text/javascript' src='css_js/js/bootstrap.js'></script>
-<script type='text/javascript' src='css_js/main.js'></script>
+<!--<script type='text/javascript' src='css_js/main.js'></script>-->
+<script type='text/javascript' src='css_js/user_mngmnt.js'></script>
 
 </html>
 
 <?php
 echo "<!-- ";
-var_dump($_SESSION['view']);
-var_dump($_SESSION['page']);
-var_dump($_SESSION['loggedin']);
+//var_dump($_SESSION['view']);
+//var_dump($_SESSION['page']);
+//var_dump($_SESSION['loggedin']);
 echo 'something';
 echo "--> ";
 ?>
