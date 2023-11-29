@@ -1,0 +1,11 @@
+body {
+  margin: 2rem 0;
+}
+
+@media (max-width: 767.98px) {
+  body {
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=pageBuilder.css.map */
