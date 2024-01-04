@@ -135,7 +135,8 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Bénévoles </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href=".?explain=explanation"> Devenir bénevole </a></li>
+                        <li><a class="dropdown-item" href="ua_v/registerVolunteer.html"> Реєстрація волонтерів </a></li>
+                        <li><a class="dropdown-item" href=".?explain=explanation"> Devenir bénévole </a></li>
                         <li><a class="dropdown-item" href="y_storage/Règlement sur les bénévoles.pdf"> Règlement sur les bénévoles</a></li>
 
                     </ul>
