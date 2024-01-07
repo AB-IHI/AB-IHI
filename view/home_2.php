@@ -109,10 +109,11 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Бенефіціари </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="ua_v/benefisiar.html">Набуття статусу </a></li>
+
                         <li><a class="dropdown-item" href="ua_v/4. Право на отримання допомоги.pdf">Право на отримання допомоги </a></li>
                         <li><a class="dropdown-item" href="ua_v/5. Права та обов'язки бенефіц.pdf">Права та обов'язки бенефіціарів </a></li>
                         <li><a class="dropdown-item" href="attestation/attestation.html" title="Beneficiary registration" >Формуляр бенефіціарів</a></li>
+                        <li><a class="dropdown-item" href="ua_v/benefisiar.html">Набуття статусу </a></li>
                     </ul>
                 </li>
             </ul>
