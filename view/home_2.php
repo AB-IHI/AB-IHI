@@ -327,7 +327,7 @@
         <div id="<!--don-->">
             <a href="https://www.payasso.fr/protection-temporaire/don">
                 <button type="button" class="btn btn-primary btn-xl-center " id="button_two" alt="test">
-                    Я роблю пожертву</button></a>
+                    Зробити внесок</button></a>
 
         </div>
     </div>
