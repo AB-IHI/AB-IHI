@@ -13,4 +13,12 @@ body {
   }
 }
 
+.remove_dot {
+  list-style-type: none;
+}
+
+.custom_ul_left {
+  padding-left: 1rem;
+}
+
 /*# sourceMappingURL=pageBuilder.css.map */
