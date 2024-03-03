@@ -1,3 +1,6 @@
+* {
+}
+
 body {
   margin:  0 2rem;
 }
@@ -15,5 +18,19 @@ body {
     //margin: 0 0 0 2em;
   }
 
-
 }
+
+.remove_dot {
+  list-style-type: none;
+}
+
+.custom_ul_left {
+  //padding-left: 1rem;
+  li {
+    font-size: x-large;
+    padding-left: 1rem;
+    text-indent: -2rem;
+
+  }
+}
+
