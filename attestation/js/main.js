@@ -10,17 +10,6 @@ $(function() {
 /*end of section cloner*/
 
 /*show on click hidden more children*/
-// let show_inputs = function() {
-//
-//     document.getElementById("hide_more").style.display = 'block';
-//     document.getElementById("show_more").style.display = 'none';
-//
-//     // console.log("triggered");
-// }
-
-
-
-
 
 /*convert date from input to usable date to display*/
 function convertDate(inputFormat) {
@@ -38,8 +27,6 @@ $(document).ready(function() {
 /*end of editor.js ini*/
 
 
-// let pers2 = "";
-
 
 
 function stringify(x) {
@@ -47,19 +34,14 @@ function stringify(x) {
 }
 
 
-// stringify (obj.init);
 
-// document.querySelector('#show_more').addEventListener('submit', function(event) {
-//     //display more input options
-//     document.querySelector('#hide_more').style.display = 'block';
-// }
 
 //-------------------------------1st generate form field child on click-----------------------------------------------------------
 let counter = 1
 function addChildInputField() {
     const buttonAddChild = document.querySelector("#show_more");
-    // console.log(buttonAddChild)
     buttonAddChild.addEventListener("click",  function (event) {
+        event.preventDefault();
         counter +=1
         genererInputField()
         console.log(counter)
@@ -171,8 +153,6 @@ let additionalChildrenArray = []//nno need for array can be stored in str then a
 let  additionalChildrenstr = ""
 //
 function addEventListenerChild(nthChild) {
-    // document.querySelector('form').addEventListener('submit', function(event) {
-    //     event.preventDefault();
     let lien = document.querySelector('#lien' + nthChild).value;
     const prenom = document.querySelector('#prenom' + nthChild).value;
     const nom = document.getElementById("nom"  + nthChild).value;
@@ -180,11 +160,6 @@ function addEventListenerChild(nthChild) {
     birth_date = convertDate(birth_date);
 
     let role = "";
-
-
-
-
-
 
     if (lien === "fils") { //1st child aka 3rd person
         role += 'mon';
@@ -236,12 +211,9 @@ function addEventListenerChild(nthChild) {
     console.log("236 additionalChildrenstr 1st when added", additionalChildrenstr)
     return additionalChildrenstr
 
-    //})
 }
 
-// document.getElementById('show_more').onclick = addChildInputField(); useless don't uncoment
 addChildInputField()
-// console.log("240")
 
 function determineLink(lien) {
     let role = ""
@@ -274,8 +246,6 @@ function testIfEmpty(obj, obj1) {
 
 //start of big async function that should be executed at the end of execution of addChildInputField()
 function bigFunctionThatRetrievesValues() {
-    //document.querySelector('form').addEventListener('submit', function(event) {
-    //event.preventDefault();
 
     //1st person appears as sender of letter
     const title = document.getElementById("title").value;
@@ -436,8 +406,7 @@ function bigFunctionThatRetrievesValues() {
         },
     };
 
-    // let testStr = "testStr :" + obj.init() + obj1.init()
-    // console.log(testStr)
+
 //nt child
 
 
@@ -479,33 +448,19 @@ function bigFunctionThatRetrievesValues() {
     else if ( obj1.init() == '' && obj.init() !== '') {
         and =  ".";
     }
-    // else if ( obj.init() == '') {
-    //     and =  ".";
-    // }
-
 
     // console.log(gender);
 
 
-    console.log(counter)
-    console.log("459 additionalChildrenArray avant le prompt donc avant le res final", additionalChildrenArray)
-
     function returnAllneededResults() {
-        // console.log(additionalChildrenArray, '468 0')
         let myTestStr = ""
         additionalChildrenArray.forEach( child =>{
-            console.log(child, '468 0')
             myTestStr += child
-
-
         });
         return myTestStr
     }
-    // returnAllneededResults()
 
-    // console.log( " 470 str :", additionalChildrenstr)
-    // console.log( " 483 myTestStr :", myTestStr)
-
+    /*******************************first pdf text**************************************/
     let prompt = `
 ${title} ${prenom} ${nom}
 ${adresse}${heb_chez}
@@ -550,6 +505,12 @@ Pièces jointes:
     2) déclaration sur l’honneur
     `;
 
+
+
+
+    /*******************************2nd pdf text_attestation_honneur**************************************/
+
+
     let att_h = `
 
 
@@ -578,8 +539,7 @@ En cas de changement dans la composition de mon foyer fiscal, je m'engage à en 
 
 
    `;
-    // console.log(gender); <u>mispeled</u> 𝙾̲𝚋̲𝚓̲𝚎̲𝚝̲
-
+    // annoying
 
 
     // Display the generated prompt
@@ -601,25 +561,3 @@ document.querySelector('form').addEventListener('submit', function(event) {
     additionalChildrenArray = []
 });
 
-// executeSecondPart()
-
-
-//
-//
-//
-// let myTestStr = ""
-//
-// function returnAllneededResults() {
-//     additionalChildrenArray.forEach((child) => {
-//         console.log(child, '468 0')
-//         myTestStr += child
-//
-//
-//     });
-//     return myTestStr
-// }
-//
-// returnAllneededResults()
-//
-// console.log('myTestStr:', myTestStr)
-//
