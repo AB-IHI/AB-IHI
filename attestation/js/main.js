@@ -203,6 +203,7 @@ function addEventListenerChild(nthChild) {
             }
         },
     };
+
     let storeStrAtTheEnd = obj.init()
     additionalChildrenArray.push(storeStrAtTheEnd); //+= obj.init();
     console.log("233 additionalChildrenArray 1st when added", additionalChildrenArray)
@@ -368,6 +369,8 @@ function bigFunctionThatRetrievesValues() {
         },
     };
 
+
+
     /***************************************start counting ppl*****************************************/
 
     let obj1 = { //3nd person aka child
@@ -460,6 +463,19 @@ function bigFunctionThatRetrievesValues() {
         return myTestStr
     }
 
+    /*function to test if empty then show moi seul ou et ...
+ */
+
+    function ifEmptySeul(obj) {
+        if (obj) {//if not empty do
+            obj = "et" + obj + ".";
+            return obj
+        }
+        else {
+            return "seul" + universal_gender + ".";
+        }
+    }
+
     /*******************************first pdf text**************************************/
     let prompt = `
 ${title} ${prenom} ${nom}
@@ -531,7 +547,7 @@ Je soussigné${universal_gender},
          ${title} ${prenom} ${nom},
          né${universal_gender} le ${birth_date} à ${ville_birth} en ${country_birth},
          APS n°${aps_num}, valable jusqu'au ${expire_date},
-déclare sur l'honneur que mon foyer fiscal en France se compose de moi ${gender}${obj.init()}
+déclare sur l'honneur que mon foyer fiscal en France se compose de moi ${ifEmptySeul(gender)}${obj.init()}
                                                         
 
 En cas de changement dans la composition de mon foyer fiscal, je m'engage à en \ninformer l'association.
@@ -539,8 +555,8 @@ En cas de changement dans la composition de mon foyer fiscal, je m'engage à en 
 
 
    `;
-    // annoying
 
+    // annoying debug
 
     // Display the generated prompt
     document.querySelector('#output').style.display = 'block';
