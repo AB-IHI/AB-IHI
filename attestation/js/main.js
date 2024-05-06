@@ -464,6 +464,8 @@ function bigFunctionThatRetrievesValues() {
     }
 
     /*function to test if empty then show moi seul ou et ...
+    further docs : basically I think it takes in str and returns str
+    good news found how to use function inside a str
  */
 
     function ifEmptySeul(obj) {
