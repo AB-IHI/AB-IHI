@@ -2,6 +2,11 @@ body {
   margin: 0 2rem;
 }
 
+ul li {
+  /*in ul basically disc means that the unordered list will have dots filled with black color not empty circles*/
+  list-style-type: disc;
+}
+
 @media (max-width: 767.98px) {
   body {
     margin: 0;
