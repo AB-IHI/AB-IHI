@@ -169,7 +169,7 @@ function addEventListenerChild(nthChild) {
         role += 'ma';
     }
 
-    let obj = { //actually nth person
+    let obj = { //actually nth person or child
         init: function() {
             document.getElementById('submit').onclick = obj.validate;
             return obj.validate(); // Call the validate function and return its result
@@ -331,15 +331,34 @@ function bigFunctionThatRetrievesValues() {
         role1 += 'ma';
     }
 
-
+    function str_customize_inscription(inscription)
+    {
+        let pers = "";
+        if (inscription)
+        {
+            pers = "       - mon ${lien} ${civ} ${prenom} ${nom}, née le ${birth_date}, APS n° ${aps_num}";
+        }
+        else
+        {
+            pers = " mon \n${lien} ${civ} ${prenom} ${nom}, née le ${birth_date}, APS n° ${aps_num}";
+        }
+        pers = pers.replace("${lien}", lien); //
+                pers = pers.replace("${prenom}", userPrenom);
+                pers = pers.replace("${role}", role);
+                pers = pers.replace("${nom}", userNom);
+                pers = pers.replace("${birth_date}", userBirth_date);
+                pers = pers.replace("${aps_num}", userAps_num);
+                pers = pers.replace("${civ}", civ);
+        return pers;
+    }
 
     let obj = { //actually 2st person
-        init: function() {
+        init: function(inscription) {
             document.getElementById('submit').onclick = obj.validate;
-            return obj.validate(); // Call the validate function and return its result
+            return obj.validate(inscription); // Call the validate function and return its result
         },
 
-        validate: function() {
+        validate: function(inscription) {
             let check = document.getElementsByClassName('person');
             let len = check.length;
             let un_champs_vide = false;
@@ -353,15 +372,7 @@ function bigFunctionThatRetrievesValues() {
             }
 
             if (!un_champs_vide) {
-                let pers = " mon \n${lien} ${civ} ${prenom} ${nom}, née le ${birth_date}, APS n° ${aps_num}";
-                pers = pers.replace("${lien}", lien); //
-                pers = pers.replace("${prenom}", userPrenom);
-                pers = pers.replace("${role}", role);
-                pers = pers.replace("${nom}", userNom);
-                pers = pers.replace("${birth_date}", userBirth_date);
-                pers = pers.replace("${aps_num}", userAps_num);
-                pers = pers.replace("${civ}", civ);
-
+                pers = str_customize_inscription(inscription);
                 return pers;
             } else {
                 return "";
@@ -370,6 +381,8 @@ function bigFunctionThatRetrievesValues() {
     };
 
 
+    //let obj_incription_str = { //regenerate correct sentence for inscription
+      
 
     /***************************************start counting ppl*****************************************/
 
@@ -409,6 +422,7 @@ function bigFunctionThatRetrievesValues() {
         },
     };
 
+    
 
 //nt child
 
@@ -433,7 +447,7 @@ function bigFunctionThatRetrievesValues() {
         }
 
     } else {
-        av = " et j'y habite actuellement avec:";
+        av = " et j'y habite actuellement avec:\n";
 
     }
 
@@ -500,7 +514,7 @@ Mesdames, Messieurs,
 
 Je vous demande de m'inscrire au programme humanitaire "Protection temporaire 
 aux personnes fuyant la guerre en Ukraine" en tant que bénéficiaire d'aide humanitaire.
-Je suis entré${universal_gender} en France le ${entry_date}${av}${obj.init()}${and}${        returnAllneededResults()
+Je suis entré${universal_gender} en France le ${entry_date}${av}${obj.init(true)}${and}${        returnAllneededResults()
     }
 Mon APS de bénéficiaire de la protection temporaire n°${aps_num} est valable jusqu'au 
 ${expire_date}. 
