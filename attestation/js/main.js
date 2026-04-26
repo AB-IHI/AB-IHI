@@ -456,7 +456,7 @@ function bigFunctionThatRetrievesValues() {
 
     //check if there are no people then add seul else add list of people
     if (obj1.init() !== '' && obj.init() !== ''){
-        and = " et ";
+        and = ",";
     } else if ( obj1.init() == '' &&   obj.init() == '') {  //Je suis entré${universal_gender} en France le ${entry_date}${av}${obj.init()}${and}${        returnAllneededResults()
                                                             // }
                                                             // Mon APS de bénéficiaire de la protection temporaire n°${aps_num} est valable jusqu'au
