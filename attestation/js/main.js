@@ -468,10 +468,9 @@ function bigFunctionThatRetrievesValues() {
     good news found how to use function inside a str
  */
 
-    function ifEmptySeul(obj) {
-        if (obj) {//if not empty do
-            obj = "et" + obj + ".";
-            return obj
+    function ifEmptySeul() {
+        if (userAps_num) {//if aps of 2nd person not empty do
+            return "et";
         }
         else {
             return "seul" + universal_gender + ".";
@@ -548,8 +547,9 @@ Objet : déclaration sur l’honneur
 Je soussigné${universal_gender}, 
          ${title} ${prenom} ${nom},
          né${universal_gender} le ${birth_date} à ${ville_birth} en ${country_birth},
-         APS n°${aps_num}, valable jusqu'au ${expire_date},
-déclare sur l'honneur que mon foyer fiscal en France se compose de moi ${ifEmptySeul(gender)}${obj.init()}
+         APS n°${aps_num}, 
+         valable jusqu'au ${expire_date},
+déclare sur l'honneur que mon foyer fiscal en France se compose de moi ${ifEmptySeul()}${obj.init()}
                                                         
 
 En cas de changement dans la composition de mon foyer fiscal, je m'engage à en \ninformer l'association.
